@@ -1,0 +1,297 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Helper to find the correct image extension (webp, jpg, png)
+function findImage(basePath) {
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return '';
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 6);
+
+const pillars = [
+	{ title: "機能的人間工学", desc: "90-90-90の法則と疲労軽減の最適解", bg: "/media-images/pillar-ergonomics.webp", link: "/category/functional-ergonomics" },
+	{ title: "色彩理論と素材感", desc: "ウォーム・ミニマリズムと集中力の関係", bg: "/media-images/pillar-color.webp", link: "/category/color-theory-and-materiality" },
+	{ title: "配線管理の美学", desc: "ノイズを排除し思考をクリアに保つ技術", bg: "/media-images/pillar-cable.webp", link: "/category/cable-management" },
+	{ title: "照明とサーカディアンリズム", desc: "光を操り集中とリラックスをコントロールする", bg: "/media-images/pillar-lighting.webp", link: "/category/lighting-design" },
+	{ title: "デジタル・ミニマリズム", desc: "クラウド活用とデスクトップ環境の最適化", bg: "/media-images/pillar-digital.webp", link: "/category/digital-minimalism" },
+	{ title: "バイオフィリックデザイン", desc: "自然を取り入れ心地よい感覚を刺激する", bg: "/media-images/pillar-biophilic.jpeg", link: "/category/biophilic-design" },
+	{ title: "集中とフローの心理学", desc: "認知負荷を下げ知的生産性を最大化する", bg: "/media-images/pillar-flow.webp", link: "/category/psychology-of-flow" }
+];
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				background-color: var(--bg-color, #F7F4EF);
+				color: #33302C;
+			}
+			/* --- Hero Section --- */
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 12em 1em;
+				min-height: 70vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 3em;
+				background-image: url('/media-images/hero-bg.webp');
+				background-color: #EDE7DD;
+				background-size: cover;
+				background-position: center;
+				filter: sepia(0.12) saturate(0.9);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero-top-desc {
+				font-size: 1.1em;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				margin-bottom: 1.5em;
+				color: var(--accent-dark);
+				text-shadow: 1px 1px 4px rgba(255,255,255,0.8);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(247, 244, 239, 0.78);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #33302C;
+			}
+			.hero h2 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 3.5em;
+				font-weight: 700;
+				margin-bottom: 0.5em;
+				letter-spacing: -1px;
+				color: var(--accent-dark);
+			}
+			.hero p {
+				font-size: 1.2em;
+				max-width: 650px;
+				margin: 0 auto;
+				line-height: 1.8;
+				opacity: 0.9;
+				color: #33302C;
+			}
+
+			/* --- Section Titles --- */
+			.section-title {
+				font-family: 'Shippori Mincho', serif;
+				text-align: center;
+				font-size: 2.2em;
+				font-weight: 700;
+				margin: 2.5em 0 1.2em;
+				color: var(--accent-dark);
+			}
+			.section-title::after {
+				content: '';
+				display: block;
+				width: 40px;
+				height: 2px;
+				background-color: var(--accent);
+				margin: 0.6em auto 0;
+			}
+
+			/* --- Pillar Posts (Cards with BG) --- */
+			.pillar-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				margin-bottom: 4em;
+				list-style: none;
+			}
+			.pillar-card {
+				position: relative;
+				height: 400px;
+				background-size: cover;
+				background-position: center;
+				background-color: #EDE7DD;
+				overflow: hidden;
+				border: 1px solid rgba(51,46,42,0.12);
+				transition: transform 0.5s ease;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+			}
+			.pillar-card:hover {
+				transform: scale(1.02);
+				z-index: 5;
+				border-color: var(--accent);
+			}
+			.pillar-overlay {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(51, 46, 42, 0.85), transparent);
+				padding: 3em 2em 2em;
+				color: #F7F4EF;
+			}
+			.pillar-card h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1.8em;
+				font-weight: 700;
+				margin: 0 0 0.3em 0;
+				color: #fff;
+			}
+			.pillar-card p {
+				font-size: 1em;
+				margin: 0;
+				opacity: 0.9;
+			}
+			.pillar-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+
+			/* --- Latest Articles Grid --- */
+			.article-grid {
+				display: grid;
+				grid-template-columns: 30vw 30vw;
+				justify-content: center;
+				gap: 3em;
+				padding: 0 1em;
+				list-style: none;
+				max-width: 1200px;
+				margin: 0 auto 5em;
+			}
+			.article-card {
+				position: relative;
+				height: 380px;
+				background-size: cover;
+				background-position: center;
+				background-color: #EDE7DD;
+				border-radius: 2px;
+				overflow: hidden;
+				border: 1px solid rgba(51,46,42,0.12);
+				transition: all 0.3s ease;
+			}
+			.article-card:hover {
+				transform: translateY(-8px);
+				border-color: var(--accent);
+			}
+			.article-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: rgba(247, 244, 239, 0.95);
+				padding: 2em;
+				text-align: center;
+			}
+			.article-card h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1.2em;
+				font-weight: 700;
+				margin: 0.5em 0;
+				line-height: 1.4;
+			}
+			.article-card h3 a {
+				color: #33302C;
+				text-decoration: none;
+			}
+			.article-date {
+				font-size: 0.85em;
+				color: var(--accent, #C17F59);
+				letter-spacing: 1px;
+			}
+			.article-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<div class="hero-top-desc">Minimal Desk Studio</div>
+					<h2>ミニマリスト・デスクセットアップの究極ガイド</h2>
+					<p>
+						洗練されたデザインと機能美の融合。ノイズを排除し、思考を研ぎ澄ますための理想のワークスペース構築メソッド。
+					</p>
+				</div>
+			</section>
+
+			<!-- Pillar Posts Section -->
+			<h2 class="section-title">カテゴリー</h2>
+			<div class="pillar-grid">
+				{pillars.map((pillar) => (
+					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
+						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
+						<div class="pillar-overlay">
+							<h3>{pillar.title}</h3>
+							<p>{pillar.desc}</p>
+						</div>
+					</div>
+				))}
+			</div>
+
+			<!-- Latest Articles Section -->
+			<h2 class="section-title">最新記事</h2>
+			<ul class="article-grid">
+				{
+					posts.map((post) => {
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						
+						return (
+						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
+							<div class="article-content">
+								<p class="article-date">
+									<time datetime={post.data.pubDate.toISOString()}>
+										{post.data.pubDate.toLocaleDateString('ja-JP', {
+											year: 'numeric',
+											month: 'short',
+											day: 'numeric',
+										})}
+									</time>
+								</p>
+								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+							</div>
+						</li>
+					)})
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

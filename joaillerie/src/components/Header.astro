@@ -1,0 +1,173 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="luxury-header">
+	<div class="top-bar">
+		<p>Bienvenue sur L'Encyclopédie des Symboles</p>
+	</div>
+	<div class="header-main">
+		<div class="logo-container">
+			<a href="/" class="logo-link">
+				<img src="/media-images/Logo.webp" alt="Joaillerie et Symbolique Logo" class="site-logo" />
+				<div class="site-titles">
+					<h1 class="site-title">Joaillerie et Symbolique</h1>
+					<p class="site-tagline">L'art, la signification et le pouvoir des bijoux</p>
+				</div>
+			</a>
+		</div>
+		<nav class="main-nav">
+			<div class="internal-links">
+				<HeaderLink href="/">Accueil</HeaderLink>
+				<div class="dropdown">
+					<a href="#" class="dropbtn">L'Encyclopédie des Symboles de Bijouterie</a>
+					<div class="dropdown-content">
+						<a href="/category/symbolisme-des-bagues-par-doigt">Le Langage des Doigts et l'Autorité</a>
+						<a href="/category/vertus-spirituelles-des-pierres">L'Énergie des Pierres et la Guérison</a>
+						<a href="/category/totems-et-protection-antique">Totems Sacrés et Protection Antique</a>
+						<a href="/category/m-taux-et-nergie-alchimique">Alchimie des Métaux et Éternité</a>
+						<a href="/category/bijoux-et-rites-de-passage">Rites de Passage et Mémoire</a>
+						<a href="/category/styles-et-identit-sociale">Identité, Style et Sous-cultures</a>
+						<a href="/category/symbolisme-de-la-nature">Faune, Flore et Secrets de la Nature</a>
+					</div>
+				</div>
+				<HeaderLink href="/blog">Articles</HeaderLink>
+				<HeaderLink href="/a-propos">À Propos</HeaderLink>
+				<HeaderLink href="/politique-de-confidentialite">Politique de Confidentialité</HeaderLink>
+				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contactez-nous</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<style>
+	.luxury-header {
+		background: #fff;
+		font-family: 'Playfair Display', serif; /* Classic luxury font */
+		border-bottom: 1px solid #eaeaea;
+		margin-bottom: 2em;
+	}
+	.top-bar {
+		background-color: #3b2c35;
+		color: white;
+		font-size: 0.85em;
+		padding: 0.5em 0;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.top-bar p {
+		margin: 0;
+	}
+	.header-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 2em;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.logo-container {
+		flex: 1;
+		min-width: 300px;
+	}
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		gap: 1em;
+	}
+	.site-logo {
+		height: 80px;
+		width: auto;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.site-titles {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.site-title {
+		margin: 0;
+		font-size: 1.8em;
+		font-weight: 400;
+		color: #333;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.site-tagline {
+		color: #666;
+		font-style: italic;
+		font-size: 1em;
+		margin-top: 0.2em;
+		margin-bottom: 0;
+	}
+	.main-nav {
+		display: flex;
+		align-items: center;
+	}
+	.internal-links {
+		display: flex;
+		gap: 2em;
+	}
+	.internal-links a {
+		color: #333;
+		text-decoration: none;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: color 0.3s ease;
+	}
+	.internal-links a:hover, .internal-links a.active {
+		color: var(--accent, #9335B6);
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropbtn {
+		cursor: pointer;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		min-width: 320px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+		z-index: 100;
+		border-radius: 4px;
+		top: 100%;
+		left: 0;
+	}
+	.dropdown-content a {
+		color: #333;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		font-size: 0.9em;
+		text-transform: none;
+		letter-spacing: normal;
+		border-bottom: 1px solid #f0f0f0;
+	}
+	.dropdown-content a:last-child {
+		border-bottom: none;
+	}
+	.dropdown-content a:hover {
+		background-color: #f5edf9;
+		color: var(--accent, #9335B6);
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.contact-btn {
+		background-color: var(--accent, #9335B6);
+		color: white !important;
+		padding: 8px 16px;
+		border-radius: 4px;
+		transition: background-color 0.3s ease !important;
+	}
+	.contact-btn:hover {
+		background-color: var(--accent-dark, #331438);
+	}
+</style>

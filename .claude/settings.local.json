@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//private/tmp/ui-ux-pro-max-skill/**)",
+      "Bash(npx -y uipro-cli@latest init --ai claude --global)",
+      "Bash(echo \"--- exit code: $? ---\")",
+      "Bash(npm run *)"
+    ]
+  }
+}

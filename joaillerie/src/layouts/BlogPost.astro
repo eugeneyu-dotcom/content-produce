@@ -1,0 +1,174 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage, category } = Astro.props;
+
+// Helper to find the correct image extension
+function findImage(basePath: any) {
+	if (!basePath) return '';
+	if (typeof basePath === 'object' && 'src' in basePath) {
+		return basePath.src;
+	}
+	if (typeof basePath !== 'string') return '';
+
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return ''; // blank if not found
+}
+
+const resolvedHeroImage = findImage(heroImage || '');
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			main {
+				width: 75%;
+				max-width: none;
+				margin: 0 auto;
+			}
+			.hero-banner {
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				height: 50vh;
+				min-height: 400px;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.hero-banner-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(51, 20, 56, 0.4);
+			}
+			.hero-banner-content {
+				position: relative;
+				z-index: 1;
+				text-align: center;
+				color: #fff;
+				padding: 0 20px;
+			}
+			.hero-banner-content h1 {
+				font-size: 3.5em;
+				color: #fff;
+				margin-bottom: 0.5em;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			}
+			.prose {
+				width: 1200px;
+				max-width: none;
+				margin: 3em auto;
+				padding: 1em;
+				color: var(--gray-dark);
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+			}
+			:global(.prose table) {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 2em 0;
+				font-size: 0.95em;
+			}
+			:global(.prose th), :global(.prose td) {
+				border: 1px solid rgba(128, 128, 128, 0.2);
+				padding: 12px 16px;
+				text-align: left;
+			}
+			:global(.prose th) {
+				background-color: var(--accent, #ec4899);
+				color: #fff;
+				font-weight: bold;
+			}
+			:global(.prose tr:nth-child(even)) {
+				background-color: rgba(128, 128, 128, 0.05);
+			}
+
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main style="padding-top: 0;">
+			<article>
+				{resolvedHeroImage ? (
+					<div class="hero-banner" style={`background-image: url('${resolvedHeroImage}');`}>
+						<div class="hero-banner-overlay"></div>
+						<div class="hero-banner-content">
+							<h1 set:html={title} />
+						</div>
+					</div>
+				) : (
+					<div class="hero-banner" style="background-color: var(--accent);">
+						<div class="hero-banner-content">
+							<h1 set:html={title} />
+						</div>
+					</div>
+				)}
+				<div class="prose">
+					{category && (
+						<div class="article-category" style="text-align: center; margin-bottom: 0.5em;">
+							<span style="background: var(--accent, #ec4899); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">{category}</span>
+						</div>
+					)}
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

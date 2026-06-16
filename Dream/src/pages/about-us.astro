@@ -1,0 +1,274 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About Us | ${SITE_TITLE}`} description="Discover the truth behind the myths on The Master Encyclopedia of Dreams" />
+		<style>
+			body {
+				font-family: 'Manrope', sans-serif;
+				background-color: var(--bg-color, #0B0618);
+				color: #E2DCF5;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 8em 1em;
+				background-image: url('/media-images/hero-bg.webp');
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				border-bottom: 2px solid var(--accent, #A78BFA);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background:
+					radial-gradient(circle at 15% 20%, rgba(167, 139, 250, 0.28) 0%, transparent 45%),
+					radial-gradient(circle at 85% 80%, rgba(103, 232, 249, 0.16) 0%, transparent 45%),
+					rgba(11, 6, 24, 0.85);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+			}
+			.hero h1 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 3.5em;
+				font-weight: 500;
+				margin-bottom: 0.2em;
+				letter-spacing: 2px;
+				color: #F5F1FE;
+				text-shadow: 0 0 20px rgba(167, 139, 250, 0.4), 2px 2px 8px rgba(0,0,0,0.9);
+			}
+			.hero p {
+				font-size: 1.2em;
+				font-style: italic;
+				color: #C4B5FD;
+				text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+			}
+
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 0;
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h2 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 2.5em;
+				font-weight: 500;
+				color: #F5F1FE;
+				border-left: 4px solid var(--accent, #A78BFA);
+				padding-left: 15px;
+				margin-bottom: 1em;
+				text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #E2DCF5;
+				margin-bottom: 1.5em;
+			}
+
+			.grid-3 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 2em;
+				margin: 4em 0;
+			}
+			.grid-box {
+				background: rgba(255,255,255,0.04);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				padding: 2.5em 2em;
+				border-radius: 16px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+				border: 1px solid rgba(255,255,255,0.08);
+				border-top: 3px solid var(--accent, #A78BFA);
+			}
+			.grid-box h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.4em;
+				color: #F5F1FE;
+				margin-bottom: 0.5em;
+				font-weight: 600;
+			}
+			.grid-box p {
+				font-size: 0.95em;
+				color: #E2DCF5;
+			}
+
+			.expertise-section {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 3em;
+				align-items: center;
+				background: rgba(255,255,255,0.04);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				padding: 3em;
+				border-radius: 16px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+				border: 1px solid rgba(255,255,255,0.08);
+				margin-bottom: 5em;
+			}
+			.expertise-image {
+				flex: 1;
+				min-width: 300px;
+				text-align: center;
+			}
+			.expertise-image img {
+				width: 100%;
+				max-width: 300px;
+				border-radius: 50%;
+				box-shadow: 0 0 30px rgba(167, 139, 250, 0.3);
+				border: 2px solid var(--accent, #A78BFA);
+			}
+			.expertise-text {
+				flex: 1.5;
+				min-width: 300px;
+			}
+			.expertise-text h2 {
+				border-left: none;
+				padding-left: 0;
+				font-family: 'Cormorant Garamond', serif;
+			}
+
+			.faq-container {
+				margin-top: 4em;
+				border-top: 1px solid rgba(167, 139, 250, 0.2);
+				padding-top: 4em;
+			}
+			.faq-item {
+				background: rgba(255,255,255,0.04);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				padding: 1.5em;
+				border-radius: 16px;
+				margin-bottom: 1.5em;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+				border: 1px solid rgba(255,255,255,0.08);
+				border-left: 4px solid var(--accent, #A78BFA);
+			}
+			.faq-item h4 {
+				margin: 0 0 0.5em 0;
+				font-family: 'Manrope', sans-serif;
+				font-weight: 700;
+				font-size: 1.25em;
+				color: var(--accent, #A78BFA); /* Highlighted Q */
+			}
+			.faq-item p {
+				margin: 0;
+				font-size: 1em;
+				color: #E2DCF5; /* Muted A */
+			}
+
+			.cta-btn {
+				display: inline-block;
+				margin-top: 3em;
+				padding: 15px 40px;
+				background-color: var(--accent, #A78BFA);
+				color: #1A0E33;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 700;
+				text-decoration: none;
+				border-radius: 4px;
+				transition: 0.3s;
+				box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
+			}
+			.cta-btn:hover {
+				background-color: #fff;
+				color: #1A0E33;
+				box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<p style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85em; font-weight: bold; margin-bottom: 15px;">Nosce Te Ipsum</p>
+					<h1>The Encyclopedia of Dreams</h1>
+					<p>The bridge between science, psychology, and the mysteries of your unconscious.</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<h2>Exploring the Frontier of Sleep</h2>
+				<p>Welcome to <strong>Encyclopedia of Dreams</strong>. We believe that a dream is not simply neural noise, but a sophisticated language. Since the works of Sigmund Freud and Carl Jung, we have known that our unconscious mind uses symbols and archetypes to communicate with our waking self. Our mission is to provide you with the keys to decode this nightly dialogue.</p>
+				<p>We fuse modern neuroscience (the study of REM brain waves, memory consolidation) with depth psychology to offer a holistic understanding of dreaming. Whether you are experiencing a recurring nightmare, seeking to master lucid dreaming, or trying to interpret an archetypal visitation, we are here to help you uncover its profound meaning.</p>
+
+				<div class="grid-3">
+					<div class="grid-box">
+						<h3>Digital Folklore Analysis</h3>
+						<p>We track the evolution of Creepypastas and internet entities like Slender Man, analyzing how digital platforms transform viral scares into modern-day hauntings.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Cross-Cultural Research</h3>
+						<p>Comparing the 'Woman in White' across continents. We bridge the gap between regional myths like the Pontianak and La Llorona to find universal human themes.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Investigative Rigor</h3>
+						<p>Using forensic research and historical archives, we aim to find the 'Seed of Truth'—the real-life events or biological explanations behind the sightings.</p>
+					</div>
+				</div>
+
+				<div class="expertise-section">
+					<div class="expertise-image">
+						<img src="/media-images/2026/05/cropped-about-us-illustration-1.png" alt="Illustration for The Encyclopedia of Dreams" onerror="this.src='/media-images/hero-bg.webp';" />
+					</div>
+					<div class="expertise-text">
+						<h2>An Interdisciplinary Expertise</h2>
+						<p>Our editorial team is composed of Jungian-oriented psychologists, neuroscientists, and researchers deeply passionate about the anthropology of dreaming. Directed by experts in dream analysis and sleep medicine, we strive to build a bridge between rigorous science and the mystique of inner experience.</p>
+						<p>Every article published on Encyclopedia of Dreams is the result of thorough research, aiming to offer our readers a unique cultural, psychological, and scientific perspective on the architecture of their nocturnal mind.</p>
+					</div>
+				</div>
+
+				<div class="faq-container">
+					<h2 style="text-align: center; border: none; font-size: 2.2em; letter-spacing: 1px;">Frequently Asked Questions</h2>
+					
+					<div class="faq-item">
+						<h4>Q: What is the approach of Encyclopedia of Dreams?</h4>
+						<p>We utilize a unique interdisciplinary approach, connecting analytical psychology (symbolism, archetypes) with modern neuroscience (sleep cycles, REM) to analyze dreams holistically.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Are your analyses based on science?</h4>
+						<p>Yes. While fully respecting the mystical and personal dimension of dreaming, we rely on clinical studies regarding sleep and memory consolidation to validate our psychological interpretations.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Who are the experts behind this site?</h4>
+						<p>A dedicated team of Jungian psychologists, sleep neuroscience specialists, and cultural anthropologists passionate about the unconscious mind.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Do you cover lucid dreaming?</h4>
+						<p>Absolutely. We feature extensive sections dedicated to induction techniques (MILD, WILD), the psychology of lucid dreaming, and the exploration of consciousness.</p>
+					</div>
+				</div>
+
+				<div style="text-align: center; margin-bottom: 40px;">
+					<p style="font-size: 1.2rem; color: #ffffff;">Ready to explore the depths of your mind?</p>
+					<a href="/blog" class="cta-btn">Explore the Encyclopedia</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

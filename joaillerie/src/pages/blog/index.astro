@@ -1,0 +1,144 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Helper to find the correct image extension
+function findImage(basePath: any) {
+	if (!basePath) return '';
+	if (typeof basePath === 'object' && 'src' in basePath) {
+		return basePath.src;
+	}
+	if (typeof basePath !== 'string') return '';
+
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return ''; // blank if not found
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: calc(50% - 1rem);
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li:first-child {
+				width: 100%;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+			ul li:first-child img {
+				width: 100%;
+			}
+			ul li:first-child .title {
+				font-size: 2.369rem;
+			}
+			ul li img {
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+			ul li a {
+				display: block;
+			}
+			.title {
+				margin: 0;
+				color: rgb(var(--black));
+				line-height: 1;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
+			}
+			ul a:hover img {
+				box-shadow: var(--box-shadow);
+			}
+			@media (max-width: 720px) {
+				ul {
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+				ul li:first-child {
+					margin-bottom: 0;
+				}
+				ul li:first-child .title {
+					font-size: 1.563em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<ul>
+					{
+						posts.map((post) => {
+							const resolvedHeroImage = findImage(post.data.heroImage || '');
+							return (
+							<li>
+								<a href={`/blog/${post.id}/`}>
+									{resolvedHeroImage && (
+										<img width="720" height="360" src={resolvedHeroImage} alt="" style="object-fit: cover;" onerror="this.style.display='none'" />
+									)}
+									{post.data.category && (
+										<div class="post-category" style="margin-bottom: 0.5em; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--accent, #ec4899); font-weight: bold;">{post.data.category}</div>
+									)}
+									<h4 class="title" set:html={post.data.title}></h4>
+									<p class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</a>
+							</li>
+						)})
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

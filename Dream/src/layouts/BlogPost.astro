@@ -1,0 +1,135 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage, category } = Astro.props;
+import fs from 'node:fs';
+import path from 'node:path';
+function findImage(basePath: string) {
+	if (!basePath) return '';
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return '';
+}
+const resolvedHeroImage = findImage(heroImage || '');
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			main {
+				width: 75%;
+				max-width: none;
+				margin: 0 auto;
+			}
+			.hero-image {
+				width: 100%;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+			}
+			.prose {
+				width: 100%;
+				max-width: none;
+				margin: auto;
+				padding: 2em;
+				color: #E2DCF5;
+				background: rgba(255,255,255,0.04);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				border: 1px solid rgba(255,255,255,0.08);
+				border-radius: 16px;
+				box-sizing: border-box;
+			}
+			:global(.prose table) {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 2em 0;
+				font-size: 0.95em;
+			}
+			:global(.prose th), :global(.prose td) {
+				border: 1px solid rgba(128, 128, 128, 0.2);
+				padding: 12px 16px;
+				text-align: left;
+			}
+			:global(.prose th) {
+				background-color: var(--accent, #A78BFA);
+				color: #1A0E33;
+				font-weight: bold;
+			}
+			:global(.prose tr:nth-child(even)) {
+				background-color: rgba(128, 128, 128, 0.05);
+			}
+
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image">
+					{resolvedHeroImage && <img width="1020" height="510" src={resolvedHeroImage} alt={title || "Hero Image"} onerror="this.style.display='none'" />}
+				</div>
+				<div class="prose">
+					{category && (
+						<div class="article-category" style="text-align: center; margin-bottom: 0.5em;">
+							<span style="background: var(--accent, #A78BFA); color: #1A0E33; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">{category}</span>
+						</div>
+					)}
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>

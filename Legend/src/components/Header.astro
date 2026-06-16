@@ -1,0 +1,182 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="eerie-header">
+	<div class="top-bar">
+		<p>Welcome to The Global Encyclopedia of Urban Legends</p>
+	</div>
+	<div class="header-main">
+		<div class="logo-container">
+			<a href="/" class="logo-link">
+				<img src="/media-images/Logo.png" alt="Global Urban Legends Logo" class="site-logo" onerror="this.style.display='none';"/>
+				<div class="site-titles">
+					<h1 class="site-title">Global Urban Legends</h1>
+					<p class="site-tagline">Myths that haunt us in the digital age</p>
+				</div>
+			</a>
+		</div>
+		<nav class="main-nav">
+			<div class="internal-links">
+				<HeaderLink href="/">Home</HeaderLink>
+				<div class="dropdown">
+					<a href="#" class="dropbtn">The Global Encyclopedia</a>
+					<div class="dropdown-content">
+						<a href="/category/psychology-of-urban-legends">Psychological Foundations & Anxiety</a>
+						<a href="/category/the-backrooms-explained">Liminal Spaces & Modern Isolation</a>
+						<a href="/category/mothman-sightings-history">Cryptids & Biological Anomalies</a>
+						<a href="/category/slender-man-origins">Digital Folklore & Creepypastas</a>
+						<a href="/category/bloody-mary-ritual-legend">Rituals & Forbidden Games</a>
+						<a href="/category/moral-panic-urban-legends">Moral Panics & Societal Fears</a>
+						<a href="/category/cross-cultural-urban-legends">Cross-Cultural Folklore</a>
+					</div>
+				</div>
+				<HeaderLink href="/blog">Archives</HeaderLink>
+				<HeaderLink href="/about-us">About Us</HeaderLink>
+				<HeaderLink href="/privacy-policy">Privacy Policy</HeaderLink>
+				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contact Us</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<style>
+	.eerie-header {
+		background: #0D0D0D;
+		font-family: 'Courier Prime', monospace;
+		border-bottom: 1px solid var(--accent, #B91C1C);
+		margin-bottom: 2em;
+	}
+	.top-bar {
+		background-color: #1A1816;
+		color: var(--accent, #B91C1C);
+		font-size: 0.85em;
+		padding: 0.5em 0;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.top-bar p {
+		margin: 0;
+	}
+	.header-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 2em;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.logo-container {
+		flex: 1;
+		min-width: 300px;
+	}
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		gap: 1em;
+	}
+	.site-logo {
+		height: 80px;
+		width: auto;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.site-titles {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.site-title {
+		margin: 0;
+		font-family: 'Special Elite', cursive;
+		font-size: 2.2em;
+		font-weight: 400;
+		color: #D6D3CE;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.site-tagline {
+		color: var(--accent, #B91C1C);
+		font-style: italic;
+		font-size: 1em;
+		margin-top: 0.2em;
+		margin-bottom: 0;
+	}
+	.main-nav {
+		display: flex;
+		align-items: center;
+	}
+	.internal-links {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+	}
+	.internal-links a {
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: color 0.3s ease;
+	}
+	.internal-links a:hover, .internal-links a.active {
+		color: var(--accent, #B91C1C);
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropbtn {
+		cursor: pointer;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: var(--bg-color, #0D0D0D);
+		min-width: 320px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+		z-index: 100;
+		border-radius: 4px;
+		top: 100%;
+		left: 0;
+		border: 1px solid var(--accent-dark, #7A1212);
+	}
+	.dropdown-content a {
+		color: #D6D3CE;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		font-size: 0.9em;
+		text-transform: none;
+		letter-spacing: normal;
+		border-bottom: 1px solid rgba(185, 28, 28, 0.2);
+	}
+	.dropdown-content a:last-child {
+		border-bottom: none;
+	}
+	.dropdown-content a:hover {
+		background-color: var(--accent-dark, #7A1212);
+		color: #fff;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.contact-btn {
+		background-color: var(--accent, #B91C1C);
+		color: #fff !important;
+		padding: 8px 16px;
+		border-radius: 2px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.95em;
+		transition: background-color 0.3s ease, color 0.3s ease !important;
+		border: 1px solid #fff;
+	}
+	.contact-btn:hover {
+		background-color: #E05252;
+		color: #fff !important;
+	}
+</style>

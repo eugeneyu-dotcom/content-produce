@@ -1,0 +1,174 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="minimal-header">
+	<div class="top-bar">
+		<p>Welcome to Minimal Desk Studio</p>
+	</div>
+	<div class="header-main">
+		<div class="logo-container">
+			<a href="/" class="logo-link">
+				<img src="/media-images/Logo.webp" alt="Minimal Desk Studio Logo" class="site-logo" onerror="this.style.display='none';"/>
+				<div class="site-titles">
+					<h1 class="site-title">Minimal Desk Studio</h1>
+					<p class="site-tagline">ミニマリスト・デスクセットアップの究極ガイド</p>
+				</div>
+			</a>
+		</div>
+		<nav class="main-nav">
+			<div class="internal-links">
+				<HeaderLink href="/">ホーム</HeaderLink>
+				<div class="dropdown">
+					<a href="#" class="dropbtn">カテゴリー</a>
+					<div class="dropdown-content">
+						<a href="/category/functional-ergonomics">機能的人間工学</a>
+						<a href="/category/color-theory-and-materiality">色彩理論と素材感</a>
+						<a href="/category/cable-management">配線管理の美学</a>
+						<a href="/category/lighting-design">照明とサーカディアンリズム</a>
+						<a href="/category/digital-minimalism">デジタル・ミニマリズム</a>
+						<a href="/category/biophilic-design">バイオフィリックデザイン</a>
+						<a href="/category/psychology-of-flow">集中とフローの心理学</a>
+					</div>
+				</div>
+				<HeaderLink href="/blog">記事一覧</HeaderLink>
+				<HeaderLink href="/about-us">当サイトについて</HeaderLink>
+				<HeaderLink href="/privacy-policy">プライバシーポリシー</HeaderLink>
+				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">お問い合わせ</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<style>
+	.minimal-header {
+		background: #ffffff;
+		font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		border-bottom: 1px solid rgba(51,46,42,0.12);
+		margin-bottom: 2em;
+	}
+	.top-bar {
+		background-color: var(--accent-dark, #6B4226);
+		color: var(--bg-color, #F7F4EF);
+		font-size: 0.8em;
+		padding: 0.6em 0;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+	.top-bar p {
+		margin: 0;
+	}
+	.header-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 2em;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.logo-container {
+		flex: 1;
+		min-width: 300px;
+	}
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		gap: 1em;
+	}
+	.site-logo {
+		height: 60px;
+		width: auto;
+		border-radius: 4px;
+		object-fit: cover;
+	}
+	.site-titles {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.site-title {
+		margin: 0;
+		font-family: 'Shippori Mincho', serif;
+		font-size: 1.8em;
+		font-weight: 700;
+		color: var(--accent-dark, #6B4226);
+		letter-spacing: -0.5px;
+	}
+	.site-tagline {
+		color: #8a8077;
+		font-size: 0.9em;
+		margin-top: 0.2em;
+		margin-bottom: 0;
+	}
+	.main-nav {
+		display: flex;
+		align-items: center;
+	}
+	.internal-links {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+	}
+	.internal-links a {
+		color: #33302C;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+	.internal-links a:hover, .internal-links a.active {
+		color: var(--accent, #C17F59);
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropbtn {
+		cursor: pointer;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #ffffff;
+		min-width: 250px;
+		box-shadow: none;
+		z-index: 100;
+		border-radius: 2px;
+		top: 100%;
+		left: 0;
+		border: 1px solid rgba(51,46,42,0.12);
+		padding: 0.5em 0;
+	}
+	.dropdown-content a {
+		color: #33302C;
+		padding: 12px 20px;
+		text-decoration: none;
+		display: block;
+		font-size: 0.9em;
+		border-bottom: 1px solid rgba(51,46,42,0.08);
+	}
+	.dropdown-content a:last-child {
+		border-bottom: none;
+	}
+	.dropdown-content a:hover {
+		background-color: #F7F4EF;
+		color: var(--accent-dark, #6B4226);
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.contact-btn {
+		background-color: var(--accent, #C17F59);
+		color: #ffffff !important;
+		padding: 8px 20px;
+		border-radius: 2px;
+		transition: background-color 0.3s ease, color 0.3s ease !important;
+		border: 1px solid var(--accent, #C17F59);
+	}
+	.contact-btn:hover {
+		background-color: #ffffff;
+		color: var(--accent, #C17F59) !important;
+	}
+</style>

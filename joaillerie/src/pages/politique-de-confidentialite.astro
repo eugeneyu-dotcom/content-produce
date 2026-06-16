@@ -1,0 +1,148 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`Politique de Confidentialité | ${SITE_TITLE}`} description="Politique de Confidentialité de Joaillerie et Symbolique" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans', sans-serif;
+				background-color: var(--bg-color, #F5EDF9); 
+				color: #333;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 6em 1em;
+				background-color: var(--accent-dark, #331438);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero h1 {
+				font-family: 'Playfair Display', serif;
+				font-size: 3em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 2px;
+				color: #fff;
+			}
+			
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 3em;
+				background: #fff;
+				border-radius: 12px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.8em;
+				color: var(--accent-dark, #331438);
+				border-bottom: 2px solid #f0f0f0;
+				padding-bottom: 10px;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #444;
+				margin-bottom: 1.5em;
+			}
+			
+			.number-badge {
+				display: inline-block;
+				background-color: var(--accent, #9335B6);
+				color: #fff;
+				font-family: 'IBM Plex Sans', sans-serif;
+				font-weight: bold;
+				padding: 2px 10px;
+				border-radius: 4px;
+				font-size: 0.8em;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			
+			.content-section a {
+				color: var(--accent, #9335B6);
+				text-decoration: underline;
+			}
+			
+			.image-container {
+				text-align: center;
+				margin: 4em 0;
+			}
+			.image-container img {
+				max-width: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+			}
+			.image-container p {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.5em;
+				font-style: italic;
+				color: var(--accent-dark, #331438);
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<h1>Politique de Confidentialité</h1>
+			</section>
+
+			<section class="content-section">
+				<p>Chez <strong>Joaillerie et Symbolique</strong> (accessible via https://www.joaillerie-et-symbolique.com), la protection de votre vie privée est une priorité. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos données personnelles.</p>
+
+				<h3><span class="number-badge">01</span> Qui sommes-nous ?</h3>
+				<p>L'adresse de notre site Web est : https://www.joaillerie-et-symbolique.com.</p>
+
+				<h3><span class="number-badge">02</span> Publicité et Cookies Google AdSense</h3>
+				<p>Ce site utilise le service publicitaire Google AdSense. Google et ses partenaires utilisent des cookies pour diffuser des annonces basées sur votre navigation sur ce site ou sur d'autres sites web.<br/>Grâce aux cookies publicitaires, Google et ses partenaires peuvent adapter les annonces qui vous sont proposées. Vous pouvez choisir de désactiver la publicité personnalisée dans les <a href="https://www.google.com/settings/ads" target="_blank" rel="noreferrer noopener">Paramètres des annonces Google</a>. Vous pouvez également désactiver les cookies d'un tiers relatifs à la publicité personnalisée en consultant <a href="https://www.aboutads.info" target="_blank" rel="noreferrer noopener">www.aboutads.info</a>.</p>
+
+				<h3><span class="number-badge">03</span> Commentaires</h3>
+				<p>Quand vous laissez un commentaire sur notre site, les données inscrites dans le formulaire de commentaire, ainsi que votre adresse IP et l'agent utilisateur de votre navigateur sont collectés pour nous aider à la détection des commentaires indésirables (spam).<br/>Une chaîne anonymisée créée à partir de votre adresse e-mail (également appelée hash) peut être envoyée au service Gravatar pour vérifier si vous l'utilisez. Les clauses de confidentialité du service Gravatar sont disponibles ici : https://automattic.com/privacy/. Après approbation de votre commentaire, votre photo de profil sera visible publiquement à côté de votre commentaire.</p>
+
+				<h3><span class="number-badge">04</span> Médias</h3>
+				<p>Si vous téléversez des images sur le site, nous vous conseillons d'éviter de téléverser des images contenant des données EXIF de coordonnées GPS. Les visiteurs de votre site peuvent télécharger et extraire des données de localisation depuis ces images.</p>
+
+				<h3><span class="number-badge">05</span> Cookies</h3>
+				<p>Si vous déposez un commentaire sur notre site, il vous sera proposé d'enregistrer votre nom, adresse e-mail et site web dans des cookies. C'est uniquement pour votre confort afin de ne pas avoir à saisir ces informations si vous déposez un autre commentaire plus tard. Ces cookies expirent au bout d'un an.<br/>Si vous avez un compte et que vous vous connectez sur ce site, un cookie temporaire sera créé pour déterminer si votre navigateur accepte les cookies. Il ne contient pas de données personnelles et sera supprimé automatiquement à la fermeture de votre navigateur.</p>
+
+				<h3><span class="number-badge">06</span> Contenu embarqué depuis d'autres sites</h3>
+				<p>Les articles de ce site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles, etc.). Le contenu intégré depuis d'autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site.<br/>Ces sites web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers et suivre vos interactions avec ces contenus embarqués si vous disposez d'un compte connecté sur leur site web.</p>
+
+				<h3><span class="number-badge">07</span> Durée de stockage de vos données</h3>
+				<p>Si vous laissez un commentaire, le commentaire et ses métadonnées sont conservés indéfiniment. Cela permet de reconnaître et approuver automatiquement les commentaires suivants au lieu de les laisser dans la file de modération.<br/>Pour les utilisateurs qui s'enregistrent sur notre site (le cas échéant), nous stockons également les données personnelles indiquées dans leur profil. Tous les utilisateurs peuvent voir, modifier ou supprimer leurs informations personnelles à tout moment (à l'exception de leur nom d'utilisateur). Les gestionnaires du site peuvent aussi voir et modifier ces informations.</p>
+
+				<h3><span class="number-badge">08</span> Les droits que vous avez sur vos données</h3>
+				<p>Si vous avez un compte ou si vous avez laissé des commentaires sur le site, vous pouvez demander à recevoir un fichier contenant toutes les données personnelles que nous possédons à votre sujet, incluant celles que vous nous avez fournies. Vous pouvez également demander la suppression des données personnelles vous concernant. Cela ne prend pas en compte les données stockées à des fins administratives, légales ou pour des raisons de sécurité.</p>
+
+				<h3><span class="number-badge">09</span> Informations de contact</h3>
+				<p>Pour toute question relative à cette politique de confidentialité, vous pouvez nous contacter par e-mail à l'adresse suivante : https://m.me/maxoraai/.</p>
+
+				<div class="image-container">
+					<p>Entrez dans l'invisible : ici, l'ornement révèle votre mystère.</p>
+					<img src="/media-images/2026/03/M-final-2.png" alt="Illustration for Politique de Confidentialité" onerror="this.style.display='none';"/>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

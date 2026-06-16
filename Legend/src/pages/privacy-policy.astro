@@ -1,0 +1,118 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy | ${SITE_TITLE}`} description="Privacy Policy of The Global Encyclopedia of Urban Legends" />
+		<style>
+			body {
+				font-family: 'Courier Prime', monospace;
+				background-color: var(--bg-color, #0D0D0D);
+				color: #D6D3CE;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 6em 1em;
+				background-color: var(--accent-dark, #7A1212);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				border-bottom: 2px solid var(--accent, #B91C1C);
+			}
+			.hero h1 {
+				font-family: 'Special Elite', cursive;
+				font-size: 3.5em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 0.05em;
+				color: #fff;
+			}
+
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 3em;
+				background: #E8E2D5;
+				border-radius: 12px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+				border: 1px solid rgba(122, 18, 18, 0.3);
+				line-height: 1.8;
+				box-sizing: border-box;
+				color: #2A2723;
+			}
+			.content-section h3 {
+				font-family: 'Special Elite', cursive;
+				font-size: 2.2em;
+				color: var(--accent-dark, #7A1212);
+				border-bottom: 1px solid rgba(122, 18, 18, 0.2);
+				padding-bottom: 10px;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #2A2723;
+				margin-bottom: 1.5em;
+			}
+
+			.content-section a {
+				color: var(--accent, #B91C1C);
+				text-decoration: underline;
+			}
+
+			.image-container {
+				text-align: center;
+				margin: 4em 0;
+			}
+			.image-container img {
+				max-width: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+				filter: grayscale(0.4) contrast(1.2);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<h1>Privacy Policy</h1>
+			</section>
+
+			<section class="content-section">
+				<p>Our website address is: <strong>https://www.global-urban-legends.com</strong> (The Global Encyclopedia of Urban Legends).</p>
+
+				<h3>Cookies and Advertising</h3>
+				<p>We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. <strong>We also share information about your use of our site with our advertising and analytics partners (including Google AdSense)</strong> who may combine it with other information that you've provided to them or that they've collected from your use of their services.<br/>Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DART cookie enables it to serve ads to our users based on their visit to our site and other sites on the Internet. Users may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.</p>
+
+				<h3>Comments</h3>
+				<p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor's IP address and browser user agent string to help spam detection.</p>
+
+				<h3>Embedded content from other websites</h3>
+				<p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website. These websites may collect data about you, use cookies, and monitor your interaction with that embedded content.</p>
+
+				<h3>How long we retain your data</h3>
+				<p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
+
+				<h3>What rights you have over your data</h3>
+				<p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you. You can also request that we erase any personal data we hold about you.</p>
+
+				<div class="image-container">
+					<img src="/media-images/hero-bg.webp" alt="Eerie Mystery" onerror="this.style.display='none';"/>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

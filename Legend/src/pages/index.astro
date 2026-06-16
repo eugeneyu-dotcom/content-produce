@@ -1,0 +1,303 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Helper to find the correct image extension (webp, jpg, png)
+function findImage(basePath) {
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return '';
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 6);
+
+const pillars = [
+	{ title: "Psychological Foundations & Anxiety", desc: "Understanding the human fears behind the myths.", bg: "/media-images/pillar-psychology.webp", link: "/category/psychology-of-urban-legends" },
+	{ title: "Liminal Spaces & Modern Isolation", desc: "The dread of backrooms and empty hallways.", bg: "/media-images/pillar-liminal.webp", link: "/category/the-backrooms-explained" },
+	{ title: "Cryptids & Biological Anomalies", desc: "Monsters that haunt the fringes of civilization.", bg: "/media-images/pillar-cryptids.webp", link: "/category/mothman-sightings-history" },
+	{ title: "Digital Folklore & Creepypastas", desc: "Open-source horror in the digital age.", bg: "/media-images/pillar-digital.webp", link: "/category/slender-man-origins" },
+	{ title: "Rituals & Forbidden Games", desc: "The performative thrill of summoning the unknown.", bg: "/media-images/pillar-rituals.webp", link: "/category/bloody-mary-ritual-legend" },
+	{ title: "Moral Panics & Societal Fears", desc: "Hysteria and the weaponization of urban legends.", bg: "/media-images/pillar-panics.webp", link: "/category/moral-panic-urban-legends" },
+	{ title: "Cross-Cultural Folklore", desc: "Universal fears translated into cultural metaphors.", bg: "/media-images/pillar-cultural.webp", link: "/category/cross-cultural-urban-legends" }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			body {
+				font-family: 'Courier Prime', monospace;
+				background-color: var(--bg-color, #0D0D0D);
+				color: #D6D3CE;
+			}
+			/* --- Hero Section --- */
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 10em 1em;
+				min-height: 70vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 3em;
+				background-image: url('/media-images/hero-bg.webp');
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				filter: grayscale(0.4) contrast(1.2);
+				box-shadow: inset 0 0 150px rgba(185, 28, 28, 0.3);
+			}
+			.hero-top-desc {
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				margin-bottom: 1.5em;
+				color: var(--accent, #B91C1C);
+				text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(13, 13, 13, 0.6);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+				filter: none;
+			}
+			.hero h2 {
+				font-family: 'Special Elite', cursive;
+				font-size: 4em;
+				font-weight: 400;
+				margin-bottom: 0.5em;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+				color: #D6D3CE;
+				letter-spacing: 0.05em;
+			}
+			.hero p {
+				font-size: 1.2em;
+				max-width: 600px;
+				margin: 0 auto;
+				line-height: 1.8;
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+			}
+
+			/* --- Section Titles --- */
+			.section-title {
+				text-align: center;
+				font-family: 'Special Elite', cursive;
+				font-size: 3em;
+				font-weight: 400;
+				margin: 2em 0 1em;
+				color: #D6D3CE;
+			}
+			.section-title::after {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 2px;
+				background-color: var(--accent, #B91C1C);
+				margin: 0.5em auto 0;
+			}
+
+			/* --- Pillar Posts (Cards with BG) --- */
+			.pillar-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				margin-bottom: 4em;
+				list-style: none;
+			}
+			.pillar-card {
+				position: relative;
+				height: 500px; /* Taller to fit 50% width proportionally */
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+				transition: transform 0.3s ease, filter 0.3s ease;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				filter: grayscale(0.4) contrast(1.2);
+			}
+			.pillar-card:hover {
+				transform: scale(1.02);
+				z-index: 5;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.8), inset 0 0 100px rgba(185, 28, 28, 0.25);
+				filter: grayscale(0.1) contrast(1.2);
+			}
+			.pillar-overlay {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(13,13,13,0.95), transparent);
+				padding: 2em 1.5em 1.5em;
+				color: #D6D3CE;
+			}
+			.pillar-card h3 {
+				font-family: 'Special Elite', cursive;
+				font-size: 2em;
+				margin: 0 0 0.2em 0;
+				color: #fff;
+				letter-spacing: 0.03em;
+			}
+			.pillar-card p {
+				font-size: 1em;
+				margin: 0;
+				color: #D6D3CE;
+			}
+			.pillar-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+
+			/* --- Latest Articles Grid (Cards with BG) --- */
+			.article-grid {
+				display: grid;
+				grid-template-columns: 30vw 30vw;
+				justify-content: center;
+				gap: 2.5em;
+				padding: 0 1em;
+				list-style: none;
+				max-width: 1200px;
+				margin: 0 auto 4em;
+			}
+			.article-card {
+				position: relative;
+				height: 450px;
+				background-size: cover;
+				background-position: center;
+				background-color: #1A1816; /* Fallback */
+				border-radius: 4px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+				transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+				filter: grayscale(0.4) contrast(1.2);
+			}
+			.article-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 100px rgba(185, 28, 28, 0.25);
+				filter: grayscale(0.1) contrast(1.2);
+			}
+			.article-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: #E8E2D5;
+				padding: 1.5em;
+				text-align: center;
+				border-top: 3px solid var(--accent, #B91C1C);
+				filter: none;
+			}
+			.article-card h3 {
+				font-family: 'Courier Prime', monospace;
+				font-size: 1.3em;
+				font-weight: 700;
+				margin: 0.5em 0;
+				line-height: 1.3;
+			}
+			.article-card h3 a {
+				color: #2A2723;
+				text-decoration: none;
+			}
+			.article-date {
+				font-size: 0.8em;
+				color: var(--accent-dark, #7A1212);
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.article-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<div class="hero-top-desc">Welcome to The Global Encyclopedia of Urban Legends</div>
+					<h2>Myths That Haunt Us</h2>
+					<p>
+						Explore the darkest corners of human anxiety, digital folklore, and terrifying cross-cultural tales that lurk in the shadows.
+					</p>
+				</div>
+			</section>
+
+			<!-- Pillar Posts Section -->
+			<h2 class="section-title">Dimensions of Fear</h2>
+			<div class="pillar-grid">
+				{pillars.map((pillar) => (
+					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
+						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
+						<div class="pillar-overlay">
+							<h3>{pillar.title}</h3>
+							<p>{pillar.desc}</p>
+						</div>
+					</div>
+				))}
+			</div>
+
+			<!-- Latest Articles Section -->
+			<h2 class="section-title">Latest Archives</h2>
+			<ul class="article-grid">
+				{
+					posts.map((post) => {
+						// Using helper to check for webp, jpg, png
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						
+						return (
+						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
+							<div class="article-content">
+								<p class="article-date">
+									<time datetime={post.data.pubDate.toISOString()}>
+										{post.data.pubDate.toLocaleDateString('en-US', {
+											year: 'numeric',
+											month: 'long',
+											day: 'numeric',
+										})}
+									</time>
+								</p>
+								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+							</div>
+						</li>
+					)})
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

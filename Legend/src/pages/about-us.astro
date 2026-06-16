@@ -1,0 +1,259 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About Us | ${SITE_TITLE}`} description="Discover the truth behind the myths on The Global Encyclopedia of Urban Legends" />
+		<style>
+			body {
+				font-family: 'Courier Prime', monospace;
+				background-color: var(--bg-color, #0D0D0D);
+				color: #D6D3CE;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 8em 1em;
+				background-image: url('/media-images/hero-bg.webp');
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				border-bottom: 2px solid var(--accent, #B91C1C);
+				filter: grayscale(0.4) contrast(1.2);
+				box-shadow: inset 0 0 150px rgba(185, 28, 28, 0.3);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(13, 13, 13, 0.6);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+				filter: none;
+			}
+			.hero h1 {
+				font-family: 'Special Elite', cursive;
+				font-size: 3.5em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 0.05em;
+				color: #fff;
+				text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+			}
+			.hero p {
+				font-size: 1.2em;
+				font-style: italic;
+				color: var(--accent, #B91C1C);
+				text-shadow: 1px 1px 4px rgba(0,0,0,0.9);
+			}
+			
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 0;
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h2 {
+				font-family: 'Special Elite', cursive;
+				font-size: 2.5em;
+				color: #D6D3CE;
+				border-left: 4px solid var(--accent, #B91C1C);
+				padding-left: 15px;
+				margin-bottom: 1em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #D6D3CE;
+				margin-bottom: 1.5em;
+			}
+
+			.grid-3 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 2em;
+				margin: 4em 0;
+			}
+			.grid-box {
+				background: #E8E2D5;
+				padding: 2.5em 2em;
+				border-radius: 4px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+				border-top: 3px solid var(--accent, #B91C1C);
+			}
+			.grid-box h3 {
+				font-family: 'Special Elite', cursive;
+				font-size: 1.4em;
+				color: #2A2723;
+				margin-bottom: 0.5em;
+				font-weight: 400;
+			}
+			.grid-box p {
+				font-size: 0.95em;
+				color: #2A2723;
+			}
+
+			.expertise-section {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 3em;
+				align-items: center;
+				background: rgba(13, 13, 13, 0.5);
+				padding: 3em;
+				border-radius: 8px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+				border: 1px solid rgba(185, 28, 28, 0.2);
+				margin-bottom: 5em;
+			}
+			.expertise-image {
+				flex: 1;
+				min-width: 300px;
+			}
+			.expertise-image img {
+				width: 100%;
+				border-radius: 4px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+				filter: grayscale(40%) contrast(1.2);
+				border: 1px solid var(--accent-dark, #7A1212);
+			}
+			.expertise-text {
+				flex: 1.5;
+				min-width: 300px;
+			}
+			.expertise-text h2 {
+				border-left: none;
+				padding-left: 0;
+				font-family: 'Special Elite', cursive;
+			}
+
+			.faq-container {
+				margin-top: 4em;
+				border-top: 1px solid rgba(185, 28, 28, 0.2);
+				padding-top: 4em;
+			}
+			.faq-item {
+				background: #E8E2D5;
+				padding: 1.5em;
+				border-radius: 4px;
+				margin-bottom: 1.5em;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+				border-left: 4px solid var(--accent, #B91C1C);
+			}
+			.faq-item h4 {
+				margin: 0 0 0.5em 0;
+				font-family: 'Special Elite', cursive;
+				font-weight: 400;
+				font-size: 1.25em;
+				color: var(--accent-dark, #7A1212);
+			}
+			.faq-item p {
+				margin: 0;
+				font-size: 1em;
+				color: #2A2723;
+			}
+
+			.cta-btn {
+				display: inline-block;
+				margin-top: 3em;
+				padding: 15px 40px;
+				background-color: var(--accent, #B91C1C);
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 700;
+				text-decoration: none;
+				border-radius: 2px;
+				border: 1px solid #fff;
+				transition: 0.3s;
+				box-shadow: 0 4px 15px rgba(185, 28, 28, 0.3);
+			}
+			.cta-btn:hover {
+				background-color: #E05252;
+				color: #fff;
+				box-shadow: 0 6px 20px rgba(224, 82, 82, 0.4);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<p style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.85em; font-weight: bold; margin-bottom: 15px;">Classified: Background Information</p>
+					<h1>Unveiling Global Urban Legends</h1>
+					<p>Investigating the truth, the myth, and the cultural shadows.</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<h2>Beyond the Creepypasta</h2>
+				<p>Welcome to <strong>Global Urban Legends Analysis</strong>. In an era where digital folklore spreads faster than truth, we serve as your primary investigators into the world's most enduring mysteries. We don't just tell scary stories; we dissect them.</p>
+				<p>Our mission is to explore the intersection of modern internet culture, ancient folklore, and investigative journalism. We believe that urban legends are the "modern mythology" of our time—mirrors reflecting our deepest societal fears, anxieties, and curiosities. From the depths of the 4chan archives to the rural villages of Southeast Asia, we trace the origins of the unexplained.</p>
+
+				<div class="grid-3">
+					<div class="grid-box">
+						<h3>Digital Folklore Analysis</h3>
+						<p>We track the evolution of Creepypastas and internet entities like Slender Man, analyzing how digital platforms transform viral scares into modern-day hauntings.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Cross-Cultural Research</h3>
+						<p>Comparing the 'Woman in White' across continents. We bridge the gap between regional myths like the Pontianak and La Llorona to find universal human themes.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Investigative Rigor</h3>
+						<p>Using forensic research and historical archives, we aim to find the 'Seed of Truth'—the real-life events or biological explanations behind the sightings.</p>
+					</div>
+				</div>
+
+				<div class="expertise-section">
+					<div class="expertise-image">
+						<img src="/media-images/2026/05/cropped-about-us-illustration-1.png" alt="Illustration for Unveiling Global Urban Legends" onerror="this.src='/media-images/hero-bg.webp';" />
+					</div>
+					<div class="expertise-text">
+						<h2>The Minds in the Dark</h2>
+						<p>Our team consists of former journalists, folklore historians, and digital forensic specialists. We don't settle for "ghost stories." We look for data, patterns, and historical evidence. Our lead researchers spend hundreds of hours sifting through local archives and digital footprints to ensure that when we report on a legend, we provide the most comprehensive analysis available on the web.</p>
+						<p>We believe that the truth is often more haunting than the legend itself.</p>
+					</div>
+				</div>
+
+				<div class="faq-container">
+					<h2 style="text-align: center; border: none; font-size: 2.2em; letter-spacing: 1px;">Case Files: FAQ</h2>
+					
+					<div class="faq-item">
+						<h4>Q: Are the stories on this site real?</h4>
+						<p>We analyze urban legends—stories that are often told as true but are of unverified origin. Our goal is to determine which parts are based on fact and which are cultural embellishments.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Do you conduct on-site investigations?</h4>
+						<p>While we primarily focus on archival and digital research, we frequently consult with local experts and witnesses to get the most accurate regional perspective.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Can I submit an urban legend from my area?</h4>
+						<p>Absolutely. We are always looking for "seeds" of new mysteries. Please use our contact form to submit your local folklore for investigative review.</p>
+					</div>
+				</div>
+
+				<div style="text-align: center;">
+					<a href="/blog" class="cta-btn">Access the Case Files</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

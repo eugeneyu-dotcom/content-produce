@@ -1,0 +1,310 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Helper to find the correct image extension (webp, jpg, png)
+function findImage(basePath) {
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return '';
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 6);
+
+const pillars = [
+	{ title: "Neurobiological Foundations", desc: "The biological engine of REM sleep and memory.", bg: "/media-images/pillar-neuro.webp", link: "/category/rem-sleep-neuroscience" },
+	{ title: "Jungian Archetypes", desc: "The collective unconscious and mythological symbols.", bg: "/media-images/pillar-jung.webp", link: "/category/jungian-archetypes" },
+	{ title: "Freudian Psychoanalysis", desc: "The royal road to the unconscious and repressed desires.", bg: "/media-images/pillar-freud.webp", link: "/category/freudian-dreamwork" },
+	{ title: "Evolutionary Threat Simulation", desc: "Nightmares as an ancestral survival mechanism.", bg: "/media-images/pillar-evolution.webp", link: "/category/evolutionary-nightmares" },
+	{ title: "Universal Symbolic Themes", desc: "Falling, flying, and the shared lexicon of humanity.", bg: "/media-images/pillar-symbols.webp", link: "/category/falling-in-dreams-meaning" },
+	{ title: "Lucid Dreaming & Agency", desc: "Conscious intervention in the sleeping mind.", bg: "/media-images/pillar-lucid.webp", link: "/category/lucid-dreaming-guide" },
+	{ title: "Cultural & Spiritual Evolution", desc: "From divine revelations to modern self-analysis.", bg: "/media-images/pillar-cultural.webp", link: "/category/history-of-dream-interpretation" }
+];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			body {
+				font-family: 'Manrope', sans-serif;
+				background-color: var(--bg-color, #0B0618);
+				color: #E2DCF5;
+			}
+			/* --- Hero Section --- */
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 12em 1em;
+				min-height: 75vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 3em;
+				background-image: url('/media-images/hero-bg.webp');
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero-top-desc {
+				font-size: 1.1em;
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				margin-bottom: 1.5em;
+				color: #C4B5FD;
+				text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background:
+					radial-gradient(circle at 15% 20%, rgba(167, 139, 250, 0.30) 0%, transparent 45%),
+					radial-gradient(circle at 85% 15%, rgba(103, 232, 249, 0.18) 0%, transparent 45%),
+					radial-gradient(circle at 50% 90%, rgba(244, 114, 182, 0.18) 0%, transparent 50%),
+					radial-gradient(circle, rgba(91, 33, 182, 0.35) 0%, rgba(11, 6, 24, 0.92) 100%);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+			}
+			.hero h2 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 4.5em;
+				font-weight: 500;
+				font-style: italic;
+				margin-bottom: 0.5em;
+				text-shadow: 0 0 30px rgba(167, 139, 250, 0.45), 0px 4px 15px rgba(91, 33, 182, 0.5);
+				color: #F5F1FE;
+			}
+			.hero p {
+				font-size: 1.3em;
+				max-width: 650px;
+				margin: 0 auto;
+				line-height: 1.8;
+				opacity: 0.9;
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+			}
+
+			/* --- Section Titles --- */
+			.section-title {
+				text-align: center;
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 2.8em;
+				font-weight: 500;
+				margin: 2em 0 1.2em;
+				color: #E2DCF5;
+				text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
+			}
+			.section-title::after {
+				content: '';
+				display: block;
+				width: 60px;
+				height: 2px;
+				background-color: var(--accent, #A78BFA);
+				margin: 0.6em auto 0;
+				box-shadow: 0 0 8px var(--accent);
+			}
+
+			/* --- Pillar Posts (Cards with BG) --- */
+			.pillar-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				margin-bottom: 4em;
+				list-style: none;
+			}
+			.pillar-card {
+				position: relative;
+				height: 550px;
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+				transition: transform 0.5s ease;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				border: 1px solid rgba(255,255,255,0.08);
+			}
+			.pillar-card:hover {
+				transform: scale(1.03);
+				z-index: 5;
+				box-shadow: 0 15px 40px rgba(167, 139, 250, 0.35);
+			}
+			.pillar-overlay {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(11, 6, 24, 0.95), transparent);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				padding: 3em 2em 2em;
+				color: #E2DCF5;
+			}
+			.pillar-card h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-style: italic;
+				font-size: 2.2em;
+				font-weight: 500;
+				margin: 0 0 0.3em 0;
+				color: #F5F1FE;
+				text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
+			}
+			.pillar-card p {
+				font-size: 1.05em;
+				margin: 0;
+				opacity: 0.8;
+			}
+			.pillar-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+
+			/* --- Latest Articles Grid --- */
+			.article-grid {
+				display: grid;
+				grid-template-columns: 30vw 30vw;
+				justify-content: center;
+				gap: 3em;
+				padding: 0 1em;
+				list-style: none;
+				max-width: 1200px;
+				margin: 0 auto 5em;
+			}
+			.article-card {
+				position: relative;
+				height: 480px;
+				background-size: cover;
+				background-position: center;
+				background-color: #1A0E33;
+				border-radius: 16px;
+				overflow: hidden;
+				box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+				transition: all 0.4s ease;
+				border: 1px solid rgba(255,255,255,0.08);
+			}
+			.article-card:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 15px 30px rgba(167, 139, 250, 0.25);
+				border-color: rgba(167, 139, 250, 0.4);
+			}
+			.article-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: rgba(255,255,255,0.04);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				padding: 2em;
+				text-align: center;
+				border-top: 2px solid var(--accent, #A78BFA);
+			}
+			.article-card h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.4em;
+				font-weight: 500;
+				margin: 0.5em 0;
+				line-height: 1.4;
+			}
+			.article-card h3 a {
+				color: #E2DCF5;
+				text-decoration: none;
+			}
+			.article-date {
+				font-size: 0.85em;
+				color: var(--accent, #A78BFA);
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.article-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<div class="hero-top-desc">Welcome to The Master Encyclopedia of Dreams</div>
+					<h2>Decode the Language of the Subconscious</h2>
+					<p>
+						Journey through the neurobiology, psychology, and spiritual evolution of your nightly visions. What is your mind trying to tell you?
+					</p>
+				</div>
+			</section>
+
+			<!-- Pillar Posts Section -->
+			<h2 class="section-title">Dimensions of the Dreamscape</h2>
+			<div class="pillar-grid">
+				{pillars.map((pillar) => (
+					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
+						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
+						<div class="pillar-overlay">
+							<h3>{pillar.title}</h3>
+							<p>{pillar.desc}</p>
+						</div>
+					</div>
+				))}
+			</div>
+
+			<!-- Latest Articles Section -->
+			<h2 class="section-title">Latest Interpretations</h2>
+			<ul class="article-grid">
+				{
+					posts.map((post) => {
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						
+						return (
+						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
+							<div class="article-content">
+								<p class="article-date">
+									<time datetime={post.data.pubDate.toISOString()}>
+										{post.data.pubDate.toLocaleDateString('en-US', {
+											year: 'numeric',
+											month: 'long',
+											day: 'numeric',
+										})}
+									</time>
+								</p>
+								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+							</div>
+						</li>
+					)})
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

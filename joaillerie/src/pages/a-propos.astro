@@ -1,0 +1,238 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`À Propos | ${SITE_TITLE}`} description="Découvrez l'âme de la parure sur Joaillerie et Symbolique" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans', sans-serif;
+				background-color: var(--bg-color, #F5EDF9); 
+				color: #333;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 8em 1em;
+				background-image: url('/media-images/about-hero.jpg');
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(51, 20, 56, 0.7);
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+			}
+			.hero h1 {
+				font-family: 'Playfair Display', serif;
+				font-size: 3.5em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 2px;
+			}
+			.hero p {
+				font-size: 1.2em;
+				font-style: italic;
+				color: #ead5f3;
+			}
+			
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 0;
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h2 {
+				font-family: 'Playfair Display', serif;
+				font-size: 2.2em;
+				color: var(--accent-dark, #331438);
+				border-left: 4px solid var(--accent, #9335B6);
+				padding-left: 15px;
+				margin-bottom: 1em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #444;
+				margin-bottom: 1.5em;
+			}
+			
+			.grid-3 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 2em;
+				margin: 4em 0;
+			}
+			.grid-box {
+				background: #fff;
+				padding: 2.5em 2em;
+				border-radius: 8px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				border-top: 4px solid var(--accent, #9335B6);
+			}
+			.grid-box h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.6em;
+				color: var(--accent-dark, #331438);
+				margin-bottom: 0.5em;
+			}
+			
+			.expertise-section {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 3em;
+				align-items: center;
+				background: #fff;
+				padding: 3em;
+				border-radius: 12px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				margin-bottom: 5em;
+			}
+			.expertise-image {
+				flex: 1;
+				min-width: 300px;
+			}
+			.expertise-image img {
+				width: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+			}
+			.expertise-text {
+				flex: 1.5;
+				min-width: 300px;
+			}
+			.expertise-text h2 {
+				border-left: none;
+				padding-left: 0;
+			}
+			
+			.faq-container {
+				margin-top: 4em;
+				border-top: 1px solid rgba(0,0,0,0.1);
+				padding-top: 4em;
+			}
+			.faq-item {
+				background: #fff;
+				padding: 1.5em;
+				border-radius: 8px;
+				margin-bottom: 1.5em;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+				border-left: 4px solid var(--accent, #9335B6);
+			}
+			.faq-item h4 {
+				margin: 0 0 0.5em 0;
+				font-family: 'Playfair Display', serif;
+				font-size: 1.3em;
+				color: var(--accent-dark, #331438);
+			}
+			.faq-item p {
+				margin: 0;
+				font-size: 1em;
+			}
+			
+			.cta-btn {
+				display: inline-block;
+				margin-top: 3em;
+				padding: 15px 40px;
+				background-color: transparent;
+				border: 2px solid var(--accent-dark, #331438);
+				color: var(--accent-dark, #331438);
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-weight: 600;
+				text-decoration: none;
+				border-radius: 4px;
+				transition: 0.3s;
+			}
+			.cta-btn:hover {
+				background-color: var(--accent-dark, #331438);
+				color: #fff !important;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<h1>L'Âme de la Parure</h1>
+					<p>Décrypter le langage invisible des pierres et des métaux.</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<h2>Plus qu'un Ornement, un Symbole</h2>
+				<p>Bienvenue sur <strong>Joaillerie et Symbolique</strong>. Nous croyons que chaque bijou est une capsule temporelle, un fragment d'histoire que l'on porte sur soi. Depuis l'aube de l'humanité, l'homme ne s'est pas contenté d'orner son corps pour la simple esthétique ; il a cherché à matérialiser ses croyances, ses amours et ses protections à travers l'artisanat le plus précieux.</p>
+				<p>Notre mission est de lever le voile sur les significations ésotériques, historiques et anthropologiques qui se cachent derrière les créations joaillières, des amulettes de l'Égypte ancienne aux chefs-d'œuvre de la haute joaillerie contemporaine.</p>
+
+				<div class="grid-3">
+					<div class="grid-box">
+						<h3>Histoire & Anthropologie</h3>
+						<p>Nous explorons les origines des rituels de parure à travers les âges pour comprendre comment le bijou a façonné les identités sociales.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Symbolisme Universel</h3>
+						<p>Chaque gemme et chaque motif possède une vibration. Nous décodons cette sémiologie pour vous aider à choisir des bijoux qui résonnent.</p>
+					</div>
+					<div class="grid-box">
+						<h3>Artisanat d'Excellence</h3>
+						<p>Nous célébrons le savoir-faire des artisans qui transforment la matière brute en poésie visuelle, respectant les traditions joaillières.</p>
+					</div>
+				</div>
+
+				<div class="expertise-section">
+					<div class="expertise-image">
+						<img src="/media-images/2026/05/cropped-a-propos-illustration-1.png" alt="Illustration for L'Âme de la Parure" onerror="this.src='/media-images/about-hero.jpg';" />
+					</div>
+					<div class="expertise-text">
+						<h2>Une Expertise Passionnée</h2>
+						<p>Sous la direction de chercheurs et de gemmologues passionnés, notre équipe s'efforce de créer un pont entre le passé mystique et la création contemporaine. Chaque article est le fruit de recherches rigoureuses pour offrir une perspective culturelle unique.</p>
+					</div>
+				</div>
+
+				<div class="faq-container">
+					<h2 style="text-align: center; border: none;">Foire Aux Questions</h2>
+					
+					<div class="faq-item">
+						<h4>Q: Quelle est la vocation de ce site ?</h4>
+						<p>Décrypter le langage invisible des bijoux. Nous explorons la psychologie, l'histoire et l'énergie derrière chaque parure.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Qui rédige les articles ?</h4>
+						<p>Une équipe passionnée d'historiens de l'art et de spécialistes de la symbolique universelle.</p>
+					</div>
+					<div class="faq-item">
+						<h4>Q: Abordez-vous les bijoux modernes ?</h4>
+						<p>Oui, nous analysons les créations contemporaines (bagues anti-stress, d'humeur) sous l'angle de la psychologie moderne.</p>
+					</div>
+				</div>
+
+				<div style="text-align: center;">
+					<a href="/" class="cta-btn">Explorer l'Encyclopédie</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

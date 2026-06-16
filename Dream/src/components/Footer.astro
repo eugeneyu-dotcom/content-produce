@@ -1,0 +1,105 @@
+---
+const today = new Date();
+---
+
+<footer class="dream-footer">
+	<div class="footer-content">
+		<div class="footer-brand">
+			<div class="maxora-logo">
+				Maxora.ai
+			</div>
+			<p class="brand-desc">
+				Artificial intelligence exploring the collective unconscious. We create digital experiences to help you decode the mysteries of your mind.
+			</p>
+			<div class="copyright">
+				&copy; {today.getFullYear()} The Master Encyclopedia of Dreams & Maxora.ai. All rights reserved.
+			</div>
+		</div>
+		
+		<div class="footer-links">
+			<h3>Quick Links</h3>
+			<a href="/privacy-policy" class="footer-btn">Privacy Policy</a>
+			<a href="mailto:eugeneyu@maxora.ai" class="footer-btn">Contact Us</a>
+		</div>
+	</div>
+</footer>
+<style>
+	.dream-footer {
+		background-color: var(--accent-dark, #5B21B6);
+		background: linear-gradient(180deg, var(--bg-color, #0B0618) 0%, #1A0E33 100%);
+		color: #E2DCF5;
+		padding: 5em 2em;
+		margin-top: 4em;
+		font-family: 'Manrope', sans-serif;
+		border-top: 1px solid rgba(167, 139, 250, 0.3);
+	}
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 4em;
+	}
+	.footer-brand {
+		flex: 2;
+		min-width: 300px;
+	}
+	.maxora-logo {
+		font-family: 'Playfair Display', serif;
+		font-size: 2.5em;
+		font-weight: 700;
+		color: #F5F1FE;
+		margin-bottom: 0.5em;
+		letter-spacing: 1px;
+	}
+	.brand-desc {
+		font-size: 1.05em;
+		line-height: 1.8;
+		opacity: 0.85;
+		margin-bottom: 2em;
+		max-width: 500px;
+	}
+	.copyright {
+		font-size: 0.9em;
+		opacity: 0.6;
+		border-top: 1px solid rgba(167, 139, 250, 0.2);
+		padding-top: 1.5em;
+		margin-top: 1em;
+	}
+	.footer-links {
+		flex: 1;
+		min-width: 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1em;
+	}
+	.footer-links h3 {
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 1.5em;
+		color: var(--accent, #A78BFA);
+		margin-bottom: 1em;
+		font-weight: 500;
+	}
+	.footer-btn {
+		display: inline-block;
+		padding: 10px 25px;
+		background: rgba(255,255,255,0.04);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border: 1px solid rgba(167, 139, 250, 0.3);
+		color: #E2DCF5;
+		text-decoration: none;
+		border-radius: 8px;
+		transition: all 0.3s ease;
+		font-size: 0.95em;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.footer-btn:hover {
+		background-color: var(--accent, #A78BFA);
+		color: #1A0E33;
+	}
+</style>

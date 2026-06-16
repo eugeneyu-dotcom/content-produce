@@ -1,0 +1,87 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={`当サイトについて | ${SITE_TITLE}`} description="Minimal Desk Studio - 洗練されたワークスペースの構築" />
+	</head>
+	<body>
+		<Header />
+		<main>
+<div class="about-us-wrapper" style="background-color: var(--bg-color, #F7F4EF); padding: 80px 0; color: #33302C; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;">
+    
+    <div class="about-container" style="max-width: 1000px; margin: 0 auto; padding: 0 20px; line-height: 1.8;">
+        
+        <div style="text-align: center; margin-bottom: 60px;">
+            <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 14px; color: var(--accent, #C17F59); margin-bottom: 20px;">ABOUT US</p>
+            <h1 style="font-family: 'Shippori Mincho', serif; font-size: 2.8rem; color: var(--accent-dark, #6B4226); margin: 0; font-weight: bold; border-bottom: 2px solid var(--accent, #C17F59); display: inline-block; padding-bottom: 10px;">ミニマル・デスク・スタジオについて</h1>
+            <p style="font-style: italic; font-size: 1.1rem; color: #5C5650; margin-top: 20px;">美しさと機能性の交差点で、集中力を高める空間を創る。</p>
+        </div>
+
+        <div style="margin-bottom: 80px;">
+            <h2 style="font-family: 'Shippori Mincho', serif; font-size: 2rem; color: var(--accent-dark, #6B4226); margin-bottom: 30px;">私たちの使命：空間の静寂とTakumiの精神</h2>
+            <p style="font-size: 1.1rem; color: #33302C;"><strong>ミニマル・デスク・スタジオ</strong>へようこそ。私たちは、デスク環境は単なる作業スペースではなく、自己表現の場であり、集中力を高めるための「聖域」であると信じています。視覚的なノイズを徹底的に排除し、一つひとつのアイテムに意味を持たせる。日本の「Takumi（職人）」のような選定の精神をもって、究極のミニマリズムを追求します。</p>
+            <p style="font-size: 1.1rem; color: #33302C;">私たちの使命は、素材の触感、色彩理論、安全工学に基づいた深い知識と実践例を提供し、あなた自身がコントロールされた、美しく快適な環境を構築する手助けをすることです。デスクを愛するすべての人へ、秩序と安らぎをもたらす空間創りを提案します。</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 80px;">
+            <div style="background: #FBFAF7; padding: 30px; border: 1px solid rgba(51,46,42,0.12); border-radius: 2px;">
+                <h3 style="font-family: 'Shippori Mincho', serif; color: var(--accent-dark, #6B4226); margin-top: 0; font-size: 1.4rem;">ミニマリズムの美学</h3>
+                <p style="font-size: 1rem; color: #5C5650;">視覚的ノイズを排除し、一貫性のあるカラーパレットと素材にこだわる。素材の触感（ハプティクス）を大切にした「ウォーム・ミニマリズム」を追求します。</p>
+            </div>
+            <div style="background: #FBFAF7; padding: 30px; border: 1px solid rgba(51,46,42,0.12); border-radius: 2px;">
+                <h3 style="font-family: 'Shippori Mincho', serif; color: var(--accent-dark, #6B4226); margin-top: 0; font-size: 1.4rem;">機能性の極致</h3>
+                <p style="font-size: 1rem; color: #5C5650;">配線管理（ケーブルマネジメント）の美学からエルゴノミクスの科学まで。集中力を高める上質なワークスペースを理論と実践で完成させます。</p>
+            </div>
+            <div style="background: #FBFAF7; padding: 30px; border: 1px solid rgba(51,46,42,0.12); border-radius: 2px;">
+                <h3 style="font-family: 'Shippori Mincho', serif; color: var(--accent-dark, #6B4226); margin-top: 0; font-size: 1.4rem;">持続可能なデスク</h3>
+                <p style="font-size: 1rem; color: #5C5650;">素材の経年変化を愛し、環境に配慮したサステナブルな素材を採用する。デザインだけでなく、製品が持つ物語や環境への貢献度も選択の基準です。</p>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px; background: #FBFAF7; padding: 50px; border-radius: 2px; border: 1px solid rgba(51,46,42,0.12);">
+            <div style="flex: 1; min-width: 280px;">
+                <img src="/media-images/posts/about-us-illustration-1.png" alt="Illustration for about us" style="width: 100%; border-radius: 2px; border: 1px solid rgba(51,46,42,0.12);">
+            </div>
+            <div style="flex: 2; min-width: 300px;">
+                <h2 style="font-family: 'Shippori Mincho', serif; font-size: 2rem; color: var(--accent-dark, #6B4226); margin-top: 0;">Takumiの魂と専門知識</h2>
+                <p style="color: #33302C; font-size: 1.1rem;">熱狂的なデスクセットアップの愛好家とクリエイターで構成される私たちのチームは、専門的な知識と実践的なアイデアを共有しています。最先端のガジェット、伝統的な素材の経年変化、そしてデスク環境心理学。私たちは、AIを効率的な情報整理に活用しつつ、最終的には人間のTakumiの精神で監修し、実体験に基づいた高品質なコンテンツを提供します。集中力と創造性を高める上質なデスク環境の構築をサポートします。</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 100px; border-top: 1px solid rgba(51,46,42,0.12); padding-top: 60px;">
+            <h2 style="font-family: 'Shippori Mincho', serif; text-align: center; font-size: 2.2rem; color: var(--accent-dark, #6B4226); margin-bottom: 50px;">よくあるご質問 (FAQ)</h2>
+
+            <div style="margin-bottom: 30px; background: #FBFAF7; border-left: 3px solid var(--accent); padding: 25px; border-radius: 2px;">
+                <h4 style="color: var(--accent-dark, #6B4226); font-size: 1.3rem; margin-bottom: 10px;">Q: どのようなコンテンツを提供していますか？</h4>
+                <p style="color: #5C5650; margin: 0;">デスクセットアップのレビュー、整理術、おすすめガジェット紹介、素材の選び方、デスク環境心理学に基づく集中力向上のヒントなどです。</p>
+            </div>
+            <div style="margin-bottom: 30px; background: #FBFAF7; border-left: 3px solid var(--accent); padding: 25px; border-radius: 2px;">
+                <h4 style="color: var(--accent-dark, #6B4226); font-size: 1.3rem; margin-bottom: 10px;">Q: AIを活用しているのですか？</h4>
+                <p style="color: #5C5650; margin: 0;">はい。効率的な情報整理と高品質なコンテンツ生成に活用していますが、最終的には人間が監修し、実体験に基づいた情報を提供します。</p>
+            </div>
+            <div style="margin-bottom: 30px; background: #FBFAF7; border-left: 3px solid var(--accent); padding: 25px; border-radius: 2px;">
+                <h4 style="color: var(--accent-dark, #6B4226); font-size: 1.3rem; margin-bottom: 10px;">Q: どのようにすれば参考になりますか？</h4>
+                <p style="color: #5C5650; margin: 0;">カテゴリ別記事を参考にしたり、PinterestやTwitterでの情報発信もご覧ください。あなたの理想のデスク環境構築に役立つ情報をお届けします。</p>
+            </div>
+            <div style="margin-bottom: 30px; background: #FBFAF7; border-left: 3px solid var(--accent); padding: 25px; border-radius: 2px;">
+                <h4 style="color: var(--accent-dark, #6B4226); font-size: 1.3rem; margin-bottom: 10px;">Q: 初心者でも大丈夫ですか？</h4>
+                <p style="color: #5C5650; margin: 0;">はい。基本的な整理方法から高度なテクニックまで幅広く扱っています。あなたに合ったデスク環境創りのサポートをします。</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 80px;">
+            <a href="/blog" style="display: inline-block; padding: 18px 45px; border: 2px solid var(--accent-dark, #6B4226); color: var(--accent-dark, #6B4226); text-decoration: none; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; transition: 0.3s;">究極ガイドを見る</a>
+        </div>
+
+    </div>
+</div>
+		</main>
+		<Footer />
+	</body>
+</html>

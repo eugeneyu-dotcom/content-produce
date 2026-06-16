@@ -1,0 +1,184 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="dream-header">
+	<div class="top-bar">
+		<p>Welcome to The Master Encyclopedia of Dreams</p>
+	</div>
+	<div class="header-main">
+		<div class="logo-container">
+			<a href="/" class="logo-link">
+				<img src="/media-images/Logo.png" alt="Encyclopedia of Dreams Logo" class="site-logo" onerror="this.style.display='none';"/>
+				<div class="site-titles">
+					<h1 class="site-title">Encyclopedia of Dreams</h1>
+					<p class="site-tagline">Decode the Language of the Subconscious</p>
+				</div>
+			</a>
+		</div>
+		<nav class="main-nav">
+			<div class="internal-links">
+				<HeaderLink href="/">Home</HeaderLink>
+				<div class="dropdown">
+					<a href="#" class="dropbtn">The Master Encyclopedia</a>
+					<div class="dropdown-content">
+						<a href="/category/rem-sleep-neuroscience">Neurobiological Foundations</a>
+						<a href="/category/jungian-archetypes">Jungian Archetypes</a>
+						<a href="/category/freudian-dreamwork">Freudian Psychoanalysis</a>
+						<a href="/category/evolutionary-nightmares">Evolutionary Threat Simulation</a>
+						<a href="/category/falling-in-dreams-meaning">Universal Symbolic Themes</a>
+						<a href="/category/lucid-dreaming-guide">Lucid Dreaming & Agency</a>
+						<a href="/category/history-of-dream-interpretation">Cultural & Spiritual Evolution</a>
+					</div>
+				</div>
+				<HeaderLink href="/blog">Archives</HeaderLink>
+				<HeaderLink href="/about-us">About Us</HeaderLink>
+				<HeaderLink href="/privacy-policy">Privacy Policy</HeaderLink>
+				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contact Us</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<style>
+	.dream-header {
+		background: rgba(11, 6, 24, 0.6);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		font-family: 'Manrope', sans-serif;
+		border-bottom: 1px solid rgba(167, 139, 250, 0.3);
+		margin-bottom: 2em;
+	}
+	.top-bar {
+		background-color: var(--accent-dark, #5B21B6);
+		color: #E2DCF5;
+		font-size: 0.85em;
+		padding: 0.5em 0;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.top-bar p {
+		margin: 0;
+	}
+	.header-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1.5em 2em;
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.logo-container {
+		flex: 1;
+		min-width: 300px;
+	}
+	.logo-link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		gap: 1em;
+	}
+	.site-logo {
+		height: 80px;
+		width: auto;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	.site-titles {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	.site-title {
+		margin: 0;
+		font-family: 'Cormorant Garamond', serif;
+		font-size: 2.2em;
+		font-weight: 500;
+		color: #F5F1FE;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
+	}
+	.site-tagline {
+		color: #C4B5FD;
+		font-style: italic;
+		font-size: 1em;
+		margin-top: 0.2em;
+		margin-bottom: 0;
+	}
+	.main-nav {
+		display: flex;
+		align-items: center;
+	}
+	.internal-links {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+	}
+	.internal-links a {
+		color: #E2DCF5;
+		text-decoration: none;
+		font-size: 1.1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: color 0.3s ease;
+	}
+	.internal-links a:hover, .internal-links a.active {
+		color: var(--accent, #A78BFA);
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	.dropbtn {
+		cursor: pointer;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background: rgba(11, 6, 24, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		min-width: 320px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+		z-index: 100;
+		border-radius: 8px;
+		top: 100%;
+		left: 0;
+		border: 1px solid rgba(255,255,255,0.08);
+	}
+	.dropdown-content a {
+		color: #E2DCF5;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		font-size: 0.9em;
+		text-transform: none;
+		letter-spacing: normal;
+		border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+	}
+	.dropdown-content a:last-child {
+		border-bottom: none;
+	}
+	.dropdown-content a:hover {
+		background-color: var(--accent-dark, #5B21B6);
+		color: #fff;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.contact-btn {
+		background-color: var(--accent-dark, #5B21B6);
+		color: #F5F1FE !important;
+		padding: 8px 16px;
+		border-radius: 4px;
+		transition: background-color 0.3s ease, color 0.3s ease !important;
+		border: 1px solid var(--accent, #A78BFA);
+	}
+	.contact-btn:hover {
+		background-color: var(--accent, #A78BFA);
+		color: #1A0E33 !important;
+	}
+</style>

@@ -1,0 +1,295 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection } from 'astro:content';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Helper to find the correct image extension (webp, jpg, png)
+function findImage(basePath) {
+	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
+	const publicDir = path.join(process.cwd(), 'public');
+	
+	// If path already has an extension, try to use it directly or check fallbacks
+	let base = basePath;
+	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
+		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+	}
+
+	for (const ext of exts) {
+		if (fs.existsSync(path.join(publicDir, base + ext))) {
+			return base + ext;
+		}
+	}
+	return ''; // blank if not found
+}
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 6); // Get latest 6 posts
+
+// Hardcoded Pillar Posts based on SOP2-1
+// User wants to manually manage pillar images under /media-images/
+const pillars = [
+	{ title: "Le Langage des Doigts", desc: "La topographie de la main et le message social.", bg: "/media-images/pillar-doigts.webp", link: "/category/symbolisme-des-bagues-par-doigt" },
+	{ title: "L'Énergie des Pierres", desc: "La lithothérapie et la résonance émotionnelle.", bg: "/media-images/pillar-pierres.webp", link: "/category/vertus-spirituelles-des-pierres" },
+	{ title: "Totems Sacrés", desc: "Les talismans protecteurs et le mauvais œil.", bg: "/media-images/pillar-totems.webp", link: "/category/totems-et-protection-antique" },
+	{ title: "Alchimie des Métaux", desc: "L'or, l'argent et leur quête d'immortalité.", bg: "/media-images/pillar-metaux.webp", link: "/category/m-taux-et-nergie-alchimique" },
+	{ title: "Rites de Passage", desc: "Naissance, union et deuil à travers les bijoux.", bg: "/media-images/pillar-rites.webp", link: "/category/bijoux-et-rites-de-passage" },
+	{ title: "Identité et Styles", desc: "Du gothique au minimalisme, le bijou comme uniforme.", bg: "/media-images/pillar-styles.webp", link: "/category/styles-et-identit-sociale" }
+];
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans', sans-serif;
+				background-color: var(--bg-color, #F5EDF9); 
+				color: #333;
+			}
+			/* --- Hero Section --- */
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 10em 1em;
+				min-height: 70vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 3em;
+				background-image: url('/media-images/hero-bg.webp'); /* Default hero image */
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero-top-desc {
+				font-size: 1em;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				margin-bottom: 1.5em;
+				color: #eee;
+				text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+			}
+			.hero-overlay {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				background: rgba(51, 20, 56, 0.6); /* Original dark purple tint */
+				z-index: 1;
+			}
+			.hero-content {
+				position: relative;
+				z-index: 2;
+				color: #fff;
+			}
+			.hero h2 {
+				font-family: 'Playfair Display', serif;
+				font-size: 3.5em;
+				font-weight: 400;
+				margin-bottom: 0.5em;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			}
+			.hero p {
+				font-size: 1.2em;
+				max-width: 600px;
+				margin: 0 auto;
+				line-height: 1.8;
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+			}
+
+			/* --- Section Titles --- */
+			.section-title {
+				text-align: center;
+				font-family: 'Playfair Display', serif;
+				font-size: 2.5em;
+				font-weight: 400;
+				margin: 2em 0 1em;
+				color: #222;
+			}
+			.section-title::after {
+				content: '';
+				display: block;
+				width: 50px;
+				height: 2px;
+				background-color: var(--accent, #9335B6);
+				margin: 0.5em auto 0;
+			}
+
+			/* --- Pillar Posts (Cards with BG) --- */
+			.pillar-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 0;
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				margin-bottom: 4em;
+				list-style: none;
+			}
+			.pillar-card {
+				position: relative;
+				height: 500px; /* Taller to fit 50% width proportionally */
+				background-size: cover;
+				background-position: center;
+				overflow: hidden;
+				transition: transform 0.3s ease;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+			}
+			.pillar-card:hover {
+				transform: scale(1.02);
+				z-index: 5;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			}
+			.pillar-overlay {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+				padding: 2em 1.5em 1.5em;
+				color: white;
+			}
+			.pillar-card h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.6em;
+				margin: 0 0 0.2em 0;
+			}
+			.pillar-card p {
+				font-size: 0.9em;
+				margin: 0;
+				color: #ddd;
+			}
+			.pillar-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+
+			/* --- Latest Articles Grid (Cards with BG) --- */
+			.article-grid {
+				display: grid;
+				grid-template-columns: 30vw 30vw;
+				justify-content: center;
+				gap: 2.5em;
+				padding: 0 1em;
+				list-style: none;
+				max-width: 1200px;
+				margin: 0 auto 4em;
+			}
+			.article-card {
+				position: relative;
+				height: 450px;
+				background-size: cover;
+				background-position: center;
+				background-color: #eee; /* Fallback */
+				border-radius: 4px;
+				overflow: hidden;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.article-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+			}
+			.article-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: rgba(255, 255, 255, 0.95);
+				padding: 1.5em;
+				text-align: center;
+				border-top: 2px solid var(--accent, #9335B6);
+			}
+			.article-card h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.3em;
+				font-weight: 400;
+				margin: 0.5em 0;
+				line-height: 1.3;
+			}
+			.article-card h3 a {
+				color: #333;
+				text-decoration: none;
+			}
+			.article-date {
+				font-size: 0.8em;
+				color: #888;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.article-link {
+				position: absolute;
+				top: 0; left: 0; right: 0; bottom: 0;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<div class="hero-top-desc">Bienvenue sur Joaillerie et Symbolique</div>
+					<h2>Le Langage Secret des Bijoux</h2>
+					<p>
+						Plongez dans l'univers fascinant de la joaillerie. Découvrez la signification cachée des pierres précieuses, 
+						le symbolisme des bagues et l'histoire qui se cache derrière chaque parure.
+					</p>
+				</div>
+			</section>
+
+			<!-- Pillar Posts Section -->
+			<h2 class="section-title">L'Encyclopédie des Symboles</h2>
+			<div class="pillar-grid">
+				{pillars.map((pillar) => (
+					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
+						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
+						<div class="pillar-overlay">
+							<h3>{pillar.title}</h3>
+							<p>{pillar.desc}</p>
+						</div>
+					</div>
+				))}
+			</div>
+
+			<!-- Latest Articles Section -->
+			<h2 class="section-title">Dernières Publications</h2>
+			<ul class="article-grid">
+				{
+					posts.map((post) => {
+						// Using helper to check for webp, jpg, png
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						
+						return (
+						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
+							<div class="article-content">
+								<p class="article-date">
+									<time datetime={post.data.pubDate.toISOString()}>
+										{post.data.pubDate.toLocaleDateString('fr-FR', {
+											year: 'numeric',
+											month: 'long',
+											day: 'numeric',
+										})}
+									</time>
+								</p>
+								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
+							</div>
+						</li>
+					)})
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>

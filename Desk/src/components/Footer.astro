@@ -1,0 +1,101 @@
+---
+const today = new Date();
+---
+
+<footer class="minimal-footer">
+	<div class="footer-content">
+		<div class="footer-brand">
+			<div class="maxora-logo">
+				Maxora.ai
+			</div>
+			<p class="brand-desc">
+				AIの力で、あなたのワークスペースを最適化。ノイズを排除し、美しさと生産性を両立する究極のデスクセットアップを提案します。
+			</p>
+			<div class="copyright">
+				&copy; {today.getFullYear()} Minimal Desk Studio & Maxora.ai. All rights reserved.
+			</div>
+		</div>
+		
+		<div class="footer-links">
+			<h3>リンク</h3>
+			<a href="/privacy-policy" class="footer-btn">プライバシーポリシー</a>
+			<a href="mailto:eugeneyu@maxora.ai" class="footer-btn">お問い合わせ</a>
+		</div>
+	</div>
+</footer>
+<style>
+	.minimal-footer {
+		background-color: var(--accent-dark, #6B4226);
+		color: #D9CFC4;
+		padding: 5em 2em;
+		margin-top: 4em;
+		font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	}
+	.footer-content {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 4em;
+	}
+	.footer-brand {
+		flex: 2;
+		min-width: 300px;
+	}
+	.maxora-logo {
+		font-family: 'Playfair Display', serif;
+		font-size: 2.2em;
+		font-weight: 700;
+		color: #ffffff;
+		margin-bottom: 0.5em;
+		letter-spacing: -0.5px;
+	}
+	.brand-desc {
+		font-size: 1.05em;
+		line-height: 1.8;
+		opacity: 0.85;
+		margin-bottom: 2em;
+		max-width: 500px;
+		color: #EDE7DD;
+	}
+	.copyright {
+		font-size: 0.9em;
+		opacity: 0.6;
+		border-top: 1px solid rgba(255,255,255,0.15);
+		padding-top: 1.5em;
+		margin-top: 1em;
+	}
+	.footer-links {
+		flex: 1;
+		min-width: 250px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1em;
+	}
+	.footer-links h3 {
+		font-size: 1.5em;
+		color: #ffffff;
+		margin-bottom: 1em;
+		font-weight: 500;
+	}
+	.footer-btn {
+		display: inline-block;
+		padding: 10px 25px;
+		background-color: rgba(255,255,255,0.05);
+		border: 1px solid rgba(255,255,255,0.25);
+		color: #F7F4EF;
+		text-decoration: none;
+		border-radius: 2px;
+		transition: all 0.3s ease;
+		font-size: 0.95em;
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.footer-btn:hover {
+		background-color: #ffffff;
+		color: var(--accent-dark, #6B4226);
+	}
+</style>
