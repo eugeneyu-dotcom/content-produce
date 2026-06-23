@@ -39,6 +39,8 @@ apiKeysContent.split('\n').forEach(line => {
 const SERPER_API_KEY = (apiKeys['Serper'] || '').replace(/[^\x21-\x7E]/g, '');
 const GEMINI_API_KEY = (apiKeys['Gemini'] || '').replace(/[^\x21-\x7E]/g, '');
 const GOOGLE_SHEET_URL = (apiKeys['GoogleSheet'] || '').trim();
+const SHEET_WRITE_URL = (apiKeys['SheetWriteUrl'] || '').trim();
+const SHEET_WRITE_SECRET = (apiKeys['SheetWriteSecret'] || '').trim();
 
 // Debug: show parsed key names and sanitized key info
 console.log('[Debug] API_Key 檔案中讀到的 key 名稱:', Object.keys(apiKeys));
@@ -174,6 +176,43 @@ const callGeminiAPI = (prompt, jsonMode = true) => {
 
         req.on('error', (error) => reject(error));
         req.write(data);
+        req.end();
+    });
+};
+
+// Write Status=USED and Post_Url back to Google Sheet via Apps Script Web App
+const markRowsUsed = (items) => {
+    return new Promise((resolve, reject) => {
+        const payload = JSON.stringify({ token: SHEET_WRITE_SECRET, items });
+        const u = new URL(SHEET_WRITE_URL);
+        const options = {
+            hostname: u.hostname,
+            path: u.pathname + u.search,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Content-Length': Buffer.byteLength(payload)
+            }
+        };
+        const req = https.request(options, (res) => {
+            const chunks = [];
+            res.on('data', (chunk) => chunks.push(chunk));
+            res.on('end', () => {
+                const body = Buffer.concat(chunks).toString('utf8');
+                // Apps Script redirects (302) to script.googleusercontent.com; follow it
+                if ((res.statusCode === 302 || res.statusCode === 301) && res.headers.location) {
+                    https.get(res.headers.location, (r2) => {
+                        const c2 = [];
+                        r2.on('data', (c) => c2.push(c));
+                        r2.on('end', () => resolve(Buffer.concat(c2).toString('utf8')));
+                    }).on('error', reject);
+                } else {
+                    resolve(body);
+                }
+            });
+        });
+        req.on('error', reject);
+        req.write(payload);
         req.end();
     });
 };
@@ -649,7 +688,8 @@ heroImage: "${headerImageSrc}"
             fs.writeFileSync(mdPath, markdownContent);
 
             console.log(`[✓ Success] Saved: ${mdPath}`);
-            results.success.push({ keyword, site, slug: writerData.slug, path: mdPath });
+            const postUrl = `${(task['Site_Url'] || '').replace(/\/+$/, '')}/blog/${writerData.slug}/`;
+            results.success.push({ keyword, site, slug: writerData.slug, path: mdPath, post_url: postUrl });
 
         } catch (taskError) {
             console.error(`[✗ Failed] "${task['Keyword']}": ${taskError.message || taskError}`);
@@ -674,7 +714,27 @@ heroImage: "${headerImageSrc}"
         console.log('\nFailed tasks:');
         results.failed.forEach(r => console.log(`  ✗ ${r.keyword}: ${r.error}`));
     }
-    console.log('\nNext steps: verify content → update CSV Status to USED → git commit + push');
+
+    // Write Status=USED + Post_Url back to the Google Sheet (only for succeeded tasks)
+    if (results.success.length > 0 && SHEET_WRITE_URL && SHEET_WRITE_SECRET) {
+        console.log('\nWriting Status=USED and Post_Url back to Google Sheet...');
+        try {
+            const items = results.success.map(r => ({ keyword: r.keyword, post_url: r.post_url }));
+            const resp = await markRowsUsed(items);
+            let parsed;
+            try { parsed = JSON.parse(resp); } catch (e) { parsed = null; }
+            if (parsed && parsed.ok) {
+                console.log(`[Sheet] Updated ${parsed.updated.length} row(s): ${parsed.updated.join(', ')}`);
+            } else {
+                console.log(`[Sheet] Write-back response was not OK: ${resp.slice(0, 300)}`);
+            }
+        } catch (e) {
+            console.log(`[Sheet] Write-back failed (${e.message}). Update Status/Post_Url manually.`);
+        }
+    } else if (results.success.length > 0) {
+        console.log('\n[Sheet] SheetWriteUrl/SheetWriteSecret not set in API_Key — skipping auto write-back.');
+        console.log('Next steps: verify content → update Sheet Status to USED + paste Post_Url → git commit + push');
+    }
 };
 
 run();
