@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.global-urban-legends.com/sitemap-index.xml

@@ -36,5 +36,5 @@ What does this mean for the future of scary stories? As technology advances, our
 So, while the old spirits might no longer be 'allowed' in official narratives, the need for scary stories persists. We’re still trying to make sense of the world, rehearsing for its threats, even if those threats are now less about a physical beast and more about the disquieting implications of our own progress. It’s a heavy weight, this constant re-evaluation of what scares us, but it's part of what keeps us adaptive, I suppose. A continuous, slightly exhausting, process of cultural and psychological calibration, as we adjust our internal defenses to the ever-changing dangers of the outside world. The stories we tell ourselves about fear are, after all, stories about survival.
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
-    <img src="/media-images/posts/the-shifting-shadows-evolutionary-purpose-scary-stories-footer.png" alt="Footer Image" style="border-radius: 8px; width: 100%; height: auto;" />
+    <img src="/media-images/posts/the-shifting-shadows-evolutionary-purpose-scary-stories-footer.png" alt="The Shifting Shadows: Unpacking the Evolutionary Purpose of Scary Stories" style="border-radius: 8px; width: 100%; height: auto;" />
 </figure>

@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
+import { SITE_TITLE } from '../consts';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
@@ -36,11 +37,26 @@ function findImage(basePath: any) {
 }
 
 const resolvedHeroImage = findImage(heroImage || '');
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"headline": title,
+	"description": description,
+	...(resolvedHeroImage ? { image: new URL(resolvedHeroImage, Astro.site).href } : {}),
+	...(pubDate ? { datePublished: new Date(pubDate).toISOString() } : {}),
+	dateModified: new Date(updatedDate || pubDate || Date.now()).toISOString(),
+	author: { "@type": "Organization", name: SITE_TITLE },
+	publisher: { "@type": "Organization", name: SITE_TITLE },
+	mainEntityOfPage: { "@type": "WebPage", "@id": canonicalURL },
+};
 ---
 
 <html lang="fr">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={resolvedHeroImage} />
+		<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
 		<style>
 			main {
 				width: 75%;

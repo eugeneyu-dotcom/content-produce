@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.encyclopedia-of-dreams.com/sitemap-index.xml

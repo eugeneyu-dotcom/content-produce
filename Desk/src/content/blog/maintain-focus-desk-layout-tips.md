@@ -36,5 +36,5 @@ heroImage: "/media-images/posts/maintain-focus-desk-layout-tips.png"
 完璧なデスク配置というものは、おそらく存在しません。なぜなら、私たちの仕事内容も、気分も、そして取り巻く環境も常に変化するからです。しかし、今回お話しした私の個人的な経験や、心理学的な側面、そして具体的な配置の選択肢を参考に、今ある環境を少しでも集中しやすいものへと改善していくことは可能です。<br><br>デスク環境への意識的な投資は、単に作業効率を上げるだけでなく、ストレスを軽減し、創造性を刺激し、最終的には私たちのウェルビーイングを高めることにつながります。今日のあなたのデスクは、明日のあなたの生産性を決める。そう考えて、ぜひ一度、ご自身のデスク配置を見直してみてはいかがでしょうか。
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
-    <img src="/media-images/posts/maintain-focus-desk-layout-tips-footer.png" alt="Footer Image" style="border-radius: 8px; width: 100%; height: auto;" />
+    <img src="/media-images/posts/maintain-focus-desk-layout-tips-footer.png" alt="集中力を維持するデスク配置術：私の経験と心理学的アプローチ" style="border-radius: 8px; width: 100%; height: auto;" />
 </figure>

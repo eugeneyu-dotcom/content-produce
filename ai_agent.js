@@ -682,7 +682,8 @@ heroImage: "${headerImageSrc}"
                 markdownContent += `${block.text}\n\n`;
             });
 
-            markdownContent += `<figure class="aligncenter size-large" style="margin-top: 60px;">\n    <img src="${footerImageSrc}" alt="Footer Image" style="border-radius: 8px; width: 100%; height: auto;" />\n</figure>\n`;
+            const footerAltText = writerData.title.replace(/"/g, '');
+            markdownContent += `<figure class="aligncenter size-large" style="margin-top: 60px;">\n    <img src="${footerImageSrc}" alt="${footerAltText}" style="border-radius: 8px; width: 100%; height: auto;" />\n</figure>\n`;
 
             const mdPath = path.join(__dirname, site, 'src', 'content', 'blog', `${writerData.slug}.md`);
             fs.writeFileSync(mdPath, markdownContent);

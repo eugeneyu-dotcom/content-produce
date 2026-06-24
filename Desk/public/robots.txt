@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.minimal-desk-studio.com/sitemap-index.xml
