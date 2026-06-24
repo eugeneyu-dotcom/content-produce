@@ -637,27 +637,31 @@ ${anchors.evidence}
             const headerImagePath = path.join(postsDir, `${writerData.slug}.png`);
             const footerImagePath = path.join(postsDir, `${writerData.slug}-footer.png`);
 
+            const placeholderSource = path.join(__dirname, site, 'public', 'media-images', 'hero-bg.webp');
+
             try {
                 console.log(`Generating Header Image: ${writerData.image_prompt_header}`);
                 const headerBase64 = await generateImageWithRetry(writerData.image_prompt_header, 3);
                 fs.writeFileSync(headerImagePath, Buffer.from(headerBase64, 'base64'));
                 console.log("Header image saved successfully.");
+            } catch(imgError) {
+                console.error("Failed to generate header image after retries:", imgError.message || imgError);
+                console.log("Falling back to placeholder image for header.");
+                if (fs.existsSync(placeholderSource)) fs.copyFileSync(placeholderSource, headerImagePath);
+            }
 
-                console.log("Waiting 60 seconds before generating footer image to avoid rate limits...");
-                await sleep(60000);
+            console.log("Waiting 60 seconds before generating footer image to avoid rate limits...");
+            await sleep(60000);
 
+            try {
                 console.log(`Generating Footer Image: ${writerData.image_prompt_footer}`);
                 const footerBase64 = await generateImageWithRetry(writerData.image_prompt_footer, 3);
                 fs.writeFileSync(footerImagePath, Buffer.from(footerBase64, 'base64'));
                 console.log("Footer image saved successfully.");
             } catch(imgError) {
-                console.error("Failed to generate images after retries:", imgError.message || imgError);
-                console.log("Falling back to placeholder image.");
-                const placeholderSource = path.join(__dirname, site, 'public', 'media-images', 'hero-bg.webp');
-                if (fs.existsSync(placeholderSource)) {
-                    fs.copyFileSync(placeholderSource, headerImagePath);
-                    fs.copyFileSync(placeholderSource, footerImagePath);
-                }
+                console.error("Failed to generate footer image after retries:", imgError.message || imgError);
+                console.log("Falling back to placeholder image for footer.");
+                if (fs.existsSync(placeholderSource)) fs.copyFileSync(placeholderSource, footerImagePath);
             }
 
             // Markdown Assembly
