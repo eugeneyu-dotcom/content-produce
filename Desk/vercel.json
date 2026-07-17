@@ -1,0 +1,184 @@
+{
+  "redirects": [
+    {
+      "source": "/4k-monitor-arm-guide",
+      "destination": "/blog/4k-monitor-arm-guide",
+      "permanent": true
+    },
+    {
+      "source": "/benq-screenbar-comparison-guide",
+      "destination": "/blog/benq-screenbar-comparison-guide",
+      "permanent": true
+    },
+    {
+      "source": "/chair-selection-back-pain",
+      "destination": "/blog/chair-selection-back-pain",
+      "permanent": true
+    },
+    {
+      "source": "/dendou-shoukou-desk-osusume-ichi-shuukan-go",
+      "destination": "/blog/dendou-shoukou-desk-osusume-ichi-shuukan-go",
+      "permanent": true
+    },
+    {
+      "source": "/desk-aroma-focus-diffuser",
+      "destination": "/blog/desk-aroma-focus-diffuser",
+      "permanent": true
+    },
+    {
+      "source": "/desk-cable-management-100yen",
+      "destination": "/blog/desk-cable-management-100yen",
+      "permanent": true
+    },
+    {
+      "source": "/desk-clean-psychology-features-japan",
+      "destination": "/blog/desk-clean-psychology-features-japan",
+      "permanent": true
+    },
+    {
+      "source": "/desk-indirect-lighting-guide",
+      "destination": "/blog/desk-indirect-lighting-guide",
+      "permanent": true
+    },
+    {
+      "source": "/desk-mat-felt-demerit",
+      "destination": "/blog/desk-mat-felt-demerit",
+      "permanent": true
+    },
+    {
+      "source": "/desk-posture-correction-guide",
+      "destination": "/blog/desk-posture-correction-guide",
+      "permanent": true
+    },
+    {
+      "source": "/desk-setup-unity-guide-japan",
+      "destination": "/blog/desk-setup-unity-guide-japan",
+      "permanent": true
+    },
+    {
+      "source": "/desktop-icon-hide-mac-hiddenme-terminal",
+      "destination": "/blog/desktop-icon-hide-mac-hiddenme-terminal",
+      "permanent": true
+    },
+    {
+      "source": "/digital-folder-mastery",
+      "destination": "/blog/digital-folder-mastery",
+      "permanent": true
+    },
+    {
+      "source": "/ergonomics-keyboard-merit-guide",
+      "destination": "/blog/ergonomics-keyboard-merit-guide",
+      "permanent": true
+    },
+    {
+      "source": "/eye-friendly-desk-light-guide-2",
+      "destination": "/blog/eye-friendly-desk-light-guide-2",
+      "permanent": true
+    },
+    {
+      "source": "/felt-desk-mat-non-slip-guide-japan",
+      "destination": "/blog/felt-desk-mat-non-slip-guide-japan",
+      "permanent": true
+    },
+    {
+      "source": "/focus-lighting-cct",
+      "destination": "/blog/focus-lighting-cct",
+      "permanent": true
+    },
+    {
+      "source": "/magnetic-cable-holder-guide-japan",
+      "destination": "/blog/magnetic-cable-holder-guide-japan",
+      "permanent": true
+    },
+    {
+      "source": "/maintain-focus-desk-layout-tips",
+      "destination": "/blog/maintain-focus-desk-layout-tips",
+      "permanent": true
+    },
+    {
+      "source": "/matte-black-gadget-recommendations",
+      "destination": "/blog/matte-black-gadget-recommendations",
+      "permanent": true
+    },
+    {
+      "source": "/monitor-light-desk-light-chigai",
+      "destination": "/blog/monitor-light-desk-light-chigai",
+      "permanent": true
+    },
+    {
+      "source": "/monitor-light-reflection-ergonomics",
+      "destination": "/blog/monitor-light-reflection-ergonomics",
+      "permanent": true
+    },
+    {
+      "source": "/no-drill-cable-management",
+      "destination": "/blog/no-drill-cable-management",
+      "permanent": true
+    },
+    {
+      "source": "/office-silent-mechanical-keyboard-guide",
+      "destination": "/blog/office-silent-mechanical-keyboard-guide",
+      "permanent": true
+    },
+    {
+      "source": "/pomodoro-desktop-apps-guide",
+      "destination": "/blog/pomodoro-desktop-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/power-tap-hiding-box-guide",
+      "destination": "/blog/power-tap-hiding-box-guide",
+      "permanent": true
+    },
+    {
+      "source": "/sagyo-koritsu-bakuage-workspace-himitsu",
+      "destination": "/blog/sagyo-koritsu-bakuage-workspace-himitsu",
+      "permanent": true
+    },
+    {
+      "source": "/standing-desk-fatigue-solutions-japan",
+      "destination": "/blog/standing-desk-fatigue-solutions-japan",
+      "permanent": true
+    },
+    {
+      "source": "/ten-nen-sozai-desk-organizer-mokusei-miryoku-katsuyoujutsu",
+      "destination": "/blog/ten-nen-sozai-desk-organizer-mokusei-miryoku-katsuyoujutsu",
+      "permanent": true
+    },
+    {
+      "source": "/walnut-desk-aging-process-japan",
+      "destination": "/blog/walnut-desk-aging-process-japan",
+      "permanent": true
+    },
+    {
+      "source": "/white-desk-setup-aesthetics",
+      "destination": "/blog/white-desk-setup-aesthetics",
+      "permanent": true
+    },
+    {
+      "source": "/white-desk-stains-conspicuous-measures",
+      "destination": "/blog/white-desk-stains-conspicuous-measures",
+      "permanent": true
+    },
+    {
+      "source": "/wireless-charging-desk-embedding-guide",
+      "destination": "/blog/wireless-charging-desk-embedding-guide",
+      "permanent": true
+    },
+    {
+      "source": "/zaikin-desk-takasa-keisan",
+      "destination": "/blog/zaikin-desk-takasa-keisan",
+      "permanent": true
+    },
+    {
+      "source": "/zone-hairu-houhou-shigoto-shuuchuu",
+      "destination": "/blog/zone-hairu-houhou-shigoto-shuuchuu",
+      "permanent": true
+    },
+    {
+      "source": "/%E3%83%9F%E3%83%8B%E3%83%9E%E3%83%AA%E3%82%B9%E3%83%88-%E5%A3%81%E7%B4%99-4k-pc-%E9%9B%86%E4%B8%AD%E5%8A%9B-%E5%A4%A7%E4%BA%BA%E3%81%AE%E9%81%B8%E6%8A%9E",
+      "destination": "/blog/%E3%83%9F%E3%83%8B%E3%83%9E%E3%83%AA%E3%82%B9%E3%83%88-%E5%A3%81%E7%B4%99-4k-pc-%E9%9B%86%E4%B8%AD%E5%8A%9B-%E5%A4%A7%E4%BA%BA%E3%81%AE%E9%81%B8%E6%8A%9E",
+      "permanent": true
+    }
+  ]
+}
