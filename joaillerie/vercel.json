@@ -107,7 +107,12 @@
     },
     {
       "source": "/oeil-bleu-grec-signification-protection-matiasma/",
-      "destination": "/blog/oeil-bleu-grec-signification-protection-matiasma/",
+      "destination": "/blog/oeil-bleu-grec-signification-protection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/oeil-bleu-grec-signification-protection-matiasma/",
+      "destination": "/blog/oeil-bleu-grec-signification-protection/",
       "permanent": true
     },
     {
