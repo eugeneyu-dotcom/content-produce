@@ -1,17 +1,18 @@
 ---
 name: content-farm-writer
-version: 2.2.0
+version: 2.3.0
 description: |
   研究這個專案 4 個內容站(joaillerie-et-symbolique.com、encyclopedia-of-dreams.com、
   minimal-desk-studio.com、global-urban-legends.com)的關鍵字機會,並用 Human_Context(HC)
   驅動的擬人寫作系統撰寫 SEO 文章,作為 ai_agent.js --prepare/--finish 流程裡「由 Claude
   來寫」的那一步。當使用者想要新的關鍵字/選題靈感、要求依照 writer_briefs/*.brief.json
   撰寫文章、想新增 pillar post,或想參考 Search Console 成效數據來決定內容方向時使用。
-  內含 2026-07-17 GSC 逐篇文章層級稽核與 2026-07-20 寫作品質檢討的經驗教訓:評斷內容品質前
-  先排除「死網址/轉址」問題的干擾、選新題目前先檢查是否與既有文章關鍵字互打、HC 五段素材
+  內含 2026-07-17 GSC 逐篇文章層級稽核與 2026-07-20/22 寫作品質檢討的經驗教訓:評斷內容品質
+  前先排除「死網址/轉址」問題的干擾、選新題目前先檢查是否與既有文章關鍵字互打、HC 五段素材
   要圍繞一個具體骨幹物件展開而不是逐段填空、法文站有自己的 AI 慣用語清單
-  (`references/anti-ai-tells-fr.md`)、標題策略要刻意實驗並記錄到
-  `title_experiments.csv` 供之後回頭核對成效。
+  (`references/anti-ai-tells-fr.md`)、標題策略採固定輪替(讀 `title_experiments.csv`
+  最後幾列決定下一個策略,不是憑感覺判斷這篇適合哪種——感覺判斷實測會一直漂移回同一個
+  答案)。
 license: MIT
 compatibility: claude-code
 allowed-tools:
@@ -111,12 +112,25 @@ API)、組裝 Astro Markdown,並把 `Status=USED` 寫回 Sheet。
    Sa Signification」「Guide de X」)——那正是所有競爭對手在用的說法,寫得一樣等於沒有
    差異化。優先做兩件事:①把使用者實際搜尋的詞盡量原樣放進標題前段;②承諾一個具體、
    可被挑戰的東西(一個反差、一個誤解被戳破、一個「真相」),而不是中立地描述「這是什麼」。
-   但承諾的東西文章裡要真的兌現,不是標題黨。**這塊目前沒有點擊數據能證明哪種風格更有效**
-   (曝光量還太小),所以要刻意嘗試不同策略、逐篇記錄,而不是每篇都用同一套直覺寫法——
-   寫完文章後,在 `Search_Console_Check/title_experiments.csv` 加一列,記下這篇標題屬於
-   哪種策略(`contrast` 反差破解 / `number` 數字清單 / `question` 疑問句直球)。累積夠多
-   篇之後,可以用 `gsc_content_farm_effectiveness.js` 依策略分組回頭核對哪種真的有效,
-   不用憑感覺猜。
+   但承諾的東西文章裡要真的兌現,不是標題黨。
+
+   **這塊目前沒有點擊數據能證明哪種風格更有效**(曝光量還太小),所以要刻意嘗試不同策略。
+   **但「刻意」不能只靠當下判斷**——實測發現,每個主題個別判斷「這篇適合哪種策略」時,
+   會一直得出同一個答案(反差破解型),因為每個主題感覺起來都很適合戳破一個迷思,判斷力
+   本身有慣性,不會自己發現自己在重複。所以規則要改成機械式輪替,不是憑感覺:
+
+   - **寫標題前,先讀 `Search_Console_Check/title_experiments.csv` 最後 1-3 列**,看最近
+     用過什麼策略。
+   - 用固定輪替順序 `contrast → number → question → contrast → ...`,直接挑「上一個用過的
+     策略」的下一個,不要重新評估這篇主題感覺適合哪種——感覺判斷正是失效的那個環節。
+   - 同一批寫好幾篇文章時,批次內部也要輪替,不能各自獨立判斷後巧合全部落在同一種
+     (這正是 2026-07-22 那批 4 篇全部變成 contrast 型的原因:每篇都是獨立判斷,没有人
+     去看「上一篇用了什麼」)。
+   - 寫完後一樣要在 `title_experiments.csv` 加一列記錄,這樣下一次才讀得到「上一個用的
+     是什麼」——記錄不是為了事後歸檔好看,是為了餵給下一次的輪替判斷用。
+
+   累積夠多篇之後,可以用 `gsc_content_farm_effectiveness.js` 依策略分組回頭核對哪種真的
+   有效,不用憑感覺猜。
 7. **表格 vs 純敘事**:判斷依據不是「SEO 文章都該有表格」,而是看第 1 點挑的維度,再用
    一個小測試確認:
 
