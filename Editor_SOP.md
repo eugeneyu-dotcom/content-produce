@@ -115,6 +115,18 @@ Claude Code 讀取素材後親自寫，不再是 `node ai_agent.js` 一鍵全自
    ```
    （每個站台、每篇文章都要照這樣把實際新增/修改的檔案一一列出。）
 4. Push 成功後，Vercel 會自動偵測並開始部署，約 1 分鐘後新文章就會在正式網站上線。
+5. **同步備份到 Bitbucket**（2026-07-23 新增）：GitHub 這邊 push 完之後，另外切到獨立的
+   umbrella repo 資料夾，把這次更新同步過去備份。這個備份跟 GitHub/Vercel 完全獨立，純粹
+   是多留一份紀錄，**不會影響部署**，順序上沒有先後限制，通常跟著 GitHub push 一起做即可：
+   ```bash
+   cd "/Users/eugeneyu/Desktop/eugeneyu-bitbucket"
+   git fetch old-content-farm
+   git subtree pull --prefix=old-content-farm old-content-farm main -m "Sync old-content-farm updates"
+   git push origin main
+   ```
+   （這個 umbrella repo 底下用資料夾分開存放好幾個專案，`old-content-farm/` 只是其中一個
+   子資料夾；上面的指令只會同步這個專案自己的部分。如果 `git subtree pull` 顯示
+   `Already up to date`，代表沒有新變更需要同步，屬於正常情況，直接跳過 `push` 也可以。）
 
 🎉 **完成！**
 

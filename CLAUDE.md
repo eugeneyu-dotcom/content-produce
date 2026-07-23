@@ -233,7 +233,19 @@ curl -s -o /dev/null -w "%{http_code}" "https://www.joaillerie-et-symbolique.com
 
 # 查看 agent 執行紀錄（若用重導向跑）
 tail -f /tmp/agent_run.log
+
+# 同步備份到 Bitbucket（GitHub push 完之後照跑，不影響 Vercel 部署）
+cd "/Users/eugeneyu/Desktop/eugeneyu-bitbucket"
+git fetch old-content-farm
+git subtree pull --prefix=old-content-farm old-content-farm main -m "Sync old-content-farm updates"
+git push origin main
 ```
+
+**Bitbucket 備份**（2026-07-23 新增）：GitHub（`origin`）依然是唯一的部署來源，Vercel 只
+接 GitHub，不受影響。另外維護一份獨立的 umbrella repo 於
+`/Users/eugeneyu/Desktop/eugeneyu-bitbucket`，對應 Bitbucket 上 `maxoraai/eugeneyu.git`，
+把好幾個專案分別放在不同子資料夾備份（這個專案對應 `old-content-farm/` 子資料夾），
+用 `git subtree` 保留完整 commit 歷史。詳細操作見 `Editor_SOP.md` 步驟 5。
 
 ---
 
