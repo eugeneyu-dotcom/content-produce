@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/lenergie-des-pierres-et-la-guerison/",
+      "destination": "/category/vertus-spirituelles-des-pierres/",
+      "permanent": true
+    },
+    {
+      "source": "/category/alchimie-des-metaux/",
+      "destination": "/category/m-taux-et-nergie-alchimique/",
+      "permanent": true
+    },
+    {
       "source": "/abeille-bijoux-symbolisme/",
       "destination": "/blog/abeille-bijoux-symbolisme/",
       "permanent": true
