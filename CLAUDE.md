@@ -234,18 +234,22 @@ curl -s -o /dev/null -w "%{http_code}" "https://www.joaillerie-et-symbolique.com
 # 查看 agent 執行紀錄（若用重導向跑）
 tail -f /tmp/agent_run.log
 
-# 同步備份到 Bitbucket（GitHub push 完之後照跑，不影響 Vercel 部署）
+# 同步備份到 Bitbucket（GitHub push 完之後照跑，不影響 Vercel 部署，只有 Eugene 自己做）
 cd "/Users/eugeneyu/Desktop/eugeneyu-bitbucket"
-git fetch old-content-farm
-git subtree pull --prefix=old-content-farm old-content-farm main -m "Sync old-content-farm updates"
-git push origin main
+./sync-all.sh
 ```
 
-**Bitbucket 備份**（2026-07-23 新增）：GitHub（`origin`）依然是唯一的部署來源，Vercel 只
-接 GitHub，不受影響。另外維護一份獨立的 umbrella repo 於
+**Bitbucket 備份**（2026-07-23 新增，2026-07-24 改為腳本化）：GitHub（`origin`）依然是唯一
+的部署來源，Vercel 只接 GitHub，不受影響。另外維護一份獨立的 umbrella repo 於
 `/Users/eugeneyu/Desktop/eugeneyu-bitbucket`，對應 Bitbucket 上 `maxoraai/eugeneyu.git`，
-把好幾個專案分別放在不同子資料夾備份（這個專案對應 `old-content-farm/` 子資料夾），
-用 `git subtree` 保留完整 commit 歷史。詳細操作見 `Editor_SOP.md` 步驟 5。
+底下用 `projects.txt` 登記好幾個個人專案（各自一個子資料夾備份，這個專案對應
+`old-content-farm/`），跑 `./sync-all.sh` 就會照清單自動對每個登記的專案做
+`git subtree add/pull`，有變更的話統一 push 一次。詳細操作見 `Editor_SOP.md` 步驟 5。
+
+⚠️ 這個 umbrella repo **只存在 Eugene 自己的電腦上，是私人的跨專案備份，跟代班/協作同事的
+工作流程無關**——代班交接時**不要**把 `eugeneyu-bitbucket` 資料夾、Bitbucket 帳號或 token
+一併交給對方；同事只需要處理 GitHub（`origin`）這條線，Bitbucket 備份留給 Eugene 自己事後
+補跑即可，不會卡到代班進度。
 
 ---
 
@@ -256,3 +260,6 @@ git push origin main
 - `Editor_SOP.md` — 編輯 SOP
 - `Project_Migration_Plan.md` — 專案遷移計畫
 - `N8N_work - Workflow_Config.csv` — 工作任務清單（從 Google Sheet 下載）
+- `new-keywords.csv` — 全新關鍵字待寫清單（尚未派工到 Sheet 的候選關鍵字）
+- `content-followups.md` — 既有文章待重寫/待重新定位的追蹤清單（跟 new-keywords.csv 不同，
+  這裡是舊文章要修，不是新關鍵字要寫）
