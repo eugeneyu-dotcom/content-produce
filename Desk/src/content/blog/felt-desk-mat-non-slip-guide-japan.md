@@ -2,7 +2,7 @@
 title: "「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"
 slug: "felt-desk-mat-non-slip-guide-japan"
 pubDate: 2026-05-04T03:22:35
-description: "Migrated post from WordPress."
+description: "フェルトデスクマットの「滑り」を防ぐ仕組みを物理学の視点で解説。シリコンドット加工と天然ゴムコーティングの違い、よくある3つの誤解、他素材との比較、選び方とお手入れ方法までまとめました。"
 type: "post"
 heroImage: "/media-images/posts/felt-desk-mat-non-slip-guide-japan-cover.png"
 category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
