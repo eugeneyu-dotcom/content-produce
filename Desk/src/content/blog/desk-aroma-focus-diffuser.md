@@ -2,7 +2,7 @@
 title: "デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践"
 slug: "desk-aroma-focus-diffuser"
 pubDate: 2026-03-11T09:26:16
-description: "Migrated post from WordPress."
+description: "ユーカリやローズマリーなど精油が集中力に与える科学的効果と、デスクに適したディフューザーの選び方を解説します。"
 type: "post"
 heroImage: "/media-images/posts/desk-aroma-focus-diffuser-cover.png"
 category: "6. バイオフィリックデザイン (Biophilic Design)"

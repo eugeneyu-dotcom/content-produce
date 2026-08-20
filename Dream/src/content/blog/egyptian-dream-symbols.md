@@ -2,7 +2,7 @@
 title: "Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance"
 slug: "egyptian-dream-symbols"
 pubDate: 2026-03-23T08:08:44
-description: "Migrated post from WordPress."
+description: "Explores how ancient Egyptians interpreted dreams as divine messages, detailing temple priesthood rituals, dream books, and specific symbol meanings."
 type: "post"
 heroImage: "/media-images/posts/egyptian-dream-symbols-cover.png"
 category: "7. Cultural & Spiritual Evolution"

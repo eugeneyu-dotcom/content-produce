@@ -2,7 +2,7 @@
 title: "The Mothman in the Machine: Decoding the Cultural Impact of Cryptozoology"
 slug: "cultural-impact-of-cryptozoology"
 pubDate: 2026-04-27T03:30:12
-description: "Migrated post from WordPress."
+description: "How the Mothman went from a local 1960s omen to a global digital archetype, and how cryptozoology gets commercialized, memed, and reborn online."
 type: "post"
 heroImage: "/media-images/posts/cultural-impact-of-cryptozoology-cover.png"
 category: "3. Cryptids & Biological Anomalies"

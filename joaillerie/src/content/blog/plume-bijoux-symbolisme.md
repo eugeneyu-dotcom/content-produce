@@ -2,7 +2,7 @@
 title: "signification plume en bijoux"
 slug: "plume-bijoux-symbolisme"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "La plume en joaillerie : symbole de liberté et de spiritualité, de la plume d'aigle amérindienne à celle de Ma'at, en passant par le paon et la colombe."
 category: "Secrets de la Nature"
 heroImage: "/media-images/posts/plume-bijoux-symbolisme-cover.png"
 ---

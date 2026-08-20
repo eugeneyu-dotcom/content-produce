@@ -2,7 +2,7 @@
 title: "Anima and Animus in Dreams: A Jungian Guide to Your Inner Counterpart"
 slug: "anima-and-animus-in-dreams"
 pubDate: 2026-04-16T02:25:19
-description: "Migrated post from WordPress."
+description: "A Jungian guide to the anima and animus figures in dreams, tracing their evolution from Freud to Jung and how to interpret and integrate them."
 type: "post"
 heroImage: "/media-images/posts/anima-and-animus-in-dreams-cover.png"
 category: "2. Jungian Archetypes"

@@ -2,7 +2,7 @@
 title: "集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"
 slug: "focus-lighting-cct"
 pubDate: 2026-03-26T09:55:58
-description: "Migrated post from WordPress."
+description: "照明の色温度が集中力や睡眠ホルモンに与える科学的影響を解説し、作業や時間帯に合わせた最適な色温度の選び方を紹介します。"
 type: "post"
 heroImage: "/media-images/posts/focus-lighting-cct-cover.png"
 category: "4. 照明とサーカディアンリズム (Lighting Design)"

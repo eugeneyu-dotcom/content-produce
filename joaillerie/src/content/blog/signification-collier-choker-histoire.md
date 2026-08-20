@@ -2,7 +2,7 @@
 title: "signification collier choker histoire"
 slug: "signification-collier-choker-histoire"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Le collier choker : de l'amulette protectrice égyptienne au signe royal d'Anne Boleyn, jusqu'à son retour grunge des années 90, un bijou d'ambivalence."
 category: "Identité et Styles"
 heroImage: "/media-images/posts/signification-collier-choker-histoire-cover.png"
 ---

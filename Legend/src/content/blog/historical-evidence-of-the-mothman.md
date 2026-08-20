@@ -2,7 +2,7 @@
 title: "Deconstructing the Mothman: An Investigation into the Historical Evidence and Digital Folklore"
 slug: "historical-evidence-of-the-mothman"
 pubDate: 2026-04-10T08:28:41
-description: "Migrated post from WordPress."
+description: "The 1966 Mothman sightings in Point Pleasant, the Silver Bridge collapse that followed, and the skeptical bird-misidentification theories behind them."
 type: "post"
 heroImage: "/media-images/posts/historical-evidence-of-the-mothman-cover.png"
 category: "3. Cryptids & Biological Anomalies"

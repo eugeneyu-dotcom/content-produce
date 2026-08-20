@@ -2,7 +2,7 @@
 title: "Mirror Rituals: An Investigator's Guide to Reflections as Portals in Global Folklore"
 slug: "mirror-rituals-digital-folklore-analysis"
 pubDate: 2026-05-11T09:46:16
-description: "Migrated post from WordPress."
+description: "Why mirrors feel like portals: the psychology and history behind Bloody Mary and other mirror rituals, from ancient scrying to digital legend-tripping."
 type: "post"
 heroImage: "/media-images/posts/mirror-rituals-digital-folklore-analysis-cover.png"
 category: "5. Rituals & Forbidden Games"

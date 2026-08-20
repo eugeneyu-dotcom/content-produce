@@ -2,7 +2,7 @@
 title: "A Definitive Study: How REM Sleep and Memory Consolidation Rewire Your Brain"
 slug: "rem-sleep-and-memory-consolidation-study"
 pubDate: 2026-05-04T03:22:11
-description: "Migrated post from WordPress."
+description: "A step-by-step look at how REM and NREM sleep consolidate memory: hippocampal tagging, slow-wave replay, and synaptic pruning that reshape the brain overnight."
 type: "post"
 heroImage: "/media-images/posts/rem-sleep-and-memory-consolidation-study-cover.png"
 category: "1. Neurobiological Foundations"

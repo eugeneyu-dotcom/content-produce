@@ -2,7 +2,7 @@
 title: "Why Do We Dream of Being Chased? Unraveling the Psychology of Pursuit Dreams"
 slug: "chased-dreams-psychology-meaning"
 pubDate: 2026-03-19T02:47:23
-description: "Migrated post from WordPress."
+description: "Why we dream of being chased: the psychology and neuroscience of pursuit dreams, from avoided fears and evolutionary threat simulation to collective anxieties."
 type: "post"
 heroImage: "/media-images/posts/chased-dreams-psychology-meaning-cover.png"
 category: "4. Evolutionary Threat Simulation"

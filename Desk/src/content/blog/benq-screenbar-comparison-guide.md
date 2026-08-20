@@ -2,7 +2,7 @@
 title: "BenQ ScreenBarシリーズ徹底比較：あなたに最適なモニターライトはどれ？"
 slug: "benq-screenbar-comparison-guide"
 pubDate: 2026-03-09T10:54:20
-description: "Migrated post from WordPress."
+description: "BenQ ScreenBar・Pro・Halo 2を価格や照度、自動調光、背光機能で徹底比較し、用途別に最適なモニターライトの選び方を解説します。"
 type: "post"
 heroImage: "/media-images/posts/benq-screenbar-comparison-guide.png"
 category: "4. 照明とサーカディアンリズム (Lighting Design)"

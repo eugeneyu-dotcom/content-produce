@@ -2,7 +2,7 @@
 title: "The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026"
 slug: "modern-internet-ghost-stories-2026"
 pubDate: 2026-04-30T07:35:11
-description: "Migrated post from WordPress."
+description: "How AI and ambient tech are birthing a new kind of ghost story in 2026, where the haunting is generated from your own private data and devices."
 type: "post"
 heroImage: "/media-images/posts/modern-internet-ghost-stories-2026-cover.png"
 category: "4. Digital Folklore & Creepypastas"

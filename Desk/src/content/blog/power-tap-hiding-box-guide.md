@@ -2,7 +2,7 @@
 title: "【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学"
 slug: "power-tap-hiding-box-guide"
 pubDate: 2026-04-29T02:45:28
-description: "Migrated post from WordPress."
+description: "電源タップ収納ボックスがトラッキング火災を防ぐ仕組みと、素材別の特徴やサイズ選びのポイントを解説します。"
 type: "post"
 heroImage: "/media-images/posts/power-tap-hiding-box-guide-cover.png"
 category: "3. 配線管理の美學 (Cable Management)"

@@ -2,7 +2,7 @@
 title: "Journey Through the Veil: The Healing Power of Shamanic Dream Practices"
 slug: "shamanic-dream-healing-journey"
 pubDate: 2026-03-16T07:44:34
-description: "Migrated post from WordPress."
+description: "Explores shamanic dream healing across indigenous traditions and modern therapy, covering soul retrieval, dream altars, and trauma recovery through dreamwork."
 type: "post"
 heroImage: "/media-images/posts/shamanic-dream-healing-journey-cover.png"
 category: "7. Cultural & Spiritual Evolution"

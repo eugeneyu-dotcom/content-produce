@@ -2,7 +2,7 @@
 title: "difference or jaune et or rose symbole"
 slug: "difference-or-jaune-et-or-rose-symbole"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Or jaune ou or rose ? Différences d'alliages, évolution symbolique de la tradition solaire à la romance victorienne, et conseils pour choisir selon sa peau."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/difference-or-jaune-et-or-rose-symbole-cover.png"
 ---

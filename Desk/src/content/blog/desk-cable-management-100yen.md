@@ -2,7 +2,7 @@
 title: "デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術"
 slug: "desk-cable-management-100yen"
 pubDate: 2026-04-27T07:19:57
-description: "Migrated post from WordPress."
+description: "100均のワイヤーネットや結束バンドを使ったデスク下配線整理のDIY手順を解説し、専用製品との比較や活用例も紹介します。"
 type: "post"
 heroImage: "/media-images/posts/desk-cable-management-100yen-cover.png"
 category: "3. 配線管理の美学 (Cable Management)"

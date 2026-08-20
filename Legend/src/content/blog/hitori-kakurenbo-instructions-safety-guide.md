@@ -2,7 +2,7 @@
 title: "Hitori Kakurenbo Instructions & Safety: A Folklorist's Guide to a Dangerous Game"
 slug: "hitori-kakurenbo-instructions-safety-guide"
 pubDate: 2026-05-15T10:43:48
-description: "Migrated post from WordPress."
+description: "A folklorist's breakdown of Hitori Kakurenbo, Japan's one-man hide-and-seek ritual, its step-by-step instructions, symbolism, and reported dangers."
 type: "post"
 heroImage: "/media-images/posts/hitori-kakurenbo-instructions-safety-guide-cover.png"
 category: "5. Rituals & Forbidden Games"

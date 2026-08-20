@@ -2,7 +2,7 @@
 title: "The Neurological Illusion: Why Do Dreams Feel Real According to Science?"
 slug: "why-do-dreams-feel-real-science"
 pubDate: 2026-05-13T02:28:29
-description: "Migrated post from WordPress."
+description: "Explains the neuroscience behind why dreams feel real, covering REM brain activity, prefrontal deactivation, and theories on dreaming's purpose."
 type: "post"
 heroImage: "/media-images/posts/why-do-dreams-feel-real-science-cover.png"
 category: "1. Neurobiological Foundations"

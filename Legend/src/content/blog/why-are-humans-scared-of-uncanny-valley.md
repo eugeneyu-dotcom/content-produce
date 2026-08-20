@@ -2,7 +2,7 @@
 title: " forbidden urban legend games"
 slug: "why-are-humans-scared-of-uncanny-valley"
 pubDate: 2026-06-10T04:19:59.912Z
-description: "Migrated post from WordPress."
+description: "Why almost-human faces unsettle us: the evolutionary threat-detection and disease-avoidance theories behind the uncanny valley, from CGI films to real robots."
 heroImage: "/media-images/posts/why-are-humans-scared-of-uncanny-valley-cover.png"
 ---
 <div class="content-container" style="max-width: 1000px; margin: 0 auto; width: 92%; padding: 30px 0; box-sizing: border-box;"Segoe UI', Roboto, Helvetica, Arial, sans-serif;">

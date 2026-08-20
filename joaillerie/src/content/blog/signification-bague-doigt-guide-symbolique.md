@@ -2,7 +2,7 @@
 title: "signification bague doigt"
 slug: "signification-bague-doigt-guide-symbolique"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Guide de la signification des bagues selon le doigt porté : symbolique gréco-romaine, variations culturelles et démystification du mythe de la Vena Amoris."
 heroImage: "/media-images/posts/signification-bague-doigt-guide-symbolique-cover.png"
 ---
 

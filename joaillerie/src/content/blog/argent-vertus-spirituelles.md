@@ -2,7 +2,7 @@
 title: "argent massif vertus spirituelles"
 slug: "argent-vertus-spirituelles"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "L'argent massif : vertus spirituelles liées à la lune et à la pureté, réputé depuis l'Antiquité comme bouclier protecteur contre les forces négatives."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/argent-vertus-spirituelles-cover.png"
 ---

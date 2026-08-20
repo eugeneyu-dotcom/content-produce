@@ -2,7 +2,7 @@
 title: "デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術"
 slug: "desk-setup-unity-guide-japan"
 pubDate: 2026-05-11T08:04:14
-description: "Migrated post from WordPress."
+description: "色彩・素材・五感の観点からデスク周りに統一感を出す方法を解説し、思考を研ぎ澄ますワークスペースの作り方を紹介します。"
 type: "post"
 heroImage: "/media-images/posts/desk-setup-unity-guide-japan-cover.png"
 category: "2. 色彩理論と素材感 (Color Theory & Materiality)"

@@ -2,7 +2,7 @@
 title: "Secular Spirituality in Modern Dream Work: From Divine Oracle to Personal Algorithm"
 slug: "secular-spirituality-in-modern-dream-work"
 pubDate: 2026-04-29T02:45:10
-description: "Migrated post from WordPress."
+description: "How dream work shifted from divine oracle to personal meaning-making, tracing Freud and Jung's influence on today's secular approach to interpreting dreams."
 type: "post"
 heroImage: "/media-images/posts/secular-spirituality-in-modern-dream-work-cover.png"
 category: "7. Cultural & Spiritual Evolution"

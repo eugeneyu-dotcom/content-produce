@@ -2,7 +2,7 @@
 title: "LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法"
 slug: "desk-indirect-lighting-guide"
 pubDate: 2026-03-16T07:44:48
-description: "Migrated post from WordPress."
+description: "LEDテープライトを使った間接照明の設置方法と、色温度による効果の違いをデスクライトや天井照明と比較して解説します。"
 type: "post"
 heroImage: "/media-images/posts/desk-indirect-lighting-guide-cover.png"
 category: "4. 照明とサーカディアンリズム (Lighting Design)"

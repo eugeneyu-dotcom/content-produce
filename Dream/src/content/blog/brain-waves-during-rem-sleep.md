@@ -2,7 +2,7 @@
 title: "The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep"
 slug: "brain-waves-during-rem-sleep"
 pubDate: 2026-04-30T07:34:25
-description: "Migrated post from WordPress."
+description: "A look at the theta, beta, and gamma brain waves defining REM sleep, how they differ from deep NREM sleep, and what they reveal about dream vividness."
 type: "post"
 heroImage: "/media-images/posts/brain-waves-during-rem-sleep-cover.png"
 category: "1. Neurobiological Foundations"

@@ -2,7 +2,7 @@
 title: "symbolique de l'or en bijouterie"
 slug: "symbolique-or-bijouterie-pouvoir-divinite-amour"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Symbolique de l'or en bijouterie : chair des dieux en Égypte, larmes du soleil chez les Incas, et promesse d'amour éternel dans l'alliance de mariage."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/symbolique-or-bijouterie-pouvoir-divinite-amour-cover.png"
 ---

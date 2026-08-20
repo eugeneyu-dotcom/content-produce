@@ -2,7 +2,7 @@
 title: "スタンディングデスク 疲れる 対策"
 slug: "standing-desk-fatigue-solutions-japan"
 pubDate: 2026-06-10T04:19:59.910Z
-description: "Migrated post from WordPress."
+description: "スタンディングデスクで疲れる原因を血流と筋肉の仕組みから解説し、10年使用者が実践する姿勢や休憩の対策を紹介します。"
 heroImage: "/media-images/posts/standing-desk-fatigue-solutions-japan-cover.png"
 ---
 

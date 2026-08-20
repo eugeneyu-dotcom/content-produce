@@ -2,7 +2,7 @@
 title: "Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious"
 slug: "jungian-dream-symbols-guide"
 pubDate: 2026-04-09T02:43:18
-description: "Migrated post from WordPress."
+description: "Explains Jung's view of dream symbols as dynamic expressions, not fixed meanings, covering the amplification method and how it differs from Freud's symbolism."
 type: "post"
 heroImage: "/media-images/posts/jungian-dream-symbols-guide-cover.png"
 category: "2. Jungian Archetypes"

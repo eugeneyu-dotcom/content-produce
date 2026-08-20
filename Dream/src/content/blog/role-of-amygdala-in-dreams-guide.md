@@ -2,7 +2,7 @@
 title: "Harnessing the Dream Engine: A Step-by-Step Guide to the Amygdala's Role in Dreams"
 slug: "role-of-amygdala-in-dreams-guide"
 pubDate: 2026-05-11T09:48:50
-description: "Migrated post from WordPress."
+description: "How the amygdala fuels dream emotion: the neuroscience behind nightmares, lesion studies, and practical steps to calm fear-driven dreams before sleep."
 type: "post"
 heroImage: "/media-images/posts/role-of-amygdala-in-dreams-guide-cover.png"
 category: "1. Neurobiological Foundations"

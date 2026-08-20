@@ -2,7 +2,7 @@
 title: "デスクマット フェルト デメリット"
 slug: "desk-mat-felt-demerit"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "Migrated post from WordPress."
+description: "フェルト製デスクマットの毛玉やマウス感度低下、液体染みなどのデメリットを構造から解説し、他素材との比較も紹介します。"
 heroImage: "/media-images/posts/desk-mat-felt-demerit-cover.png"
 ---
 

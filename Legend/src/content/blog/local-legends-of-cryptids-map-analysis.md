@@ -2,7 +2,7 @@
 title: "Mapping the Unseen: How the Local Legends of Cryptids Map Charts the Geography of Fear"
 slug: "local-legends-of-cryptids-map-analysis"
 pubDate: 2026-04-13T09:04:49
-description: "Migrated post from WordPress."
+description: "How crowdsourced cryptid maps turn scattered sightings into a geography of fear, revealing the anxieties, tourism, and folklore tied to each region."
 type: "post"
 heroImage: "/media-images/posts/local-legends-of-cryptids-map-analysis-cover.png"
 category: "3. Cryptids & Biological Anomalies"

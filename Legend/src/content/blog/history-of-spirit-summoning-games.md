@@ -2,7 +2,7 @@
 title: "From Oracle to Ouija: An Investigative History of Spirit Summoning Games"
 slug: "history-of-spirit-summoning-games"
 pubDate: 2026-05-18T07:35:09
-description: "Migrated post from WordPress."
+description: "From ancient oracles to the Ouija board and Kokkuri-san: a history of spirit-summoning games, why they spread, and where AI seances may take them next."
 type: "post"
 heroImage: "/media-images/posts/history-of-spirit-summoning-games-cover.png"
 category: "5. Rituals & Forbidden Games"

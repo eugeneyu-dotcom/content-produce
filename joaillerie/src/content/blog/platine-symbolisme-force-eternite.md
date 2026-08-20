@@ -2,7 +2,7 @@
 title: "platine symbolisme force"
 slug: "platine-symbolisme-force-eternite"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Le platine, métal de la force et de l'éternité : propriétés physiques, histoire royale, comparaison avec l'or et mythes démystifiés sur sa résistance."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/platine-symbolisme-force-eternite-cover.png"
 ---

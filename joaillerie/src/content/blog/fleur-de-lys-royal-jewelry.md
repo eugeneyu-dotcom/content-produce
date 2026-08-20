@@ -2,7 +2,7 @@
 title: "bijoux fleur de lys royauté"
 slug: "fleur-de-lys-royal-jewelry"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "La fleur de lys en joaillerie : emblème sacré de la royauté française, de la légende de Clovis à Louis XIV, réinterprété aujourd'hui par la haute joaillerie."
 category: "Secrets de la Nature"
 heroImage: "/media-images/posts/fleur-de-lys-royal-jewelry-cover.png"
 ---

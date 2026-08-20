@@ -2,7 +2,7 @@
 title: " cultural significance dreams"
 slug: "psychological-reason-for-sleep-paralysis-demons"
 pubDate: 2026-06-10T04:19:59.909Z
-description: "Migrated post from WordPress."
+description: "Explains the neuroscience behind sleep paralysis demons, tracing how REM atonia, fear circuits, and cultural imagery create the terrifying illusion."
 heroImage: "/media-images/posts/psychological-reason-for-sleep-paralysis-demons-cover.png"
 ---
 <div class="wp-block-uagb-container uagb-block-b8f00iiy alignfull" style="background-padding: 40px 0;">

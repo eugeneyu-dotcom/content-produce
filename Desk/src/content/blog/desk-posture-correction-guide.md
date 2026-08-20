@@ -2,7 +2,7 @@
 title: "人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術"
 slug: "desk-posture-correction-guide"
 pubDate: 2026-04-07T09:35:16
-description: "Migrated post from WordPress."
+description: "骨盤サポートクッションやモニターアームなど姿勢矯正グッズの人間工学的効果を比較し、正しい使い方と神話を解説します。"
 type: "post"
 heroImage: "/media-images/posts/desk-posture-correction-guide-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"

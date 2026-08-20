@@ -2,7 +2,7 @@
 title: "porter une bague au petit doigt"
 slug: "porter-bague-petit-doigt-signification"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "La bague au petit doigt : de la chevalière aristocratique scellant les documents à son adoption moderne comme symbole d'indépendance et d'affirmation de soi."
 category: "Langage des Doigts"
 heroImage: "/media-images/posts/porter-bague-petit-doigt-signification-cover.png"
 ---

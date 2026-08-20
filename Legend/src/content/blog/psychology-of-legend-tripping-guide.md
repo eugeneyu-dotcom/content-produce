@@ -2,7 +2,7 @@
 title: "A Digital Folklorist's Guide: Deconstructing the Psychology of Legend Tripping"
 slug: "psychology-of-legend-tripping-guide"
 pubDate: 2026-05-04T03:22:52
-description: "Migrated post from WordPress."
+description: "The psychology of legend tripping: a 4-step breakdown of why people seek out haunted sites, and the mental mechanics that turn ordinary fear into belief."
 type: "post"
 heroImage: "/media-images/posts/psychology-of-legend-tripping-guide-cover.png"
 category: "5. Rituals & Forbidden Games"

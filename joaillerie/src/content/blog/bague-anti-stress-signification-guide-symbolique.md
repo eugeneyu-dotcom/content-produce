@@ -2,7 +2,7 @@
 title: "bague anti stress signification"
 slug: "bague-anti-stress-signification-guide-symbolique"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Signification de la bague anti-stress : origines liées aux chapelets et pierres d'inquiétude, guide en 4 étapes pour l'utiliser comme outil de pleine conscience."
 heroImage: "/media-images/posts/bague-anti-stress-signification-guide-symbolique-cover.png"
 ---
 

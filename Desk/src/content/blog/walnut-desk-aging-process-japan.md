@@ -2,7 +2,7 @@
 title: "ウォールナットデスクの経年変化：5年後の「景色」を育てるということ"
 slug: "walnut-desk-aging-process-japan"
 pubDate: 2026-04-30T07:34:46
-description: "Migrated post from WordPress."
+description: "ウォールナットデスクが5年で色や質感を変える経年変化の化学的プロセスと、その美しさを育てるメンテナンス法を紹介します。"
 type: "post"
 heroImage: "/media-images/posts/walnut-desk-aging-process-japan-cover.png"
 category: "2. 色彩理論と素材感 (Color Theory & Materiality)"

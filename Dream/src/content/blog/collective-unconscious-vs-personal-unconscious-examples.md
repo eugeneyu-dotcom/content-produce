@@ -2,7 +2,7 @@
 title: "Collective Unconscious vs. Personal Unconscious: A Deep Dive into the Psyche's Architecture"
 slug: "collective-unconscious-vs-personal-unconscious-examples"
 pubDate: 2026-04-13T09:04:11
-description: "Migrated post from WordPress."
+description: "Explains Jung's model of the psyche, contrasting the personal unconscious's private complexes with the inherited archetypes of the collective unconscious."
 type: "post"
 heroImage: "/media-images/posts/collective-unconscious-vs-personal-unconscious-examples-cover.png"
 category: "2. Jungian Archetypes"

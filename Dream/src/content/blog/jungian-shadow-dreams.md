@@ -1,8 +1,8 @@
 ---
-title: "Unveiling the Shadow: A Jungian Exploration of Dreams and the Unconscious Self"
+title: "Jungian Shadow in Dreams: Animal Symbols and the Unconscious"
 slug: "jungian-shadow-dreams"
 pubDate: 2026-03-13T07:13:36
-description: "Migrated post from WordPress."
+description: "Why does the Shadow show up as a snake, wolf, or fox in dreams? A Jungian guide to animal symbolism and the unconscious self you repress."
 type: "post"
 heroImage: "/media-images/posts/jungian-shadow-dreams-cover.png"
 category: "2. Jungian Archetypes"

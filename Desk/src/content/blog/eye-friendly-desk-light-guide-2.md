@@ -2,7 +2,7 @@
 title: "学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来"
 slug: "eye-friendly-desk-light-guide-2"
 pubDate: 2026-03-30T08:40:23
-description: "Migrated post from WordPress."
+description: "JIS規格の照度や演色性、フリッカー対策など、目に優しい学習用デスクライトを選ぶための科学的基準と実践法を解説します。"
 type: "post"
 heroImage: "/media-images/posts/eye-friendly-desk-light-guide-2-cover.png"
 category: "4. 照明とサーカディアンリズム (Lighting Design)"

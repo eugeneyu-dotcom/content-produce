@@ -2,7 +2,7 @@
 title: "マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学"
 slug: "magnetic-cable-holder-guide-japan"
 pubDate: 2026-04-24T03:00:27
-description: "Migrated post from WordPress."
+description: "Ankerのマグネット式ケーブルホルダーを3年使った体験から、磁力の仕組みや設置方法、結束バンドとの違いを語ります。"
 type: "post"
 heroImage: "/media-images/posts/magnetic-cable-holder-guide-japan-cover.png"
 category: "3. 配線管理の美學 (Cable Management)"

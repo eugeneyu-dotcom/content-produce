@@ -2,7 +2,7 @@
 title: "pendentif papillon symbole renaissance"
 slug: "papillon-pendant-renaissance-symbol"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Le pendentif papillon : symbole de métamorphose et de renaissance, de la Psyché grecque aux créations Art Nouveau de Lalique et Van Cleef & Arpels."
 category: "Secrets de la Nature"
 heroImage: "/media-images/posts/papillon-pendant-renaissance-symbol-cover.png"
 ---

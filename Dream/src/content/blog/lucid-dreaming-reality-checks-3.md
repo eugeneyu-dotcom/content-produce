@@ -2,7 +2,7 @@
 title: "Mastering Dream Lucidity: A Cognitive and Practical Guide to Reality Checks"
 slug: "lucid-dreaming-reality-checks-3"
 pubDate: 2026-03-30T08:39:23
-description: "Migrated post from WordPress."
+description: "A practical guide to lucid dreaming reality checks, comparing the hand check, nose pinch, and mirror test, the science behind why they work, and common myths."
 type: "post"
 heroImage: "/media-images/posts/lucid-dreaming-reality-checks-3-cover.png"
 category: "6. Lucid Dreaming & Agency"

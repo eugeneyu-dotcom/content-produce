@@ -2,7 +2,7 @@
 title: "signification bague index"
 slug: "signification-bague-index"
 pubDate: 2026-06-10T04:19:59.906Z
-description: "Migrated post from WordPress."
+description: "La bague à l'index : symbole d'autorité depuis les rois et évêques du Moyen Âge jusqu'à son interprétation moderne comme signe d'indépendance et d'ambition."
 category: "Langage des Doigts"
 heroImage: "/media-images/posts/signification-bague-index-cover.png"
 ---

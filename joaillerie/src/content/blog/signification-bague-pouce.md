@@ -2,7 +2,7 @@
 title: "signification bague pouce"
 slug: "signification-bague-pouce"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "La bague au pouce : symbole de volonté et d'indépendance, héritée des archers avec leur zihgir protecteur, aujourd'hui affirmation de style non-conformiste."
 heroImage: "/media-images/posts/signification-bague-pouce-cover.png"
 ---
 

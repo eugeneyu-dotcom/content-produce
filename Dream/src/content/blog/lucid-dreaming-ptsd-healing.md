@@ -2,7 +2,7 @@
 title: "Lucid Dreaming for PTSD Recovery: Navigating Trauma with Conscious Awareness"
 slug: "lucid-dreaming-ptsd-healing"
 pubDate: 2026-03-09T10:51:01
-description: "Migrated post from WordPress."
+description: "Explores how lucid dreaming techniques like MILD and WBTB can help PTSD sufferers confront nightmares, regain control, and reduce trauma symptoms."
 type: "post"
 heroImage: "/media-images/posts/lucid-dreaming-ptsd-healing.png"
 category: "6. Lucid Dreaming & Agency"

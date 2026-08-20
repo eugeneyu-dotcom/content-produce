@@ -2,7 +2,7 @@
 title: "4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで"
 slug: "4k-monitor-arm-guide"
 pubDate: 2026-03-12T08:28:06
-description: "Migrated post from WordPress."
+description: "4Kモニターアームの選び方から設置・調整方法まで、ガス式と機械式の違いや耐荷重の注意点を徹底解説します。"
 type: "post"
 heroImage: "/media-images/posts/4k-monitor-arm-guide-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"

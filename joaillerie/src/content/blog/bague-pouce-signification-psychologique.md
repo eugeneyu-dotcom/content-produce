@@ -2,7 +2,7 @@
 title: "bague au pouce signification psychologique"
 slug: "bague-pouce-signification-psychologique"
 pubDate: 2026-06-10T04:19:59.906Z
-description: "Migrated post from WordPress."
+description: "La bague au pouce : décodage psychologique d'un symbole de volonté et d'ego, de son héritage féministe historique à sa nouvelle signification numérique."
 category: "Langage des Doigts"
 heroImage: "/media-images/posts/bague-pouce-signification-psychologique-cover.png"
 ---

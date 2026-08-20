@@ -2,7 +2,7 @@
 title: "bijoux de deuil victoriens"
 slug: "bijoux-de-deuil-victoriens-memoire-chagrin"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Les bijoux de deuil victoriens : jais, cheveux tressés et perles racontent comment la reine Victoria a codifié le chagrin en un langage joaillier intime."
 category: "Rites de Passage"
 heroImage: "/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-cover.png"
 ---

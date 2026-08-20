@@ -2,7 +2,7 @@
 title: "Sigmund Freud Interpretation of Dreams Latent Content: A Modern Autopsy"
 slug: "sigmund-freud-interpretation-of-dreams-latent-content"
 pubDate: 2026-05-22T07:28:34
-description: "Migrated post from WordPress."
+description: "A skeptical, personal take on Freud's manifest-versus-latent dream model, tracing its evolution through Jung to the Activation-Synthesis Hypothesis."
 type: "post"
 heroImage: "/media-images/posts/sigmund-freud-interpretation-of-dreams-latent-content-cover.png"
 category: "3. Freudian Psychoanalysis"

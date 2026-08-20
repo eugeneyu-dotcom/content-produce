@@ -2,7 +2,7 @@
 title: "bijoux en cuivre bienfaits santé"
 slug: "cuivre-sante-bijoux-benefices"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Bijoux en cuivre et santé : absorption transdermique, usages ayurvédiques et égyptiens ancestraux, et démystification des allégations contre l'arthrite."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/cuivre-sante-bijoux-benefices-cover.png"
 ---

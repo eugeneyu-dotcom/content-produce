@@ -1,8 +1,8 @@
 ---
-title: "L'Œil Bleu Grec Porte-t-il Vraiment Malheur ?"
+title: "Œil Bleu Grec : Signification, Origine et Protection Réelle"
 slug: "oeil-bleu-grec-signification-protection"
 pubDate: 2026-07-01T09:20:42.796Z
-description: "On l'appelle souvent « œil maléfique », mais il fait l'inverse : il protège. Son histoire grecque, la différence avec le nazar turc, et les deux règles à connaître avant d'en offrir un."
+description: "La vraie signification de l'œil bleu grec (Matiasma) : symbole de protection, pas de malchance. Origines antiques et différence avec le nazar turc."
 category: "Totems de Protection"
 heroImage: "/media-images/posts/oeil-bleu-grec-signification-protection.png"
 ---

@@ -2,7 +2,7 @@
 title: "在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】"
 slug: "zaikin-desk-takasa-keisan"
 pubDate: 2026-04-13T09:04:29
-description: "Migrated post from WordPress."
+description: "身長から椅子とデスクの理想の高さを計算する差尺の求め方と、よくある調整ミスの解決策を職人技の精度で解説します。"
 type: "post"
 heroImage: "/media-images/posts/zaikin-desk-takasa-keisan-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"

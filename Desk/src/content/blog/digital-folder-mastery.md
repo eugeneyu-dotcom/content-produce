@@ -2,7 +2,7 @@
 title: "デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解"
 slug: "digital-folder-mastery"
 pubDate: 2026-04-02T06:58:16
-description: "Migrated post from WordPress."
+description: "認知心理学に基づくフォルダ構造と命名規則で、デジタルファイルを瞬時に見つけられる整理術を実践的に解説します。"
 type: "post"
 heroImage: "/media-images/posts/digital-folder-mastery-cover.png"
 category: "5. デジタル・ミニマリズム (Digital Minimalism)"

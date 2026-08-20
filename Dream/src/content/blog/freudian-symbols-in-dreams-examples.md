@@ -2,7 +2,7 @@
 title: "Freudian Symbols in Dreams: Examples & Why They're Useless for Modern Anxiety"
 slug: "freudian-symbols-in-dreams-examples"
 pubDate: 2026-05-25T03:42:50
-description: "Migrated post from WordPress."
+description: "A critical look at Freud's dream symbols, from phallic imagery to birth canals, contrasted with modern neuroscience explanations for the same dream themes."
 type: "post"
 heroImage: "/media-images/posts/freudian-symbols-in-dreams-examples-cover.png"
 category: "3. Freudian Psychoanalysis"

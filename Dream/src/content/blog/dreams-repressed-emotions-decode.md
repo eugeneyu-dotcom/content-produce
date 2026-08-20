@@ -2,7 +2,7 @@
 title: "Decoding Dreams: How Repressed Emotions Manifest in Your Sleep"
 slug: "dreams-repressed-emotions-decode"
 pubDate: 2026-03-12T05:53:42
-description: "Migrated post from WordPress."
+description: "Explores how repressed emotions surface in dreams, drawing on Freud, Jung, and neuroscience, with journaling techniques to decode their meaning."
 type: "post"
 heroImage: "/media-images/posts/dreams-repressed-emotions-decode-cover.png"
 category: "3. Freudian Psychoanalysis"

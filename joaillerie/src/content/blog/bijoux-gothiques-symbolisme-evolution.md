@@ -2,7 +2,7 @@
 title: "bijoux gothiques symbolisme"
 slug: "bijoux-gothiques-symbolisme-evolution"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Le symbolisme des bijoux gothiques : du memento mori médiéval au deuil victorien en jais, jusqu'à la subculture punk et ses réinterprétations contemporaines."
 category: "Identité et Styles"
 heroImage: "/media-images/posts/bijoux-gothiques-symbolisme-evolution-cover.png"
 ---

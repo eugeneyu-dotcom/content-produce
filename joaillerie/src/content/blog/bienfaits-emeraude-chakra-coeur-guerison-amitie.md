@@ -2,7 +2,7 @@
 title: "bienfaits emeraude chakra coeur"
 slug: "bienfaits-emeraude-chakra-coeur-guerison-amitie"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Émeraude et chakra du cœur : comment cette pierre verte, liée depuis Cléopâtre à l'amour et à la guérison, m'a aidé à apaiser la perte d'une amitié brisée."
 category: "Énergie des Pierres"
 heroImage: "/media-images/posts/bienfaits-emeraude-chakra-coeur-guerison-amitie-cover.png"
 ---

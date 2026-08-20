@@ -2,7 +2,7 @@
 title: "tendance bijoux minimalistes"
 slug: "tendance-bijoux-minimalistes"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Bijoux minimalistes : philosophie du 'less is more' en joaillerie, entre lignes pures, espace négatif et dialogue avec la tendance maximaliste colorée."
 category: "Identité et Styles"
 heroImage: "/media-images/posts/tendance-bijoux-minimalistes-cover.png"
 ---

@@ -2,7 +2,7 @@
 title: "why do i keep dreaming about the same house"
 slug: "why-do-i-keep-dreaming-about-the-same-house"
 pubDate: 2026-06-10T04:19:59.909Z
-description: "Migrated post from WordPress."
+description: "Explains why the same house keeps appearing in dreams, using a case study and Freudian and Jungian theory to decode its psychological symbolism."
 heroImage: "/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-cover.png"
 ---
 

@@ -2,7 +2,7 @@
 title: "histoire bague de fiancailles"
 slug: "engagement-ring-history-odyssey"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Histoire de la bague de fiançailles : des anneaux égyptiens et romains à l'essor du diamant, en passant par la légende de la Vena Amoris et son doigt sacré."
 category: "Rites de Passage"
 heroImage: "/media-images/posts/engagement-ring-history-odyssey-cover.png"
 ---

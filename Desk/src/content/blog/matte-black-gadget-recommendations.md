@@ -2,7 +2,7 @@
 title: "マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」"
 slug: "matte-black-gadget-recommendations"
 pubDate: 2026-05-13T02:28:53
-description: "Migrated post from WordPress."
+description: "マットブラックガジェットが集中力を高める理由を色彩心理と光学特性から解説し、素材別の質感や神話の検証も紹介します。"
 type: "post"
 heroImage: "/media-images/posts/matte-black-gadget-recommendations-cover.png"
 category: "2. 色彩理論と素材感 (Color Theory & Materiality)"

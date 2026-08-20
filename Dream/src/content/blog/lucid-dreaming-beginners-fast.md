@@ -2,7 +2,7 @@
 title: "How to Lucid Dream Fast: A Beginner's Guide to Rapid Dream Control"
 slug: "lucid-dreaming-beginners-fast"
 pubDate: 2026-04-07T08:07:18
-description: "Migrated post from WordPress."
+description: "A practical starter guide to lucid dreaming, covering dream journaling, reality checks, and the MILD, WILD, and WBTB techniques for faster results."
 type: "post"
 heroImage: "/media-images/posts/lucid-dreaming-beginners-fast-cover.png"
 category: "6. Lucid Dreaming & Agency"

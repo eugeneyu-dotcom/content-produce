@@ -2,7 +2,7 @@
 title: "how did the backrooms creepypasta start"
 slug: "how-did-the-backrooms-creepypasta-start"
 pubDate: 2026-06-10T04:19:59.912Z
-description: "Migrated post from WordPress."
+description: "How a single 2019 4chan post about a yellow, fluorescent-lit room spawned the Backrooms creepypasta and its sprawling liminal-space mythology."
 heroImage: "/media-images/posts/how-did-the-backrooms-creepypasta-start-cover.png"
 ---
 

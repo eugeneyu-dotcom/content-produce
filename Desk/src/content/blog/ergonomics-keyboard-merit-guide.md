@@ -2,7 +2,7 @@
 title: "エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学"
 slug: "ergonomics-keyboard-merit-guide"
 pubDate: 2026-04-15T08:20:31
-description: "Migrated post from WordPress."
+description: "標準キーボードが手首に強いる負担とエルゴノミクスキーボードによる中立位保持の効果を解説し、選び方の神話も検証します。"
 type: "post"
 heroImage: "/media-images/posts/ergonomics-keyboard-merit-guide-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"

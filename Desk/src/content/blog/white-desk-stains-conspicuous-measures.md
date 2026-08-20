@@ -2,7 +2,7 @@
 title: "白いデスク 汚れ 目立つ 対策"
 slug: "white-desk-stains-conspicuous-measures"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "Migrated post from WordPress."
+description: "白いデスクの汚れが目立つ光学的理由と、日常の手入れ方法や黒・木目デスクとの比較から選び方を解説します。"
 heroImage: "/media-images/posts/white-desk-stains-conspicuous-measures-cover.png"
 ---
 

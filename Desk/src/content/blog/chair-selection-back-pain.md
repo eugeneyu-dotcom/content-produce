@@ -2,7 +2,7 @@
 title: "「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】"
 slug: "chair-selection-back-pain"
 pubDate: 2026-04-09T02:43:31
-description: "Migrated post from WordPress."
+description: "在宅ワーク用椅子の歴史と腰痛のメカニズムを解説し、エルゴノミクスチェアの選び方と正しい座り方を職人目線で紹介します。"
 type: "post"
 heroImage: "/media-images/posts/chair-selection-back-pain-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"

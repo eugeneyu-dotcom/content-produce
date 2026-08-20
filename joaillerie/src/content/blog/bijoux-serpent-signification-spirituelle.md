@@ -2,7 +2,7 @@
 title: "bijoux serpent signification spirituelle"
 slug: "bijoux-serpent-signification-spirituelle"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Bijoux serpent : symbole de mue et de renaissance de l'Égypte antique à l'Inde, incarné par la célèbre bague-serpent offerte par le Prince Albert à Victoria."
 category: "Secrets de la Nature"
 heroImage: "/media-images/posts/bijoux-serpent-signification-spirituelle-cover.png"
 ---

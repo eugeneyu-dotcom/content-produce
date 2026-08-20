@@ -2,7 +2,7 @@
 title: "穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善"
 slug: "no-drill-cable-management"
 pubDate: 2026-03-19T02:47:38
-description: "Migrated post from WordPress."
+description: "穴あけ不要のクランプ式・粘着式ケーブルトレーの固定原理と設置方法を解説し、穴あけ方式との違いや選び方を比較します。"
 type: "post"
 heroImage: "/media-images/posts/no-drill-cable-management-cover.png"
 category: "3. 配線管理の美学 (Cable Management)"

@@ -2,7 +2,7 @@
 title: "lithotherapie pierres protection"
 slug: "lithotherapie-pierres-protection"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Lithothérapie et pierres de protection : un regard sceptique sur la tourmaline noire, entre effet placebo, rituel personnel et besoin humain de réconfort."
 category: "Énergie des Pierres"
 heroImage: "/media-images/posts/lithotherapie-pierres-protection-cover.png"
 ---

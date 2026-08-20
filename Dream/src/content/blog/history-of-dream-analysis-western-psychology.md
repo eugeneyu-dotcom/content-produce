@@ -2,7 +2,7 @@
 title: "A Researcher's Guide: Tracing the History of Dream Analysis in Western Psychology"
 slug: "history-of-dream-analysis-western-psychology"
 pubDate: 2026-04-24T02:59:57
-description: "Migrated post from WordPress."
+description: "Tracing dream analysis from ancient omens through Freud's wish-fulfillment theory and Jung's collective unconscious to later scientific approaches."
 type: "post"
 heroImage: "/media-images/posts/history-of-dream-analysis-western-psychology-cover.png"
 category: "7. Cultural & Spiritual Evolution"

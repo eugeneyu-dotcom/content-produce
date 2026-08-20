@@ -2,7 +2,7 @@
 title: "symbole abeille joaillerie"
 slug: "abeille-bijoux-symbolisme"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "L'abeille en joaillerie : du pendentif minoen de Mália à l'emblème impérial de Napoléon, jusqu'aux collections contemporaines de Chaumet et Marc Deloche."
 category: "Secrets de la Nature"
 heroImage: "/media-images/posts/abeille-bijoux-symbolisme-cover.png"
 ---

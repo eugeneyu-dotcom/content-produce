@@ -2,7 +2,7 @@
 title: " 生産性向上 ワークスペース"
 slug: "desk-clean-psychology-features-japan"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "Migrated post from WordPress."
+description: "机が綺麗な人と汚い人の思考プロセスの違いを心理学的に考察し、「機能的なデスク」とは何かを問い直すエッセイです。"
 heroImage: "/media-images/posts/desk-clean-psychology-features-japan-cover.png"
 ---
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">

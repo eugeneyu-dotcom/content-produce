@@ -2,7 +2,7 @@
 title: "look bijoux bohème chic"
 slug: "boho-chic-jewelry-evolution"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Le style bohème chic en bijoux : des origines contre-culturelles hippies à l'art de la superposition, entre colliers, bracelets et pierres naturelles."
 category: "Identité et Styles"
 heroImage: "/media-images/posts/boho-chic-jewelry-evolution-cover.png"
 ---

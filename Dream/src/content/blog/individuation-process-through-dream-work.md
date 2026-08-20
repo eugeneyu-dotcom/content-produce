@@ -2,7 +2,7 @@
 title: "The Alchemical Marriage: A Guide to the Individuation Process Through Dream Work"
 slug: "individuation-process-through-dream-work"
 pubDate: 2026-04-23T02:45:48
-description: "Migrated post from WordPress."
+description: "A Jungian guide to individuation through dream work: mapping the psyche, journaling and amplifying symbols, and active imagination to integrate the unconscious."
 type: "post"
 heroImage: "/media-images/posts/individuation-process-through-dream-work-cover.png"
 category: "2. Jungian Archetypes"

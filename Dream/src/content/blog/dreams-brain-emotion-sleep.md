@@ -2,7 +2,7 @@
 title: "The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep"
 slug: "dreams-brain-emotion-sleep"
 pubDate: 2026-03-11T09:18:26
-description: "Migrated post from WordPress."
+description: "How the amygdala, hippocampus, and prefrontal cortex process emotional memories during REM sleep, and what this means for future mental health therapies."
 type: "post"
 heroImage: "/media-images/posts/dreams-brain-emotion-sleep-cover.png"
 category: "1. Neurobiological Foundations"

@@ -2,7 +2,7 @@
 title: "why do my dreams feel so real and exhausting"
 slug: "why-do-my-dreams-feel-so-real-and-exhausting"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Explains why REM sleep dreams feel vivid and leave you exhausted, covering the neurobiology involved, common triggers, and sleep hygiene tips."
 heroImage: "/media-images/posts/why-do-my-dreams-feel-so-real-and-exhausting-cover.png"
 ---
 

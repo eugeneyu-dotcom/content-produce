@@ -2,7 +2,7 @@
 title: "デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで"
 slug: "wireless-charging-desk-embedding-guide"
 pubDate: 2026-04-23T02:46:10
-description: "Migrated post from WordPress."
+description: "デスクにワイヤレス充電器を埋め込む電磁誘導の原理と、貼り付け式・穴開け式のDIY手順、よくある誤解を解説します。"
 type: "post"
 heroImage: "/media-images/posts/wireless-charging-desk-embedding-guide-cover.png"
 category: "3. 配線管理의 美學 (Cable Management)"

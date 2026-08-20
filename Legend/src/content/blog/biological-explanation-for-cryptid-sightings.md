@@ -2,7 +2,7 @@
 title: "Deconstructing Monsters: A Biological Autopsy of Cryptid Sightings"
 slug: "biological-explanation-for-cryptid-sightings"
 pubDate: 2026-04-23T05:49:15
-description: "Migrated post from WordPress."
+description: "Why brains manufacture monsters: pareidolia, misidentified animals, and eDNA science explain sightings of Bigfoot, the Kraken, and Loch Ness's Nessie."
 type: "post"
 heroImage: "/media-images/posts/biological-explanation-for-cryptid-sightings-cover.png"
 category: "3. Cryptids & Biological Anomalies"

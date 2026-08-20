@@ -2,7 +2,7 @@
 title: "piercing oreille signification culturelle"
 slug: "piercing-oreille-odyssee-culturelle-2"
 pubDate: 2026-06-10T04:19:59.908Z
-description: "Migrated post from WordPress."
+description: "Le piercing d'oreille : des marqueurs de statut pharaoniques et vikings aux symboles de rébellion punk, jusqu'à son adoption esthétique contemporaine."
 category: "Identité et Styles"
 heroImage: "/media-images/posts/piercing-oreille-odyssee-culturelle-2-cover.png"
 ---

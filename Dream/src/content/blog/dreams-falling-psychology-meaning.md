@@ -2,7 +2,7 @@
 title: "The Profound Psychology of Falling in Dreams: Unraveling the Subconscious Descent"
 slug: "dreams-falling-psychology-meaning"
 pubDate: 2026-03-10T08:19:46
-description: "Migrated post from WordPress."
+description: "Explains why we dream of falling, covering the hypnic jerk reflex alongside Freudian, Jungian, and cross-cultural psychological interpretations."
 type: "post"
 heroImage: "/media-images/posts/dreams-falling-psychology-meaning-cover.png"
 category: "5. Universal Symbolic Themes"

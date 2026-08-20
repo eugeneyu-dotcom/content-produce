@@ -2,7 +2,7 @@
 title: "saphir bleu propriétés ésotériques"
 slug: "saphir-bleu-pouvoirs-esoteriques"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Le saphir bleu : pierre de vérité et de sagesse depuis l'Égypte antique et Rome jusqu'au Moyen Âge chrétien, associée aux chakras de la gorge et du troisième œil."
 category: "Énergie des Pierres"
 heroImage: "/media-images/posts/saphir-bleu-pouvoirs-esoteriques-cover.png"
 ---

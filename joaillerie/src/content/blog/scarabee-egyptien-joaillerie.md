@@ -2,7 +2,7 @@
 title: "symbole scarabée égyptien bijoux"
 slug: "scarabee-egyptien-joaillerie"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Le scarabée égyptien, symbole de Khépri et de renaissance solaire : origines mythologiques, matériaux sacrés et présence dans le trésor de Toutânkhamon."
 category: "Totems de Protection"
 heroImage: "/media-images/posts/scarabee-egyptien-joaillerie-cover.png"
 ---

@@ -2,7 +2,7 @@
 title: "The Cursed Algorithm: A Field Guide to the Evolution of Internet Horror Characters"
 slug: "evolution-of-internet-horror-characters-from-chain-mail-to-ai"
 pubDate: 2026-05-25T03:43:23
-description: "Migrated post from WordPress."
+description: "From chain-letter curses to Slender Man, SCP, and analog horror: how internet horror characters evolved, and what AI-generated monsters come next."
 type: "post"
 heroImage: "/media-images/posts/evolution-of-internet-horror-characters-from-chain-mail-to-ai-cover.png"
 category: "4. Digital Folklore & Creepypastas"

@@ -2,7 +2,7 @@
 title: "signification alliance main droite"
 slug: "wedding-ring-right-hand"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "L'alliance à la main droite : tradition répandue en Russie, Allemagne et dans l'Église orthodoxe, symbolisant force, engagement public et bénédiction divine."
 category: "Langage des Doigts"
 heroImage: "/media-images/posts/wedding-ring-right-hand-cover.png"
 ---

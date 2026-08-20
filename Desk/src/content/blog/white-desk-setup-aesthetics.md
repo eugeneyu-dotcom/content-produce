@@ -2,7 +2,7 @@
 title: "ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド"
 slug: "white-desk-setup-aesthetics"
 pubDate: 2026-03-10T08:34:18
-description: "Migrated post from WordPress."
+description: "白いデスクがおしゃれに見える心理学的理由と、照明・素材・植物・配線で実践するホワイトデスクセットアップ術を解説します。"
 type: "post"
 heroImage: "/media-images/posts/white-desk-setup-aesthetics-cover.png"
 category: "2. 色彩理論と素材感 (Color Theory & Materiality)"

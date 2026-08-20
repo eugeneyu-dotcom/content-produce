@@ -2,7 +2,7 @@
 title: "The Digital Séance: A 4-Step Guide to Why Teens Play Paranormal Games"
 slug: "why-teens-play-paranormal-games-digital-seance"
 pubDate: 2026-04-29T02:45:48
-description: "Migrated post from WordPress."
+description: "Why teens play paranormal video games: a 4-step breakdown of the psychology, from thrill-seeking and liminal immersion to communal fear and catharsis."
 type: "post"
 heroImage: "/media-images/posts/why-teens-play-paranormal-games-digital-seance-cover.png"
 category: "5. Rituals & Forbidden Games"

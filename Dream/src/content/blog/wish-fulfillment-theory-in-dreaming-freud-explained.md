@@ -2,7 +2,7 @@
 title: "Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister"
 slug: "wish-fulfillment-theory-in-dreaming-freud-explained"
 pubDate: 2026-06-03T09:35:03
-description: "Migrated post from WordPress."
+description: "A personal essay testing Freud's wish fulfillment theory against two real dreams, weighed against the Activation-Synthesis Hypothesis and a grounded reading."
 type: "post"
 heroImage: "/media-images/posts/wish-fulfillment-theory-in-dreaming-freud-explained-cover.png"
 category: "3. Freudian Psychoanalysis"

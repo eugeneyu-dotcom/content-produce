@@ -2,7 +2,7 @@
 title: "bague auriculaire signification"
 slug: "bague-auriculaire-signification-pouvoir-intuition"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "La bague auriculaire : liée à Mercure et à l'intuition, héritée des chevalières aristocratiques, sa signification varie selon la main droite ou gauche."
 heroImage: "/media-images/posts/bague-auriculaire-signification-pouvoir-intuition-cover.png"
 ---
 

@@ -2,7 +2,7 @@
 title: "pouvoir des pierres precieuses"
 slug: "pouvoir-des-pierres-precieuses-experience-sceptique"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Migrated post from WordPress."
+description: "Le pouvoir des pierres précieuses : mon expérience sceptique avec un jade acheté sur Taobao, entre effet placebo, ancrage tactile et rituel personnel."
 category: "Énergie des Pierres"
 heroImage: "/media-images/posts/pouvoir-des-pierres-precieuses-experience-sceptique-cover.png"
 ---

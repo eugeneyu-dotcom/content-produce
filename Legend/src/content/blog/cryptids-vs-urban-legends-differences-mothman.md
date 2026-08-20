@@ -2,7 +2,7 @@
 title: "Cryptids vs. Urban Legends: A Digital Folklorist's Investigation into the Mothman Enigma"
 slug: "cryptids-vs-urban-legends-differences-mothman"
 pubDate: 2026-04-24T03:00:49
-description: "Migrated post from WordPress."
+description: "Cryptid or urban legend? The Mothman case shows the real difference: one asks if a creature exists, the other asks what the story is warning you about."
 type: "post"
 heroImage: "/media-images/posts/cryptids-vs-urban-legends-differences-mothman-cover.png"
 category: "3. Cryptids & Biological Anomalies"

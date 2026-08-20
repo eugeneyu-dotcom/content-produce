@@ -2,7 +2,7 @@
 title: "Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back"
 slug: "digital-folklore-and-lost-media-gone-forever"
 pubDate: 2026-06-03T10:57:39
-description: "Migrated post from WordPress."
+description: "A personal essay on digital folklore that vanishes forever when a blog or forum dies, and why online myths are more fragile than printed stories."
 type: "post"
 heroImage: "/media-images/posts/digital-folklore-and-lost-media-gone-forever-cover.png"
 category: "4. Digital Folklore & Creepypastas"

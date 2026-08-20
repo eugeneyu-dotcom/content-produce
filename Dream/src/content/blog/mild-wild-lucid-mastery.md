@@ -2,7 +2,7 @@
 title: "Mastering Lucid Dreaming: A Scientific Comparison of MILD and WILD Techniques"
 slug: "mild-wild-lucid-mastery"
 pubDate: 2026-04-02T06:57:58
-description: "Migrated post from WordPress."
+description: "Compares MILD and WILD lucid dreaming techniques: difficulty, success rates, step-by-step practice, underlying neuroscience, and common practitioner pitfalls."
 type: "post"
 heroImage: "/media-images/posts/mild-wild-lucid-mastery-cover.png"
 category: "6. Lucid Dreaming & Agency"

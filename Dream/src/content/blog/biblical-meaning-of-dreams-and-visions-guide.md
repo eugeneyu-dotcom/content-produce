@@ -2,7 +2,7 @@
 title: "The Biblical Meaning of Dreams and Visions: A 4-Step Guide to Discernment"
 slug: "biblical-meaning-of-dreams-and-visions-guide"
 pubDate: 2026-04-27T03:29:23
-description: "Migrated post from WordPress."
+description: "A biblical guide to discerning dreams and visions, explaining their scriptural distinction and a 4-step process: prayer, Scripture, counsel, and fruit."
 type: "post"
 heroImage: "/media-images/posts/biblical-meaning-of-dreams-and-visions-guide-cover.png"
 category: "7. Cultural & Spiritual Evolution"

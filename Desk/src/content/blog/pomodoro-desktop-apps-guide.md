@@ -2,7 +2,7 @@
 title: "デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例"
 slug: "pomodoro-desktop-apps-guide"
 pubDate: 2026-03-13T07:13:48
-description: "Migrated post from WordPress."
+description: "ポモドーロテクニックの心理学的効果とデスクトップアプリの機能・コストを比較し、集中力を高める活用法を解説します。"
 type: "post"
 heroImage: "/media-images/posts/pomodoro-desktop-apps-guide-cover.png"
 category: "7. 集中とフローの心理學 (Psychology of Flow)"

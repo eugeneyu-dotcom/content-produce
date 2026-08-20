@@ -2,7 +2,7 @@
 title: "Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?"
 slug: "lucid-dreaming-attainment"
 pubDate: 2026-03-27T08:16:31
-description: "Migrated post from WordPress."
+description: "Examines the neuroscience behind lucid dreaming, from gamma waves and prefrontal activity to induction techniques like MILD and WBTB, and who can learn it."
 type: "post"
 heroImage: "/media-images/posts/lucid-dreaming-attainment-cover.png"
 category: "6. Lucid Dreaming & Agency"

@@ -2,7 +2,7 @@
 title: "「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ"
 slug: "zone-hairu-houhou-shigoto-shuuchuu"
 pubDate: 2026-05-22T07:28:51
-description: "Migrated post from WordPress."
+description: "雑音を消すのではなく脳内で意味を書き換える集中法を提案し、ゾーンに入るための4つの実践ステップを解説します。"
 type: "post"
 heroImage: "/media-images/posts/zone-hairu-houhou-shigoto-shuuchuu-cover.png"
 category: "7. 集中とフローの心理学 (Psychology of Flow)"

@@ -2,7 +2,7 @@
 title: "モニターライト デスクライト 違い"
 slug: "monitor-light-desk-light-chigai"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "Migrated post from WordPress."
+description: "モニターライトとデスクライトの光学設計や眩光制御の違いを歴史的背景から解説し、次世代照明の展望まで紹介します。"
 heroImage: "/media-images/posts/monitor-light-desk-light-chigai-cover.png"
 ---
 
