@@ -122,10 +122,13 @@ const parseCSV = (content) => {
 // Site Mapping
 const siteMap = {
     'Dream Interpretation': 'Dream',
+    'Dream': 'Dream',
     'Joaillerie et Symbolique': 'joaillerie',
     'Joaillerie': 'joaillerie',
     'ミニマリスト・デスクセットアップ': 'Desk',
-    'Global Urban Legends Analysis': 'Legend'
+    'Desk': 'Desk',
+    'Global Urban Legends Analysis': 'Legend',
+    'Legend': 'Legend'
 };
 
 const callSerperAPI = (query) => {
