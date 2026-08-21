@@ -231,6 +231,44 @@ const markRowsUsed = (items) => {
     });
 };
 
+// Append brand-new keyword rows to the Google Sheet via the same Apps Script Web App
+// (action: 'append' branch). Returns { ok, appended: [...keywords], skipped: [...keywords] }.
+const appendKeywordRows = (rows) => {
+    return new Promise((resolve, reject) => {
+        const payload = JSON.stringify({ token: SHEET_WRITE_SECRET, action: 'append', rows });
+        const u = new URL(SHEET_WRITE_URL);
+        const options = {
+            hostname: u.hostname,
+            path: u.pathname + u.search,
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Content-Length': Buffer.byteLength(payload)
+            }
+        };
+        const req = https.request(options, (res) => {
+            const chunks = [];
+            res.on('data', (chunk) => chunks.push(chunk));
+            res.on('end', () => {
+                const body = Buffer.concat(chunks).toString('utf8');
+                // Apps Script redirects (302) to script.googleusercontent.com; follow it
+                if ((res.statusCode === 302 || res.statusCode === 301) && res.headers.location) {
+                    https.get(res.headers.location, (r2) => {
+                        const c2 = [];
+                        r2.on('data', (c) => c2.push(c));
+                        r2.on('end', () => resolve(Buffer.concat(c2).toString('utf8')));
+                    }).on('error', reject);
+                } else {
+                    resolve(body);
+                }
+            });
+        });
+        req.on('error', reject);
+        req.write(payload);
+        req.end();
+    });
+};
+
 const generateImageWithImagen = (prompt) => {
     return new Promise((resolve, reject) => {
         const data = JSON.stringify({
@@ -1307,11 +1345,108 @@ heroImage: "${headerImageSrc}"
     }
 };
 
+// Quote-aware single-line CSV field splitter (no newline handling needed —
+// only used against one line at a time from an already-split file).
+const parseCSVLine = (line) => {
+    const fields = [];
+    let field = '';
+    let inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+        const c = line[i];
+        if (inQuotes) {
+            if (c === '"') {
+                if (line[i + 1] === '"') { field += '"'; i++; }
+                else { inQuotes = false; }
+            } else {
+                field += c;
+            }
+        } else {
+            if (c === '"') inQuotes = true;
+            else if (c === ',') { fields.push(field); field = ''; }
+            else field += c;
+        }
+    }
+    fields.push(field);
+    return fields;
+};
+
+// Read a keyword backlog CSV (default new-keywords.csv), POST every row to the
+// Apps Script's new 'append' action, then strip whichever rows the Sheet confirms
+// it now has (freshly appended, or already present as a duplicate) — leaving
+// comment lines (#...) and any row that failed to send untouched.
+const runAddKeywords = async (csvPath) => {
+    const resolvedPath = path.resolve(__dirname, csvPath || 'new-keywords.csv');
+    if (!fs.existsSync(resolvedPath)) {
+        console.error(`找不到檔案：${resolvedPath}`);
+        process.exit(1);
+    }
+    if (!SHEET_WRITE_URL || !SHEET_WRITE_SECRET) {
+        console.error('API_Key 檔案裡沒有設定 SheetWriteUrl/SheetWriteSecret，無法寫入 Sheet。');
+        process.exit(1);
+    }
+
+    const rawContent = fs.readFileSync(resolvedPath, 'utf8');
+    const rows = parseCSV(rawContent);
+
+    if (rows.length === 0) {
+        console.log('沒有找到任何待新增的關鍵字列（可能都已經處理過，或檔案裡只剩註解）。');
+        return;
+    }
+
+    console.log(`讀到 ${rows.length} 筆待新增的關鍵字，送出給 Google Sheet...`);
+    const responseText = await appendKeywordRows(rows);
+
+    let result;
+    try {
+        result = JSON.parse(responseText);
+    } catch (e) {
+        console.error('Apps Script 回傳的內容不是合法 JSON，可能是 Apps Script 端出錯或還沒重新部署：');
+        console.error(responseText);
+        process.exit(1);
+    }
+
+    if (!result.ok) {
+        console.error(`寫入失敗：${result.error}`);
+        process.exit(1);
+    }
+
+    const appended = result.appended || [];
+    const skipped = result.skipped || [];
+    console.log(`\n✅ 新增 ${appended.length} 列：`, appended);
+    if (skipped.length > 0) {
+        console.log(`⚠️  跳過 ${skipped.length} 列（Sheet 裡已經有相同的 Keyword）：`, skipped);
+    }
+
+    const processedKeywords = new Set([...appended, ...skipped]);
+    if (processedKeywords.size === 0) {
+        console.log('Sheet 端沒有回報任何新增或跳過的列，先不動本地檔案，麻煩檢查一下 Apps Script。');
+        return;
+    }
+
+    const headers = Object.keys(rows[0]);
+    const kwIdx = headers.indexOf('Keyword');
+    const lines = rawContent.replace(/\r\n/g, '\n').split('\n');
+    const keptLines = lines.filter((line) => {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith('#')) return true; // 保留註解與空行
+        const fields = parseCSVLine(line);
+        if (fields.length !== headers.length) return true; // 不是可辨識的資料列，保留
+        const kw = (fields[kwIdx] || '').trim();
+        if (kw === 'Keyword') return true; // 標題列本身
+        return !processedKeywords.has(kw);
+    });
+
+    fs.writeFileSync(resolvedPath, keptLines.join('\n'));
+    console.log(`\n已經把處理過的列從 ${path.basename(resolvedPath)} 移除（註解保留）。`);
+};
+
 const mode = process.argv[2];
 if (mode === '--prepare') {
     runPrepare();
 } else if (mode === '--finish') {
     runFinish();
+} else if (mode === '--add-keywords') {
+    runAddKeywords(process.argv[3]);
 } else {
     run();
 }
