@@ -10,7 +10,7 @@ category: "3. 配線管理の美學 (Cable Management)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/magnetic-cable-holder-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学" title="マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/magnetic-cable-holder-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Magnetic cable holder keeping charging cables neatly organized on a desk" title="マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：あるミニマリストの3年越しの告白</h4>
 <h3>3年間の沈黙、そして秩序の再発見</h3>
@@ -37,6 +37,6 @@ category: "3. 配線管理の美學 (Cable Management)"
 <li style="margin-bottom: 12px;"><strong>習慣化：</strong>ケーブルを使い終わったら、必ずホルダーに戻すことを意識する。この「所作」を1週間続ければ、それは無意識の習慣となる。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/magnetic-cable-holder-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学" title="マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/magnetic-cable-holder-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Magnetic cable holder keeping charging cables neatly organized on a desk" title="マグネット式ケーブルホルダー究極の使い方：3年愛用者が語るデスク整理の哲学"></figure>
 </div>
 

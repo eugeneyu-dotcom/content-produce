@@ -9,7 +9,7 @@ heroImage: "/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast.png"
 <div class="wp-block-uagb-container uagb-block-b8f00iiy alignfull" style="background-padding: 40px 0;">
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #ffffff; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>How to Wake Up From a Lucid Dream Fast</strong></h1>
-<figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;"><img fetchpriority="high" decoding="async" class="wp-image-1860" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" title="How to Wake Up From a Lucid Dream Fast" src="/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast-illustration-1.png" alt="Illustration for How to Wake Up From a Lucid Dream Fast" width="1024" height="1024" /></figure>
+<figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;"><img fetchpriority="high" decoding="async" class="wp-image-1860" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" title="How to Wake Up From a Lucid Dream Fast" src="/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast-illustration-1.png" alt="Surreal dreamlike photograph symbolizing the transition from sleep to waking" width="1024" height="1024" /></figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>Why You Might Need to Exit a Lucid Dream on Purpose</strong></h2>
 <div class="content-block" style="margin-bottom: 40px;">
@@ -44,7 +44,7 @@ heroImage: "/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast.png"
 <strong>Solution:</strong> Sleep paralysis happens when your mind becomes conscious before REM atonia has fully lifted, and it can occur naturally whether or not you attempt an exit technique. If it happens, stay calm: it is temporary and harmless, even though the accompanying hallucinations can feel intense. Focus on small, deliberate movements — wiggling a single finger or toe — rather than panicking, and the paralysis will pass on its own within a minute or two.</li>
 </ul>
 </div>
-<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img decoding="async" class="wp-image-1861" style="border-radius: 6px; width: 100%; border: 1px solid #333;" title="How to Wake Up From a Lucid Dream Fast" src="/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast-illustration-2.png" alt="Illustration for How to Wake Up From a Lucid Dream Fast" width="1024" height="1024" /></figure>
+<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img decoding="async" class="wp-image-1861" style="border-radius: 6px; width: 100%; border: 1px solid #333;" title="How to Wake Up From a Lucid Dream Fast" src="/media-images/posts/how-to-wake-up-from-a-lucid-dream-fast-illustration-2.png" alt="Surreal dreamlike photograph symbolizing the transition from sleep to waking" width="1024" height="1024" /></figure>
 </div>
 </div>
 </div>

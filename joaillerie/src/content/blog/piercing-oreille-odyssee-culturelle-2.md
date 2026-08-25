@@ -62,7 +62,7 @@ heroImage: "/media-images/posts/piercing-oreille-odyssee-culturelle-2-cover.png"
 </ul>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/piercing-oreille-odyssee-culturelle-2-illustration-1.png" alt="Illustration for piercing oreille signification culturelle" class="wp-image-1981" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/piercing-oreille-odyssee-culturelle-2-illustration-1.png" alt="Assortment of ear piercing jewelry including studs and hoops" class="wp-image-1981" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

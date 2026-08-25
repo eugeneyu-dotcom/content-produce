@@ -71,7 +71,7 @@ heroImage: "/media-images/posts/cuivre-sante-bijoux-benefices-cover.png"
 <dd style="margin-bottom: 30px; margin-left: 0; line-height: 1.6;">R3 : Non, ils ne sont pas une cure. Alors que de nombreux utilisateurs rapportent un soulagement, les preuves scientifiques sont mitigées. Ils peuvent être utilisés en complément mais ne remplacent pas un avis médical.</dd>
 </dl></div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" decoding="async" width="1024" height="1024" class="wp-image-1909" style="border-radius: 8px; width: 100%; height: auto;" src="/media-images/posts/cuivre-sante-bijoux-benefices-illustration-1.png" alt="Illustration for bijoux en cuivre bienfaits santé" /><br />
+            <img fetchpriority="high" decoding="async" width="1024" height="1024" class="wp-image-1909" style="border-radius: 8px; width: 100%; height: auto;" src="/media-images/posts/cuivre-sante-bijoux-benefices-illustration-1.png" alt="Copper bracelet with a warm reddish-brown metallic sheen" /><br />
         </figure>
 </p></div>
 </div>

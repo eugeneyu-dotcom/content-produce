@@ -10,7 +10,7 @@ category: "3. 配線管理의 美學 (Cable Management)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/wireless-charging-desk-embedding-guide-illustration-1.png" alt="Illustration for デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで" title="デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/wireless-charging-desk-embedding-guide-illustration-1.png" alt="Wireless charging pad embedded seamlessly into a wooden desk surface" title="デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">究極のミニマリズムへ：デスクに溶け込む充電技術</h4>
 <p style="margin-bottom: 25px;">完璧に整えられたデスク。そこには一本のケーブルも見当たらない。しかし、スマートフォンを天板の決まった位置に置くと、静かに充電が始まる。これは未来の光景ではなく、現代の技術と少しの「職人魂」で実現可能な現実だ。「デスクへのワイヤレス充電器埋め込み」は、単なる利便性の追求ではない。それは、デジタルデバイスとの関係性を再定義し、物理的な空間からデジタルの痕跡を消し去るという、ミニマリズムの哲学を体現する行為である。この行為は、私たちのワークスペースを、単なる作業場から思考を深めるための聖域へと昇華させる可能性を秘めている。本稿では、この見えない力をデスクに宿すための技術的本質から、具体的な実践方法、さらにはケーブルから完全に解放される未来の展望までを、深く掘り下げていく。</p>
@@ -98,6 +98,6 @@ category: "3. 配線管理의 美學 (Cable Management)"
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">デスクという「聖域」を完成させる静かな革命</h4>
 <p style="margin-bottom: 25px;">デスクへのワイヤレス充電器の埋め込みは、単なるガジェットの設置作業に留まらない。それは、私たちの生活空間から物理的な制約である「ケーブル」を一本ずつ消し去っていくという、より大きな潮流の一部である。現在の技術が「置く」ことで充電を実現しているのに対し、未来の技術は「存在する」だけで充電が完了する空間そのものを目指している。部屋に入っただけで、ポケットの中のスマートフォンや手首のスマートウォッチが自動的に充電される「空間伝送型ワイヤレス給電」は、すでに実験室レベルでは実現しつつある。スマートオフィスやIoT家具は、電源という概念すら意識させない、真にシームレスな環境を提供するだろう。今日、私たちがデスクに一つの充電器を埋め込むという行為は、その壮大な未来に向けた、小さくも確実な一歩なのだ。それは、テクノロジーが我々の視界から消え、背景に溶け込み、生活を静かに支えるという究極の理想へ向けた、職人による静かな革命なのである。</p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/wireless-charging-desk-embedding-guide-illustration-2.png" alt="Illustration for デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで" title="デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/wireless-charging-desk-embedding-guide-illustration-2.png" alt="Wireless charging pad embedded seamlessly into a wooden desk surface" title="デスクに魔法を埋め込む。ワイヤレス充電器の完全ガイド：DIYから未来展望まで"></figure>
 </div>
 

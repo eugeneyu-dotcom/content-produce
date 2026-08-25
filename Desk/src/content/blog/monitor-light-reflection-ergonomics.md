@@ -10,7 +10,7 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/monitor-light-reflection-ergonomics-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層" title="モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/monitor-light-reflection-ergonomics-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Monitor light bar positioned above a screen to reduce glare and reflection" title="モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">見えない敵：モニター画面における「グレア」の正体と視覚への影響</h4>
 <p style="margin-bottom: 25px;">長時間のPC作業で目の疲れや肩こりを感じるとき、その原因は明るさや色温度だけでなく、画面に映り込む「グレア（眩惑光）」であることが少なくありません。グレアには大きく分けて、光源が直接視界に入って眩しさを感じる「直接グレア」と、画面表面に光源や周囲の景色が映り込む「反射グレア（ヴェーリング・リフレクション）」の2種類があります。デスク環境で問題になりやすいのは、後者の反射グレアです。</p>
@@ -78,5 +78,5 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/monitor-light-reflection-ergonomics-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層" title="モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/monitor-light-reflection-ergonomics-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Monitor light bar positioned above a screen to reduce glare and reflection" title="モニターライトが拓く、視覚快適性の新境地：反射対策とエルゴノミクスの深層"></figure>
 </div>

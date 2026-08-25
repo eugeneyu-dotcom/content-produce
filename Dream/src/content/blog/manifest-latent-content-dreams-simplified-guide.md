@@ -28,5 +28,5 @@ heroImage: "/media-images/posts/manifest-latent-content-dreams-simplified-guide-
 <p>None of this is verified in the way a lab result is verified. Freud's interpretive method has real, well-documented critiques, starting with the fact that almost any manifest image can be routed to almost any latent meaning depending on which analyst is doing the routing. If you want the fuller version of that critique, and what <a href="/blog/manifest-vs-latent-content-of-dreams-simplified/">modern neuroscience proposes instead</a>, that's a separate piece. This one is just about understanding what Freud actually meant by the split, mechanically, before deciding how much of it to believe.</p>
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
-    <img src="/media-images/posts/manifest-latent-content-dreams-simplified-guide-illustration-1.png" alt="Illustration for Manifest vs. Latent Content: Finally, a Simplified Guide to Your Dreams' Double Life" style="border-radius: 8px; width: 100%; height: auto;" />
+    <img src="/media-images/posts/manifest-latent-content-dreams-simplified-guide-illustration-1.png" alt="Surreal dreamlike photograph symbolizing the hidden layers beneath a dream's surface story" style="border-radius: 8px; width: 100%; height: auto;" />
 </figure>

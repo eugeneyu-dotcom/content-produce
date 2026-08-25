@@ -10,7 +10,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Felt desk mat with a keyboard and mouse resting on its surface" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">はじめに：静寂な安定性を求めて</h4>
 <p style="margin-bottom: 25px;">ミニマリストの書斎において、フェルト製のデスクマットは単なるアクセサリーではなく、一種の哲学の表明です。その柔らかな質感は視覚的なノイズを吸収し、落ち着いた雰囲気を醸成します。しかし、この静謐な美しさの裏には、しばしば見過ごされる物理的な課題が存在します――「滑り」です。キーボードを打つ僅かな力、マウスを動かす微細な振動。それらが蓄積し、気づけばマット全体が数ミリ、あるいは数センチずれている。この僅かなズレこそが、我々の集中力を削ぎ、無意識のストレスを生み出す源泉なのです。本稿では、この「滑り」という現象を物理学の視点から解剖し、真に安定した作業環境を構築するための「滑り止めフェルトデスクマット」の核心に迫ります。これは単なる製品レビューではなく、理想的なワークスペースを追求するための科学的探求です。</p>
@@ -109,6 +109,6 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <p style="margin-bottom: 25px;">デスクマットにおける滑り止め技術は、今後も進化を続けるでしょう。より環境負荷の少ないサステナブルな素材から作られた滑り止めコーティング、ガラスや特殊塗装された金属といった特定のデスク天板に最適化された専用のグリップ素材、あるいは使用者のタイピング圧力を感知してズレを警告するスマートシステムなどが登場するかもしれません。パーソナライゼーションの波は、機能面にも及び、個々のデスク環境に合わせたカスタムメイドの滑り止めソリューションが現実のものとなる日も近いでしょう。しかし、どのような未来が訪れようとも、私たちがデスクマットに求める本質は変わりません。それは、思考を妨げない「静かな安定性」です。究極の選択とは、最新技術を追い求めることではなく、自身の作業スタイルを深く理解し、その動きを黙って支えてくれる信頼性の高い一枚を選ぶこと。それは、日々の創造性を物理的に、そして心理的に支える、最も賢明な投資なのです。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Felt desk mat with a keyboard and mouse resting on its surface" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
 </div>
 

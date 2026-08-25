@@ -57,7 +57,7 @@ heroImage: "/media-images/posts/bague-pouce-signification-psychologique-cover.pn
 </ul>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bague-pouce-signification-psychologique-illustration-1.png" alt="Illustration for bague au pouce signification psychologique" class="wp-image-2092" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bague-pouce-signification-psychologique-illustration-1.png" alt="Close-up of a gold ring worn on the thumb" class="wp-image-2092" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

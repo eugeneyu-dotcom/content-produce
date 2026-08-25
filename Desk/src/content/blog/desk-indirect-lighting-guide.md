@@ -10,7 +10,7 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" width="1024" height="1024" src="/media-images/posts/desk-indirect-lighting-guide-illustration-1.png" class="wp-image-1765" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" title="LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" /></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" width="1024" height="1024" src="/media-images/posts/desk-indirect-lighting-guide-illustration-1.png" class="wp-image-1765" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="LED strip lighting installed along the underside of a desk for indirect illumination" title="LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" /></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">感官実用：LEDテープライトでデスク環境を変える究極の設置術と美学</h4>
 <p style="margin-bottom: 25px;">今日のデジタル時代において、デスクは単なる作業スペースではなく、創造性、生産性、そしてリラックスの場へと進化しています。この空間の質を劇的に向上させる鍵の一つが、LEDテープライトを用いた間接照明です。適切に設置された間接照明は、まるで魔法のように、あなたのデスクを機能的かつ美しい「儀式感」に満ちた場所へと変貌させます。</p>
@@ -80,6 +80,6 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-indirect-lighting-guide-illustration-2.png" class="wp-image-1766" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" title="LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" /></figure>
+<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-indirect-lighting-guide-illustration-2.png" class="wp-image-1766" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="LED strip lighting installed along the underside of a desk for indirect illumination" title="LEDテープライトで実現する究極の間接照明：デスク環境を劇的に変える方法" /></figure>
 </div>
 

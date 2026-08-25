@@ -10,7 +10,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/chair-selection-back-pain-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】" title="「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/chair-selection-back-pain-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Ergonomic office chair with lumbar support in a minimalist home office" title="「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">「座る」という行為の変遷：王座からワーキングチェアへ</h4>
 <p style="margin-bottom: 25px;">人類の歴史において、「座る」という行為は、常に生産性や快適性と結びついていたわけではない。古代エジプトのファラオが座した黄金の椅子や、中世ヨーロッパの君主が権威の象徴とした玉座は、その構造において身体への配慮よりも、地位と威厳を誇示する目的が優先されていた。これらの椅子は、硬質な素材と垂直な背もたれを持ち、長時間座ることを想定していない、いわば儀式のための装置であった。日本の伝統的な生活様式に目を向ければ、畳の上での「正座」が基本であり、椅子という文化そのものが西洋からの輸入品であったことがわかる。この「床に座る」文化は、独自の身体感覚を育んできたが、近代化と共にデスクワークが普及するにつれ、西洋式の椅子が日本の職場や家庭にも浸透し始めた。</p>
@@ -68,6 +68,6 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 <p style="margin-bottom: 25px;">さらに、この健康データは個人のワークスタイルと統合される。チェアがユーザーの疲労度を検知し、連携するスマートデバイスに休憩を促す通知を送ることも可能になるだろう。例えば、<a href="/blog/pomodoro-desktop-apps-guide/">ポモドーロテクニック アプリ デスク</a>と連動し、25分の作業後に立ち上がってストレッチをするよう、椅子自体が振動で知らせる、といった機能も現実的だ。素材も進化し、体温や湿度に応じて通気性を変化させるスマートファブリックや、自己修復機能を備えたサステナブルな素材が主流となるかもしれない。未来の椅子選びは、もはや「座り心地」だけで評価されるものではなくなる。それは、自身の生産性と健康を最大化するための、最もパーソナルな健康管理デバイスを選ぶ行為へと変貌していく。我々は、椅子が身体の延長線上にある、真の「サイボーグ」時代を迎えつつあるのだ。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/chair-selection-back-pain-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】" title="「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/chair-selection-back-pain-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Ergonomic office chair with lumbar support in a minimalist home office" title="「座る」の進化論：腰痛を未然に防ぐ、在宅ワーク用椅子の選び方【職人目線の徹底解説】"></figure>
 </div>
 

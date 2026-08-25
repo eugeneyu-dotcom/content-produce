@@ -12,7 +12,7 @@ category: "1. Neurobiological Foundations"
 <div class="uagb-container-inner-blocks-wrap" style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px;"><strong>The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep</strong></h2>
 <div class="wp-block-uagb-image aligncenter uagb-block-0p6466pz">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-brain-emotion-sleep-illustration-1.png" class="wp-image-1642" style="width: 1032px; height: 350px; object-fit: cover; border-radius: 6px;" alt="Illustration for The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" title="The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-brain-emotion-sleep-illustration-1.png" class="wp-image-1642" style="width: 1032px; height: 350px; object-fit: cover; border-radius: 6px;" alt="Abstract glowing illustration of a brain processing emotion during sleep" title="The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" /></figure>
 </div>
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Core Essence: Neurobiological Mechanisms of Dreaming and Emotion</strong></h2>
 <p class="has-text-align-center" style="margin-bottom: 40px;">
@@ -37,7 +37,7 @@ category: "1. Neurobiological Foundations"
 <p>This distinct processing mechanism during dreaming is crucial for emotional memory consolidation and distress reduction. It allows the brain to transform emotionally charged experiences into more manageable, less impactful memories, contributing significantly to our overall emotional stability and psychological well-being. This ability to integrate raw experiences into a narrative without direct conscious oversight underscores the profound significance of dreaming for mental health. Exploring how these processes interact with broader themes can be found in resources like <a href="/category/falling-in-dreams-meaning/">The Master Encyclopedia of Dreams</a>, which delves into universal symbolic themes often linked to emotional integration.</p>
 </p>
 <div class="wp-block-uagb-image aligncenter">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-brain-emotion-sleep-illustration-2.png" class="wp-image-1643" style="border-radius: 6px; max-width: 100%;" alt="Illustration for The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" title="The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-brain-emotion-sleep-illustration-2.png" class="wp-image-1643" style="border-radius: 6px; max-width: 100%;" alt="Abstract glowing illustration of a brain processing emotion during sleep" title="The Neurobiology of Dreams: How Your Brain Processes Emotions While You Sleep" /></figure>
 </div></div>
 </div>
 

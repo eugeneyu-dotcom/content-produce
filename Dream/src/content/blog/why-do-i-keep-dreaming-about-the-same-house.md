@@ -10,7 +10,7 @@ heroImage: "/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-cove
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #FFFFFF; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>Why Do I Keep Dreaming About the Same House? A Psychological Deep Dive</strong></h1>
 <figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-illustration-1.png" class="wp-image-1878" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Illustration for why do i keep dreaming about the same house" title="why do i keep dreaming about the same house" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-illustration-1.png" class="wp-image-1878" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Surreal dreamlike photograph of a recurring house, symbolizing a familiar dream setting" title="why do i keep dreaming about the same house" /><br />
         </figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Case of the Unfamiliar House: An Architect's Recurring Blueprint</strong></h2>
@@ -50,7 +50,7 @@ heroImage: "/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-cove
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img decoding="async" width="1024" height="1024" src="/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-illustration-2.png" class="wp-image-1879" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Illustration for why do i keep dreaming about the same house" title="why do i keep dreaming about the same house" /><br />
+            <img decoding="async" width="1024" height="1024" src="/media-images/posts/why-do-i-keep-dreaming-about-the-same-house-illustration-2.png" class="wp-image-1879" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Surreal dreamlike photograph of a recurring house, symbolizing a familiar dream setting" title="why do i keep dreaming about the same house" /><br />
         </figure>
 </p>
 </div>

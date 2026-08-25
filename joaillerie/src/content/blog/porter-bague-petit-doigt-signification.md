@@ -77,7 +77,7 @@ heroImage: "/media-images/posts/porter-bague-petit-doigt-signification-cover.png
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/porter-bague-petit-doigt-signification-illustration-1.png" alt="Illustration for porter une bague au petit doigt" class="wp-image-2150" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/porter-bague-petit-doigt-signification-illustration-1.png" alt="Gold ring worn on the little finger" class="wp-image-2150" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

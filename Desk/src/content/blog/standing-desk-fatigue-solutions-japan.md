@@ -8,7 +8,7 @@ heroImage: "/media-images/posts/standing-desk-fatigue-solutions-japan-cover.png"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">スタンディングデスクで「疲れる」は誤解？10年愛用者が語る本質的対策と科学的アプローチ</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/standing-desk-fatigue-solutions-japan-illustration-1.png" alt="Illustration for スタンディングデスク 疲れる 対策" title="スタンディングデスク 疲れる 対策"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/standing-desk-fatigue-solutions-japan-illustration-1.png" alt="Person adjusting a standing desk to alternate between sitting and standing" title="スタンディングデスク 疲れる 対策"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：スタンディングデスクという「道具」との対話</h4>
 <p style="margin-bottom: 25px;">スタンディングデスクを導入する多くの人が、健康増進や生産性向上という輝かしい未来を思い描く。しかし、その先に待っているのは、しばしば足腰の痛みや予期せぬ疲労感という現実だ。まるで、手にしたばかりの名刀の扱い方がわからず、その重さに振り回されているかのようである。この疲労は、スタンディングデスクそのものの欠陥ではなく、使用者と道具との間の「対話不足」から生じる。人間は本来、静止し続けるようには設計されていない。この生物学的な前提を無視して、ただ「立つ」という行為を続ければ、身体が悲鳴を上げるのは当然の帰結である。本稿では、単なる疲労対策の羅列ではなく、スタンディングデスクという道具の「本質」を理解し、それを使いこなすための職人的な技術と科学的アプローチを深く掘り下げていく。目的は、疲労をゼロにすることではなく、疲労を創造的なエネルギーへと昇華させることにある。</p>
@@ -38,5 +38,5 @@ heroImage: "/media-images/posts/standing-desk-fatigue-solutions-japan-cover.png"
 <li style="margin-bottom: 12px;"><strong>統合的アプローチ：</strong>単一の対策に頼らず、姿勢、時間管理、ツール、ストレッチを組み合わせた多角的な戦略が、持続可能なスタンディングワークを実現する。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/standing-desk-fatigue-solutions-japan-illustration-2.png" alt="Illustration for スタンディングデスク 疲れる 対策" title="スタンディングデスク 疲れる 対策"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/standing-desk-fatigue-solutions-japan-illustration-2.png" alt="Person adjusting a standing desk to alternate between sitting and standing" title="スタンディングデスク 疲れる 対策"></figure>
 </div>

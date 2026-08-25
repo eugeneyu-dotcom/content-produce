@@ -12,7 +12,7 @@ category: "3. Freudian Psychoanalysis"
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #FFFFFF; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister</strong></h1>
 <figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/wish-fulfillment-theory-in-dreaming-freud-explained-illustration-1.png" class="wp-image-1914" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Illustration for Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" title="Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/wish-fulfillment-theory-in-dreaming-freud-explained-illustration-1.png" class="wp-image-1914" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Surreal dreamlike photograph symbolizing a wish fulfilled within a dream" title="Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" /><br />
         </figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Idol in the Jungle</strong></h2>
@@ -49,7 +49,7 @@ category: "3. Freudian Psychoanalysis"
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img decoding="async" width="1024" height="1024" src="/media-images/posts/wish-fulfillment-theory-in-dreaming-freud-explained-illustration-2.png" class="wp-image-1915" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Illustration for Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" title="Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" /><br />
+            <img decoding="async" width="1024" height="1024" src="/media-images/posts/wish-fulfillment-theory-in-dreaming-freud-explained-illustration-2.png" class="wp-image-1915" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Surreal dreamlike photograph symbolizing a wish fulfilled within a dream" title="Freud's Wish Fulfillment Theory in Dreaming: My Unmet Idol & An Invented Sister" /><br />
         </figure>
 </p>
 </div>

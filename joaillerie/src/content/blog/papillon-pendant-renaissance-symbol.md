@@ -98,7 +98,7 @@ heroImage: "/media-images/posts/papillon-pendant-renaissance-symbol-cover.png"
 <strong style="color: #b87333;">R3 :</strong> Choisissez un pendentif dont le matériau (or, argent), la pierre (agate, saphir) et le design résonnent avec votre histoire personnelle et vos aspirations. Considérez la phase de votre vie que vous souhaitez symboliser (renaissance, résilience, joie) et optez pour un style qui vous inspire et vous rappelle la force de votre propre transformation.</p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-    <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/papillon-pendant-renaissance-symbol-illustration-1.png" alt="Illustration for pendentif papillon symbole renaissance" class="wp-image-1969" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+    <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/papillon-pendant-renaissance-symbol-illustration-1.png" alt="Gold butterfly-shaped pendant necklace, symbolizing transformation and rebirth" class="wp-image-1969" style="border-radius: 8px; width: 100%; height: auto;" /><br />
 </figure>
 </div>
 </div>

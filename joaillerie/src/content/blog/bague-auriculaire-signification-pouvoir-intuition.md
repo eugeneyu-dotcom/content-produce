@@ -80,7 +80,7 @@ heroImage: "/media-images/posts/bague-auriculaire-signification-pouvoir-intuitio
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bague-auriculaire-signification-pouvoir-intuition-illustration-1.png" alt="Illustration for bague auriculaire signification" class="wp-image-2218" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bague-auriculaire-signification-pouvoir-intuition-illustration-1.png" alt="Gold ring worn on the little finger, close-up detail" class="wp-image-2218" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

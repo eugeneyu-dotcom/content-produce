@@ -10,7 +10,7 @@ category: "6. バイオフィリックデザイン (Biophilic Design)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践</h2>
-<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-aroma-focus-diffuser-illustration-1.png" alt="Illustration for デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" class="wp-image-1750" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" /></figure>
+<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-aroma-focus-diffuser-illustration-1.png" alt="Small aroma diffuser releasing mist on a desk beside a laptop" class="wp-image-1750" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" /></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">香りが脳機能と集中力に与える科学的影響</h4>
 <p style="margin-bottom: 25px;">デスクワークや学習において、集中力は生産性を左右する重要な要素です。多くの人がコーヒーやエナジードリンクに頼りがちですが、香りの力、特にアロマテラピーが脳機能と集中力に深く関わっていることは、科学的な研究によって明らかになっています。私たちの嗅覚は、五感の中でも特に原始的で、香りの分子が鼻腔から直接、感情や記憶を司る脳の辺縁系に到達します。この直接的な経路が、香りが気分や認知機能に瞬時に影響を与える理由です。</p>
@@ -87,6 +87,6 @@ category: "6. バイオフィリックデザイン (Biophilic Design)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-aroma-focus-diffuser-illustration-2.png" alt="Illustration for デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" class="wp-image-1751" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" /></figure>
+<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/desk-aroma-focus-diffuser-illustration-2.png" alt="Small aroma diffuser releasing mist on a desk beside a laptop" class="wp-image-1751" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="デスクに香りを：アロマディフューザーで集中力を極限まで高める科学と実践" /></figure>
 </div>
 

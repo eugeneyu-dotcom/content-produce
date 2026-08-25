@@ -10,7 +10,7 @@ category: "3. 配線管理の美学 (Cable Management)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善</h2>
-<figure style="text-align: center; margin: 40px 0;"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/no-drill-cable-management-illustration-1.png" class="wp-image-1786" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" title="穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" /></figure>
+<figure style="text-align: center; margin: 40px 0;"><img fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/no-drill-cable-management-illustration-1.png" class="wp-image-1786" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Clean cable management tray mounted under a desk without any visible drilling" title="穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" /></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">核心本質：穴あけ不要ケーブルトレーの固定原理と技術ロジック</h4>
 <p style="margin-bottom: 25px;">ケーブルが絡まり合ったデスクは、作業効率を低下させるだけでなく、見た目にも煩雑で集中力を妨げます。しかし、多くの人が穴あけ加工を伴うケーブル整理に抵抗を感じています。そこで注目されるのが、穴あけ不要なケーブルトレーです。これらの製品は、特殊な固定原理と技術ロジックに基づいて設計されており、デスクを傷つけることなく、スマートな配線環境を実現します。</p>
@@ -83,6 +83,6 @@ category: "3. 配線管理の美学 (Cable Management)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" width="1024" height="1024" src="/media-images/posts/no-drill-cable-management-illustration-2.png" class="wp-image-1787" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" title="穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" /></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" width="1024" height="1024" src="/media-images/posts/no-drill-cable-management-illustration-2.png" class="wp-image-1787" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Clean cable management tray mounted under a desk without any visible drilling" title="穴あけ不要ケーブルトレー完全ガイド：スマートな配線整理でデスクを劇的に改善" /></figure>
 </div>
 

@@ -10,7 +10,7 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">色温度が集中力と生体リズムに与える科学的影響</h4>
 <p style="margin-bottom: 25px;">私たちの脳と身体は、光のスペクトル、特にその色温度によって深く影響を受けています。色温度はケルビン（K）という単位で表現され、低い値は暖色系の光（電球色）、高い値は寒色系の光（昼光色）を示します。この光の色温度が、人間の概日リズム（サーカディアンリズム）と直接的に結びつき、集中力、覚醒度、そして睡眠の質に決定的な役割を果たします。</p>
@@ -97,6 +97,6 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 <dd>A3: 既存の照明器具が調光・調色機能を持たない場合でも、いくつか方法はあります。最も簡単なのは、調光調色機能付きのスマートLED電球に交換することです。また、デスクライトなど局部的な照明に調光調色機能を持つものを取り入れることで、作業環境の色温度を柔軟に調整できます。天井照明とタスクライトを組み合わせる「多重照明」も効果的です。</dd>
 </dl>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
 </div>
 

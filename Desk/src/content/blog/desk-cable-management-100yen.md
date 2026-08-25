@@ -10,7 +10,7 @@ category: "3. 配線管理の美学 (Cable Management)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-cable-management-100yen-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術" title="デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-cable-management-100yen-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Cables neatly organized under a desk using simple dollar-store storage items" title="デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：配線整理の本質——秩序がもたらす精神的静寂</h4>
 <p style="margin-bottom: 25px;">デスク環境を構築する上で、多くの人々が見過ごしがちな領域、それが天板の下に広がる混沌の宇宙——配線です。絡み合ったケーブルの集合体は、単なる視覚的なノイズに留まりません。それは、我々の思考の明晰性を蝕む、静かなる侵略者なのです。配線整理の本質は、物理的な秩序を回復させることを通じて、精神的な静寂と集中力を取り戻す儀式に他なりません。美しく整えられた配線は、作業効率を高めるだけでなく、火災の原因となる埃の蓄積を防ぎ、断線や接触不良のリスクを低減させるという、極めて実践的な安全対策でもあります。足元に潜む災禍の種を摘み取り、清潔で安全な空間を維持することは、現代の知識労働者にとって必須のスキルと言えるでしょう。</p>
@@ -43,6 +43,6 @@ category: "3. 配線管理の美学 (Cable Management)"
 <li style="margin-bottom: 12px;"><strong>漸進的な改善</strong>：最初から完璧を目指す必要はない。まずは床からケーブルを浮かすことから始め、徐々に洗練させていく「カイゼン」のアプローチが、継続の鍵となる。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-cable-management-100yen-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術" title="デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-cable-management-100yen-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Cables neatly organized under a desk using simple dollar-store storage items" title="デスク下配線の美学：100均グッズで実現する「職人級」ケーブル整理術"></figure>
 </div>
 

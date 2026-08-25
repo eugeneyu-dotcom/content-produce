@@ -75,7 +75,7 @@ heroImage: "/media-images/posts/fleur-de-lys-royal-jewelry-cover.png"
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/fleur-de-lys-royal-jewelry-illustration-1.png" alt="Illustration for bijoux fleur de lys royauté" class="wp-image-2045" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/fleur-de-lys-royal-jewelry-illustration-1.png" alt="Gold fleur-de-lys pendant necklace, a symbol of French royal heritage" class="wp-image-2045" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

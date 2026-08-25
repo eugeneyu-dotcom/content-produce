@@ -10,7 +10,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/4k-monitor-arm-guide-illustration-1.png" alt="Illustration for 4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/4k-monitor-arm-guide-illustration-1.png" alt="Adjustable monitor arm holding a 4K display above a minimalist desk" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">4Kモニターアームで実現する究極の快適性：設置と調整の秘訣</h4>
 <p style="margin-bottom: 25px;">4Kモニターの普及により、私たちはかつてないほどの高精細な映像体験を享受できるようになりました。しかし、その大画面と重量ゆえに、一般的なスタンドでは満足のいく設置や調整が難しいという課題も浮上しています。ここで真価を発揮するのが、専用のモニターアームです。特に4Kモニター向けに設計されたアームは、単なるモニターの固定具ではなく、ユーザーの生産性と健康を向上させるための重要なツールとなります。</p>
@@ -62,7 +62,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 <h4 style="margin-bottom: 15px; font-weight: bold; border-bottom: 2px solid #2C3E50; padding-bottom: 10px;">関連動画</h4>
 <p style="margin-bottom: 0;"><a href="https://www.youtube.com/watch?v=njF9QdTE_wA" style="color: #E67E22; text-decoration: underline;" target="_blank">https://www.youtube.com/watch?v=njF9QdTE_wA</a></p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/4k-monitor-arm-guide-illustration-2.png" alt="Illustration for 4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/4k-monitor-arm-guide-illustration-2.png" alt="Adjustable monitor arm holding a 4K display above a minimalist desk" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="4Kモニターアーム徹底解説：最適な選び方から快適なデスク環境構築まで"></figure>
 </div>
 </div>
 

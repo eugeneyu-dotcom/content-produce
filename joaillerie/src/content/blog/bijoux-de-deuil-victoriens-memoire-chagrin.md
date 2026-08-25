@@ -56,7 +56,7 @@ heroImage: "/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-cover
 </ul>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-illustration-1.png" alt="Illustration for bijoux de deuil victoriens" class="wp-image-2198" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-illustration-1.png" alt="Victorian-era mourning brooch with dark jet stone and woven hair detail" class="wp-image-2198" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

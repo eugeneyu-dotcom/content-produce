@@ -10,7 +10,7 @@ category: "7. 集中とフローの心理学 (Psychology of Flow)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/zone-hairu-houhou-shigoto-shuuchuu-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ" title="「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/zone-hairu-houhou-shigoto-shuuchuu-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Focused person working at a clean desk in a calm, distraction-free setting" title="「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">「静かにしろ」と念じる無駄な時間よ、さようなら</h4>
 <p style="margin-bottom: 25px;">私のスタジオには、声が異常に響く男がいる。彼自身に悪気はない。だが、その声は会議室の分厚い扉をいとも簡単に貫通し、私の集中力をまるで鋭利な刃物のように切り刻む。ヘッドフォン？ 気休めに過ぎない。低く響く振動は、骨を伝って脳に直接届くかのようだ。かつての私は、彼が会議を始めるたびに内心で舌打ちし、仕事の効率が著しく低下するのを感じていた。静寂を愛し、ヘッドフォンを嫌う私にとって、それは拷問に近かった。</p>
@@ -48,6 +48,6 @@ category: "7. 集中とフローの心理学 (Psychology of Flow)"
 <li style="margin-bottom: 12px;"><strong>ケース3：「同僚が、やはりうるさすぎる」</strong><br />精神トレーニングは一朝一夕にはいかない。最初は失敗して当然だ。重要なのは、「彼の声を無視しよう」と力むのではなく、「彼の声は、カフェのざわめきと同じ」と、思考のラベルを貼り替える練習を続けること。これは、脳の認知的な抵抗トレーニングだ。ジムで重りを少しずつ増やしていくように、焦らず、しかし着実に負荷に慣れていくしかない。あなたの集中力は、環境によって支配されるものではない。あなた自身が、鍛え、設計し、支配するものなのだ。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/zone-hairu-houhou-shigoto-shuuchuu-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ" title="「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/zone-hairu-houhou-shigoto-shuuchuu-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Focused person working at a clean desk in a calm, distraction-free setting" title="「ゾーンに入る方法」は環境で決まらない。仕事の集中を脳からハックする4つのステップ"></figure>
 </div>
 

@@ -10,7 +10,7 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 
 <h2 class="wp-block-heading"><strong>BenQ ScreenBarシリーズ徹底比較：あなたに最適なモニターライトはどれ？</strong></h2>
 <figure class="wp-block-image size-large">
-    <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/benq-screenbar-comparison-guide-illustration-1.png" alt="Illustration for BenQ ScreenBarシリーズ徹底比較：あなたに最適なモニターライトはどれ？" class="wp-image-1737" title="BenQ ScreenBarシリーズ徹底比較：あなたに最適なモニターライトはどれ？" /><br />
+    <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/benq-screenbar-comparison-guide-illustration-1.png" alt="BenQ ScreenBar monitor light mounted above a display on a minimalist desk" class="wp-image-1737" title="BenQ ScreenBarシリーズ徹底比較：あなたに最適なモニターライトはどれ？" /><br />
 </figure>
 <h4 class="wp-block-heading"><strong>[本質] ミニマリスト・デスクセットアップの究極ガイド</strong></h4>
 <h3 class="wp-block-heading">BenQ ScreenBarシリーズ：主要モデルの徹底比較で最適な選択を</h3>

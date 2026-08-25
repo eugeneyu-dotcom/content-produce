@@ -10,7 +10,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド</h2>
-<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/white-desk-setup-aesthetics-illustration-1.png" alt="Illustration for ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" class="wp-image-1747" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" /></figure>
+<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/white-desk-setup-aesthetics-illustration-1.png" alt="All-white minimalist desk setup with clean lines and simple accessories" class="wp-image-1747" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" title="ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" /></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">ホワイトデスクの核心本質：なぜ白は「おしゃれ」で機能的なのか</h4>
 <p style="margin-bottom: 25px;">白いデスクのセットアップがなぜ多くの人に「おしゃれ」だと感じられるのでしょうか。その答えは、色彩心理学、デザイン哲学、そして空間が人の心に与える影響に深く根ざしています。白は、清潔感、純粋さ、そして無限の可能性を象徴する色です。この色がワークスペースにもたらす効果は計り知れません。</p>
@@ -104,6 +104,6 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/white-desk-setup-aesthetics-illustration-2.png" alt="Illustration for ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" class="wp-image-1748" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" /></figure>
+<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/white-desk-setup-aesthetics-illustration-2.png" alt="All-white minimalist desk setup with clean lines and simple accessories" class="wp-image-1748" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" title="ホワイトデスク セットアップが「おしゃれ」に見える秘密：効率と美学を両立する究極ガイド" /></figure>
 </div>
 

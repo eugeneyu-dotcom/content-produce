@@ -12,7 +12,7 @@ category: "3. Freudian Psychoanalysis"
 <div class="uagb-container-inner-blocks-wrap" style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px;"><strong>Decoding Dreams: How Repressed Emotions Manifest in Your Sleep</strong></h2>
 <div class="wp-block-uagb-image aligncenter uagb-block-ex9l2lb5">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-repressed-emotions-decode-illustration-1.png" class="wp-image-1645" style="width: 1032px; height: 350px; object-fit: cover; border-radius: 6px;" alt="Illustration for Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" title="Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-repressed-emotions-decode-illustration-1.png" class="wp-image-1645" style="width: 1032px; height: 350px; object-fit: cover; border-radius: 6px;" alt="Surreal dreamlike photograph symbolizing repressed emotions surfacing in sleep" title="Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" /></figure>
 </div>
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Core Essence: Unveiling Emotions in the Subconscious Realm</strong></h2>
 <p class="has-text-align-center" style="margin-bottom: 40px;">
@@ -39,7 +39,7 @@ category: "3. Freudian Psychoanalysis"
 <p>Furthermore, advancements in neurofeedback and wearable sleep technology could provide real-time data on emotional brain activity during sleep. This could allow individuals to become more attuned to their emotional states during dreaming, potentially even fostering lucid dreaming to consciously engage with and resolve repressed emotions within the dream itself. The future of dream analysis is not just about decoding; it's about empowering individuals with advanced tools to actively manage, integrate, and heal the emotional wounds revealed by their subconscious. These technological innovations, combined with a deeper scientific understanding of sleep and emotion, promise a future where dreams are not just a nightly mystery but an active, integral part of our journey towards holistic mental and emotional well-being.</p>
 </p>
 <div class="wp-block-uagb-image aligncenter">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-repressed-emotions-decode-illustration-2.png" class="wp-image-1646" style="border-radius: 6px; max-width: 100%;" alt="Illustration for Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" title="Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/dreams-repressed-emotions-decode-illustration-2.png" class="wp-image-1646" style="border-radius: 6px; max-width: 100%;" alt="Surreal dreamlike photograph symbolizing repressed emotions surfacing in sleep" title="Decoding Dreams: How Repressed Emotions Manifest in Your Sleep" /></figure>
 </div></div>
 </div>
 

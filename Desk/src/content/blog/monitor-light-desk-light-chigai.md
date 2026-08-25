@@ -8,7 +8,7 @@ heroImage: "/media-images/posts/monitor-light-desk-light-chigai-cover.png"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">【徹底解説】モニターライトとデスクライトの違いとは？光学的設計から未来の展望まで</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/monitor-light-desk-light-chigai-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for モニターライト デスクライト 違い" title="モニターライト デスクライト 違い"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/monitor-light-desk-light-chigai-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Comparison of a monitor light bar and a traditional desk lamp side by side" title="モニターライト デスクライト 違い"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：光を制する者、思考を制す — デスク照明の進化論</h4>
 <p style="margin-bottom: 25px;">現代におけるデスクは、もはや単なる家具ではない。それは思考を紡ぎ、創造性を具現化するための「道場」であり、知的生産活動の聖域である。この聖域において、我々の集中力と生産性を根底から支える要素、それが「光」だ。かつて、我々の手元を照らすのは、温かみのある光を投げかける伝統的なデスクライトであった。しかし、主役が紙とペンから液晶ディスプレイへと移行した今、照明に求められる役割は劇的に変化した。本稿では、この進化の最前線に立つ「モニターライト」と、長年の歴史を持つ「デスクライト」の間に横たわる、<a href="/category/lighting-design/">ミニマリスト・デスクセットアップの究極ガイド</a>でも語られる本質的な違いを解き明かす。単なる製品比較に留まらず、その設計思想の根源、光学的原理、そして我々の知覚に与える影響の系譜を辿り、次世代のワークスペースが求める光の未来像を提示する。</p>
@@ -73,5 +73,5 @@ heroImage: "/media-images/posts/monitor-light-desk-light-chigai-cover.png"
 <p style="margin-bottom: 25px;">究極的には、照明器具という「モノ」の存在感は希薄になるだろう。デスクの天板そのものが発光したり、モニターのベゼルに照明システムが完全に組み込まれたりすることで、光は空気や水のように、そこにあるのが当たり前の「環境要素」となる。我々はもはや照明を「操作」するのではなく、ただその空間にいるだけで、システムが我々の状態をセンシングし、常に最適な光環境を「提供」してくれる。知的生産の「道場」は、テクノロジーの存在を感じさせない、静かで穏やかな、そして最も思考が深まる空間へと昇華していくのだ。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/monitor-light-desk-light-chigai-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for モニターライト デスクライト 違い" title="モニターライト デスクライト 違い"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/monitor-light-desk-light-chigai-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Comparison of a monitor light bar and a traditional desk lamp side by side" title="モニターライト デスクライト 違い"></figure>
 </div>

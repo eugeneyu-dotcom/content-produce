@@ -10,7 +10,7 @@ category: "7. 集中とフローの心理學 (Psychology of Flow)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例</h2>
-<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/pomodoro-desktop-apps-guide-illustration-1.png" class="wp-image-1761" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" title="デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" /></figure>
+<figure style="text-align: center; margin: 40px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/pomodoro-desktop-apps-guide-illustration-1.png" class="wp-image-1761" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Pomodoro timer app displayed on a desktop screen next to a notebook" title="デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" /></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">ポモドーロテクニックの核心本質：心理学と脳科学に基づいた集中力向上</h4>
 <p style="margin-bottom: 25px;">ポモドーロテクニックは、25分間の作業と5分間の休憩を繰り返すシンプルな時間管理法ですが、その背後には人間の心理と脳科学に基づいた深い洞察があります。私たちは長時間にわたる単調な作業に集中し続けることが苦手であり、認知負荷の蓄積はパフォーマンス低下や燃え尽き症候群を引き起こします。このテクニックは、作業を短いスプリントに分割することで、この認知負荷を効果的に管理し、脳の疲労を軽減します。</p>
@@ -75,6 +75,6 @@ category: "7. 集中とフローの心理學 (Psychology of Flow)"
 </dl>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/pomodoro-desktop-apps-guide-illustration-2.png" class="wp-image-1762" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" title="デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" /></figure>
+<figure style="text-align: center; margin: 60px 0;"><img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/pomodoro-desktop-apps-guide-illustration-2.png" class="wp-image-1762" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Pomodoro timer app displayed on a desktop screen next to a notebook" title="デスクトップでポモドーロテクニックを最大化する：集中力アップアプリの科学、実践、比較、そして成功事例" /></figure>
 </div>
 

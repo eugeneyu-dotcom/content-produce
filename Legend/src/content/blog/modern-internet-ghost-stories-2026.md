@@ -10,7 +10,7 @@ category: "4. Digital Folklore & Creepypastas"
 
 <div class="content-container" style="max-width: 1000px; margin: 0 auto; width: 92%; padding: 30px 0; box-sizing: border-box;"Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
 <h2 style="margin-top: 60px; margin-bottom: 30px; font-weight: 800;" class="main-title">The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/modern-internet-ghost-stories-2026-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026" title="The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/modern-internet-ghost-stories-2026-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Glowing smartphone screen in a dark room, evoking a modern digital ghost story" title="The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026"></figure>
 <div class="article-body">
 <h4>The Case File: AURA's Echo</h4>
 <h2 style="margin-top: 60px; margin-bottom: 30px; font-weight: 800;">The Case File: AURA's Echo</h2>
@@ -35,6 +35,6 @@ category: "4. Digital Folklore & Creepypastas"
 <li style="margin-bottom: 14px;"><strong>Advocate for Transparency:</strong> Engage in and support public discourse on AI ethics and algorithmic transparency. The 'black box' is the darkest room of all; demand a light be shone inside.</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/modern-internet-ghost-stories-2026-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026" title="The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/modern-internet-ghost-stories-2026-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Glowing smartphone screen in a dark room, evoking a modern digital ghost story" title="The Ghost in the Machine: An Analysis of Modern Internet Ghost Stories in 2026"></figure>
 </div>
 

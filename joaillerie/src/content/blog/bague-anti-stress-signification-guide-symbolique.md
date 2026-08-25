@@ -53,6 +53,6 @@ heroImage: "/media-images/posts/bague-anti-stress-signification-guide-symbolique
 <li><strong>L’Anneau ne Suffit Plus Face à un Stress Intense :</strong> Il est fondamental de rappeler que la bague est un outil de soutien, non une solution miracle. Face à une anxiété profonde ou chronique, elle est un allié pour les moments de crise aiguë mais ne remplace pas des stratégies de fond (thérapie, méditation, exercice physique). Si vous constatez que son effet est systématiquement insuffisant, considérez-la comme un signal vous indiquant qu’un soutien plus structuré est peut-être nécessaire. Elle reste un excellent régulateur au quotidien, mais il faut savoir reconnaître ses limites.</li>
 </ul>
 </div>
-<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img fetchpriority="high" decoding="async" class="wp-image-2245" style="border-radius: 8px; width: 100%; height: auto;" src="/media-images/posts/bague-anti-stress-signification-guide-symbolique-illustration-1.png" alt="Illustration for bague anti stress signification" width="1024" height="1024" /></figure>
+<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img fetchpriority="high" decoding="async" class="wp-image-2245" style="border-radius: 8px; width: 100%; height: auto;" src="/media-images/posts/bague-anti-stress-signification-guide-symbolique-illustration-1.png" alt="Textured spinner-style anti-stress ring in gold, designed for fidgeting and mindfulness" width="1024" height="1024" /></figure>
 </div>
 </div>

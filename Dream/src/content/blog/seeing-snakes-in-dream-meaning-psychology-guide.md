@@ -12,7 +12,7 @@ category: "5. Universal Symbolic Themes"
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #FFFFFF; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare</strong></h1>
 <figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/seeing-snakes-in-dream-meaning-psychology-guide-illustration-1.png" class="wp-image-1905" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Illustration for A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" title="A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/seeing-snakes-in-dream-meaning-psychology-guide-illustration-1.png" class="wp-image-1905" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Surreal dreamlike photograph of a snake, symbolizing dream imagery" title="A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" /><br />
         </figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>That Plane Crash Dream I Can't Shake</strong></h2>
@@ -54,7 +54,7 @@ category: "5. Universal Symbolic Themes"
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img decoding="async" width="1024" height="1024" src="/media-images/posts/seeing-snakes-in-dream-meaning-psychology-guide-illustration-2.png" class="wp-image-1906" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Illustration for A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" title="A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" /><br />
+            <img decoding="async" width="1024" height="1024" src="/media-images/posts/seeing-snakes-in-dream-meaning-psychology-guide-illustration-2.png" class="wp-image-1906" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Surreal dreamlike photograph of a snake, symbolizing dream imagery" title="A Guide to Seeing Snakes in Dreams: A Psychologist's Take on an Absurd Nightmare" /><br />
         </figure>
 </p>
 </div>

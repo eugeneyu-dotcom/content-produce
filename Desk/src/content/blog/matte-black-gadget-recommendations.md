@@ -10,7 +10,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/matte-black-gadget-recommendations-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」" title="マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/matte-black-gadget-recommendations-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Matte black desk gadgets and accessories arranged on a minimalist desk" title="マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：色を超えた思想としてのマットブラック</h4>
 <p style="margin-bottom: 25px;">マットブラック（艶消し黒）は、単なる色彩の選択肢ではない。それは一つの思想であり、デジタル環境における自己表現の様式である。光を反射せず、その内に吸収するこの「無彩色」は、現代のガジェットデザインにおいて、単なる流行を超えた地位を確立した。それはステルス戦闘機がレーダー波を吸収するように、ユーザーの注意散漫を吸収し、深い集中へと導くための機能的意匠なのだ。なぜ、クリエイターやプロフェッショナルは、まるで儀式のように自らのデスク環境をマットブラックで統一するのか。本稿では、その美学、機能性、そして根底に流れる哲学を解き明かす。これは、単なるガジェットのおすすめリストではない。あなたの生産性と創造性を再定義するための、<a href="/category/color-theory-and-materiality/">ミニマリスト・デスクセットアップの究極ガイド</a>へと続く思索の旅である。</p>
@@ -75,6 +75,6 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <p style="margin-bottom: 25px;">最終的に、マットブラックという美学は、我々がテクノロジーとどう向き合うかという問いへの一つの答えであり続けるだろう。デジタルデバイスがますます生活に浸透し、我々の注意を奪い合う時代において、あえて存在感を消し、使い手の思考と一体化しようとする「無」の哲学。その価値は、今後ますます高まっていくに違いない。デスク上のガジェットを選ぶことは、自らの思考環境を設計する行為そのものである。そしてマットブラックは、そのための最も静かで、最も力強い選択肢であり続けるだろう。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/matte-black-gadget-recommendations-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」" title="マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/matte-black-gadget-recommendations-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Matte black desk gadgets and accessories arranged on a minimalist desk" title="マットブラックガジェット おすすめ論：美学と機能性を超えた「無の哲学」"></figure>
 </div>
 

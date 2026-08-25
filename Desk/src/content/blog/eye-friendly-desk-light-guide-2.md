@@ -10,7 +10,7 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/eye-friendly-desk-light-guide-2-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来" title="学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/eye-friendly-desk-light-guide-2-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Warm, soft desk lamp lighting designed to reduce eye strain while working" title="学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">目に優しい照明の科学：JIS AA級基準と視覚疲労軽減の原理</h4>
 <p style="margin-bottom: 25px;">学習環境における「目に優しい」という表現は、単なるマーケティング用語ではなく、眼球生理学と光学設計に基づいた厳格な科学的基準によって裏付けられています。最適な学習用デスクライトを選ぶためには、光の物理的特性が私たちの視覚に及ぼす影響を深く理解することが不可欠です。</p>
@@ -100,6 +100,6 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 <p style="margin-bottom: 25px;"><strong style="color: #34495E; display: inline-block; margin-bottom: 20px;">A3: いいえ、デスクライトのブルーライト対策だけでは不十分な場合があります。デスクライトは主に手元の作業面を照らすものであり、PCモニターから直接発せられるブルーライトの対策にはなりません。モニターからのブルーライト対策としては、モニター自体のブルーライト軽減モードの使用、ブルーライトカットフィルターの装着、またはソフトウェアによる調整などが有効です。両者の対策を併用することで、より総合的な目の保護を実現できます。</strong></p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/eye-friendly-desk-light-guide-2-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来" title="学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/eye-friendly-desk-light-guide-2-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Warm, soft desk lamp lighting designed to reduce eye strain while working" title="学習効率を最大化する「目に優しいデスクライト」の科学、実践、そして未来"></figure>
 </div>
 

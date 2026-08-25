@@ -10,7 +10,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/zaikin-desk-takasa-keisan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】" title="在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/zaikin-desk-takasa-keisan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Person measuring desk height against a chair in a home office setup" title="在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">なぜ「感覚」ではなく「計算」なのか？在宅勤務デスクの高さがもたらす無言の支配</h4>
 <p style="margin-bottom: 25px;">在宅勤務という新しい働き方が浸透する中で、多くの人が見過ごしているのが、デスクの「高さ」という静かなる支配者です。私たちは一日の大半をこの平面の上で過ごしますが、その高さが自身の身体に合っていない場合、生産性の低下はもちろん、肩こり、腰痛、さらには手根管症候群といった深刻な健康問題を引き起こすサイレントキラーとなり得ます。感覚的に「これでいいだろう」と選んだデスクの高さが、実は日々の疲労を蓄積させる元凶かもしれません。</p>
@@ -61,6 +61,6 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 <p style="margin-bottom: 25px;">AppleのMagic Keyboardのような薄型キーボードと、厚みのあるメカニカルキーボードでは、手首の角度が大きく変わります。そのため、必要なデスクの高さも微妙に異なります。<br /><b>解決策：</b>計算値はあくまで標準的なキーボードを想定したものです。厚みのあるキーボードを使用する場合は、手首が反り返らないよう、計算値よりもわずかにデスクを下げるか、パームレストを使用して手首の高さを補正する必要があります。最終調整は、実際にタイピングをしながら、手首がまっすぐに保たれる高さを探ってください。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/zaikin-desk-takasa-keisan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】" title="在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/zaikin-desk-takasa-keisan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Person measuring desk height against a chair in a home office setup" title="在宅勤務の質を劇的に変える、デスク高さの計算方法【職人技の精度で】"></figure>
 </div>
 

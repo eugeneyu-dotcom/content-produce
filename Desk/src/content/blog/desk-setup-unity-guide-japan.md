@@ -10,7 +10,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-setup-unity-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術" title="デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-setup-unity-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Cohesive minimalist desk setup with matching materials and color palette" title="デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序論：秩序の美学—なぜデスクの統一感は思考を研ぎ澄ますのか</h4>
 <p style="margin-bottom: 25px;">書斎やワークスペースは、単なる作業場所ではない。それは思考を形にするための祭壇であり、精神の延長線上にある聖域である。そして、その空間における「統一感」とは、見た目の美しさを超えた、極めて機能的な意味を持つ。雑然とした環境は、我々の脳に無数の微細なノイズを送り込み、貴重な認知資源を絶えず奪い続ける。これは心理学における「認知負荷」の問題であり、デスク周りの統一感は、この負荷を最小限に抑えるための最も効果的な手段の一つだ。</p>
@@ -49,6 +49,6 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <li style="margin-bottom: 12px;"><b>機能美の追求：</b>全てのアイテムは、なぜそこにあるのか？ その配置は効率的か？ 機能性を突き詰めることが、結果として美しい秩序を生み出す。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-setup-unity-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術" title="デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-setup-unity-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Cohesive minimalist desk setup with matching materials and color palette" title="デスク周りの統一感の出し方：思考を研ぎ澄ますための心理学的アプローチと実践術"></figure>
 </div>
 

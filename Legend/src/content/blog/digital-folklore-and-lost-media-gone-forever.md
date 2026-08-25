@@ -10,7 +10,7 @@ category: "4. Digital Folklore & Creepypastas"
 
 <div class="content-container" style="max-width: 1000px; margin: 0 auto; width: 92%; padding: 30px 0; box-sizing: border-box;"Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
 <h2 style="margin-top: 60px; margin-bottom: 30px; font-weight: 800;" class="main-title">Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/digital-folklore-and-lost-media-gone-forever-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back" title="Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/digital-folklore-and-lost-media-gone-forever-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Glitching old computer screen displaying corrupted, fading digital imagery" title="Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back"></figure>
 <div class="article-body">
 <h4>The Blog That Isn't There Anymore</h4>
 <p style="margin-bottom: 28px;">There was a story I read as a teenager that has settled under my skin like a splinter. It was on a private blog, one of those simple, pre-platform affairs run by a single, anonymous author. The whole site was a collection of short fiction about Southeast Asian witchcraft and animism. It was raw, unpolished, and felt dangerously authentic. I tried to find it again a few years ago to share a specific story with a friend, and the domain was gone. Not repurposed, not parked, just a dead DNS lookup. It had vanished completely. The internet is littered with these small graveyards, forgotten corners where our <a href="/category/slender-man-origins/">modern lore</a> was born and died quietly.</p>
@@ -32,6 +32,6 @@ category: "4. Digital Folklore & Creepypastas"
 <li style="margin-bottom: 14px;"><strong>Learn to accept the 404.</strong> Some things are just gone. The search is fruitless. The story is over. That unresolved feeling is now part of the narrative itself.</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/digital-folklore-and-lost-media-gone-forever-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back" title="Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/digital-folklore-and-lost-media-gone-forever-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Glitching old computer screen displaying corrupted, fading digital imagery" title="Ghosts in the Machine: On Digital Folklore and Lost Media We Can't Get Back"></figure>
 </div>
 

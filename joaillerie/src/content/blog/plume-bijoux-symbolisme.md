@@ -93,7 +93,7 @@ heroImage: "/media-images/posts/plume-bijoux-symbolisme-cover.png"
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/plume-bijoux-symbolisme-illustration-1.png" alt="Illustration for signification plume en bijoux" class="wp-image-2019" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/plume-bijoux-symbolisme-illustration-1.png" alt="Delicate gold feather-shaped pendant necklace" class="wp-image-2019" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

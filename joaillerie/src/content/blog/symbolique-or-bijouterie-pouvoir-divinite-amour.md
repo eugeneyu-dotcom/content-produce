@@ -83,7 +83,7 @@ heroImage: "/media-images/posts/symbolique-or-bijouterie-pouvoir-divinite-amour-
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/symbolique-or-bijouterie-pouvoir-divinite-amour-illustration-1.png" alt="Illustration for symbolique de l'or en bijouterie" class="wp-image-2234" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/symbolique-or-bijouterie-pouvoir-divinite-amour-illustration-1.png" alt="Ornate gold jewelry piece glowing warmly, symbolizing divine and eternal love" class="wp-image-2234" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

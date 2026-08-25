@@ -8,7 +8,7 @@ heroImage: "/media-images/posts/white-desk-stains-conspicuous-measures-cover.png
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">白いデスクの汚れは宿命か？専門家が教える目立つ原因と究極の対策</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/white-desk-stains-conspicuous-measures-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 白いデスク 汚れ 目立つ 対策" title="白いデスク 汚れ 目立つ 対策"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/white-desk-stains-conspicuous-measures-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Close-up of a white desk surface showing a visible stain mark" title="白いデスク 汚れ 目立つ 対策"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：白という名のキャンバス、その純粋性と向き合う</h4>
 <p style="margin-bottom: 25px;">白いデスクは、思考のための「余白」である。それはミニマリズムの精神を体現し、創造的な作業空間に静謐さと秩序をもたらす。しかし、その純白のキャンバスは、日常のあらゆる痕跡を正直に映し出す鏡でもある。コーヒーの雫、ペンのインク、見えないはずの皮脂。これらは単なる汚れではなく、私たちの活動の記録そのものだ。多くの人が白いデスクに憧れを抱きながらも、その維持管理に躊躇するのは、この「正直さ」ゆえであろう。本稿では、白いデスクの汚れがなぜ目立つのかという物理的・光学的原理から、その美しさを永続させるための具体的な作法、さらには「白いデスクは管理が大変」という神話を解体していく。これは単なる清掃ガイドではない。あなたのワークスペースを最高の状態に保つための哲学と技術の探求であり、<a href="/category/color-theory-and-materiality/">ミニマリスト・デスクセットアップの究極ガイド</a>へと続く道標である。</p>
@@ -100,5 +100,5 @@ heroImage: "/media-images/posts/white-desk-stains-conspicuous-measures-cover.png
 <p style="margin-bottom: 25px;">最終的に、白いデスクを選ぶということは、その美しさと引き換えに、ある種の「責任」を受け入れることでもある。しかし、その責任は決して重荷ではない。むしろ、日々のルーティンに小さな達成感とマインドフルネスをもたらし、仕事や学習に対する誠実な姿勢を育む。白いデスクの手入れは、面倒な義務ではなく、創造性を最大限に引き出すための、価値ある投資なのである。その白さは、あなたの集中力とインスピレーションを静かに、そして力強く支え続けるだろう。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/white-desk-stains-conspicuous-measures-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 白いデスク 汚れ 目立つ 対策" title="白いデスク 汚れ 目立つ 対策"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/white-desk-stains-conspicuous-measures-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Close-up of a white desk surface showing a visible stain mark" title="白いデスク 汚れ 目立つ 対策"></figure>
 </div>

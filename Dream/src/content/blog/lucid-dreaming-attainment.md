@@ -12,7 +12,7 @@ category: "6. Lucid Dreaming & Agency"
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #FFFFFF; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?</strong></h1>
 <figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/lucid-dreaming-attainment-illustration-1.png" class="wp-image-1752" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Illustration for Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" title="Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/lucid-dreaming-attainment-illustration-1.png" class="wp-image-1752" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Soft dreamlike photograph symbolizing conscious control within a dream state" title="Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" /><br />
         </figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Neurobiological and Psychological Foundations of Lucid Dreaming</strong></h2>
@@ -92,7 +92,7 @@ category: "6. Lucid Dreaming & Agency"
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/lucid-dreaming-attainment-illustration-2.png" class="wp-image-1753" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Illustration for Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" title="Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" /><br />
+            <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/lucid-dreaming-attainment-illustration-2.png" class="wp-image-1753" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Soft dreamlike photograph symbolizing conscious control within a dream state" title="Demystifying Lucid Dreaming: Is Conscious Control in Sleep Attainable for Everyone?" /><br />
         </figure>
 </p>
 </div>

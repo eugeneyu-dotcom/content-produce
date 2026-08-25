@@ -8,7 +8,7 @@ heroImage: "/media-images/posts/desk-mat-felt-demerit-cover.png"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デスクマット フェルトのデメリット：後悔する前に知るべき全知識</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for デスクマット フェルト デメリット" title="デスクマット フェルト デメリット"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Close-up of a felt desk mat showing pilling and wear over time" title="デスクマット フェルト デメリット"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：なぜフェルトの温もりは、やがて後悔に変わるのか？</h4>
 <p style="margin-bottom: 25px;">ミニマルで温かみのあるデスク空間を追求する中で、多くの人が羊毛フェルト製のデスクマットに魅了されます。その柔らかな質感と天然素材ならではの風合いは、無機質なデバイスに囲まれた空間に、確かな「生活の質」をもたらしてくれるように感じられます。しかし、その詩的な魅力の裏には、日々の使用において無視できない、数々の実践的なデメリットが潜んでいます。この選択は、単なる美学の問題ではなく、生産性と快適性を左右する重要な決断です。美しいデスク環境を構築するための<a href="/category/color-theory-and-materiality/">ミニマリスト・デスクセットアップの究極ガイド</a>においても、素材の選定はその根幹をなす要素です。本稿では、なぜその温もりがやがて後悔に変わり得るのか、その構造的欠陥から感覚的な不満、そしてユーザーの実体験に至るまで、職人のような精密さで深く掘り下げていきます。これは、単なる欠点の羅列ではなく、理想のデスク環境を築くための、より賢明な選択肢を見出すための探求です。</p>
@@ -75,5 +75,5 @@ heroImage: "/media-images/posts/desk-mat-felt-demerit-cover.png"
 </p>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for デスクマット フェルト デメリット" title="デスクマット フェルト デメリット"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Close-up of a felt desk mat showing pilling and wear over time" title="デスクマット フェルト デメリット"></figure>
 </div>

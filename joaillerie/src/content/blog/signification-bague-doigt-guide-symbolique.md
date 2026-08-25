@@ -83,7 +83,7 @@ heroImage: "/media-images/posts/signification-bague-doigt-guide-symbolique-cover
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/signification-bague-doigt-guide-symbolique-illustration-1.png" alt="Illustration for signification bague doigt" class="wp-image-2209" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/signification-bague-doigt-guide-symbolique-illustration-1.png" alt="Several gold rings displayed across different fingers of a hand" class="wp-image-2209" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

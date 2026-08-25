@@ -44,7 +44,7 @@ heroImage: "/media-images/posts/pouvoir-des-pierres-precieuses-experience-scepti
 </ul>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/pouvoir-des-pierres-precieuses-experience-sceptique-illustration-1.png" alt="Illustration for pouvoir des pierres precieuses" class="wp-image-2283" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/pouvoir-des-pierres-precieuses-experience-sceptique-illustration-1.png" alt="Various raw and polished gemstones arranged on a dark surface" class="wp-image-2283" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

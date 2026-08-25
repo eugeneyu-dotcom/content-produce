@@ -68,7 +68,7 @@ heroImage: "/media-images/posts/bijoux-serpent-signification-spirituelle-cover.p
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bijoux-serpent-signification-spirituelle-illustration-1.png" alt="Illustration for bijoux serpent signification spirituelle" class="wp-image-2035" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/bijoux-serpent-signification-spirituelle-illustration-1.png" alt="Gold serpent-shaped bracelet coiled elegantly, symbolizing spiritual renewal and transformation" class="wp-image-2035" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

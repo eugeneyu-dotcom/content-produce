@@ -10,7 +10,7 @@ category: "3. 配線管理の美學 (Cable Management)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/power-tap-hiding-box-guide-illustration-1.png" alt="Illustration for 【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学" title="【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" src="/media-images/posts/power-tap-hiding-box-guide-illustration-1.png" alt="Power strip concealed neatly inside a storage box under a desk" title="【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">なぜ「隠す」のか？電源タップボックスの本質的価値</h4>
 <h3>空間における「静寂」の創出</h3>
@@ -94,6 +94,6 @@ category: "3. 配線管理の美學 (Cable Management)"
 <p style="margin-bottom: 25px;"><strong style="color: #34495e; display: inline-block; margin-bottom: 20px;">A3:</strong> 多くの市販木製ボックスには、燃えにくいように難燃性の塗装や加工が施されています。しかし、ケーブルボックスが提供する最も重要な安全対策は、火災の主な原因である「トラッキング現象」を防ぐことにあります。これは、ホコリの蓄積を防ぐことで実現されるため、素材の種類に関わらず、ボックスを使用すること自体が火災リスクを大幅に低減させます。素材の特性を理解し、デザインやインテリアとの調和を重視して選ぶのが良いでしょう。</p>
 </div>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/power-tap-hiding-box-guide-illustration-2.png" alt="Illustration for 【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学" title="【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" src="/media-images/posts/power-tap-hiding-box-guide-illustration-2.png" alt="Power strip concealed neatly inside a storage box under a desk" title="【徹底解説】電源タップ収納ボックスの選び方。隠す美学と火災を防ぐ科学"></figure>
 </div>
 

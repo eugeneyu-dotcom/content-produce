@@ -10,7 +10,7 @@ category: "5. デジタル・ミニマリズム (Digital Minimalism)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/digital-folder-mastery-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解" title="デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/digital-folder-mastery-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Neatly organized digital folder structure displayed on a computer screen" title="デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">デジタル整理術の核心：情報検索理論と認知心理学</h4>
 <p style="margin-bottom: 25px;">建築設計事務所でチーフデザイナーを務める田中氏の仕事場は、常に驚くほどの効率性を誇ります。彼女が手がける複雑なプロジェクトは、何百ものCADデータ、レンダリング画像、クライアントとの議事録といった膨大なデジタル資産を伴いますが、必要なファイルは常に3クリック以内に見つかり、過去の資料も瞬時に参照可能です。この卓越した効率性は、単なる几帳面さから来るものではなく、情報検索理論と認知心理学に深く根ざしたデジタル整理術によって支えられています。彼女のシステムは、脳が情報を処理し、記憶し、そして想起するメカニズムに適合するよう設計されているのです。</p>
@@ -41,6 +41,6 @@ category: "5. デジタル・ミニマリズム (Digital Minimalism)"
 <li><strong>共有フォルダのルール明文化と共有：</strong>もしチームで共有フォルダを使用している場合、上記で定めた命名規則やフォルダ構造に関するルールを明文化し、チーム全体で共有し遵守することを提案してください。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/digital-folder-mastery-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解" title="デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/digital-folder-mastery-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Neatly organized digital folder structure displayed on a computer screen" title="デジタル整理術の極意：認知科学が解き明かすフォルダ管理の最適解"></figure>
 </div>
 

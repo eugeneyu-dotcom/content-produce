@@ -10,7 +10,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">ウォールナットデスクの経年変化：5年後の「景色」を育てるということ</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/walnut-desk-aging-process-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for ウォールナットデスクの経年変化：5年後の「景色」を育てるということ" title="ウォールナットデスクの経年変化：5年後の「景色」を育てるということ"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/walnut-desk-aging-process-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Walnut wood desk surface showing rich grain texture developed over years" title="ウォールナットデスクの経年変化：5年後の「景色」を育てるということ"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：五年目の朝、デスクは語り始めた</h4>
 <p style="margin-bottom: 25px;">朝の光が部屋に差し込む。5年前に迎えたウォールナットのデスクは、今、静かにその表情を変えている。購入当初、それは深く、ほとんど黒に近いチョコレート色をしていた。重厚で、どこか近寄りがたいほどの威厳があった。しかし、毎朝のコーヒーカップの跡、無数のアイデアを書き留めたペンの滑り、そして窓から差し込む光の洗礼を経て、そのデスクはもはや単なる「家具」ではない。表面は、角が取れて滑らかになり、色は赤みを帯びた温かいマホガニーブラウンへと変化している。まるで、共に過ごした時間の記憶を吸い込んで、内側から発光しているかのようだ。これは劣化ではない。これは「成熟」であり、使い手とデスクが共に紡いできた物語の物的な証左なのである。この変化、すなわち「経年変化」こそが、ウォールナットという素材が持つ最大の魅力であり、我々が深く探求すべき価値の核心だ。</p>
@@ -36,6 +36,6 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <li style="margin-bottom: 12px;"><strong>変化を記録する：</strong>一年に一度、同じ場所、同じ光の条件下でデスクの写真を撮る。数年後に見返した時、その微妙で、しかし確実な変化に驚き、デスクへの愛着がより一層深まるだろう。</li>
 </ul>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/walnut-desk-aging-process-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for ウォールナットデスクの経年変化：5年後の「景色」を育てるということ" title="ウォールナットデスクの経年変化：5年後の「景色」を育てるということ"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/walnut-desk-aging-process-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Walnut wood desk surface showing rich grain texture developed over years" title="ウォールナットデスクの経年変化：5年後の「景色」を育てるということ"></figure>
 </div>
 

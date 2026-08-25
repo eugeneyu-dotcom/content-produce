@@ -7,7 +7,7 @@ heroImage: "/media-images/posts/desk-clean-psychology-features-japan-cover.png"
 ---
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">机の上が綺麗な人の心理とは？元カノの「汚デスク」から見えた理科脳と文科脳の絶望的な断絶</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-clean-psychology-features-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for  生産性向上 ワークスペース" title=" 生産性向上 ワークスペース"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-clean-psychology-features-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Tidy, organized minimalist desk workspace with clear surfaces" title=" 生産性向上 ワークスペース"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">視界のノイズが、僕の精神を直接削っていた日々の記憶</h4>
 <p style="margin-bottom: 25px;">元カノとオフィスで同僚だった時期がある。その記憶は今でも、僕の網膜に焼き付いている。僕のデスクは、言うなれば「無」だった。ノートPC、キーボード、マウス、水の入ったグラス、そしてティッシュの箱。それだけ。視界に入る全てのモノには、明確な存在理由があった。一方で、彼女のデスクは「混沌」そのものだった。業務用のモニターの周りには、正体不明のフィギュアやぬいぐるみが神殿の偶像のように鎮座し、いつ書かれたかも分からない書類の地層が形成され、その隙間から乾いたペンの残骸や、もはやゴミとしか呼べない何かが顔を覗かせていた。</p>
@@ -69,5 +69,5 @@ heroImage: "/media-images/posts/desk-clean-psychology-features-japan-cover.png"
 <p style="margin-bottom: 25px;">他人の基準を捨て、自らの魂と対話し、自分だけの究極のコックピットを創り上げること。それこそが、机の上という小さな宇宙を通して、我々が到達すべき本質的な目標なのだ。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-clean-psychology-features-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for  生産性向上 ワークスペース" title=" 生産性向上 ワークスペース"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-clean-psychology-features-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Tidy, organized minimalist desk workspace with clear surfaces" title=" 生産性向上 ワークスペース"></figure>
 </div>

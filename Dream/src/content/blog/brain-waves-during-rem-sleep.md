@@ -11,7 +11,7 @@ category: "1. Neurobiological Foundations"
 <div class="wp-block-uagb-container uagb-block-b8f00iiy alignfull" style="background-padding: 40px 0;">
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #ffffff; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep</strong></h1>
-<figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;"><img loading="lazy" decoding="async" class="wp-image-1836" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" title="The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" src="/media-images/posts/brain-waves-during-rem-sleep-illustration-1.png" alt="Illustration for The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" width="1024" height="1024" /></figure>
+<figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;"><img loading="lazy" decoding="async" class="wp-image-1836" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" title="The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" src="/media-images/posts/brain-waves-during-rem-sleep-illustration-1.png" alt="Abstract glowing illustration symbolizing brain wave activity during REM sleep" width="1024" height="1024" /></figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Paradoxical Symphony: An Introduction to REM Sleep’s Brain Activity</strong></h2>
 <div class="content-block" style="margin-bottom: 40px;">
@@ -60,7 +60,7 @@ category: "1. Neurobiological Foundations"
 </ul>
 </div>
 </div>
-<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img loading="lazy" decoding="async" class="wp-image-1837" style="border-radius: 6px; width: 100%; border: 1px solid #333;" title="The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" src="/media-images/posts/brain-waves-during-rem-sleep-illustration-2.png" alt="Illustration for The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" width="1024" height="1024" /></figure>
+<figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;"><img loading="lazy" decoding="async" class="wp-image-1837" style="border-radius: 6px; width: 100%; border: 1px solid #333;" title="The Paradoxical Theater: A Deep Dive into Brain Waves During REM Sleep" src="/media-images/posts/brain-waves-during-rem-sleep-illustration-2.png" alt="Abstract glowing illustration symbolizing brain wave activity during REM sleep" width="1024" height="1024" /></figure>
 </div>
 </div>
 

@@ -12,7 +12,7 @@ category: "2. Jungian Archetypes"
 <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h1 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; color: #FFFFFF; font-size: 2.8rem; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious</strong></h1>
 <figure class="wp-block-image aligncenter size-large" style="margin-bottom: 50px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/jungian-dream-symbols-guide-illustration-1.png" class="wp-image-1791" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Illustration for Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" title="Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/jungian-dream-symbols-guide-illustration-1.png" class="wp-image-1791" style="width: 1032px; min-height: 350px; height: auto; object-fit: cover; border-radius: 6px; border: 1px solid #333;" alt="Surreal dreamlike photograph symbolizing Jungian dream symbols and archetypes" title="Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" /><br />
         </figure>
 <div style="width: 100%; text-align: left;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Living Language of the Psyche: Beyond Fixed Definitions</strong></h2>
@@ -59,7 +59,7 @@ category: "2. Jungian Archetypes"
 </div>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/jungian-dream-symbols-guide-illustration-2.png" class="wp-image-1792" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Illustration for Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" title="Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" /><br />
+            <img loading="lazy" decoding="async" width="1024" height="1024" src="/media-images/posts/jungian-dream-symbols-guide-illustration-2.png" class="wp-image-1792" style="border-radius: 6px; width: 100%; border: 1px solid #333;" alt="Surreal dreamlike photograph symbolizing Jungian dream symbols and archetypes" title="Beyond the Dictionary: A Jungian Guide to Dream Symbols and the Collective Unconscious" /><br />
         </figure>
 </p>
 </div>

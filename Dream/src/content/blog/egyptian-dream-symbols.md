@@ -12,7 +12,7 @@ category: "7. Cultural & Spiritual Evolution"
 <div class="uagb-container-inner-blocks-wrap" style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; width: 90%;">
 <h2 class="wp-block-heading has-text-align-center" style="margin-bottom: 30px; text-shadow: 0 0 15px rgba(187, 134, 252, 0.5);"><strong>Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance</strong></h2>
 <div class="wp-block-uagb-image aligncenter uagb-block-msn1j92b">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" class="wp-image-1678" style="width: 100%; max-width: 1032px; height: auto; min-height: 350px; border-radius: 6px; object-fit: cover; border: 1px solid #333;" src="/media-images/posts/egyptian-dream-symbols-illustration-1.png" alt="Illustration for Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" title="Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" class="wp-image-1678" style="width: 100%; max-width: 1032px; height: auto; min-height: 350px; border-radius: 6px; object-fit: cover; border: 1px solid #333;" src="/media-images/posts/egyptian-dream-symbols-illustration-1.png" alt="Symbolic photograph evoking ancient Egyptian dream interpretation imagery" title="Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" /></figure>
 </div>
 <h2 class="wp-block-heading has-text-align-center" style="margin-top: 50px; margin-bottom: 25px;"><strong>The Mystical Nexus: Dreams, Divinity, and Dynastic Power in Ancient Egypt</strong></h2>
 <div style="margin-bottom: 40px; text-align: left;">
@@ -80,7 +80,7 @@ category: "7. Cultural & Spiritual Evolution"
 </div>
 </div>
 <div class="wp-block-uagb-image aligncenter" style="margin-top: 50px;">
-<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" class="wp-image-1679" style="border-radius: 6px; width: 100%; height: auto; border: 1px solid #333;" src="/media-images/posts/egyptian-dream-symbols-illustration-2.png" alt="Illustration for Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" title="Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" /></figure>
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" width="1024" height="1024" class="wp-image-1679" style="border-radius: 6px; width: 100%; height: auto; border: 1px solid #333;" src="/media-images/posts/egyptian-dream-symbols-illustration-2.png" alt="Symbolic photograph evoking ancient Egyptian dream interpretation imagery" title="Deciphering the Sacred Canvas: Ancient Egyptian Dream Interpretation Symbols and Their Enduring Significance" /></figure>
 </div>
 </div>
 </div>

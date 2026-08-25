@@ -10,7 +10,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/ergonomics-keyboard-merit-guide-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学" title="エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/ergonomics-keyboard-merit-guide-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Ergonomic split keyboard positioned for a neutral wrist angle on a desk" title="エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：道具と身体の対話—エルゴノミクスの本質</h4>
 <p style="margin-bottom: 25px;">現代の知識労働者にとって、キーボードは思考をデジタル世界に刻むための鑿（のみ）であり、筆です。しかし、私たちが日常的に使う標準的なフラットキーボードは、実は工業生産の効率性を優先した結果であり、人体の自然な構造を無視した設計と言わざるを得ません。その結果、多くの人が手首の痛み、肩こり、さらには反復性ストレス障害（RSI）といった代償を支払っています。</p>
@@ -69,6 +69,6 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 <p style="margin-bottom: 25px;">エルゴノミクスキーボードを選択するということは、私たちの身体が、使い捨ての資源ではなく、長期的に維持・管理すべき最も重要な資本であると認識することです。それは、効率性や生産性という短期的な指標だけでなく、持続可能性とウェルビーイングという、より本質的な価値観に根差した決断です。現代の画一的な工業製品がもたらす身体への負荷に対して、「否」を突きつけ、自らの身体に合わせて道具を誂えるという、極めてパーソナルで創造的な行為なのです。初期のコストや学習への挑戦は、未来の健康と快適なデジタルライフへの最も賢明な投資と言えるでしょう。あなたの手は、思考を紡ぐための聖なる道具です。それにふさわしい器を与えない理由はありません。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/ergonomics-keyboard-merit-guide-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学" title="エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/ergonomics-keyboard-merit-guide-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Ergonomic split keyboard positioned for a neutral wrist angle on a desk" title="エルゴノミクスキーボードの真価：手首の悲鳴を沈黙させる科学と美学"></figure>
 </div>
 

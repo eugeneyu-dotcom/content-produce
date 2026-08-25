@@ -10,7 +10,7 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
 <h2 style="margin-bottom: 30px; font-weight: bold;">人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-posture-correction-guide-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Illustration for 人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術" title="人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術"></figure>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-posture-correction-guide-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Person sitting at a desk demonstrating correct ergonomic posture" title="人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">身体の軸を取り戻す：デスクワーク姿勢矯正グッズの人間工学的本質</h4>
 <p style="margin-bottom: 25px;">現代の知識労働者にとって、デスクでの長時間の着座は避けられない現実です。しかし、この静的な行為が、私たちの身体に静かな、しかし深刻な負荷をかけ続けている事実は看過できません。腰痛、肩こり、そして集中力の散漫。これらの問題の根源は、多くの場合、不適切な姿勢、すなわち身体の自然なS字カーブが崩れることに起因します。この課題に対し、姿勢矯正グッズは単なる気休めの道具ではなく、人間工学（エルゴノミクス）の原理に基づき、身体の軸を再調整するための科学的なソリューションとして存在します。</p>
@@ -86,6 +86,6 @@ category: "1. 機能的人間工学 (Functional Ergonomics)"
 <p style="margin-bottom: 25px;">我々はこれまで、人間工学に基づいた様々な姿勢矯正グッズの科学的根拠、比較分析、そして実践的な活用法を深く探求してきました。骨盤クッションが骨盤の角度を正し、モニターアームが視線を安定させ、エルゴノミクスチェアが全身を支える。これらのツールが現代のデスクワーカーにとって強力な味方であることは疑いようもありません。しかし、究極的に目指すべきは、これらのツールへの完全な依存ではなく、ツールを通じて身体本来の正しい在り方を再学習し、最終的には自身の意識と筋力で自然な姿勢を維持できるようになることです。姿勢矯正グッズは、目的地へ案内してくれる熟練のガイドではありますが、道を歩むのは自分自身の足です。ツールのサポートを受けながら、定期的に立ち上がって身体を動かし、体幹を意識する習慣を育むこと。それこそが、一過性の対策ではなく、持続可能な健康と生産性を手に入れるための本質的なアプローチです。ツールを身体機能の拡張と捉え、テクノロジーと身体が調和する、より質の高いワークスタイルを構築していくこと。その先にこそ、真の快適性と創造性が待っているのです。</p>
 </p>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-posture-correction-guide-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Illustration for 人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術" title="人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-posture-correction-guide-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Person sitting at a desk demonstrating correct ergonomic posture" title="人間工学の真髄：デスクワーク姿勢矯正グッズの科学的選定法と生産性を最大化する活用術"></figure>
 </div>
 

@@ -81,7 +81,7 @@ heroImage: "/media-images/posts/difference-or-jaune-et-or-rose-symbole-cover.png
 </p>
 </div>
 <figure class="wp-block-image aligncenter size-large" style="margin-top: 60px;">
-            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/difference-or-jaune-et-or-rose-symbole-illustration-1.png" alt="Illustration for difference or jaune et or rose symbole" class="wp-image-2185" style="border-radius: 8px; width: 100%; height: auto;" /><br />
+            <img fetchpriority="high" fetchpriority="high" decoding="async" width="1024" height="1024" src="/media-images/posts/difference-or-jaune-et-or-rose-symbole-illustration-1.png" alt="Side-by-side comparison of yellow gold and rose gold jewelry pieces" class="wp-image-2185" style="border-radius: 8px; width: 100%; height: auto;" /><br />
         </figure>
 </p>
 </div>

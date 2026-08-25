@@ -13,7 +13,7 @@ category: "6. Lucid Dreaming & Agency"
 <h2 class="wp-block-heading has-text-align-center"><strong>Lucid Dreaming for PTSD Recovery: Navigating Trauma with Conscious Awareness</strong></h2>
 <div class="wp-block-uagb-image aligncenter uagb-block-47ic57iv wp-block-uagb-image--layout-default">
 <figure class="wp-block-uagb-image__figure" style="margin: 20px 0;">
-                <img loading="lazy" decoding="async" src="/media-images/posts/lucid-dreaming-ptsd-healing-illustration-1.png" alt="Illustration for Lucid Dreaming for PTSD Recovery: Navigating Trauma with Conscious Awareness" width="1032" height="350" style="object-fit:cover; border-radius:6px; display: block; margin: 0 auto;" loading="lazy" title="Lucid Dreaming for PTSD Recovery: Navigating Trauma with Conscious Awareness"><br />
+                <img loading="lazy" decoding="async" src="/media-images/posts/lucid-dreaming-ptsd-healing-illustration-1.png" alt="Soft dreamlike photograph symbolizing healing and conscious awareness during sleep" width="1032" height="350" style="object-fit:cover; border-radius:6px; display: block; margin: 0 auto;" loading="lazy" title="Lucid Dreaming for PTSD Recovery: Navigating Trauma with Conscious Awareness"><br />
             </figure>
 </p></div>
 <h4 class="wp-block-heading has-text-align-center"><strong>The Master Encyclopedia of Dreams</strong></h4>
