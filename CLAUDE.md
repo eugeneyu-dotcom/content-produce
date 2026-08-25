@@ -263,3 +263,5 @@ cd "/Users/eugeneyu/Desktop/eugeneyu-bitbucket"
 - `new-keywords.csv` — 全新關鍵字待寫清單（尚未派工到 Sheet 的候選關鍵字）
 - `content-followups.md` — 既有文章待重寫/待重新定位的追蹤清單（跟 new-keywords.csv 不同，
   這裡是舊文章要修，不是新關鍵字要寫）
+- `Site_Strategy_Log.md` — 四站差異化策略日誌（首頁結構/內容系列/互動功能等定位層級的決策，
+  非單篇文章優化），每次定案新方向都要記錄，並在有足夠 GSC 數據後回頭補上成效驗證
