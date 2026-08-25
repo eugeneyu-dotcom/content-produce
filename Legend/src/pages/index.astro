@@ -25,9 +25,15 @@ function findImage(basePath) {
 	return '';
 }
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 6);
+);
+const posts = allPosts.slice(0, 6);
+
+const onScreenSlugs = ['slender-man-video-game-viral-origin', 'horror-movies-based-on-real-urban-legends'];
+const onScreenPosts = onScreenSlugs
+	.map((slug) => allPosts.find((post) => post.id === slug))
+	.filter(Boolean);
 
 const pillars = [
 	{ title: "Psychological Foundations & Anxiety", desc: "Understanding the human fears behind the myths.", bg: "/media-images/pillar-psychology.webp", link: "/category/psychology-of-urban-legends" },
@@ -123,6 +129,102 @@ const pillars = [
 				height: 2px;
 				background-color: var(--accent, #B91C1C);
 				margin: 0.5em auto 0;
+			}
+
+			/* --- On Screen Spotlight --- */
+			.on-screen-section {
+				max-width: 1200px;
+				margin: 0 auto 4em;
+				padding: 2.5em 2em;
+				background: #1A1816;
+				border: 1px solid var(--accent-dark, #7A1212);
+				border-radius: 4px;
+				box-shadow: 0 4px 25px rgba(0,0,0,0.5);
+			}
+			.on-screen-header {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+			.on-screen-kicker {
+				display: inline-block;
+				color: var(--accent, #B91C1C);
+				font-size: 0.85em;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				border: 1px solid var(--accent, #B91C1C);
+				padding: 0.3em 1em;
+				margin-bottom: 1em;
+			}
+			.on-screen-title {
+				font-family: 'Special Elite', cursive;
+				font-size: 2.4em;
+				font-weight: 400;
+				color: #fff;
+				margin: 0.2em 0;
+			}
+			.on-screen-intro {
+				color: #D6D3CE;
+				max-width: 560px;
+				margin: 0.5em auto 0;
+				line-height: 1.7;
+			}
+			.on-screen-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2em;
+			}
+			.on-screen-card {
+				position: relative;
+				display: block;
+				height: 300px;
+				background-size: cover;
+				background-position: center;
+				background-color: #0D0D0D;
+				border-radius: 4px;
+				overflow: hidden;
+				text-decoration: none;
+				filter: grayscale(0.4) contrast(1.2);
+				transition: filter 0.3s ease, transform 0.3s ease;
+			}
+			.on-screen-card:hover {
+				filter: grayscale(0.1) contrast(1.2);
+				transform: translateY(-4px);
+			}
+			.on-screen-card-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(13,13,13,0.95), transparent);
+				padding: 2.5em 1.5em 1.5em;
+			}
+			.on-screen-card h3 {
+				font-family: 'Courier Prime', monospace;
+				font-weight: 700;
+				font-size: 1.2em;
+				color: #fff;
+				margin: 0 0 0.4em;
+				line-height: 1.3;
+			}
+			.on-screen-read {
+				color: var(--accent, #E05252);
+				font-size: 0.85em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.on-screen-archive-link {
+				display: block;
+				text-align: center;
+				margin-top: 2em;
+				color: #D6D3CE;
+				text-decoration: none;
+				font-size: 0.95em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-top: 1px solid rgba(185,28,28,0.3);
+				padding-top: 1.5em;
+				transition: color 0.3s ease;
+			}
+			.on-screen-archive-link:hover {
+				color: var(--accent, #B91C1C);
 			}
 
 			/* --- Pillar Posts (Cards with BG) --- */
@@ -253,6 +355,30 @@ const pillars = [
 						Explore the darkest corners of human anxiety, digital folklore, and terrifying cross-cultural tales that lurk in the shadows.
 					</p>
 				</div>
+			</section>
+
+			<!-- On Screen Spotlight -->
+			<section class="on-screen-section">
+				<div class="on-screen-header">
+					<span class="on-screen-kicker">Latest Dispatch</span>
+					<h2 class="on-screen-title">Legends on Screen</h2>
+					<p class="on-screen-intro">Where cryptids and creepypastas go when they leave the page — tracked here as new games and films adapt them.</p>
+				</div>
+				<div class="on-screen-grid">
+					{onScreenPosts.map((post) => {
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						return (
+							<a href={`/blog/${post.id}/`} class="on-screen-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+								<div class="on-screen-card-content">
+									<h3>{post.data.title}</h3>
+									<span class="on-screen-read">Read the file &rarr;</span>
+								</div>
+							</a>
+						);
+					})}
+				</div>
+				<a href="/category/legends-on-screen" class="on-screen-archive-link">Browse the full archive &rarr;</a>
 			</section>
 
 			<!-- Pillar Posts Section -->
