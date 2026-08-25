@@ -25,9 +25,16 @@ function findImage(basePath) {
 	return '';
 }
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 6);
+);
+const posts = allPosts.slice(0, 6);
+
+const searchIndex = allPosts.map((post) => ({
+	title: post.data.title,
+	slug: post.id,
+	description: post.data.description || '',
+}));
 
 const pillars = [
 	{ title: "Neurobiological Foundations", desc: "The biological engine of REM sleep and memory.", bg: "/media-images/pillar-neuro.webp", link: "/category/rem-sleep-neuroscience" },
@@ -127,6 +134,99 @@ const pillars = [
 				background-color: var(--accent, #A78BFA);
 				margin: 0.6em auto 0;
 				box-shadow: 0 0 8px var(--accent);
+			}
+
+			/* --- Dream Dictionary Search --- */
+			.dream-search-section {
+				max-width: 700px;
+				margin: 0 auto 4em;
+				padding: 0 1em;
+				text-align: center;
+			}
+			.dream-search-intro {
+				color: #C4B5FD;
+				font-size: 1.05em;
+				margin: -0.4em 0 1.8em;
+				opacity: 0.85;
+			}
+			.dream-search-box {
+				position: relative;
+			}
+			.dream-search-input {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 1em 1.4em;
+				font-size: 1.1em;
+				font-family: 'Manrope', sans-serif;
+				color: #F5F1FE;
+				background: rgba(255,255,255,0.06);
+				backdrop-filter: blur(12px);
+				-webkit-backdrop-filter: blur(12px);
+				border: 1px solid rgba(167, 139, 250, 0.3);
+				border-radius: 999px;
+				outline: none;
+				transition: border-color 0.3s ease, box-shadow 0.3s ease;
+			}
+			.dream-search-input::placeholder {
+				color: rgba(226, 220, 245, 0.45);
+			}
+			.dream-search-input:focus {
+				border-color: var(--accent, #A78BFA);
+				box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+			}
+			.dream-search-results {
+				list-style: none;
+				margin: 0.8em 0 0;
+				padding: 0.5em;
+				text-align: left;
+				background: rgba(11, 6, 24, 0.92);
+				backdrop-filter: blur(14px);
+				-webkit-backdrop-filter: blur(14px);
+				border: 1px solid rgba(167, 139, 250, 0.25);
+				border-radius: 16px;
+				box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+				max-height: 420px;
+				overflow-y: auto;
+			}
+			.dream-search-results[hidden] {
+				display: none;
+			}
+			.dream-search-result {
+				border-radius: 10px;
+			}
+			.dream-search-result a {
+				display: block;
+				padding: 0.9em 1em;
+				color: #E2DCF5;
+				text-decoration: none;
+				border-radius: 10px;
+				transition: background-color 0.2s ease;
+			}
+			.dream-search-result a:hover,
+			.dream-search-result a.is-active {
+				background: rgba(167, 139, 250, 0.16);
+			}
+			.dream-search-result-title {
+				font-family: 'Cormorant Garamond', serif;
+				font-size: 1.2em;
+				font-style: italic;
+				color: #F5F1FE;
+			}
+			.dream-search-result-desc {
+				display: block;
+				font-size: 0.85em;
+				color: #C4B5FD;
+				opacity: 0.8;
+				margin-top: 0.2em;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.dream-search-empty {
+				padding: 0.9em 1em;
+				color: #C4B5FD;
+				opacity: 0.7;
+				font-style: italic;
 			}
 
 			/* --- Pillar Posts (Cards with BG) --- */
@@ -263,6 +363,25 @@ const pillars = [
 				</div>
 			</section>
 
+			<!-- Dream Dictionary Search -->
+			<section class="dream-search-section">
+				<h2 class="section-title">Search the Dream Dictionary</h2>
+				<p class="dream-search-intro">Type what you saw — a person, an animal, a feeling — and jump straight to its meaning.</p>
+				<div class="dream-search-box">
+					<input
+						type="text"
+						id="dream-search-input"
+						class="dream-search-input"
+						placeholder="e.g. falling, teeth, snake, an ex..."
+						autocomplete="off"
+						aria-label="Search the dream dictionary"
+						aria-controls="dream-search-results"
+						aria-expanded="false"
+					/>
+					<ul id="dream-search-results" class="dream-search-results" role="listbox" hidden></ul>
+				</div>
+			</section>
+
 			<!-- Pillar Posts Section -->
 			<h2 class="section-title">Dimensions of the Dreamscape</h2>
 			<div class="pillar-grid">
@@ -306,5 +425,95 @@ const pillars = [
 			</ul>
 		</main>
 		<Footer />
+		<script define:vars={{ searchIndex }}>
+			const input = document.getElementById('dream-search-input');
+			const results = document.getElementById('dream-search-results');
+			let activeIndex = -1;
+			let currentMatches = [];
+
+			function escapeHtml(str) {
+				return str.replace(/[&<>"']/g, (c) => ({
+					'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+				}[c]));
+			}
+
+			function render(matches) {
+				currentMatches = matches;
+				activeIndex = -1;
+				if (matches.length === 0) {
+					results.innerHTML = '<li class="dream-search-empty">No dream symbol matches that yet — try a different word.</li>';
+					results.hidden = false;
+					input.setAttribute('aria-expanded', 'true');
+					return;
+				}
+				results.innerHTML = matches.map((m, i) => `
+					<li class="dream-search-result" role="option" id="dream-result-${i}">
+						<a href="/blog/${m.slug}/">
+							<span class="dream-search-result-title">${escapeHtml(m.title)}</span>
+							${m.description ? `<span class="dream-search-result-desc">${escapeHtml(m.description)}</span>` : ''}
+						</a>
+					</li>
+				`).join('');
+				results.hidden = false;
+				input.setAttribute('aria-expanded', 'true');
+			}
+
+			function hide() {
+				results.hidden = true;
+				results.innerHTML = '';
+				input.setAttribute('aria-expanded', 'false');
+				activeIndex = -1;
+				currentMatches = [];
+			}
+
+			function search(query) {
+				const q = query.trim().toLowerCase();
+				if (!q) {
+					hide();
+					return;
+				}
+				const matches = searchIndex.filter((post) =>
+					post.title.toLowerCase().includes(q) || post.description.toLowerCase().includes(q)
+				).slice(0, 8);
+				render(matches);
+			}
+
+			let debounceTimer;
+			input.addEventListener('input', (e) => {
+				clearTimeout(debounceTimer);
+				const value = e.target.value;
+				debounceTimer = setTimeout(() => search(value), 120);
+			});
+
+			input.addEventListener('keydown', (e) => {
+				if (results.hidden || currentMatches.length === 0) {
+					if (e.key === 'Enter') search(input.value);
+					return;
+				}
+				const links = results.querySelectorAll('a');
+				if (e.key === 'ArrowDown') {
+					e.preventDefault();
+					activeIndex = Math.min(activeIndex + 1, links.length - 1);
+					links.forEach((l, i) => l.classList.toggle('is-active', i === activeIndex));
+					links[activeIndex]?.scrollIntoView({ block: 'nearest' });
+				} else if (e.key === 'ArrowUp') {
+					e.preventDefault();
+					activeIndex = Math.max(activeIndex - 1, 0);
+					links.forEach((l, i) => l.classList.toggle('is-active', i === activeIndex));
+					links[activeIndex]?.scrollIntoView({ block: 'nearest' });
+				} else if (e.key === 'Enter') {
+					e.preventDefault();
+					const target = activeIndex >= 0 ? links[activeIndex] : links[0];
+					if (target) window.location.href = target.href;
+				} else if (e.key === 'Escape') {
+					hide();
+					input.blur();
+				}
+			});
+
+			document.addEventListener('click', (e) => {
+				if (!e.target.closest('.dream-search-box')) hide();
+			});
+		</script>
 	</body>
 </html>
