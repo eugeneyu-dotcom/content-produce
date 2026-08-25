@@ -162,7 +162,12 @@
     },
     {
       "source": "/sigmund-freud-interpretation-of-dreams-latent-content/",
-      "destination": "/blog/sigmund-freud-interpretation-of-dreams-latent-content/",
+      "destination": "/blog/manifest-latent-content-dreams-simplified-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sigmund-freud-interpretation-of-dreams-latent-content/",
+      "destination": "/blog/manifest-latent-content-dreams-simplified-guide/",
       "permanent": true
     },
     {
