@@ -30,6 +30,11 @@
 內容架構完全一樣。這輪四個方向的共通精神是**用互動/系列取代純列表**（joaillerie 穿搭模組、
 Legend 時事模組、Dream 搜尋框、Desk 診斷測驗），讓四站在視覺主題之外，結構上也真正分化開來。
 
-另外調查時發現兩個孤兒重複頁面（跟這次策略無關，之後有空處理即可）：
+另外調查時發現兩個孤兒重複頁面（跟這次策略無關）：
 - `joaillerie/src/pages/faune-flore-et-secrets-de-la-nature.astro`（跟同名 category 頁重複）
 - `Desk/src/pages/functional-ergonomics.astro`（跟同名 category 頁重複）
+
+**2026-08-26 已處理**：確認站上沒有任何內部連結指向這兩個根目錄頁面（`resolvePillarSlug()`
+實際解析 pillar 連結時是掃描 `category/*.astro`，完全不讀 Sheet 的 Pillar Post Url 欄位），
+但該欄位裡確實存過這兩個根目錄網址、頁面本身也有真實內容，可能已被 Google 索引，因此刪除
+檔案的同時在各站 `vercel.json` 加了 301 轉址到對應的 `/category/<slug>/` 頁面，不留 404。

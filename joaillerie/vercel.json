@@ -214,6 +214,11 @@
       "source": "/wedding-ring-right-hand/",
       "destination": "/blog/wedding-ring-right-hand/",
       "permanent": true
+    },
+    {
+      "source": "/faune-flore-et-secrets-de-la-nature/",
+      "destination": "/category/symbolisme-de-la-nature/",
+      "permanent": true
     }
   ]
 }

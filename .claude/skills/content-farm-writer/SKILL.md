@@ -177,9 +177,12 @@ API)、組裝 Astro Markdown,並把 `Status=USED` 寫回 Sheet。
 ## Pillar Post(基石匯總頁)
 
 Sheet 裡的「Pillar Post Url」欄位一定要指向一個真實存在的頁面,否則會 404(先前有兩個
-維度就是這樣才被發現——可參考 git 歷史裡的
-`joaillerie/src/pages/faune-flore-et-secrets-de-la-nature.astro` 與
-`Desk/src/pages/functional-ergonomics.astro` 當範本)。被要求新增 pillar 時:在站台
+維度就是這樣才被發現,曾建過 `joaillerie/src/pages/faune-flore-et-secrets-de-la-nature.astro`
+與 `Desk/src/pages/functional-ergonomics.astro` 兩個根目錄頁面來補這個洞——但因為
+`resolvePillarSlug()` 實際上是掃描 `category/*.astro` 來解析文章內的 pillar 連結,完全不讀
+這個 CSV 欄位,這兩個根目錄頁面在站上從頭到尾沒有任何內部連結指向,是純孤兒頁,2026-08-26
+已刪除並改為轉址到對應的 `/category/<slug>/` 頁面。要找當初的版面範本,用
+`git log --all --full-history -- <該檔案路徑>` 找刪除前的版本)。被要求新增 pillar 時:在站台
 **根目錄**建立 `src/pages/<slug>.astro`(不是放在 `category/` 底下),沿用該站既有的
 `Header`/`Footer`/`BaseHead` 元件與配色/字體主題,內容包含 hero 區塊、導論、串接該維度
 既有文章的 cluster 卡片區、簡短 FAQ,以及連到對應 `/category/<slug>/` 頁與首頁的 CTA。
