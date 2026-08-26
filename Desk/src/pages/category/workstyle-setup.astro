@@ -1,0 +1,76 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE } from '../../consts';
+---
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <BaseHead title={"ワークスタイル別セットアップ | " + SITE_TITLE} description="あなたの働き方に必要なのはどれ？ Web会議中心・集中作業・配信/クリエイター・学生の4タイプ別に、デスクグッズの優先順位をまとめた実践ガイド。" />
+        <script type="application/ld+json" set:html={"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"ワークスタイル別セットアップとは？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"働き方ごとに優先すべきデスクグッズをまとめたガイド\"}},{\"@type\":\"Question\",\"name\":\"何タイプ用意されている？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Web会議中心・集中作業・配信/クリエイター・学生の4タイプ\"}},{\"@type\":\"Question\",\"name\":\"全部揃える必要がある？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ、自分のタイプの優先項目だけで十分\"}},{\"@type\":\"Question\",\"name\":\"複数のタイプに当てはまる場合は？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"優先度が高いタイプから順に取り入れて問題ない\"}},{\"@type\":\"Question\",\"name\":\"このガイドは更新される？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい、新しいワークスタイル別ガイドを追加予定\"}}]}"} />
+    </head>
+    <body>
+        <Header />
+        <main class="category-page" style="width: 75%; max-width: none; margin: 0 auto; padding: 20px;">
+        <header style="margin-bottom: 40px;">
+            <h1>ワークスタイル別セットアップ</h1>
+        </header>
+
+        <section class="category-article" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+            <p>デスクグッズのレビュー記事は数多くありますが、どれも自分の働き方に必要かどうかは別問題です。このガイドでは「Web会議中心」「集中作業」「配信・クリエイター」「学生・コスパ重視」の4つのワークスタイルごとに、本当に優先すべきものだけを整理しています。全部揃える必要はなく、自分のタイプに合う記事だけを参考にしてください。</p>
+        </section>
+
+        <section class="category-wp-content">
+<figure class="wp-block-uagb-image__figure"><img loading="lazy" decoding="async" src="/media-images/posts/focus-worker-desk-setup-guide.webp" alt="Illustration for ワークスタイル別セットアップ" class="uag-image-workstyle-setup" width="1200" height="350" title="ワークスタイル別セットアップ" role="img"></figure>
+</section>
+
+
+
+<section class="category-keywords" style="margin: 40px 0; padding: 20px; border-top: 1px solid rgba(51,46,42,0.12);">
+    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Related Keywords</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a href="/blog/setup-web-kaigi-multi-worker/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #C17F59); color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.95rem; transition: opacity 0.2s;">#Web会議 デスク環境</a>
+        <a href="/blog/focus-worker-desk-setup-guide/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #C17F59); color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.95rem; transition: opacity 0.2s;">#集中作業 デスクセットアップ</a>
+        <a href="/blog/creator-streamer-desk-setup-guide/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #C17F59); color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.95rem; transition: opacity 0.2s;">#配信 クリエイター デスク</a>
+        <a href="/blog/student-budget-desk-setup-guide/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #C17F59); color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.95rem; transition: opacity 0.2s;">#学生 一人暮らし デスク</a>
+    </div>
+</section>
+
+
+
+<div class="category-faq-section" style="margin-top: 60px; padding: 40px 30px; background: #FBFAF7; border-radius: 4px; border: 1px solid rgba(51,46,42,0.12);">
+    <h2 style="text-align: center; margin-bottom: 40px; color: var(--accent-dark, #6B4226); font-size: 2rem; font-family: 'Shippori Mincho', serif;">Frequently Asked Questions</h2>
+    <div class="faq-content" style="display: flex; flex-direction: column; gap: 24px;">
+
+        <div class="faq-item" style="background: #ffffff; border-radius: 2px; padding: 24px; border-left: 3px solid var(--accent); transition: transform 0.2s ease;">
+            <h4 style="color: var(--accent-dark, #6B4226); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 600; font-family: 'Shippori Mincho', serif;">Q: ワークスタイル別セットアップとは？</h4>
+            <p style="color: #5C5650; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> 働き方ごとに優先すべきデスクグッズをまとめたガイド</p>
+        </div>
+
+        <div class="faq-item" style="background: #ffffff; border-radius: 2px; padding: 24px; border-left: 3px solid var(--accent); transition: transform 0.2s ease;">
+            <h4 style="color: var(--accent-dark, #6B4226); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 600; font-family: 'Shippori Mincho', serif;">Q: 何タイプ用意されている？</h4>
+            <p style="color: #5C5650; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Web会議中心・集中作業・配信/クリエイター・学生の4タイプ</p>
+        </div>
+
+        <div class="faq-item" style="background: #ffffff; border-radius: 2px; padding: 24px; border-left: 3px solid var(--accent); transition: transform 0.2s ease;">
+            <h4 style="color: var(--accent-dark, #6B4226); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 600; font-family: 'Shippori Mincho', serif;">Q: 全部揃える必要がある？</h4>
+            <p style="color: #5C5650; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> いいえ、自分のタイプの優先項目だけで十分</p>
+        </div>
+
+        <div class="faq-item" style="background: #ffffff; border-radius: 2px; padding: 24px; border-left: 3px solid var(--accent); transition: transform 0.2s ease;">
+            <h4 style="color: var(--accent-dark, #6B4226); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 600; font-family: 'Shippori Mincho', serif;">Q: 複数のタイプに当てはまる場合は？</h4>
+            <p style="color: #5C5650; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> 優先度が高いタイプから順に取り入れて問題ない</p>
+        </div>
+
+        <div class="faq-item" style="background: #ffffff; border-radius: 2px; padding: 24px; border-left: 3px solid var(--accent); transition: transform 0.2s ease;">
+            <h4 style="color: var(--accent-dark, #6B4226); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 600; font-family: 'Shippori Mincho', serif;">Q: このガイドは更新される？</h4>
+            <p style="color: #5C5650; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> はい、新しいワークスタイル別ガイドを追加予定</p>
+        </div>
+    </div>
+</div>
+    </main>
+        <Footer />
+    </body>
+</html>

@@ -25,9 +25,21 @@ function findImage(basePath) {
 	return '';
 }
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 6);
+);
+const posts = allPosts.slice(0, 6);
+
+const workstyleOptions = [
+	{ key: 'meeting', label: 'オンライン会議が多い', slug: 'setup-web-kaigi-multi-worker' },
+	{ key: 'focus', label: 'とにかく集中したい', slug: 'focus-worker-desk-setup-guide' },
+	{ key: 'creator', label: '配信・動画編集をしている', slug: 'creator-streamer-desk-setup-guide' },
+	{ key: 'student', label: '予算を抑えたい学生', slug: 'student-budget-desk-setup-guide' },
+];
+const workstyleResults = workstyleOptions.map((opt) => {
+	const post = allPosts.find((p) => p.id === opt.slug);
+	return { ...opt, title: post?.data.title || '', description: post?.data.description || '' };
+});
 
 const pillars = [
 	{ title: "機能的人間工学", desc: "90-90-90の法則と疲労軽減の最適解", bg: "/media-images/pillar-ergonomics.webp", link: "/category/functional-ergonomics" },
@@ -123,6 +135,118 @@ const pillars = [
 				height: 2px;
 				background-color: var(--accent);
 				margin: 0.6em auto 0;
+			}
+
+			/* --- Setup Diagnosis --- */
+			.diagnosis-section {
+				max-width: 900px;
+				margin: 0 auto 4em;
+				padding: 2.5em 2em;
+				background: #ffffff;
+				border: 1px solid rgba(51,46,42,0.12);
+				border-radius: 4px;
+			}
+			.diagnosis-header {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+			.diagnosis-kicker {
+				display: inline-block;
+				color: var(--accent-dark, #6B4226);
+				font-size: 0.8em;
+				letter-spacing: 2px;
+				border: 1px solid var(--accent, #C17F59);
+				border-radius: 2px;
+				padding: 0.3em 1.2em;
+				margin-bottom: 1em;
+			}
+			.diagnosis-title {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 2em;
+				font-weight: 700;
+				color: var(--accent-dark, #6B4226);
+				margin: 0.2em 0;
+			}
+			.diagnosis-intro {
+				color: #5C5650;
+				max-width: 480px;
+				margin: 0.5em auto 0;
+				line-height: 1.7;
+			}
+			.diagnosis-questions {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1em;
+			}
+			.diagnosis-option {
+				font-family: 'IBM Plex Sans JP', sans-serif;
+				font-size: 1em;
+				padding: 1.4em 1.2em;
+				background: #F7F4EF;
+				border: 1px solid rgba(51,46,42,0.15);
+				border-radius: 2px;
+				color: #33302C;
+				cursor: pointer;
+				transition: border-color 0.2s ease, background-color 0.2s ease;
+				text-align: center;
+			}
+			.diagnosis-option:hover {
+				border-color: var(--accent, #C17F59);
+				background: #FBFAF7;
+			}
+			.diagnosis-result {
+				position: relative;
+			}
+			.diagnosis-result-card {
+				position: relative;
+				height: 280px;
+				background-size: cover;
+				background-position: center;
+				background-color: #EDE7DD;
+				border-radius: 4px;
+				overflow: hidden;
+			}
+			.diagnosis-result-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(51,46,42,0.9), transparent);
+				padding: 2.5em 1.5em 1.5em;
+				color: #F7F4EF;
+			}
+			.diagnosis-result-label {
+				display: block;
+				font-size: 0.8em;
+				letter-spacing: 2px;
+				color: var(--accent, #C17F59);
+				margin-bottom: 0.5em;
+			}
+			.diagnosis-result-content h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1.4em;
+				color: #fff;
+				margin: 0 0 0.6em;
+				line-height: 1.4;
+			}
+			.diagnosis-result-link {
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				border-bottom: 1px solid var(--accent, #C17F59);
+				padding-bottom: 2px;
+			}
+			.diagnosis-reset {
+				display: block;
+				margin: 1.5em auto 0;
+				background: none;
+				border: none;
+				color: #8a8077;
+				text-decoration: underline;
+				cursor: pointer;
+				font-size: 0.9em;
+				font-family: 'IBM Plex Sans JP', sans-serif;
+			}
+			.diagnosis-reset:hover {
+				color: var(--accent-dark, #6B4226);
 			}
 
 			/* --- Pillar Posts (Cards with BG) --- */
@@ -250,6 +374,36 @@ const pillars = [
 				</div>
 			</section>
 
+			<!-- Setup Diagnosis -->
+			<section class="diagnosis-section">
+				<div class="diagnosis-header">
+					<span class="diagnosis-kicker">セットアップ診断</span>
+					<h2 class="diagnosis-title">あなたに必要なのは、どれ？</h2>
+					<p class="diagnosis-intro">一番近い働き方を選ぶと、優先すべきデスクグッズをまとめたガイドが見つかります。</p>
+				</div>
+				<div class="diagnosis-questions" id="diagnosis-questions">
+					{workstyleOptions.map((opt) => (
+						<button type="button" class="diagnosis-option" data-key={opt.key}>{opt.label}</button>
+					))}
+				</div>
+				<div class="diagnosis-result" id="diagnosis-result" hidden>
+					{workstyleResults.map((r) => {
+						const basePath = `/media-images/posts/${r.slug}`;
+						const bgImage = findImage(basePath);
+						return (
+							<div class="diagnosis-result-card" data-result-key={r.key} style={bgImage ? `background-image: url('${bgImage}');` : ''} hidden>
+								<div class="diagnosis-result-content">
+									<span class="diagnosis-result-label">診断結果</span>
+									<h3>{r.title}</h3>
+									<a href={`/blog/${r.slug}/`} class="diagnosis-result-link">ガイドを見る &rarr;</a>
+								</div>
+							</div>
+						);
+					})}
+					<button type="button" class="diagnosis-reset" id="diagnosis-reset">もう一度診断する</button>
+				</div>
+			</section>
+
 			<!-- Pillar Posts Section -->
 			<h2 class="section-title">カテゴリー</h2>
 			<div class="pillar-grid">
@@ -293,5 +447,26 @@ const pillars = [
 			</ul>
 		</main>
 		<Footer />
+		<script>
+			const questions = document.getElementById('diagnosis-questions');
+			const result = document.getElementById('diagnosis-result');
+			const resetBtn = document.getElementById('diagnosis-reset');
+
+			questions?.addEventListener('click', (e) => {
+				const btn = e.target.closest('.diagnosis-option');
+				if (!btn) return;
+				const key = btn.dataset.key;
+				questions.hidden = true;
+				result.hidden = false;
+				result.querySelectorAll('.diagnosis-result-card').forEach((card) => {
+					card.hidden = card.dataset.resultKey !== key;
+				});
+			});
+
+			resetBtn?.addEventListener('click', () => {
+				result.hidden = true;
+				questions.hidden = false;
+			});
+		</script>
 	</body>
 </html>
