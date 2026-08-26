@@ -149,7 +149,7 @@ const jsonLd = {
 		<main style="padding-top: 0;">
 			<article>
 				{resolvedHeroImage ? (
-					<div class="hero-banner" style={`background-image: url('${resolvedHeroImage}');`}>
+					<div class="hero-banner" style={`background-image: url('${resolvedHeroImage}');`} role="img" aria-label={description || title}>
 						<div class="hero-banner-overlay"></div>
 						<div class="hero-banner-content">
 							<h1 set:html={title} />
