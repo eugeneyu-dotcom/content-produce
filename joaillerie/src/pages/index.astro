@@ -26,9 +26,15 @@ function findImage(basePath) {
 	return ''; // blank if not found
 }
 
-const posts = (await getCollection('blog')).sort(
+const allPosts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 6); // Get latest 6 posts
+);
+const posts = allPosts.slice(0, 6); // Get latest 6 posts
+
+const styleGuideSlugs = ['superposer-colliers-guide-longueurs', 'or-argent-choisir-carnation-mythe'];
+const styleGuidePosts = styleGuideSlugs
+	.map((slug) => allPosts.find((post) => post.id === slug))
+	.filter(Boolean);
 
 // Hardcoded Pillar Posts based on SOP2-1
 // User wants to manually manage pillar images under /media-images/
@@ -121,6 +127,102 @@ const pillars = [
 				height: 2px;
 				background-color: var(--accent, #9335B6);
 				margin: 0.5em auto 0;
+			}
+
+			/* --- Style Guide Spotlight --- */
+			.style-guide-section {
+				max-width: 1200px;
+				margin: 0 auto 4em;
+				padding: 2.5em 2em;
+				background: #fff;
+				border: 1px solid #eaeaea;
+				border-radius: 8px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+			}
+			.style-guide-header {
+				text-align: center;
+				margin-bottom: 2em;
+			}
+			.style-guide-kicker {
+				display: inline-block;
+				color: var(--accent, #9335B6);
+				font-size: 0.8em;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				border: 1px solid var(--accent, #9335B6);
+				border-radius: 20px;
+				padding: 0.3em 1.2em;
+				margin-bottom: 1em;
+			}
+			.style-guide-title {
+				font-family: 'Playfair Display', serif;
+				font-size: 2.3em;
+				font-weight: 400;
+				color: #222;
+				margin: 0.2em 0;
+			}
+			.style-guide-intro {
+				color: #666;
+				max-width: 560px;
+				margin: 0.5em auto 0;
+				line-height: 1.7;
+			}
+			.style-guide-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2em;
+			}
+			.style-guide-card {
+				position: relative;
+				display: block;
+				height: 300px;
+				background-size: cover;
+				background-position: center;
+				background-color: #f5edf9;
+				border-radius: 6px;
+				overflow: hidden;
+				text-decoration: none;
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.style-guide-card:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 15px 30px rgba(147, 53, 182, 0.2);
+			}
+			.style-guide-card-content {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+				padding: 2.5em 1.5em 1.5em;
+			}
+			.style-guide-card h3 {
+				font-family: 'Playfair Display', serif;
+				font-weight: 400;
+				font-size: 1.2em;
+				color: #fff;
+				margin: 0 0 0.4em;
+				line-height: 1.3;
+			}
+			.style-guide-read {
+				color: #E8C5F5;
+				font-size: 0.85em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.style-guide-archive-link {
+				display: block;
+				text-align: center;
+				margin-top: 2em;
+				color: #666;
+				text-decoration: none;
+				font-size: 0.95em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-top: 1px solid #eaeaea;
+				padding-top: 1.5em;
+				transition: color 0.3s ease;
+			}
+			.style-guide-archive-link:hover {
+				color: var(--accent, #9335B6);
 			}
 
 			/* --- Pillar Posts (Cards with BG) --- */
@@ -245,6 +347,30 @@ const pillars = [
 						le symbolisme des bagues et l'histoire qui se cache derrière chaque parure.
 					</p>
 				</div>
+			</section>
+
+			<!-- Style Guide Spotlight -->
+			<section class="style-guide-section">
+				<div class="style-guide-header">
+					<span class="style-guide-kicker">Nouveau</span>
+					<h2 class="style-guide-title">Guide de Style</h2>
+					<p class="style-guide-intro">La signification d'un bijou est une chose. Voici comment le porter, l'associer et le superposer au quotidien.</p>
+				</div>
+				<div class="style-guide-grid">
+					{styleGuidePosts.map((post) => {
+						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
+						const bgImage = findImage(basePath);
+						return (
+							<a href={`/blog/${post.id}/`} class="style-guide-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
+								<div class="style-guide-card-content">
+									<h3>{post.data.title}</h3>
+									<span class="style-guide-read">Lire le guide &rarr;</span>
+								</div>
+							</a>
+						);
+					})}
+				</div>
+				<a href="/category/guide-de-style" class="style-guide-archive-link">Voir tous les guides de style &rarr;</a>
 			</section>
 
 			<!-- Pillar Posts Section -->
