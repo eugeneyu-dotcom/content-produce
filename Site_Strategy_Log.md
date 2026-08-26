@@ -38,3 +38,10 @@ Legend 時事模組、Dream 搜尋框、Desk 診斷測驗），讓四站在視�
 實際解析 pillar 連結時是掃描 `category/*.astro`，完全不讀 Sheet 的 Pillar Post Url 欄位），
 但該欄位裡確實存過這兩個根目錄網址、頁面本身也有真實內容，可能已被 Google 索引，因此刪除
 檔案的同時在各站 `vercel.json` 加了 301 轉址到對應的 `/category/<slug>/` 頁面，不留 404。
+
+**2026-08-26 hero 圖 alt text 已處理**：稽核當時記的「hero/cover 圖是 CSS background-image、
+完全沒有 alt text」實際只有 joaillerie 一站有這個問題——Dream/Desk/Legend 的 `BlogPost.astro`
+本來就用真的 `<img alt={title}>`，只有 joaillerie 用 `<div style="background-image:...">`
+疊 `<h1>` 的做法，導致每篇文章的 hero 圖對螢幕閱讀器完全不存在。修法是在該 `<div>` 加
+`role="img"` 與 `aria-label={description || title}`，不改版面、不用重寫成 `<img>`，一次套用到
+全站所有文章（因為是共用 layout，不是逐篇檔案）。
