@@ -1,13 +1,13 @@
 ---
-title: "デスクマット フェルト デメリット"
+title: "フェルトのデスクマットにしてから、マウスカーソルが急に飛ぶようになったのはなぜ？"
 slug: "desk-mat-felt-demerit"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "フェルト製デスクマットの毛玉やマウス感度低下、液体染みなどのデメリットを構造から解説し、他素材との比較も紹介します。"
+description: "デスクマット フェルトのデメリット：見た目の温かみと引き換えに起きる光学式マウスのトラッキング不良や毛玉、静電気による塵の吸着まで、構造的な欠陥を解説します。"
 heroImage: "/media-images/posts/desk-mat-felt-demerit-cover.png"
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
-<h2 style="margin-bottom: 30px; font-weight: bold;">デスクマット フェルトのデメリット：後悔する前に知るべき全知識</h2>
+<h2 style="margin-bottom: 30px; font-weight: bold;">フェルトのデスクマットにしてから、マウスカーソルが急に飛ぶようになったのはなぜ？</h2>
 <figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Close-up of a felt desk mat showing pilling and wear over time" title="デスクマット フェルト デメリット"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：なぜフェルトの温もりは、やがて後悔に変わるのか？</h4>

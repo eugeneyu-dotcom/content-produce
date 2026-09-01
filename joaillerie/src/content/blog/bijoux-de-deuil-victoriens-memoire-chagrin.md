@@ -1,15 +1,15 @@
 ---
-title: "bijoux de deuil victoriens"
+title: "Les Bijoux de Deuil Victoriens Ne Contenaient Pas Que du Jais — Ils Contenaient les Cheveux du Défunt"
 slug: "bijoux-de-deuil-victoriens-memoire-chagrin"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Les bijoux de deuil victoriens : jais, cheveux tressés et perles racontent comment la reine Victoria a codifié le chagrin en un langage joaillier intime."
+description: "Bijoux de deuil victoriens : pourquoi le jais n'est pas le matériau le plus troublant de cette tradition — les cheveux du défunt, tissés à la main par des artisans spécialisés, l'étaient bien davantage."
 category: "Rites de Passage"
 heroImage: "/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-cover.png"
 ---
 
 <div class="wp-block-group alignfull" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.joaillerie-et-symbolique.com/wp-content/uploads/2026/05/image-header.png'); background-size: cover; background-position: center; padding-top: 180px; padding-bottom: 100px; color: #ffffff; text-align: center; margin-bottom: 0px !important; display: block;">
 <p style="text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">bijoux de deuil victoriens</p>
-<h1 style="color: #ffffff; font-size: 3rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Bijoux de deuil victoriens : Le langage secret de la mémoire et du chagrin</h1>
+<h1 style="color: #ffffff; font-size: 3rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Les Bijoux de Deuil Victoriens Ne Contenaient Pas Que du Jais — Ils Contenaient les Cheveux du Défunt</h1>
 </div>
 <div class="wp-block-group alignfull" style="background-color: var(--ast-global-color-4); padding: 60px 0px; margin-top: 0px !important; display: block;">
 <div style="max-width: 1200px; width: 90%; margin: 0 auto; display: block; text-align: left;">

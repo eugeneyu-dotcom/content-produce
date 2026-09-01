@@ -1,13 +1,13 @@
 ---
-title: "白いデスク 汚れ 目立つ 対策"
+title: "「黒いデスクの方が汚れが目立たず楽」というのは本当？よくある俗説を3つ検証した"
 slug: "white-desk-stains-conspicuous-measures"
 pubDate: 2026-06-10T04:19:59.911Z
-description: "白いデスクの汚れが目立つ光学的理由と、日常の手入れ方法や黒・木目デスクとの比較から選び方を解説します。"
+description: "白いデスクの汚れ対策：「黒の方が楽」という俗説は実は誤解を招く表現。光学的な理由から3つの俗説の真偽まで、白・黒・木目デスクの比較を交えて検証します。"
 heroImage: "/media-images/posts/white-desk-stains-conspicuous-measures-cover.png"
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
-<h2 style="margin-bottom: 30px; font-weight: bold;">白いデスクの汚れは宿命か？専門家が教える目立つ原因と究極の対策</h2>
+<h2 style="margin-bottom: 30px; font-weight: bold;">「黒いデスクの方が汚れが目立たず楽」というのは本当？よくある俗説を3つ検証した</h2>
 <figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/white-desk-stains-conspicuous-measures-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Close-up of a white desk surface showing a visible stain mark" title="白いデスク 汚れ 目立つ 対策"></figure>
 <div class="article-body">
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">序章：白という名のキャンバス、その純粋性と向き合う</h4>
