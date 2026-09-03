@@ -44,6 +44,23 @@ cd Legend && npm run build
 git add [articles and images] && git commit -m "..." && git push origin main
 ```
 
+**push 完之後，一定要主動通知 Google 收錄**（2026-09-03 新增，Eugene 要求的固定流程，
+不是可選步驟）：對每一個新發表或有實質改版（標題/內容重寫）的網址，呼叫
+`Search_Console_Check/gsc_request_indexing.py` 送出 Google Indexing API 通知，插隊
+到 Google 自然爬取排程前面，不要傻等：
+
+```bash
+cd "/Users/eugeneyu/Desktop/Routine_work/Search_Console_Check"
+venv/bin/python gsc_request_indexing.py --url "https://www.xxx.com/blog/slug/"
+# 多個網址：--url 可重複指定多次，或用 --urls-file urls.txt（每行一個網址）
+```
+
+- 適用範圍：新文章、新分類頁、以及標題/描述有實質重寫的既有文章（純內文小改不必送）。
+  只改了 alt text、schema 這類不影響 SERP 呈現的技術微調不用送。
+- 憑證跟設定已經備妥（`indexing-service-account.json`），不需要額外設定，直接呼叫即可。
+- 每個 GCP 專案每天預設額度 200 次，這個專案規模離上限還很遠，不用特別省著用。
+- 送完之後結果會自動附加寫進 `gsc_indexing_requests_log.json`，不用另外手動記錄。
+
 ---
 
 ## API Key 檔案格式
