@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO策略紀事</title>
+</head>
+<body>
+<style>
+  :root {
+    --bg: #f3f2ef;
+    --surface: #ffffff;
+    --surface-2: #eae8e3;
+    --ink: #1c1e24;
+    --muted: #5b5f6b;
+    --faint: #8b8f99;
+    --line: #dedcd6;
+    --joaillerie: #8a2fa8;
+    --dream: #6e4fd1;
+    --desk: #a8622f;
+    --legend: #b23430;
+    --system: #147d74;
+    --pending: #9a6a00;
+    --code-bg: #eceae4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161b;
+      --surface: #1b1e25;
+      --surface-2: #23262e;
+      --ink: #e7e4de;
+      --muted: #a3a7b0;
+      --faint: #71757f;
+      --line: #2c303a;
+      --joaillerie: #c78fe0;
+      --dream: #a78bfa;
+      --desk: #e0a874;
+      --legend: #e8615d;
+      --system: #5fc9be;
+      --pending: #e0a736;
+      --code-bg: #23262e;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161b;
+    --surface: #1b1e25;
+    --surface-2: #23262e;
+    --ink: #e7e4de;
+    --muted: #a3a7b0;
+    --faint: #71757f;
+    --line: #2c303a;
+    --joaillerie: #c78fe0;
+    --dream: #a78bfa;
+    --desk: #e0a874;
+    --legend: #e8615d;
+    --system: #5fc9be;
+    --pending: #e0a736;
+    --code-bg: #23262e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, 'Noto Sans TC', 'PingFang TC', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrap {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  /* ---- Header ---- */
+  .page-header {
+    margin-bottom: 3rem;
+  }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--system);
+    margin-bottom: 0.9rem;
+  }
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 2.9rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.7rem;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  /* ---- Stats strip ---- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2.4rem 0 0;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 1.1rem 1.1rem;
+  }
+  .stat .n {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: block;
+  }
+  .stat .l {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+  }
+
+  /* ---- Site legend ---- */
+  .legend-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    margin: 1.6rem 0 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .legend-row .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+  }
+
+  /* ---- Phases ---- */
+  .phase {
+    margin-top: 3.2rem;
+    padding-top: 2.2rem;
+    border-top: 1px solid var(--line);
+  }
+  .phase:first-of-type {
+    margin-top: 3.6rem;
+  }
+  .phase-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.85rem;
+    margin-bottom: 0.35rem;
+  }
+  .phase-index {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .phase-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .phase-when {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--faint);
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  .phase-summary {
+    color: var(--muted);
+    max-width: 66ch;
+    margin: 0.5rem 0 1.4rem;
+    font-size: 0.97rem;
+  }
+
+  /* ---- Entries ---- */
+  .entry {
+    display: flex;
+    gap: 0.9rem;
+    padding: 0.95rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .entry:first-child { border-top: none; }
+
+  .tag {
+    flex: 0 0 auto;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    height: fit-content;
+    white-space: nowrap;
+    margin-top: 0.15rem;
+  }
+  .tag.joaillerie { background: color-mix(in srgb, var(--joaillerie) 16%, transparent); color: var(--joaillerie); }
+  .tag.dream { background: color-mix(in srgb, var(--dream) 16%, transparent); color: var(--dream); }
+  .tag.desk { background: color-mix(in srgb, var(--desk) 16%, transparent); color: var(--desk); }
+  .tag.legend { background: color-mix(in srgb, var(--legend) 16%, transparent); color: var(--legend); }
+  .tag.system { background: color-mix(in srgb, var(--system) 16%, transparent); color: var(--system); }
+  .tag.all { background: var(--surface-2); color: var(--muted); }
+
+  .entry-body { flex: 1; min-width: 0; }
+  .entry-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    margin: 0 0 0.2rem;
+  }
+  .entry-desc {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0;
+  }
+  .entry-meta {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 0.45rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.76rem;
+    color: var(--faint);
+  }
+  .entry-meta a {
+    color: var(--faint);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .entry-meta a:hover, .entry-meta a:focus-visible {
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+  .entry-meta a:focus-visible {
+    outline: 2px solid var(--system);
+    outline-offset: 2px;
+  }
+
+  .metric-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    background: var(--code-bg);
+    border-radius: 6px;
+    padding: 0.25rem 0.55rem;
+    margin-top: 0.5rem;
+  }
+  .metric-line .bad { color: var(--legend); }
+  .metric-line .ok { color: var(--system); }
+
+  /* ---- Pending tracker ---- */
+  .pending-section {
+    margin-top: 3rem;
+    padding: 1.8rem 1.8rem 0.4rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+  .pending-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    margin-bottom: 0.3rem;
+  }
+  .pending-head h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .pending-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--pending);
+    background: color-mix(in srgb, var(--pending) 16%, transparent);
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+  }
+  .pending-summary {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0.4rem 0 1.4rem;
+    max-width: 66ch;
+  }
+  .pending-item {
+    border-top: 1px solid var(--line);
+    padding: 1.1rem 0;
+    display: flex;
+    gap: 0.9rem;
+  }
+  .pending-item:first-of-type { border-top: none; }
+  .pending-dot {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--pending);
+    margin-top: 0.5rem;
+  }
+  .pending-item-body { flex: 1; min-width: 0; }
+  .pending-item-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+    margin: 0 0 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .pending-item-desc {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .pending-item-next {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--faint);
+    margin-top: 0.5rem;
+  }
+  .pending-item-next strong { color: var(--pending); font-weight: 600; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.82rem;
+    color: var(--faint);
+  }
+
+  @media (max-width: 560px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .phase-when { margin-left: 0; }
+    .phase-head { flex-wrap: wrap; }
+  }
+</style>
+
+<div class="wrap">
+  <header class="page-header">
+    <div class="eyebrow">joaillerie · Dream · Desk · Legend — 持續更新中，始於 2026-08-12</div>
+    <h1>SEO策略紀事</h1>
+    <p class="lede">四站的技術 SEO、標題/CTR 優化、站台差異化策略的完整處理紀錄，依真實發生順序排列，每一項都附上實際數據跟 commit 連結。這份文件會持續往下加，待處理問題也統一在這裡追蹤，不再散落在各個對話裡。</p>
+
+    <div class="stats">
+      <div class="stat"><span class="n">20</span><span class="l">SEO 相關 commit</span></div>
+      <div class="stat"><span class="n">104</span><span class="l">篇補上真實 meta description</span></div>
+      <div class="stat"><span class="n">28</span><span class="l">分類頁加上 FAQPage schema</span></div>
+      <div class="stat"><span class="n">178</span><span class="l">張圖片修正 alt text</span></div>
+    </div>
+
+    <div class="legend-row">
+      <span><span class="dot" style="background:var(--joaillerie)"></span>joaillerie</span>
+      <span><span class="dot" style="background:var(--dream)"></span>Dream</span>
+      <span><span class="dot" style="background:var(--desk)"></span>Desk</span>
+      <span><span class="dot" style="background:var(--legend)"></span>Legend</span>
+      <span><span class="dot" style="background:var(--system)"></span>跨站基礎設施</span>
+    </div>
+  </header>
+
+  <section class="pending-section">
+    <div class="pending-head">
+      <h2>目前待處理</h2>
+      <span class="pending-count">5 項</span>
+    </div>
+    <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">oeil-bleu-grec-signification-protection <span class="tag joaillerie">joaillerie</span></p>
+        <p class="pending-item-desc">已重寫 2 次（08-12、08-20）仍無起色——1523 曝光、6 點擊、CTR 0.4%、排名 13.1。競品標題偏輕鬆口語，現在的標題還是列點式，跟贏家語氣有落差。</p>
+        <p class="pending-item-next">下一步：<strong>換角度重寫，不是再等</strong> — 拿內文裡具體的區分點（例如防嫉妒 vs 防小人）取代列點式標題</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">jungian-shadow-dreams <span class="tag dream">Dream</span></p>
+        <p class="pending-item-desc">已重寫 1 次（08-20），標題本身已具體、有畫面感，CTR 仍是 0%。Dream 全站幾乎所有文章都是同樣的零點擊模式，比較可能是新站對上長年經營的權威解夢站的信任落差，不是單篇標題問題。</p>
+        <p class="pending-item-next">下一步：<strong>暫緩個別標題調整</strong> — 需要先確認是否為站台層級的信任/權威度問題，再決定要不要投入反向連結</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">4 個新差異化模組成效 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，09-01 查核時曝光量全部個位數，部分頁面尚未被索引。</p>
+        <p class="pending-item-next">下一步：<strong>約 09-15～09-22 回頭查核</strong> — 屆時應有足夠索引量做初步判斷</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">Legend 16 筆關鍵字積壓，全部缺 Human_Context <span class="tag legend">Legend</span></p>
+        <p class="pending-item-desc">kokkuri san how to play 已補 HC 並發表（見第 08 階段），Legend 仍剩 16 筆待處理，依然遠超其他三站。<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">daruma san game ritual</code> 能直接接上同一條儀式遊戲系列（history-of-spirit-summoning-games、hitori-kakurenbo、現在還有 kokkuri-san），是剩下 16 筆裡最容易寫出差異化的一筆。另外 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">is mothman an alien or a cryptid</code> 補 HC 前要先確認跟既有的 cryptids-vs-urban-legends-differences-mothman 角度是否真的不重疊。</p>
+        <p class="pending-item-next">下一步：<strong>優先幫 daruma-san 補 HC</strong> — 其餘 15 筆暫緩，不要再往 Legend 加新關鍵字</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">9 個新研究的關鍵字缺口，暫緩加入 Sheet <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">opale、labradorite、pierre de naissance（joaillerie）、naked in public、dead relative visiting（Dream，dream about spiders 已在 Sheet 裡不用重加）、gaming chair vs office chair（Desk）、bigfoot、loch ness monster（Legend）——全部 Serper 驗證過真實需求，但鑑於 Legend 已積壓 17 筆、其他站也都卡在等 HC，這輪先不加進 Sheet。</p>
+        <p class="pending-item-next">下一步：<strong>等現有積壓清得差不多再加</strong> — 尤其 Legend，先別讓積壓更嚴重</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">01</span>
+      <h2 class="phase-title">第一輪 GSC 診斷：補齊明顯缺口</h2>
+      <span class="phase-when">08-12</span>
+    </div>
+    <p class="phase-summary">第一次真正用 GSC 數據回頭檢查既有文章，抓到的都是「明顯沒做完」的東西——空白 meta description、標題直接照搬內部分類代號。</p>
+
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">oeil-bleu-grec-signification-protection 第 1 次標題重寫</p>
+        <p class="entry-desc">排名不差，CTR 只有 0.7%，判定是泛用範本標題的問題。</p>
+        <div class="metric-line">當時 <span class="bad">0.7% CTR</span> → 這是本輪三次重寫的第一次</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/177f998" target="_blank" rel="noopener">177f998</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">manifest-vs-latent-content 重新定位</p>
+        <p class="entry-desc">改走 Activation-Synthesis Hypothesis 角度，保留原本正在起色的 slug，補上真正對應的科學內容。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/177f998" target="_blank" rel="noopener">177f998</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">首頁 + 人間工学分類頁標題重寫</p>
+        <p class="entry-desc">兩頁都在用內部維度代號或裸品牌名當標題，換成對應真實搜尋詞的文案。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/7f8757c" target="_blank" rel="noopener">7f8757c</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">felt-desk-mat-non-slip-guide-japan 補上描述</p>
+        <p class="entry-desc">description 欄位還留著「Migrated post from WordPress.」原樣，標題其實已經對到正確關鍵字，只是沒人接手寫描述。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/0fc7954" target="_blank" rel="noopener">0fc7954</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">02</span>
+      <h2 class="phase-title">第二輪 GSC 診斷：批次掃過全站佔位符</h2>
+      <span class="phase-when">08-20</span>
+    </div>
+    <p class="phase-summary">這輪從「修 2 篇」升級成「掃全站」——順手抓到兩組 WordPress 遷移時複製貼錯內容的文章，標題跟本文對不上。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">104 篇「Migrated post from WordPress.」佔位符描述，逐篇讀內文重寫</p>
+        <p class="entry-desc">Dream 30 篇、Desk 28 篇（日文）、Legend 15 篇、joaillerie 31 篇。刻意跳過 1 篇——joaillerie 的 pierre-de-lune 當時還是空殼內容，寫描述等於捏造沒有的內容。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/def83ff" target="_blank" rel="noopener">def83ff</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">oeil-bleu-grec-signification-protection 第 2 次標題重寫</p>
+        <p class="entry-desc">當時排名 21.5、442 次曝光，但標題完全沒出現「signification」「protection」這兩個真正的搜尋主詞。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/def83ff" target="_blank" rel="noopener">def83ff</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">jungian-shadow-dreams 第 1 次標題重寫</p>
+        <p class="entry-desc">排名 8.4、18 次曝光、0 點擊，描述同樣是遺留的遷移佔位符。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/def83ff" target="_blank" rel="noopener">def83ff</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span> / <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">2 組跨文章複製貼錯內容修正</p>
+        <p class="entry-desc">how-to-wake-up-from-a-lucid-dream-fast 內文其實是另一篇 amygdala 文章的內容；monitor-light-reflection-ergonomics 內文其實是 focus-lighting-cct 的內容。都重寫成跟標題相符。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/def83ff" target="_blank" rel="noopener">def83ff</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">03</span>
+      <h2 class="phase-title">技術 SEO 基礎建設 + 關鍵字互打排除</h2>
+      <span class="phase-when">08-25</span>
+    </div>
+    <p class="phase-summary">從「修個別文章」轉向「補結構性缺口」：合併重複主題文章、全站補上結構化資料、修掉一篇真正的空殼文章。</p>
+
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">合併 Freudian 重複文章，解決關鍵字互打</p>
+        <p class="entry-desc">sigmund-freud-interpretation-of-dreams-latent-content 併入 manifest-latent-content-dreams-simplified-guide，兩篇本來在互搶同一批查詢詞排名，補上 301 轉址。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/586f51e" target="_blank" rel="noopener">586f51e</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">28 個分類頁加上 FAQPage 結構化資料，178 張圖片修正 alt text</p>
+        <p class="entry-desc">每站 7 個分類頁、共 4 站 28 頁，全部補上 FAQPage JSON-LD；106 篇文章的圖片 alt text 從泛用的「Illustration for [標題]」改成有內容意義的描述。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/ee6f478" target="_blank" rel="noopener">ee6f478</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">pierre-de-lune 空殼文章補上真實內容</p>
+        <p class="entry-desc">前一輪特意跳過的那篇——Sheet 裡其實早就有真實 Human_Context，只是從沒被寫成文章，對搜尋引擎來說是個已收錄但幾乎空白的頁面。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/0d40d9d" target="_blank" rel="noopener">0d40d9d</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">04</span>
+      <h2 class="phase-title">四站差異化：把定位也當一種 SEO 策略</h2>
+      <span class="phase-when">08-25 → 08-26</span>
+    </div>
+    <p class="phase-summary">四站首頁原本是同一套模板，只有配色字體不同。這輪讓每站在內容架構上真正分化，各自新增一條內容線 + 一個互動模組。</p>
+
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">站內搜尋：把 43 篇文章變成可查詢的夢境字典</p>
+        <p class="entry-desc">首頁加搜尋框，即時比對全站文章標題/描述，不需要寫新內容。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/0336b5d" target="_blank" rel="noopener">0336b5d</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">Legends on Screen：新分類 + 2 篇種子文章</p>
+        <p class="entry-desc">傳說改編進遊戲/電影的角度，全站 27 篇文章裡完全沒覆蓋過的白地。Slender Man 遊戲起源、5 部改編自真實都市傳說的恐怖片。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/36716ea" target="_blank" rel="noopener">36716ea</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">Guide de Style：新分類 + 2 篇種子文章</p>
+        <p class="entry-desc">從「這代表什麼」延伸到「怎麼穿搭」。項鍊疊戴長度規則、金銀選擇破除膚色迷思，兩篇都連回既有的象徵學文章。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/6e44c28" target="_blank" rel="noopener">6e44c28</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">セットアップ診断：單題互動測驗 + 4 篇整合指南</p>
+        <p class="entry-desc">點選工作型態→揭示對應指南，把 37 篇單品評測交叉連結成 4 種情境套餐，取代原本純靜態的最新文章列表。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/62b3821" target="_blank" rel="noopener">62b3821</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">成效追蹤狀態見上方「目前待處理」。</p>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">05</span>
+      <h2 class="phase-title">結構清理：孤兒頁面與無障礙缺口</h2>
+      <span class="phase-when">08-26</span>
+    </div>
+    <p class="phase-summary">趁著整理站台架構的時候，順手處理兩個放了很久、一直沒排上優先序的技術債。</p>
+
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span> / <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">刪除 2 個孤兒根目錄頁面，改用 301 轉址</p>
+        <p class="entry-desc">確認站內沒有任何連結指向這兩頁後才刪除，同時補上轉址到對應分類頁，避免遺留 404。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/646b7d7" target="_blank" rel="noopener">646b7d7</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">Hero 圖加上無障礙標籤</p>
+        <p class="entry-desc">全站文章的主視覺用 CSS background-image 疊字，對螢幕閱讀器完全不存在。加上 role="img" + aria-label，一次套用到所有文章。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/c5afd7a" target="_blank" rel="noopener">c5afd7a</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">06</span>
+      <h2 class="phase-title">第三輪 GSC 診斷：重新拉 90 天數據</h2>
+      <span class="phase-when">09-01</span>
+    </div>
+    <p class="phase-summary">重跑 GSC 90 天報告，這次的判斷標準更嚴格——只挑「排名不差、CTR 仍趨近於零、標題還沒被動過」的乾淨案例，避開已經試過還沒見效的舊案子。</p>
+
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">argent-vertus-spirituelles</p>
+        <p class="entry-desc">「argent massif vertus spirituelles」→「Pourquoi Croyait-on Que Seul l'Argent Pouvait Tuer un Loup-Garou ?」，拿內文本來就有的狼人銀彈傳說當鉤子。</p>
+        <div class="metric-line">曝光 133 · 排名 <span class="ok">7.3</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/42101d7" target="_blank" rel="noopener">42101d7</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">bijoux-de-deuil-victoriens-memoire-chagrin</p>
+        <p class="entry-desc">「bijoux de deuil victoriens」→ 標題直接點名內文最驚人的細節：喪禮珠寶裡真的織進了逝者的頭髮。</p>
+        <div class="metric-line">曝光 73 · 排名 <span class="ok">7.6</span> · 點擊 2</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/42101d7" target="_blank" rel="noopener">42101d7</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">white-desk-stains-conspicuous-measures</p>
+        <p class="entry-desc">生關鍵字標題 →「黒いデスクの方が汚れが目立たず楽」というのは本当？よくある俗説を3つ検証した——文章本來就有 3 段俗說驗證，直接拿來當標題結構。</p>
+        <div class="metric-line">曝光 54 · 排名 <span class="ok">7.9</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/42101d7" target="_blank" rel="noopener">42101d7</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">desk-mat-felt-demerit</p>
+        <p class="entry-desc">生關鍵字標題 → 直接點名內文的具體痛點：光學滑鼠在毛氈墊上追蹤失效、游標亂飛。</p>
+        <div class="metric-line">曝光 34 · 排名 <span class="ok">7.0</span> · 點擊 1</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/42101d7" target="_blank" rel="noopener">42101d7</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">oeil-bleu-grec 跟 jungian-shadow-dreams 這兩篇還沒解決，追蹤狀態見上方「目前待處理」。</p>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">07</span>
+      <h2 class="phase-title">關鍵字缺口研究 + Sheet 積壓盤點</h2>
+      <span class="phase-when">09-01</span>
+    </div>
+    <p class="phase-summary">第一次把「找新關鍵字」跟「Google Sheet 現有待處理清單」放在一起交叉比對，結果比預期更關鍵：Sheet 裡積壓的 34 筆候選關鍵字裡，只有 1 筆已經有真實 Human_Context。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">9 個關鍵字缺口研究，逐一 Serper 驗證真實搜尋需求</p>
+        <p class="entry-desc">joaillerie：opale、labradorite、pierre de naissance par mois。Dream：dream about spiders、dream about being naked in public、dream about dead relative visiting。Desk：gaming chair vs office chair。Legend：bigfoot、loch ness monster——29 篇文章裡完全沒碰過的兩個知名度最高的神秘生物。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">Google Sheet 34 筆待處理關鍵字盤點</p>
+        <p class="entry-desc">joaillerie 5 筆、Dream 4 筆、Desk 8 筆、Legend 17 筆——全部檢查 Human_Context 欄位是否有真實內容。結果：只有 joaillerie 的 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">amulette de protection signification</code> 有完整 HC，其餘 33 筆全是空白，卡在「等 Eugene 補素材」這一步，不是缺關鍵字。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">amulette-de-protection-signification</p>
+        <p class="entry-desc">用 Sheet 裡現成的真實 HC 寫成文章——馬來西亞文化融合下，法蒂瑪之手跟佛牌一起掛在同一個觀光客鑰匙圈上的觀察。跟既有的單一護身符文章（main-de-fatma、oeil-bleu-grec、scarabee-egyptien）角度不同，這篇談的是「多元文化如何讓避邪聖物混搭出新形態」，寫完同時修正了分類頁上兩個早該更新卻還顯示「pending」的舊連結。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/e50942c" target="_blank" rel="noopener">e50942c</a></div>
+      </div>
+    </div>
+
+    <div class="metric-line" style="margin-top: 0.8rem; display: block; width: fit-content;">HC文 vs 舊文（四站合計）最新比值：點擊 <span class="ok">2.43x</span> · 曝光 <span class="ok">4.70x</span> · 點擊率 <span class="ok">1.32x</span>（9.4% → 12.5%）</div>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">08</span>
+      <h2 class="phase-title">積壓清單開始動起來</h2>
+      <span class="phase-when">09-02</span>
+    </div>
+    <p class="phase-summary">上一輪標記的 3 個「最急迫」關鍵字，Eugene 都補上了真實 Human_Context——joaillerie 以外的三站各發表一篇，Sheet 積壓從 34 筆降到 31 筆。</p>
+
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">dream-about-spiders-meaning</p>
+        <p class="entry-desc">蜘蛛結網／織網／打死蜘蛛三種不同情境對應三種不同解讀，跟既有的 seeing-snakes 文章互相呼應但角度不重疊。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/9740d78" target="_blank" rel="noopener">9740d78</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">semai-heya-desk-layout</p>
+        <p class="entry-desc">朋友在屋頂三角形變形空間裡自製浮動式桌角、改用縱向收納的真實案例，延續 minimal-desk-erabikata 的敘事線，結論是「縮小尺寸不是唯一解」。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/9740d78" target="_blank" rel="noopener">9740d78</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">kokkuri-san-how-to-play</p>
+        <p class="entry-desc">實際玩法步驟 + 2011 年電影《こっくりさん 劇場版》+ 遊戲王暗影遊戲的視覺呼應 + 用錢仙解數學題的迷因，刻意跟既有的 history-of-spirit-summoning-games（起源比較文）錯開角度，避免關鍵字互打。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/9740d78" target="_blank" rel="noopener">9740d78</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">順手修正了 Desk 分類頁上另一個早該更新的「pending」舊連結（maintain-focus-desk-layout-tips 早就發表過了）。三筆都已在 Sheet 標記 Status=USED。</p>
+  </section>
+
+  <footer>
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-02。
+  </footer>
+</div>
+
+
+
+</body>
+</html>
