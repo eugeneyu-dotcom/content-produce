@@ -30,7 +30,7 @@ const allPosts = (await getCollection('blog')).sort(
 );
 const posts = allPosts.slice(0, 6);
 
-const onScreenSlugs = ['slender-man-video-game-viral-origin', 'horror-movies-based-on-real-urban-legends'];
+const onScreenSlugs = ['slender-man-video-game-viral-origin', 'horror-movies-based-on-real-urban-legends', 'kokkuri-san-how-to-play', 'daruma-san-bath-game-ritual'];
 const onScreenPosts = onScreenSlugs
 	.map((slug) => allPosts.find((post) => post.id === slug))
 	.filter(Boolean);

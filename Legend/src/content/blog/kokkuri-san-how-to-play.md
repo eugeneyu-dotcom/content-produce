@@ -21,7 +21,7 @@ heroImage: "/media-images/posts/kokkuri-san-how-to-play.webp"
 
 ## The 2011 Film, and a Duel That Looks a Lot Like It
 
-<p>Kokkuri-san's cultural footprint runs well past playground use. In 2011, director Nagae Jirō released <em><a href="https://jfdb.jp/title/2943" target="_blank" rel="noopener noreferrer">Kokkuri-san: The Movie</a></em>, a horror feature built around the ritual. Readers of a certain manga generation will also recognize the visual DNA of Kokkuri-san-style rituals in Yu-Gi-Oh's "Shadow Game" sequences — Bakura Ryo's darker duels, lit and staged like a séance, owe an obvious debt to this exact tradition of drawing a spirit into a circle of participants and a marked surface.</p>
+<p>Kokkuri-san's cultural footprint runs well past playground use, joining the growing list of <a href="/category/legends-on-screen/">legends adapted for the screen</a>. In 2011, director Nagae Jirō released <em><a href="https://jfdb.jp/title/2943" target="_blank" rel="noopener noreferrer">Kokkuri-san: The Movie</a></em>, a horror feature built around the ritual. Readers of a certain manga generation will also recognize the visual DNA of Kokkuri-san-style rituals in Yu-Gi-Oh's "Shadow Game" sequences — Bakura Ryo's darker duels, lit and staged like a séance, owe an obvious debt to this exact tradition of drawing a spirit into a circle of participants and a marked surface.</p>
 
 ## Somewhere, a Kid Asked It to Check Their Math Homework
 
