@@ -92,6 +92,9 @@ const SITE_VOLUME_TIERS = {
   Dream: { low: 500, mid: 50000 }, // 2026-09-08 GKP 樣本（8字）校準，僅供 Dream；
   // 英文夢境解析是全球大眾市場，量級比 joaillerie 高一個數量級（頂到 50000），
   // 門檻不能跟 joaillerie 共用。
+  Legend: { low: 100, mid: 5000 }, // 2026-09-08 GKP 樣本（8字）校準，僅供 Legend；
+  // 都市傳說深挖題材量級接近 joaillerie（頂到 5000），跟 Dream 的大眾市場不同量級，
+  // 數字剛好跟 joaillerie 一樣純屬巧合，不是可以互相套用的意思。
 };
 
 function volumeTierFor(site, volume) {
