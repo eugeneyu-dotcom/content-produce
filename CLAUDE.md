@@ -126,11 +126,20 @@ Writer prompt 的關鍵規則：
 
 使用 **Google Apps Script Web App** 接收 POST 請求更新 Sheet。
 
-Apps Script 程式碼邏輯：
-- 接收 `{token, items:[{keyword, post_url}]}`
-- 驗證 token（對應 `API_Key` 中的 `SheetWriteSecret`）
-- 按 Keyword 欄比對，設定 Status=USED 與 Post_Url
+Apps Script 程式碼邏輯（2026-09-08 起支援兩種動作，用 `action` 欄位區分）：
+- **更新既有列**（預設行為，不帶 `action` 或 `action` 不是 `'append'`）：
+  接收 `{token, items:[{keyword, post_url}]}`，按 Keyword 欄比對，設定 Status=USED 與 Post_Url。
+- **新增列**（`action: 'append'`）：接收 `{token, action:'append', rows:[{...}]}`，`rows` 裡每個
+  物件的 key 要跟 Sheet 現有欄位標題文字完全一致（`Topic`/`Site_Url`/`Pillar Post Title`/
+  `Pillar Post Dimesion`/`Pillar Post Url`/`Keyword Cluster`/`Keyword`/`Language`/`Used`/
+  `API Key`/`Status`/`Post_Url`/`Post_ID`/`Human_Context`），缺的欄位自動補空字串；已存在
+  同一個 `Keyword` 的列會被跳過，不會重複新增。新增新關鍵字時 `Status` 留空，等真人補上
+  `Human_Context` 之後才手動改成 `Active`，不要一次新增就直接是 `Active`。
+- 兩種動作都要驗證 token（對應 `API_Key` 中的 `SheetWriteSecret`）
 - Web App 部署設定：**執行身份=我、存取權限=所有人（Anyone）**
+- `Pillar Post Dimesion` 只要是目標分類 `.astro` 檔案內容裡會出現的一段文字即可（不用整段
+  精確符合分類標題），因為 `resolvePillarSlug()` 用的是 `content.includes(pillarDim)` 子字串
+  比對；最保險的做法是照抄同一個分類底下已經驗證成功過的其他列的 `Pillar Post Dimesion` 值。
 
 ---
 
