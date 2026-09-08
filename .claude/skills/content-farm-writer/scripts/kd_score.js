@@ -20,12 +20,21 @@
 // 用法：
 //   1. 即時查詢模式（直接呼叫 Serper，自動抽網域/ads/shopping，算完印出分數）：
 //        node kd_score.js --live --site joaillerie --keyword "oeil bleu grec"
+//      加上 --volume <GKP月搜尋量數字> 可以一併算出完整四象限（黃金/挑戰/利基/避開）：
+//        node kd_score.js --live --site joaillerie --keyword "main de fatma signification" --volume 5000
 //
 //   2. 批次模式（先自己準備好 JSON，一次算一批）：
 //        node kd_score.js --batch input.json [output.csv]
-//      input.json 格式（一個關鍵字一筆）：
+//      input.json 格式（一個關鍵字一筆，volume 可省略，省略時不算象限只算 KD）：
 //        [{ "keyword": "...", "site": "joaillerie", "top10_domains": ["a.com", ...],
-//           "ads_present": false, "shopping_present": false }, ...]
+//           "ads_present": false, "shopping_present": false, "volume": 5000 }, ...]
+//
+// ---- 搜尋量門檻（每站各自校準，2026-09-08 起陸續補上） ----
+// GKP 對沒有實際廣告花費的帳號只給離散檔位（50/500/5000...），不是精確數字，
+// 門檻也只能對應這幾檔去訂，不要幻想能訂出更細的級距。博弈站的「≥5000=高量」
+// 門檻是 7 市場×50 分類累積出來的經驗值，對我們這種單一小眾主題站不適用——
+// 這裡的 5000 在目前樣本裡已經是天花板，所以每站都要用自己實際查到的樣本
+// 分布另外訂，不能互相套用，也不能整案套博弈站的數字。
 
 const fs = require('fs');
 const path = require('path');
@@ -75,6 +84,31 @@ const SITE_TIERS = {
     ],
   },
 };
+
+// 每站的搜尋量門檻（低/中門檻各自的上限，超過中門檻就算高量）。
+// 尚未校準的站先留空，跑 --volume 時會直接報錯提醒去校準，不要用假門檻硬套。
+const SITE_VOLUME_TIERS = {
+  joaillerie: { low: 100, mid: 5000 }, // 2026-09-08 GKP 樣本（13字）校準，僅供 joaillerie
+};
+
+function volumeTierFor(site, volume) {
+  const t = SITE_VOLUME_TIERS[site];
+  if (!t) {
+    throw new Error(`"${site}" 站還沒有校準過的搜尋量門檻，先用該站的 GKP 樣本校準 SITE_VOLUME_TIERS 再用 --volume`);
+  }
+  if (volume <= t.low) return '低';
+  if (volume < t.mid) return '中';
+  return '高';
+}
+
+function quadrantFor(volumeTier, kdBucket) {
+  const highVol = volumeTier === '高';
+  const lowMidKd = kdBucket === '低' || kdBucket === '中';
+  if (highVol && lowMidKd) return '黃金';
+  if (highVol && !lowMidKd) return '挑戰';
+  if (!highVol && lowMidKd) return '利基';
+  return '避開';
+}
 
 function tiersFor(site) {
   const t = SITE_TIERS[site];
@@ -159,7 +193,7 @@ const SITE_LOCALE = {
   Legend: { gl: 'us', hl: 'en' },
 };
 
-async function runLive(site, keyword) {
+async function runLive(site, keyword, volume) {
   const apiKeyPath = path.join(__dirname, '..', '..', '..', '..', 'API_Key');
   const apiKeyFile = fs.readFileSync(apiKeyPath, 'utf8');
   const m = apiKeyFile.match(/^Serper:\s*(.+)$/m);
@@ -179,9 +213,17 @@ async function runLive(site, keyword) {
   console.log(`ads_present=${adsPresent}  shopping_present=${shoppingPresent}`);
   console.log(`匹配到分層清單的網域數：${highAuthCount}`);
   console.log(`KD 分數：${score}（${bucket}）`);
-  console.log('');
-  console.log('四象限判斷（搜尋量待 GKP 補上後才能完整判斷，這裡只算出 KD 這一半）：');
-  console.log(`  KD ≤60（低/中）→ 排名機會較好；KD >60（高）→ 需要長期布局或直接避開`);
+
+  if (volume === undefined) {
+    console.log('');
+    console.log('（沒給 --volume，只算出 KD 這一半；要看完整四象限請加上 --volume <GKP月搜尋量>）');
+    return;
+  }
+
+  const volTier = volumeTierFor(site, volume);
+  const quadrant = quadrantFor(volTier, bucket);
+  console.log(`月搜尋量：${volume}（${volTier}量）`);
+  console.log(`四象限判斷：${quadrant}`);
 }
 
 function runBatch(inputPath, outputPath) {
@@ -193,6 +235,17 @@ function runBatch(inputPath, outputPath) {
       !!e.shopping_present,
       e.site
     );
+    let volTier = '';
+    let quadrant = '';
+    if (e.volume !== undefined && e.volume !== null && e.volume !== '') {
+      try {
+        volTier = volumeTierFor(e.site, Number(e.volume));
+        quadrant = quadrantFor(volTier, bucket);
+      } catch {
+        volTier = '未校準';
+        quadrant = '';
+      }
+    }
     return {
       keyword: e.keyword || '',
       site: e.site || '',
@@ -201,11 +254,14 @@ function runBatch(inputPath, outputPath) {
       high_auth_count: highAuthCount,
       ads_present: !!e.ads_present,
       shopping_present: !!e.shopping_present,
+      volume: e.volume ?? '',
+      volume_tier: volTier,
+      quadrant,
     };
   });
 
   const out = outputPath || 'kd_scores_output.csv';
-  const header = Object.keys(rows[0] || { keyword: '', site: '', kd_score: '', kd_bucket: '', high_auth_count: '', ads_present: '', shopping_present: '' });
+  const header = Object.keys(rows[0] || { keyword: '', site: '', kd_score: '', kd_bucket: '', high_auth_count: '', ads_present: '', shopping_present: '', volume: '', volume_tier: '', quadrant: '' });
   const lines = [header.join(',')];
   for (const row of rows) {
     lines.push(header.map((k) => String(row[k]).replace(/,/g, ';')).join(','));
@@ -219,11 +275,13 @@ async function main() {
   if (args[0] === '--live') {
     const siteIdx = args.indexOf('--site');
     const kwIdx = args.indexOf('--keyword');
+    const volIdx = args.indexOf('--volume');
     if (siteIdx === -1 || kwIdx === -1) {
-      console.error('用法：node kd_score.js --live --site <joaillerie|Dream|Desk|Legend> --keyword "<關鍵字>"');
+      console.error('用法：node kd_score.js --live --site <joaillerie|Dream|Desk|Legend> --keyword "<關鍵字>" [--volume <月搜尋量>]');
       process.exit(1);
     }
-    await runLive(args[siteIdx + 1], args[kwIdx + 1]);
+    const volume = volIdx === -1 ? undefined : Number(args[volIdx + 1]);
+    await runLive(args[siteIdx + 1], args[kwIdx + 1], volume);
   } else if (args[0] === '--batch') {
     if (!args[1]) {
       console.error('用法：node kd_score.js --batch <input.json> [output.csv]');
