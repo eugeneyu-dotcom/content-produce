@@ -89,6 +89,9 @@ const SITE_TIERS = {
 // 尚未校準的站先留空，跑 --volume 時會直接報錯提醒去校準，不要用假門檻硬套。
 const SITE_VOLUME_TIERS = {
   joaillerie: { low: 100, mid: 5000 }, // 2026-09-08 GKP 樣本（13字）校準，僅供 joaillerie
+  Dream: { low: 500, mid: 50000 }, // 2026-09-08 GKP 樣本（8字）校準，僅供 Dream；
+  // 英文夢境解析是全球大眾市場，量級比 joaillerie 高一個數量級（頂到 50000），
+  // 門檻不能跟 joaillerie 共用。
 };
 
 function volumeTierFor(site, volume) {
