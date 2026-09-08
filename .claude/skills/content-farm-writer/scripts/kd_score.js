@@ -67,7 +67,12 @@ const SITE_TIERS = {
     minor: ['dreams.co.uk', 'everdear.co', 'leahannbolen.com', 'medium.com', 'quora.com'],
   },
   Desk: {
-    authority: ['wikipedia.org', 'note.com', 'kanademono.design', 'bauhutte.jp'],
+    // 2026-09-08 補上日本大型電商/比價站——「〇〇 おすすめ/比較」型查詢幾乎必被這幾個
+    // 站佔滿前十名，原本清單沒收錄導致 KD 被低估（實測過電動昇降デスク おすすめ）。
+    authority: [
+      'wikipedia.org', 'note.com', 'kanademono.design', 'bauhutte.jp',
+      'amazon.co.jp', 'rakuten.co.jp', 'biccamera.com', 'my-best.com',
+    ],
     minor: [
       'irodorimadori.com', 'goodrooms.jp', 'rincostyle.blog',
       'gadget.mahoroba148.com', 'kurashi-ec.jp',
@@ -95,6 +100,8 @@ const SITE_VOLUME_TIERS = {
   Legend: { low: 100, mid: 5000 }, // 2026-09-08 GKP 樣本（8字）校準，僅供 Legend；
   // 都市傳說深挖題材量級接近 joaillerie（頂到 5000），跟 Dream 的大眾市場不同量級，
   // 數字剛好跟 joaillerie 一樣純屬巧合，不是可以互相套用的意思。
+  Desk: { low: 100, mid: 5000 }, // 2026-09-08 GKP 樣本（12字，含 Google 自動展開的
+  // 電動昇降デスク／100均線材收納兩大關聯詞群）校準，僅供 Desk；量級同樣頂到 5000。
 };
 
 function volumeTierFor(site, volume) {
