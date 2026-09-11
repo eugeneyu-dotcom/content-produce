@@ -126,8 +126,9 @@ Writer prompt 的關鍵規則：
 
 使用 **Google Apps Script Web App** 接收 POST 請求更新 Sheet。
 
-Apps Script 程式碼邏輯（2026-09-08 起支援兩種動作，用 `action` 欄位區分）：
-- **更新既有列**（預設行為，不帶 `action` 或 `action` 不是 `'append'`）：
+Apps Script 程式碼邏輯（2026-09-08 起支援 append，2026-09-11 起再加 delete/setStatus，
+用 `action` 欄位區分）：
+- **更新既有列**（預設行為，不帶 `action` 或 `action` 不是 `'append'`/`'delete'`/`'setStatus'`）：
   接收 `{token, items:[{keyword, post_url}]}`，按 Keyword 欄比對，設定 Status=USED 與 Post_Url。
 - **新增列**（`action: 'append'`）：接收 `{token, action:'append', rows:[{...}]}`，`rows` 裡每個
   物件的 key 要跟 Sheet 現有欄位標題文字完全一致（`Topic`/`Site_Url`/`Pillar Post Title`/
@@ -135,7 +136,17 @@ Apps Script 程式碼邏輯（2026-09-08 起支援兩種動作，用 `action` �
   `API Key`/`Status`/`Post_Url`/`Post_ID`/`Human_Context`），缺的欄位自動補空字串；已存在
   同一個 `Keyword` 的列會被跳過，不會重複新增。新增新關鍵字時 `Status` 留空，等真人補上
   `Human_Context` 之後才手動改成 `Active`，不要一次新增就直接是 `Active`。
-- 兩種動作都要驗證 token（對應 `API_Key` 中的 `SheetWriteSecret`）
+- **刪除列**（`action: 'delete'`）：接收 `{token, action:'delete', keywords:['kw1','kw2',...]}`，
+  按 Keyword 欄比對，找到的列整列刪除。**⚠️ 這個動作是照關鍵字文字比對，不是照列號比對**——
+  如果同一個 `Keyword` 文字剛好對應到兩列（例如一列是已發表文章的正式紀錄、另一列是誤植的
+  重複候選字），兩列會一起被刪掉。刪除前務必先查一次該關鍵字在 Sheet 裡是不是恰好只有一列
+  （2026-09-11 就因為沒先查，刪除一個重複的候選字時，連同已發表文章那列的 Status=USED／
+  Post_Url 紀錄也一起被誤刪，靠 `append` 動作手動重建才補回來，但原始的 Human_Context
+  內容沒能完整復原）。
+- **設定任意 Status**（`action: 'setStatus'`）：接收
+  `{token, action:'setStatus', items:[{keyword, status}]}`，只改 Status 欄成指定的任意值
+  （例如 `Pending`），不像預設的更新動作那樣寫死成 `USED`。
+- 四種動作都要驗證 token（對應 `API_Key` 中的 `SheetWriteSecret`）
 - Web App 部署設定：**執行身份=我、存取權限=所有人（Anyone）**
 - `Pillar Post Dimesion` 只要是目標分類 `.astro` 檔案內容裡會出現的一段文字即可（不用整段
   精確符合分類標題），因為 `resolvePillarSlug()` 用的是 `content.includes(pillarDim)` 子字串
