@@ -189,6 +189,21 @@ Header 和 Footer 圖片各自有獨立的 try/catch，任一失敗只 fallback 
 ### 4. Image fallback
 如果圖片生成失敗，複製 `{site}/public/media-images/hero-bg.webp` 作為 placeholder。
 
+### 5. 手機版相容性修復（2026-09-11，四站版面差異化改版時發現）
+- **水平溢出**：四站首頁沿用「`width:100vw` + `margin-left/right: calc(-50vw + 50%)`」的
+  跳脫全寬寫法（`.hero` 等區塊），在手機瀏覽器下會比真實 viewport 多跑出約 30 幾 px，造成
+  不必要的水平捲動、右側露出底色——桌面版看不出來，只有實際切到手機寬度測試才會發現。
+  四站 `global.css` 的 `body` 都加了 `overflow-x: hidden` 保險，不追根究柢是哪個瀏覽器的
+  哪個像素差異造成的，直接把這類水平溢出攔下來。
+- **`hidden` 屬性被共用 class 蓋掉**：Desk 手機版的分類展開面板一開始沒辦法收合，因為共用
+  class（例如 `.spec-row`）設了 `display: flex`，在 CSS 特異度打平時因為原始碼順序在後而
+  蓋掉了 `hidden` 屬性原本該有的 `display: none`。之後任何用 `hidden` 屬性做顯示/隱藏切換
+  的地方，都要留意共用 class 有沒有無條件設 `display`。
+- **`<span>` 縮圖忘記設 `display: block`**：Legend/Desk 各有縮圖元素用 `<span>` 承載
+  `background-image`，但父層不是 flex/grid 容器時，`width`/`aspect-ratio` 完全不會生效、
+  縮圖直接消失（寬高算出來是 0）。之後這類「背景圖當縮圖」的 span/div 元素，都要明確寫
+  `display: block`，不要依賴父層剛好是 flex 容器的隱性行為。
+
 ---
 
 ## Astro 站台架構
