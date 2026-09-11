@@ -1,6 +1,26 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const searchIndex = allPosts.map((post) => ({
+	title: post.data.title,
+	slug: post.id,
+	description: post.data.description || '',
+}));
+
+const categories = [
+	{ label: 'Neurobiological Foundations', href: '/category/rem-sleep-neuroscience' },
+	{ label: 'Jungian Archetypes', href: '/category/jungian-archetypes' },
+	{ label: 'Freudian Psychoanalysis', href: '/category/freudian-dreamwork' },
+	{ label: 'Evolutionary Threat Simulation', href: '/category/evolutionary-nightmares' },
+	{ label: 'Universal Symbolic Themes', href: '/category/falling-in-dreams-meaning' },
+	{ label: 'Lucid Dreaming & Agency', href: '/category/lucid-dreaming-guide' },
+	{ label: 'Cultural & Spiritual Evolution', href: '/category/history-of-dream-interpretation' },
+];
 ---
 
 <header class="dream-header">
@@ -8,54 +28,157 @@ import { SITE_TITLE } from '../consts';
 		<p>Welcome to The Master Encyclopedia of Dreams</p>
 	</div>
 	<div class="header-main">
-		<div class="logo-container">
-			<a href="/" class="logo-link">
-				<img src="/media-images/Logo.png" alt="Encyclopedia of Dreams Logo" class="site-logo" onerror="this.style.display='none';"/>
-				<div class="site-titles">
-					<h1 class="site-title">Encyclopedia of Dreams</h1>
-					<p class="site-tagline">Decode the Language of the Subconscious</p>
-				</div>
-			</a>
-		</div>
-		<nav class="main-nav">
-			<div class="internal-links">
-				<HeaderLink href="/">Home</HeaderLink>
-				<div class="dropdown">
-					<a href="#" class="dropbtn">The Master Encyclopedia</a>
-					<div class="dropdown-content">
-						<a href="/category/rem-sleep-neuroscience">Neurobiological Foundations</a>
-						<a href="/category/jungian-archetypes">Jungian Archetypes</a>
-						<a href="/category/freudian-dreamwork">Freudian Psychoanalysis</a>
-						<a href="/category/evolutionary-nightmares">Evolutionary Threat Simulation</a>
-						<a href="/category/falling-in-dreams-meaning">Universal Symbolic Themes</a>
-						<a href="/category/lucid-dreaming-guide">Lucid Dreaming & Agency</a>
-						<a href="/category/history-of-dream-interpretation">Cultural & Spiritual Evolution</a>
-					</div>
-				</div>
-				<HeaderLink href="/blog">Archives</HeaderLink>
-				<HeaderLink href="/about-us">About Us</HeaderLink>
-				<HeaderLink href="/privacy-policy">Privacy Policy</HeaderLink>
-				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contact Us</a>
-			</div>
+		<a href="/" class="logo-link">
+			<img src="/media-images/Logo.png" alt="Encyclopedia of Dreams Logo" class="site-logo" onerror="this.style.display='none';"/>
+			<span class="site-title">Encyclopedia of Dreams</span>
+		</a>
+
+		<nav class="quick-nav">
+			<HeaderLink href="/">Home</HeaderLink>
+			<button type="button" class="index-toggle" id="index-toggle" aria-expanded="false" aria-controls="index-panel">Index ▾</button>
+			<HeaderLink href="/blog">Archives</HeaderLink>
+			<HeaderLink href="/about-us">About</HeaderLink>
 		</nav>
+
+		<button type="button" class="lookup-toggle" id="lookup-toggle" aria-expanded="false" aria-controls="lookup-panel" aria-label="Search the dream dictionary">
+			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+			<span>Look Up</span>
+		</button>
+
+		<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="quick-nav" aria-label="Open menu">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+
+	<div class="index-panel" id="index-panel" hidden>
+		<div class="index-panel-inner">
+			{categories.map((cat) => <a href={cat.href} class="index-chip">{cat.label}</a>)}
+		</div>
+	</div>
+
+	<div class="lookup-panel" id="lookup-panel" hidden>
+		<div class="lookup-panel-inner">
+			<div class="lookup-box">
+				<input
+					type="text"
+					id="header-search-input"
+					class="lookup-input"
+					placeholder="e.g. falling, teeth, snake, an ex..."
+					autocomplete="off"
+					aria-label="Search the dream dictionary"
+				/>
+				<ul id="header-search-results" class="lookup-results" role="listbox" hidden></ul>
+			</div>
+		</div>
 	</div>
 </header>
+
+<script define:vars={{ searchIndex }}>
+	const navToggle = document.getElementById('nav-toggle');
+	const quickNav = document.querySelector('.quick-nav');
+	navToggle?.addEventListener('click', () => {
+		const isOpen = quickNav?.classList.toggle('is-open');
+		navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+
+	const indexToggle = document.getElementById('index-toggle');
+	const indexPanel = document.getElementById('index-panel');
+	indexToggle?.addEventListener('click', () => {
+		const isHidden = indexPanel.hidden;
+		indexPanel.hidden = !isHidden;
+		indexToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+		if (isHidden) {
+			lookupPanel.hidden = true;
+			lookupToggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+
+	const lookupToggle = document.getElementById('lookup-toggle');
+	const lookupPanel = document.getElementById('lookup-panel');
+	const input = document.getElementById('header-search-input');
+	const results = document.getElementById('header-search-results');
+
+	lookupToggle?.addEventListener('click', () => {
+		const isHidden = lookupPanel.hidden;
+		lookupPanel.hidden = !isHidden;
+		lookupToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+		if (isHidden) {
+			indexPanel.hidden = true;
+			indexToggle.setAttribute('aria-expanded', 'false');
+			input.focus();
+		}
+	});
+
+	function escapeHtml(str) {
+		return str.replace(/[&<>"']/g, (c) => ({
+			'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+		}[c]));
+	}
+
+	function render(matches) {
+		if (matches.length === 0) {
+			results.innerHTML = '<li class="lookup-empty">No dream symbol matches that yet.</li>';
+			results.hidden = false;
+			return;
+		}
+		results.innerHTML = matches.map((m) => `
+			<li class="lookup-result">
+				<a href="/blog/${m.slug}/">
+					<span class="lookup-result-title">${escapeHtml(m.title)}</span>
+					${m.description ? `<span class="lookup-result-desc">${escapeHtml(m.description)}</span>` : ''}
+				</a>
+			</li>
+		`).join('');
+		results.hidden = false;
+	}
+
+	function search(query) {
+		const q = query.trim().toLowerCase();
+		if (!q) {
+			results.hidden = true;
+			results.innerHTML = '';
+			return;
+		}
+		const matches = searchIndex.filter((post) =>
+			post.title.toLowerCase().includes(q) || post.description.toLowerCase().includes(q)
+		).slice(0, 8);
+		render(matches);
+	}
+
+	let debounceTimer;
+	input?.addEventListener('input', (e) => {
+		clearTimeout(debounceTimer);
+		const value = e.target.value;
+		debounceTimer = setTimeout(() => search(value), 120);
+	});
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') {
+			lookupPanel.hidden = true;
+			lookupToggle.setAttribute('aria-expanded', 'false');
+			indexPanel.hidden = true;
+			indexToggle.setAttribute('aria-expanded', 'false');
+		}
+	});
+</script>
+
 <style>
 	.dream-header {
-		background: rgba(11, 6, 24, 0.6);
+		background: rgba(11, 6, 24, 0.75);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
 		font-family: 'Manrope', sans-serif;
 		border-bottom: 1px solid rgba(167, 139, 250, 0.3);
 		margin-bottom: 2em;
-		position: relative;
+		position: sticky;
+		top: 0;
 		z-index: 1000;
 	}
 	.top-bar {
 		background-color: var(--accent-dark, #5B21B6);
 		color: #E2DCF5;
-		font-size: 0.85em;
-		padding: 0.5em 0;
+		font-size: 0.78em;
+		padding: 0.4em 0;
 		letter-spacing: 1px;
 		text-align: center;
 		text-transform: uppercase;
@@ -65,122 +188,223 @@ import { SITE_TITLE } from '../consts';
 	}
 	.header-main {
 		display: flex;
-		flex-wrap: wrap;
 		align-items: center;
-		justify-content: space-between;
-		padding: 1.5em 2em;
+		gap: 1.5em;
+		padding: 1em 1.5em;
 		max-width: 1400px;
 		margin: 0 auto;
-	}
-	.logo-container {
-		flex: 1;
-		min-width: 300px;
 	}
 	.logo-link {
 		display: flex;
 		align-items: center;
+		gap: 0.7em;
 		text-decoration: none;
-		gap: 1em;
+		flex-shrink: 0;
 	}
 	.site-logo {
-		height: 80px;
-		width: auto;
+		height: 42px;
+		width: 42px;
 		border-radius: 50%;
 		object-fit: cover;
 	}
-	.site-titles {
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-	}
 	.site-title {
-		margin: 0;
 		font-family: 'Cormorant Garamond', serif;
-		font-size: 2.2em;
-		font-weight: 500;
-		color: #F5F1FE;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
-	}
-	.site-tagline {
-		color: #C4B5FD;
 		font-style: italic;
-		font-size: 1em;
-		margin-top: 0.2em;
-		margin-bottom: 0;
+		font-size: 1.35em;
+		color: #F5F1FE;
+		white-space: nowrap;
 	}
-	.main-nav {
+	.quick-nav {
 		display: flex;
 		align-items: center;
+		gap: 1.6em;
+		flex: 1;
 	}
-	.internal-links {
-		display: flex;
-		gap: 2em;
-		align-items: center;
-	}
-	.internal-links a {
+	.quick-nav :global(a) {
 		color: #E2DCF5;
 		text-decoration: none;
-		font-size: 1.1em;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		font-size: 0.95em;
+		letter-spacing: 0.5px;
 		transition: color 0.3s ease;
+		white-space: nowrap;
 	}
-	.internal-links a:hover, .internal-links a.active {
+	.quick-nav :global(a:hover), .quick-nav :global(a.active) {
 		color: var(--accent, #A78BFA);
 	}
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-	.dropbtn {
-		cursor: pointer;
-	}
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background: rgba(11, 6, 24, 0.85);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		min-width: 320px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-		z-index: 100;
-		border-radius: 8px;
-		top: 100%;
-		left: 0;
-		border: 1px solid rgba(255,255,255,0.08);
-	}
-	.dropdown-content a {
+	.index-toggle {
+		background: none;
+		border: none;
 		color: #E2DCF5;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
+		font-family: inherit;
+		font-size: 0.95em;
+		letter-spacing: 0.5px;
+		cursor: pointer;
+		padding: 0;
+	}
+	.index-toggle[aria-expanded="true"] {
+		color: var(--accent, #A78BFA);
+	}
+
+	.lookup-toggle {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		background: rgba(255,255,255,0.06);
+		border: 1px solid rgba(167, 139, 250, 0.35);
+		color: #E2DCF5;
+		padding: 0.5em 1em;
+		border-radius: 999px;
+		font-family: inherit;
 		font-size: 0.9em;
-		text-transform: none;
-		letter-spacing: normal;
-		border-bottom: 1px solid rgba(167, 139, 250, 0.15);
+		cursor: pointer;
+		transition: border-color 0.2s ease, background 0.2s ease;
+		flex-shrink: 0;
 	}
-	.dropdown-content a:last-child {
-		border-bottom: none;
+	.lookup-toggle:hover, .lookup-toggle[aria-expanded="true"] {
+		border-color: var(--accent, #A78BFA);
+		background: rgba(167, 139, 250, 0.12);
 	}
-	.dropdown-content a:hover {
-		background-color: var(--accent-dark, #5B21B6);
-		color: #fff;
-	}
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-	.contact-btn {
-		background-color: var(--accent-dark, #5B21B6);
-		color: #F5F1FE !important;
-		padding: 8px 16px;
+
+	.nav-toggle {
+		display: none;
+		flex-direction: column;
+		gap: 4px;
+		background: none;
+		border: 1px solid rgba(167, 139, 250, 0.4);
 		border-radius: 4px;
-		transition: background-color 0.3s ease, color 0.3s ease !important;
-		border: 1px solid var(--accent, #A78BFA);
+		width: 38px;
+		height: 38px;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		flex-shrink: 0;
 	}
-	.contact-btn:hover {
-		background-color: var(--accent, #A78BFA);
-		color: #1A0E33 !important;
+	.nav-toggle span {
+		width: 18px;
+		height: 2px;
+		background: #E2DCF5;
+	}
+
+	.index-panel, .lookup-panel {
+		border-top: 1px solid rgba(167, 139, 250, 0.25);
+		background: rgba(8, 4, 18, 0.97);
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+	}
+	.index-panel-inner, .lookup-panel-inner {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 1.6em 1.5em;
+	}
+	.index-panel-inner {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7em;
+	}
+	.index-chip {
+		color: #E2DCF5;
+		text-decoration: none;
+		font-size: 0.88em;
+		padding: 0.6em 1.1em;
+		border: 1px solid rgba(167, 139, 250, 0.3);
+		border-radius: 999px;
+		transition: all 0.2s ease;
+		white-space: nowrap;
+	}
+	.index-chip:hover {
+		background: var(--accent, #A78BFA);
+		color: #1A0E33;
+		border-color: var(--accent, #A78BFA);
+	}
+
+	.lookup-box {
+		position: relative;
+		max-width: 560px;
+		margin: 0 auto;
+	}
+	.lookup-input {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0.9em 1.3em;
+		font-size: 1.05em;
+		font-family: 'Manrope', sans-serif;
+		color: #F5F1FE;
+		background: rgba(255,255,255,0.06);
+		border: 1px solid rgba(167, 139, 250, 0.3);
+		border-radius: 999px;
+		outline: none;
+	}
+	.lookup-input:focus {
+		border-color: var(--accent, #A78BFA);
+	}
+	.lookup-results {
+		list-style: none;
+		margin: 0.6em 0 0;
+		padding: 0.4em;
+		background: rgba(11, 6, 24, 0.98);
+		border: 1px solid rgba(167, 139, 250, 0.25);
+		border-radius: 14px;
+		max-height: 360px;
+		overflow-y: auto;
+	}
+	.lookup-results[hidden] {
+		display: none;
+	}
+	.lookup-result a {
+		display: block;
+		padding: 0.7em 0.9em;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: background-color 0.2s ease;
+	}
+	.lookup-result a:hover {
+		background: rgba(167, 139, 250, 0.16);
+	}
+	.lookup-result-title {
+		display: block;
+		font-family: 'Cormorant Garamond', serif;
+		font-style: italic;
+		color: #F5F1FE;
+		font-size: 1.05em;
+	}
+	.lookup-result-desc {
+		display: block;
+		font-size: 0.82em;
+		color: #C4B5FD;
+		opacity: 0.8;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.lookup-empty {
+		padding: 0.7em 0.9em;
+		color: #C4B5FD;
+		font-style: italic;
+		opacity: 0.7;
+	}
+
+	@media (max-width: 860px) {
+		.nav-toggle {
+			display: flex;
+		}
+		.quick-nav {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			align-items: stretch;
+			background: rgba(8, 4, 18, 0.97);
+			padding: 1em 1.5em;
+			border-top: 1px solid rgba(167, 139, 250, 0.25);
+			gap: 1em;
+		}
+		.quick-nav.is-open {
+			display: flex;
+		}
+		.lookup-toggle span {
+			display: none;
+		}
 	}
 </style>

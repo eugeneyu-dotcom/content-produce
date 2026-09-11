@@ -2,100 +2,162 @@
 const today = new Date();
 ---
 
-<footer class="luxury-footer">
-	<div class="footer-content">
-		<div class="footer-brand">
-			<div class="maxora-logo">
-				Maxora.ai
-			</div>
+<footer class="colophon">
+	<div class="colophon-rule"></div>
+	<div class="colophon-content">
+		<div class="colophon-mark">
+			<span class="colophon-glyph">§</span>
+		</div>
+
+		<div class="colophon-brand">
+			<div class="masthead-echo">Joaillerie et Symbolique</div>
 			<p class="brand-desc">
 				L'intelligence artificielle au service de la beauté, de l'histoire et de la culture. Nous créons des expériences digitales immersives pour décrypter le langage invisible du monde.
 			</p>
-			<div class="copyright">
-				&copy; {today.getFullYear()} Joaillerie et Symbolique & Maxora.ai. Tous droits réservés.
-			</div>
 		</div>
-		
-		<div class="footer-links">
-			<h3>Liens Rapides</h3>
-			<a href="/politique-de-confidentialite" class="footer-btn">Politique de Confidentialité</a>
+
+		<div class="colophon-index">
+			<h3>Sommaire</h3>
+			<a href="/category/vertus-spirituelles-des-pierres">L'Énergie des Pierres</a>
+			<a href="/category/totems-et-protection-antique">Totems Sacrés</a>
+			<a href="/category/m-taux-et-nergie-alchimique">Alchimie des Métaux</a>
+			<a href="/category/bijoux-et-rites-de-passage">Rites de Passage</a>
+			<a href="/category/guide-de-style">Guide de Style</a>
+		</div>
+
+		<div class="colophon-contact">
+			<h3>Rédaction</h3>
 			<a href="mailto:eugeneyu@maxora.ai" class="footer-btn">Contactez-nous</a>
+			<a href="/politique-de-confidentialite" class="footer-btn footer-btn-ghost">Politique de Confidentialité</a>
 		</div>
 	</div>
+	<div class="colophon-legal">
+		<span>&copy; {today.getFullYear()} Joaillerie et Symbolique &amp; Maxora.ai. Tous droits réservés.</span>
+		<span class="maxora-credit">Réalisé avec Maxora.ai</span>
+	</div>
 </footer>
+
 <style>
-	.luxury-footer {
+	.colophon {
 		background-color: var(--accent-dark, #331438);
 		color: #ebd5f5;
-		padding: 5em 2em;
 		margin-top: 4em;
 		font-family: 'IBM Plex Sans', sans-serif;
 	}
-	.footer-content {
+	.colophon-rule {
+		height: 1px;
+		background: linear-gradient(to right, transparent, rgba(255,255,255,0.35), transparent);
+	}
+	.colophon-content {
 		max-width: 1200px;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		gap: 4em;
+		padding: 4em 2em 3em;
+		display: grid;
+		grid-template-columns: auto 1.6fr 1fr 1fr;
+		gap: 3em;
+		align-items: start;
 	}
-	.footer-brand {
-		flex: 2;
-		min-width: 300px;
-	}
-	.maxora-logo {
+	.colophon-mark {
 		font-family: 'Playfair Display', serif;
-		font-size: 2.5em;
-		font-weight: 700;
+	}
+	.colophon-glyph {
+		display: block;
+		font-size: 3.5em;
+		line-height: 1;
+		color: rgba(255,255,255,0.25);
+	}
+	.masthead-echo {
+		font-family: 'Playfair Display', serif;
+		font-size: 1.7em;
+		font-weight: 400;
 		color: #fff;
-		margin-bottom: 0.5em;
-		letter-spacing: 1px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin-bottom: 0.6em;
 	}
 	.brand-desc {
-		font-size: 1.05em;
+		font-size: 0.98em;
 		line-height: 1.8;
-		opacity: 0.85;
-		margin-bottom: 2em;
-		max-width: 500px;
+		opacity: 0.8;
+		max-width: 440px;
+		margin: 0;
 	}
-	.copyright {
-		font-size: 0.9em;
-		opacity: 0.6;
-		border-top: 1px solid rgba(255,255,255,0.1);
-		padding-top: 1.5em;
-		margin-top: 1em;
-	}
-	.footer-links {
-		flex: 1;
-		min-width: 250px;
+	.colophon-index, .colophon-contact {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 1em;
+		gap: 0.9em;
 	}
-	.footer-links h3 {
+	.colophon-index h3, .colophon-contact h3 {
 		font-family: 'Playfair Display', serif;
-		font-size: 1.5em;
+		font-size: 1.1em;
 		color: #fff;
-		margin-bottom: 1em;
+		margin: 0 0 0.3em;
 		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	.colophon-index a {
+		color: #ebd5f5;
+		opacity: 0.8;
+		text-decoration: none;
+		font-size: 0.92em;
+		transition: opacity 0.2s ease;
+	}
+	.colophon-index a:hover {
+		opacity: 1;
+		text-decoration: underline;
 	}
 	.footer-btn {
 		display: inline-block;
-		padding: 10px 25px;
+		padding: 10px 20px;
 		background-color: rgba(255,255,255,0.05);
-		border: 1px solid rgba(255,255,255,0.2);
+		border: 1px solid rgba(255,255,255,0.25);
 		color: #fff;
 		text-decoration: none;
 		border-radius: 4px;
 		transition: all 0.3s ease;
-		font-size: 0.95em;
-		width: 100%;
+		font-size: 0.88em;
 		text-align: center;
-		box-sizing: border-box;
 	}
 	.footer-btn:hover {
 		background-color: #fff;
 		color: var(--accent-dark, #331438);
+	}
+	.footer-btn-ghost {
+		background: none;
+		border-color: rgba(255,255,255,0.15);
+		opacity: 0.85;
+	}
+	.colophon-legal {
+		border-top: 1px solid rgba(255,255,255,0.1);
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1.4em 2em;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 0.5em;
+		font-size: 0.82em;
+		opacity: 0.6;
+	}
+	.maxora-credit {
+		font-style: italic;
+	}
+
+	@media (max-width: 860px) {
+		.colophon-content {
+			grid-template-columns: 1fr 1fr;
+		}
+		.colophon-mark, .colophon-brand {
+			grid-column: 1 / -1;
+		}
+	}
+	@media (max-width: 560px) {
+		.colophon-content {
+			grid-template-columns: 1fr;
+		}
+		.colophon-legal {
+			flex-direction: column;
+		}
 	}
 </style>

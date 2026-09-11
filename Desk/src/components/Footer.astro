@@ -1,101 +1,137 @@
 ---
 const today = new Date();
+const categories = [
+	{ label: '機能的人間工学', href: '/category/functional-ergonomics' },
+	{ label: '色彩理論と素材感', href: '/category/color-theory-and-materiality' },
+	{ label: '配線管理の美学', href: '/category/cable-management' },
+	{ label: '照明とサーカディアンリズム', href: '/category/lighting-design' },
+	{ label: 'デジタル・ミニマリズム', href: '/category/digital-minimalism' },
+	{ label: 'バイオフィリックデザイン', href: '/category/biophilic-design' },
+	{ label: '集中とフローの心理学', href: '/category/psychology-of-flow' },
+];
 ---
 
-<footer class="minimal-footer">
-	<div class="footer-content">
-		<div class="footer-brand">
-			<div class="maxora-logo">
-				Maxora.ai
-			</div>
-			<p class="brand-desc">
-				AIの力で、あなたのワークスペースを最適化。ノイズを排除し、美しさと生産性を両立する究極のデスクセットアップを提案します。
-			</p>
-			<div class="copyright">
-				&copy; {today.getFullYear()} Minimal Desk Studio & Maxora.ai. All rights reserved.
+<footer class="spec-footer">
+	<div class="spec-footer-grid">
+		<div class="spec-footer-cell spec-footer-brand">
+			<span class="cell-label">運営</span>
+			<div class="cell-body">
+				<strong>Minimal Desk Studio</strong>
+				<p>AIの力で、あなたのワークスペースを最適化。ノイズを排除し、美しさと生産性を両立する究極のデスクセットアップを提案します。</p>
 			</div>
 		</div>
-		
-		<div class="footer-links">
-			<h3>リンク</h3>
-			<a href="/privacy-policy" class="footer-btn">プライバシーポリシー</a>
-			<a href="mailto:eugeneyu@maxora.ai" class="footer-btn">お問い合わせ</a>
+		<div class="spec-footer-cell spec-footer-index">
+			<span class="cell-label">カテゴリー索引</span>
+			<div class="cell-body cell-index">
+				{categories.map((c) => <a href={c.href}>{c.label}</a>)}
+			</div>
+		</div>
+		<div class="spec-footer-cell spec-footer-links">
+			<span class="cell-label">リンク</span>
+			<div class="cell-body">
+				<a href="/privacy-policy">プライバシーポリシー</a>
+				<a href="mailto:eugeneyu@maxora.ai">お問い合わせ</a>
+			</div>
 		</div>
 	</div>
+	<div class="spec-footer-copyright">
+		&copy; {today.getFullYear()} Minimal Desk Studio &amp; Maxora.ai. All rights reserved.
+	</div>
 </footer>
+
 <style>
-	.minimal-footer {
-		background-color: var(--accent-dark, #6B4226);
-		color: #D9CFC4;
-		padding: 5em 2em;
+	.spec-footer {
 		margin-top: 4em;
-		font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		border-top: 1px solid rgba(51,46,42,0.15);
+		font-family: 'IBM Plex Sans JP', sans-serif;
+		color: #33302C;
 	}
-	.footer-content {
+	.spec-footer-grid {
 		max-width: 1200px;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		gap: 4em;
+		display: grid;
+		grid-template-columns: 1.2fr 1.4fr 1fr;
 	}
-	.footer-brand {
-		flex: 2;
-		min-width: 300px;
+	.spec-footer-cell {
+		border-right: 1px solid rgba(51,46,42,0.12);
+		padding: 1.8em 1.6em;
 	}
-	.maxora-logo {
-		font-family: 'Playfair Display', serif;
-		font-size: 2.2em;
-		font-weight: 700;
-		color: #ffffff;
-		margin-bottom: 0.5em;
-		letter-spacing: -0.5px;
+	.spec-footer-cell:last-child {
+		border-right: none;
 	}
-	.brand-desc {
-		font-size: 1.05em;
+	.cell-label {
+		display: block;
+		font-size: 0.72em;
+		letter-spacing: 1.5px;
+		color: #8a8077;
+		margin-bottom: 1em;
+	}
+	.cell-body strong {
+		font-family: 'Shippori Mincho', serif;
+		font-size: 1.2em;
+		color: var(--accent-dark, #6B4226);
+		display: block;
+		margin-bottom: 0.6em;
+	}
+	.cell-body p {
+		font-size: 0.88em;
 		line-height: 1.8;
-		opacity: 0.85;
-		margin-bottom: 2em;
-		max-width: 500px;
-		color: #EDE7DD;
+		color: #5C5650;
+		margin: 0;
 	}
-	.copyright {
-		font-size: 0.9em;
-		opacity: 0.6;
-		border-top: 1px solid rgba(255,255,255,0.15);
-		padding-top: 1.5em;
-		margin-top: 1em;
-	}
-	.footer-links {
-		flex: 1;
-		min-width: 250px;
+	.cell-index {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 1em;
+		gap: 0;
 	}
-	.footer-links h3 {
-		font-size: 1.5em;
-		color: #ffffff;
-		margin-bottom: 1em;
-		font-weight: 500;
-	}
-	.footer-btn {
-		display: inline-block;
-		padding: 10px 25px;
-		background-color: rgba(255,255,255,0.05);
-		border: 1px solid rgba(255,255,255,0.25);
-		color: #F7F4EF;
+	.cell-index a {
+		padding: 0.5em 0;
+		border-bottom: 1px solid rgba(51,46,42,0.08);
+		color: #33302C;
 		text-decoration: none;
-		border-radius: 2px;
-		transition: all 0.3s ease;
-		font-size: 0.95em;
-		width: 100%;
-		text-align: center;
-		box-sizing: border-box;
+		font-size: 0.88em;
+		transition: color 0.2s ease;
 	}
-	.footer-btn:hover {
-		background-color: #ffffff;
+	.cell-index a:last-child {
+		border-bottom: none;
+	}
+	.cell-index a:hover {
 		color: var(--accent-dark, #6B4226);
+	}
+	.spec-footer-links .cell-body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8em;
+	}
+	.spec-footer-links a {
+		color: #33302C;
+		text-decoration: none;
+		font-size: 0.88em;
+		border: 1px solid rgba(51,46,42,0.15);
+		padding: 0.6em 1em;
+		text-align: center;
+		transition: all 0.2s ease;
+	}
+	.spec-footer-links a:hover {
+		border-color: var(--accent, #C17F59);
+		color: var(--accent-dark, #6B4226);
+	}
+	.spec-footer-copyright {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1.2em 1.6em;
+		border-top: 1px solid rgba(51,46,42,0.12);
+		font-size: 0.8em;
+		color: #8a8077;
+	}
+
+	@media (max-width: 860px) {
+		.spec-footer-grid {
+			grid-template-columns: 1fr;
+		}
+		.spec-footer-cell {
+			border-right: none;
+			border-bottom: 1px solid rgba(51,46,42,0.12);
+		}
 	}
 </style>

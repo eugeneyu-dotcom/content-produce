@@ -249,113 +249,126 @@ const pillars = [
 				color: var(--accent-dark, #6B4226);
 			}
 
-			/* --- Pillar Posts (Cards with BG) --- */
-			.pillar-grid {
+			/* --- Category catalog: dense flat grid, hairline borders, no shadows --- */
+			.catalog-grid {
 				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: 0;
-				width: 100vw;
-				margin-left: calc(-50vw + 50%);
-				margin-right: calc(-50vw + 50%);
-				margin-bottom: 4em;
-				list-style: none;
+				grid-template-columns: repeat(4, 1fr);
+				border-top: 1px solid rgba(51,46,42,0.15);
+				border-left: 1px solid rgba(51,46,42,0.15);
+				max-width: 1400px;
+				margin: 0 auto 4em;
 			}
-			.pillar-card {
+			.catalog-cell {
 				position: relative;
-				height: 400px;
-				background-size: cover;
-				background-position: center;
-				background-color: #EDE7DD;
-				overflow: hidden;
-				border: 1px solid rgba(51,46,42,0.12);
-				transition: transform 0.5s ease;
 				display: flex;
 				flex-direction: column;
-				justify-content: flex-end;
+				border-right: 1px solid rgba(51,46,42,0.15);
+				border-bottom: 1px solid rgba(51,46,42,0.15);
+				text-decoration: none;
+				background: #ffffff;
+				transition: background-color 0.2s ease;
 			}
-			.pillar-card:hover {
-				transform: scale(1.02);
-				z-index: 5;
-				border-color: var(--accent);
+			.catalog-cell:hover {
+				background: #F7F4EF;
 			}
-			.pillar-overlay {
-				position: absolute;
-				bottom: 0; left: 0; right: 0;
-				background: linear-gradient(to top, rgba(51, 46, 42, 0.85), transparent);
-				padding: 3em 2em 2em;
-				color: #F7F4EF;
-			}
-			.pillar-card h3 {
-				font-family: 'Shippori Mincho', serif;
-				font-size: 1.8em;
-				font-weight: 700;
-				margin: 0 0 0.3em 0;
-				color: #fff;
-			}
-			.pillar-card p {
-				font-size: 1em;
-				margin: 0;
-				opacity: 0.9;
-			}
-			.pillar-link {
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				z-index: 10;
-			}
-
-			/* --- Latest Articles Grid --- */
-			.article-grid {
-				display: grid;
-				grid-template-columns: 30vw 30vw;
-				justify-content: center;
-				gap: 3em;
-				padding: 0 1em;
-				list-style: none;
-				max-width: 1200px;
-				margin: 0 auto 5em;
-			}
-			.article-card {
-				position: relative;
-				height: 380px;
+			.catalog-thumb {
+				width: 100%;
+				aspect-ratio: 4 / 3;
 				background-size: cover;
 				background-position: center;
 				background-color: #EDE7DD;
-				border-radius: 2px;
-				overflow: hidden;
-				border: 1px solid rgba(51,46,42,0.12);
-				transition: all 0.3s ease;
+				filter: grayscale(0.15) contrast(1.02);
 			}
-			.article-card:hover {
-				transform: translateY(-8px);
-				border-color: var(--accent);
+			.catalog-label {
+				padding: 1em 1.1em 1.2em;
+				border-top: 1px solid rgba(51,46,42,0.1);
 			}
-			.article-content {
-				position: absolute;
-				bottom: 0; left: 0; right: 0;
-				background: rgba(247, 244, 239, 0.95);
-				padding: 2em;
-				text-align: center;
-			}
-			.article-card h3 {
-				font-family: 'Shippori Mincho', serif;
-				font-size: 1.2em;
-				font-weight: 700;
-				margin: 0.5em 0;
-				line-height: 1.4;
-			}
-			.article-card h3 a {
-				color: #33302C;
-				text-decoration: none;
-			}
-			.article-date {
-				font-size: 0.85em;
+			.catalog-index {
+				display: block;
+				font-size: 0.7em;
 				color: var(--accent, #C17F59);
 				letter-spacing: 1px;
+				margin-bottom: 0.4em;
 			}
-			.article-link {
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				z-index: 10;
+			.catalog-label h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1.05em;
+				font-weight: 700;
+				margin: 0 0 0.3em;
+				color: #33302C;
+				line-height: 1.4;
+			}
+			.catalog-label p {
+				font-size: 0.8em;
+				color: #8a8077;
+				margin: 0;
+				line-height: 1.5;
+			}
+
+			/* --- Latest Articles: dense flat catalog grid --- */
+			.article-catalog {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				border-top: 1px solid rgba(51,46,42,0.15);
+				border-left: 1px solid rgba(51,46,42,0.15);
+				max-width: 1400px;
+				margin: 0 auto 5em;
+				list-style: none;
+				padding: 0;
+			}
+			.article-cell {
+				position: relative;
+				border-right: 1px solid rgba(51,46,42,0.15);
+				border-bottom: 1px solid rgba(51,46,42,0.15);
+				background: #ffffff;
+				transition: background-color 0.2s ease;
+			}
+			.article-cell:hover {
+				background: #F7F4EF;
+			}
+			.article-cell a {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+			.article-thumb {
+				display: block;
+				width: 100%;
+				aspect-ratio: 16 / 10;
+				background-size: cover;
+				background-position: center;
+				background-color: #EDE7DD;
+			}
+			.article-cell-body {
+				padding: 1.1em 1.2em 1.3em;
+				border-top: 1px solid rgba(51,46,42,0.1);
+			}
+			.article-cell h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1em;
+				font-weight: 700;
+				margin: 0.4em 0 0;
+				line-height: 1.5;
+				color: #33302C;
+			}
+			.article-cell .article-date {
+				font-size: 0.75em;
+				color: var(--accent, #C17F59);
+				letter-spacing: 0.5px;
+			}
+
+			@media (max-width: 960px) {
+				.catalog-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+				.article-catalog {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			@media (max-width: 560px) {
+				.catalog-grid, .article-catalog {
+					grid-template-columns: 1fr;
+				}
 			}
 		</style>
 	</head>
@@ -404,43 +417,46 @@ const pillars = [
 				</div>
 			</section>
 
-			<!-- Pillar Posts Section -->
+			<!-- Category catalog: dense flat grid -->
 			<h2 class="section-title">カテゴリー</h2>
-			<div class="pillar-grid">
-				{pillars.map((pillar) => (
-					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
-						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
-						<div class="pillar-overlay">
+			<div class="catalog-grid">
+				{pillars.map((pillar, i) => (
+					<a href={pillar.link} class="catalog-cell">
+						<span class="catalog-thumb" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}></span>
+						<span class="catalog-label">
+							<span class="catalog-index">{String(i + 1).padStart(2, '0')}</span>
 							<h3>{pillar.title}</h3>
 							<p>{pillar.desc}</p>
-						</div>
-					</div>
+						</span>
+					</a>
 				))}
 			</div>
 
-			<!-- Latest Articles Section -->
+			<!-- Latest Articles: dense flat catalog grid -->
 			<h2 class="section-title">最新記事</h2>
-			<ul class="article-grid">
+			<ul class="article-catalog">
 				{
 					posts.map((post) => {
 						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
 						const bgImage = findImage(basePath);
-						
+
 						return (
-						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
-							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
-							<div class="article-content">
-								<p class="article-date">
-									<time datetime={post.data.pubDate.toISOString()}>
-										{post.data.pubDate.toLocaleDateString('ja-JP', {
-											year: 'numeric',
-											month: 'short',
-											day: 'numeric',
-										})}
-									</time>
-								</p>
-								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
-							</div>
+						<li class="article-cell">
+							<a href={`/blog/${post.id}/`}>
+								<span class="article-thumb" style={bgImage ? `background-image: url('${bgImage}');` : ''}></span>
+								<span class="article-cell-body">
+									<span class="article-date">
+										<time datetime={post.data.pubDate.toISOString()}>
+											{post.data.pubDate.toLocaleDateString('ja-JP', {
+												year: 'numeric',
+												month: 'short',
+												day: 'numeric',
+											})}
+										</time>
+									</span>
+									<h3>{post.data.title}</h3>
+								</span>
+							</a>
 						</li>
 					)})
 				}

@@ -1,185 +1,247 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+const tabs = [
+	{ label: 'HOME', href: '/' },
+	{ label: 'ON SCREEN', href: '/category/legends-on-screen' },
+	{ label: 'ARCHIVES', href: '/blog' },
+	{ label: 'ABOUT', href: '/about-us' },
+	{ label: 'PRIVACY', href: '/privacy-policy' },
+];
+const categories = [
+	{ label: 'Psychological Foundations & Anxiety', href: '/category/psychology-of-urban-legends' },
+	{ label: 'Liminal Spaces & Modern Isolation', href: '/category/the-backrooms-explained' },
+	{ label: 'Cryptids & Biological Anomalies', href: '/category/mothman-sightings-history' },
+	{ label: 'Digital Folklore & Creepypastas', href: '/category/slender-man-origins' },
+	{ label: 'Rituals & Forbidden Games', href: '/category/bloody-mary-ritual-legend' },
+	{ label: 'Moral Panics & Societal Fears', href: '/category/moral-panic-urban-legends' },
+	{ label: 'Cross-Cultural Folklore', href: '/category/cross-cultural-urban-legends' },
+];
 ---
 
-<header class="eerie-header">
-	<div class="top-bar">
-		<p>Welcome to The Global Encyclopedia of Urban Legends</p>
+<header class="dossier-header">
+	<div class="stamp-bar">
+		<span>CLASSIFIED — FOR PUBLIC RELEASE</span>
 	</div>
-	<div class="header-main">
-		<div class="logo-container">
-			<a href="/" class="logo-link">
-				<img src="/media-images/Logo.png" alt="Global Urban Legends Logo" class="site-logo" onerror="this.style.display='none';"/>
-				<div class="site-titles">
-					<h1 class="site-title">Global Urban Legends</h1>
-					<p class="site-tagline">Myths that haunt us in the digital age</p>
-				</div>
-			</a>
-		</div>
-		<nav class="main-nav">
-			<div class="internal-links">
-				<HeaderLink href="/">Home</HeaderLink>
-				<div class="dropdown">
-					<a href="#" class="dropbtn">The Global Encyclopedia</a>
-					<div class="dropdown-content">
-						<a href="/category/psychology-of-urban-legends">Psychological Foundations & Anxiety</a>
-						<a href="/category/the-backrooms-explained">Liminal Spaces & Modern Isolation</a>
-						<a href="/category/mothman-sightings-history">Cryptids & Biological Anomalies</a>
-						<a href="/category/slender-man-origins">Digital Folklore & Creepypastas</a>
-						<a href="/category/bloody-mary-ritual-legend">Rituals & Forbidden Games</a>
-						<a href="/category/moral-panic-urban-legends">Moral Panics & Societal Fears</a>
-						<a href="/category/cross-cultural-urban-legends">Cross-Cultural Folklore</a>
-					</div>
-				</div>
-				<HeaderLink href="/category/legends-on-screen">On Screen</HeaderLink>
-				<HeaderLink href="/blog">Archives</HeaderLink>
-				<HeaderLink href="/about-us">About Us</HeaderLink>
-				<HeaderLink href="/privacy-policy">Privacy Policy</HeaderLink>
-				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contact Us</a>
-			</div>
-		</nav>
+
+	<div class="case-plate">
+		<a href="/" class="case-id">
+			<img src="/media-images/Logo.png" alt="Global Urban Legends Logo" class="site-logo" onerror="this.style.display='none';"/>
+			<span class="case-id-text">
+				<span class="case-id-label">FILE:</span>
+				<span class="case-id-name">Global Urban Legends</span>
+			</span>
+		</a>
+		<button type="button" class="index-toggle" id="index-toggle" aria-expanded="false" aria-controls="index-drawer">CASE INDEX ▾</button>
+		<button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="tab-strip" aria-label="Open menu">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+
+	<nav class="tab-strip" id="tab-strip">
+		{tabs.map((t) => <HeaderLink href={t.href}>{t.label}</HeaderLink>)}
+	</nav>
+
+	<div class="index-drawer" id="index-drawer" hidden>
+		{categories.map((c) => <a href={c.href} class="index-row"><span class="redaction"></span>{c.label}</a>)}
 	</div>
 </header>
+
+<script>
+	const indexToggle = document.getElementById('index-toggle');
+	const indexDrawer = document.getElementById('index-drawer');
+	indexToggle?.addEventListener('click', () => {
+		const isHidden = indexDrawer.hidden;
+		indexDrawer.hidden = !isHidden;
+		indexToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+	});
+
+	const navToggle = document.getElementById('nav-toggle');
+	const tabStrip = document.getElementById('tab-strip');
+	navToggle?.addEventListener('click', () => {
+		const isOpen = tabStrip.classList.toggle('is-open');
+		navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+</script>
+
 <style>
-	.eerie-header {
-		background: #0D0D0D;
+	.dossier-header {
 		font-family: 'Courier Prime', monospace;
+		background: #0D0D0D;
 		border-bottom: 1px solid var(--accent, #B91C1C);
 		margin-bottom: 2em;
-		position: relative;
-		z-index: 1000;
 	}
-	.top-bar {
-		background-color: #1A1816;
+	.stamp-bar {
+		background: #1A1816;
 		color: var(--accent, #B91C1C);
-		font-size: 0.85em;
-		padding: 0.5em 0;
-		letter-spacing: 1px;
 		text-align: center;
-		text-transform: uppercase;
+		font-size: 0.72em;
+		letter-spacing: 2px;
+		padding: 0.5em 0.5em;
 	}
-	.top-bar p {
-		margin: 0;
-	}
-	.header-main {
+	.case-plate {
 		display: flex;
-		flex-wrap: wrap;
 		align-items: center;
-		justify-content: space-between;
-		padding: 1.5em 2em;
+		gap: 1em;
 		max-width: 1400px;
 		margin: 0 auto;
+		padding: 0.9em 1.4em;
 	}
-	.logo-container {
-		flex: 1;
-		min-width: 300px;
-	}
-	.logo-link {
+	.case-id {
 		display: flex;
 		align-items: center;
+		gap: 0.7em;
 		text-decoration: none;
-		gap: 1em;
+		flex: 1;
+		min-width: 0;
 	}
 	.site-logo {
-		height: 80px;
-		width: auto;
+		height: 36px;
+		width: 36px;
 		border-radius: 50%;
 		object-fit: cover;
+		border: 1px solid var(--accent, #B91C1C);
+		flex-shrink: 0;
 	}
-	.site-titles {
+	.case-id-text {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
+		min-width: 0;
 	}
-	.site-title {
-		margin: 0;
-		font-family: 'Special Elite', cursive;
-		font-size: 2.2em;
-		font-weight: 400;
-		color: #D6D3CE;
-		text-transform: uppercase;
+	.case-id-label {
+		font-size: 0.65em;
+		color: var(--accent, #B91C1C);
 		letter-spacing: 2px;
 	}
-	.site-tagline {
-		color: var(--accent, #B91C1C);
-		font-style: italic;
-		font-size: 1em;
-		margin-top: 0.2em;
-		margin-bottom: 0;
-	}
-	.main-nav {
-		display: flex;
-		align-items: center;
-	}
-	.internal-links {
-		display: flex;
-		gap: 2em;
-		align-items: center;
-	}
-	.internal-links a {
-		color: #D6D3CE;
-		text-decoration: none;
+	.case-id-name {
+		font-family: 'Special Elite', cursive;
 		font-size: 1.1em;
-		text-transform: uppercase;
+		color: #D6D3CE;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.index-toggle {
+		flex-shrink: 0;
+		background: none;
+		border: 1px solid var(--accent-dark, #7A1212);
+		color: #D6D3CE;
+		font-family: inherit;
+		font-size: 0.78em;
 		letter-spacing: 1px;
-		transition: color 0.3s ease;
-	}
-	.internal-links a:hover, .internal-links a.active {
-		color: var(--accent, #B91C1C);
-	}
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-	.dropbtn {
+		padding: 0.6em 1em;
 		cursor: pointer;
 	}
-	.dropdown-content {
+	.index-toggle[aria-expanded="true"] {
+		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.nav-toggle {
 		display: none;
-		position: absolute;
-		background-color: var(--bg-color, #0D0D0D);
-		min-width: 320px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-		z-index: 100;
-		border-radius: 4px;
-		top: 100%;
-		left: 0;
+		flex-shrink: 0;
+		flex-direction: column;
+		gap: 4px;
+		background: none;
 		border: 1px solid var(--accent-dark, #7A1212);
+		width: 40px;
+		height: 40px;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
 	}
-	.dropdown-content a {
+	.nav-toggle span {
+		width: 18px;
+		height: 1.5px;
+		background: #D6D3CE;
+	}
+
+	/* Folder-tab strip: horizontal-scroll on any width, never wraps */
+	.tab-strip {
+		display: flex;
+		gap: 0;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		max-width: 1400px;
+		margin: 0 auto;
+		border-top: 1px solid rgba(185,28,28,0.25);
+		scrollbar-width: thin;
+	}
+	.tab-strip :global(a) {
+		flex-shrink: 0;
+		padding: 0.8em 1.3em;
 		color: #D6D3CE;
-		padding: 12px 16px;
 		text-decoration: none;
-		display: block;
-		font-size: 0.9em;
-		text-transform: none;
-		letter-spacing: normal;
-		border-bottom: 1px solid rgba(185, 28, 28, 0.2);
+		font-size: 0.82em;
+		letter-spacing: 1px;
+		border-right: 1px solid rgba(185,28,28,0.2);
+		white-space: nowrap;
+		clip-path: polygon(6px 0, 100% 0, 100% 100%, 0 100%, 0 6px);
 	}
-	.dropdown-content a:last-child {
+	.tab-strip :global(a:hover), .tab-strip :global(a.active) {
+		background: #1A1816;
+		color: var(--accent, #B91C1C);
+	}
+
+	.index-drawer {
+		border-top: 1px solid rgba(185,28,28,0.25);
+		background: #1A1816;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0.5em 1.4em;
+	}
+	.index-row {
+		display: flex;
+		align-items: center;
+		gap: 0.8em;
+		padding: 0.7em 0;
+		border-bottom: 1px solid rgba(185,28,28,0.15);
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+	}
+	.index-row:last-child {
 		border-bottom: none;
 	}
-	.dropdown-content a:hover {
-		background-color: var(--accent-dark, #7A1212);
-		color: #fff;
+	.index-row:hover {
+		color: var(--accent, #B91C1C);
 	}
-	.dropdown:hover .dropdown-content {
-		display: block;
+	.redaction {
+		display: inline-block;
+		width: 14px;
+		height: 10px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
 	}
-	.contact-btn {
-		background-color: var(--accent, #B91C1C);
-		color: #fff !important;
-		padding: 8px 16px;
-		border-radius: 2px;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		font-size: 0.95em;
-		transition: background-color 0.3s ease, color 0.3s ease !important;
-		border: 1px solid #fff;
-	}
-	.contact-btn:hover {
-		background-color: #E05252;
-		color: #fff !important;
+
+	@media (max-width: 780px) {
+		.case-id-label {
+			display: none;
+		}
+		.case-id-name {
+			font-size: 0.85em;
+			white-space: normal;
+			line-height: 1.2;
+		}
+		.index-toggle {
+			font-size: 0.68em;
+			padding: 0.6em 0.6em;
+		}
+		.nav-toggle {
+			display: flex;
+		}
+		.tab-strip {
+			display: none;
+		}
+		.tab-strip.is-open {
+			display: flex;
+			flex-direction: column;
+			overflow-x: visible;
+		}
+		.tab-strip.is-open :global(a) {
+			clip-path: none;
+			border-right: none;
+			border-bottom: 1px solid rgba(185,28,28,0.2);
+		}
 	}
 </style>

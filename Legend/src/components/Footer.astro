@@ -1,103 +1,138 @@
 ---
 const today = new Date();
+const categories = [
+	{ label: 'Psychological Foundations & Anxiety', href: '/category/psychology-of-urban-legends' },
+	{ label: 'Liminal Spaces & Modern Isolation', href: '/category/the-backrooms-explained' },
+	{ label: 'Cryptids & Biological Anomalies', href: '/category/mothman-sightings-history' },
+	{ label: 'Digital Folklore & Creepypastas', href: '/category/slender-man-origins' },
+	{ label: 'Rituals & Forbidden Games', href: '/category/bloody-mary-ritual-legend' },
+	{ label: 'Moral Panics & Societal Fears', href: '/category/moral-panic-urban-legends' },
+	{ label: 'Cross-Cultural Folklore', href: '/category/cross-cultural-urban-legends' },
+];
 ---
 
-<footer class="eerie-footer">
-	<div class="footer-content">
-		<div class="footer-brand">
-			<div class="maxora-logo">
-				Maxora.ai
-			</div>
-			<p class="brand-desc">
-				Artificial intelligence uncovering the mysteries, myths, and legends that shape human culture. We create digital experiences to explore the terrifying unknown.
-			</p>
-			<div class="copyright">
-				&copy; {today.getFullYear()} Global Urban Legends & Maxora.ai. All rights reserved.
+<footer class="case-cabinet">
+	<div class="cabinet-stamp">END OF FILE</div>
+	<div class="cabinet-body">
+		<div class="cabinet-brand">
+			<div class="cabinet-title">Global Urban Legends</div>
+			<p class="cabinet-desc">Artificial intelligence uncovering the mysteries, myths, and legends that shape human culture — tracking the terrifying unknown as it spreads across the digital age.</p>
+			<div class="cabinet-links">
+				<a href="/privacy-policy">Privacy Policy</a>
+				<a href="mailto:eugeneyu@maxora.ai">Contact Us</a>
 			</div>
 		</div>
-		
-		<div class="footer-links">
-			<h3>Quick Links</h3>
-			<a href="/privacy-policy" class="footer-btn">Privacy Policy</a>
-			<a href="mailto:eugeneyu@maxora.ai" class="footer-btn">Contact Us</a>
+		<div class="cabinet-index">
+			<span class="cabinet-index-label">CASE INDEX</span>
+			{categories.map((c) => (
+				<a href={c.href} class="cabinet-row"><span class="redaction"></span>{c.label}</a>
+			))}
 		</div>
 	</div>
+	<div class="cabinet-copyright">
+		&copy; {today.getFullYear()} Global Urban Legends &amp; Maxora.ai. All rights reserved.
+	</div>
 </footer>
+
 <style>
-	.eerie-footer {
-		background-color: var(--accent-dark, #7A1212);
-		color: #D6D3CE;
-		padding: 5em 2em;
+	.case-cabinet {
 		margin-top: 4em;
-		font-family: 'Courier Prime', monospace;
+		background: #0D0D0D;
 		border-top: 2px solid var(--accent, #B91C1C);
+		font-family: 'Courier Prime', monospace;
+		color: #D6D3CE;
 	}
-	.footer-content {
+	.cabinet-stamp {
+		text-align: center;
+		font-family: 'Special Elite', cursive;
+		color: var(--accent-dark, #7A1212);
+		border: 2px solid var(--accent-dark, #7A1212);
+		width: fit-content;
+		margin: 2em auto 0;
+		padding: 0.3em 1.2em;
+		letter-spacing: 3px;
+		transform: rotate(-2deg);
+		font-size: 0.9em;
+	}
+	.cabinet-body {
 		max-width: 1200px;
 		margin: 0 auto;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		gap: 4em;
+		padding: 2em 1.6em 2.5em;
+		display: grid;
+		grid-template-columns: 1.3fr 1fr;
+		gap: 3em;
 	}
-	.footer-brand {
-		flex: 2;
-		min-width: 300px;
-	}
-	.maxora-logo {
-		font-family: 'Playfair Display', serif;
-		font-size: 2.5em;
-		font-weight: 700;
-		color: #D6D3CE;
-		margin-bottom: 0.5em;
-		letter-spacing: 1px;
-	}
-	.brand-desc {
-		font-size: 1.05em;
-		line-height: 1.8;
-		opacity: 0.85;
-		margin-bottom: 2em;
-		max-width: 500px;
-	}
-	.copyright {
-		font-size: 0.9em;
-		opacity: 0.6;
-		border-top: 1px solid rgba(232, 226, 213, 0.2);
-		padding-top: 1.5em;
-		margin-top: 1em;
-	}
-	.footer-links {
-		flex: 1;
-		min-width: 250px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 1em;
-	}
-	.footer-links h3 {
+	.cabinet-title {
 		font-family: 'Special Elite', cursive;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		color: #D6D3CE;
-		margin-bottom: 1em;
-		font-weight: 400;
+		margin-bottom: 0.6em;
 	}
-	.footer-btn {
-		display: inline-block;
-		padding: 10px 25px;
-		background-color: rgba(232, 226, 213, 0.05);
-		border: 1px solid rgba(232, 226, 213, 0.3);
+	.cabinet-desc {
+		font-size: 0.92em;
+		line-height: 1.8;
+		opacity: 0.8;
+		margin: 0 0 1.5em;
+	}
+	.cabinet-links {
+		display: flex;
+		gap: 1.5em;
+	}
+	.cabinet-links a {
 		color: #D6D3CE;
 		text-decoration: none;
-		border-radius: 4px;
-		transition: all 0.3s ease;
-		font-size: 0.95em;
-		width: 100%;
-		text-align: center;
-		box-sizing: border-box;
+		border: 1px solid rgba(232,226,213,0.25);
+		padding: 0.6em 1.2em;
+		font-size: 0.85em;
+		transition: all 0.2s ease;
 	}
-	.footer-btn:hover {
-		background-color: #0D0D0D;
-		color: #D6D3CE;
+	.cabinet-links a:hover {
 		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.cabinet-index-label {
+		display: block;
+		font-size: 0.72em;
+		letter-spacing: 2px;
+		color: var(--accent, #B91C1C);
+		margin-bottom: 1em;
+	}
+	.cabinet-row {
+		display: flex;
+		align-items: center;
+		gap: 0.7em;
+		padding: 0.55em 0;
+		border-bottom: 1px solid rgba(185,28,28,0.15);
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+	}
+	.cabinet-row:last-child {
+		border-bottom: none;
+	}
+	.cabinet-row:hover {
+		color: var(--accent, #B91C1C);
+	}
+	.redaction {
+		display: inline-block;
+		width: 12px;
+		height: 9px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
+	}
+	.cabinet-copyright {
+		border-top: 1px solid rgba(232,226,213,0.12);
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 1.2em 1.6em;
+		font-size: 0.78em;
+		opacity: 0.55;
+	}
+
+	@media (max-width: 780px) {
+		.cabinet-body {
+			grid-template-columns: 1fr;
+			gap: 2em;
+		}
 	}
 </style>

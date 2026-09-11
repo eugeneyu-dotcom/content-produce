@@ -1,177 +1,201 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+const tabs = [
+	{ label: 'ホーム', href: '/' },
+	{ label: 'セットアップ診断', href: '/category/workstyle-setup' },
+	{ label: '記事一覧', href: '/blog' },
+	{ label: '当サイトについて', href: '/about-us' },
+];
+const categories = [
+	{ label: '機能的人間工学', href: '/category/functional-ergonomics' },
+	{ label: '色彩理論と素材感', href: '/category/color-theory-and-materiality' },
+	{ label: '配線管理の美学', href: '/category/cable-management' },
+	{ label: '照明とサーカディアンリズム', href: '/category/lighting-design' },
+	{ label: 'デジタル・ミニマリズム', href: '/category/digital-minimalism' },
+	{ label: 'バイオフィリックデザイン', href: '/category/biophilic-design' },
+	{ label: '集中とフローの心理学', href: '/category/psychology-of-flow' },
+];
 ---
 
-<header class="minimal-header">
-	<div class="top-bar">
-		<p>Welcome to Minimal Desk Studio</p>
+<header class="spec-header">
+	<div class="spec-row spec-row-top">
+		<a href="/" class="spec-tag spec-logo">
+			<img src="/media-images/Logo.webp" alt="Minimal Desk Studio Logo" class="site-logo" onerror="this.style.display='none';"/>
+			<span>Minimal Desk Studio</span>
+		</a>
+		<span class="spec-tag spec-meta">ミニマリスト・デスクセットアップの究極ガイド</span>
+		<button type="button" class="spec-tag spec-cat-toggle" id="cat-toggle" aria-expanded="false" aria-controls="cat-row">カテゴリー一覧 +</button>
+		<button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="tab-row" aria-label="メニューを開く">
+			<span></span><span></span><span></span>
+		</button>
 	</div>
-	<div class="header-main">
-		<div class="logo-container">
-			<a href="/" class="logo-link">
-				<img src="/media-images/Logo.webp" alt="Minimal Desk Studio Logo" class="site-logo" onerror="this.style.display='none';"/>
-				<div class="site-titles">
-					<h1 class="site-title">Minimal Desk Studio</h1>
-					<p class="site-tagline">ミニマリスト・デスクセットアップの究極ガイド</p>
-				</div>
-			</a>
-		</div>
-		<nav class="main-nav">
-			<div class="internal-links">
-				<HeaderLink href="/">ホーム</HeaderLink>
-				<div class="dropdown">
-					<a href="#" class="dropbtn">カテゴリー</a>
-					<div class="dropdown-content">
-						<a href="/category/functional-ergonomics">機能的人間工学</a>
-						<a href="/category/color-theory-and-materiality">色彩理論と素材感</a>
-						<a href="/category/cable-management">配線管理の美学</a>
-						<a href="/category/lighting-design">照明とサーカディアンリズム</a>
-						<a href="/category/digital-minimalism">デジタル・ミニマリズム</a>
-						<a href="/category/biophilic-design">バイオフィリックデザイン</a>
-						<a href="/category/psychology-of-flow">集中とフローの心理学</a>
-					</div>
-				</div>
-				<HeaderLink href="/category/workstyle-setup">セットアップ診断</HeaderLink>
-				<HeaderLink href="/blog">記事一覧</HeaderLink>
-				<HeaderLink href="/about-us">当サイトについて</HeaderLink>
-				<HeaderLink href="/privacy-policy">プライバシーポリシー</HeaderLink>
-				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">お問い合わせ</a>
-			</div>
-		</nav>
+
+	<nav class="spec-row spec-row-tabs" id="tab-row">
+		{tabs.map((t) => <HeaderLink href={t.href}>{t.label}</HeaderLink>)}
+		<a href="mailto:eugeneyu@maxora.ai" class="tab-contact">お問い合わせ</a>
+	</nav>
+
+	<div class="spec-row spec-row-categories" id="cat-row" hidden>
+		{categories.map((c) => <a href={c.href} class="cat-cell">{c.label}</a>)}
 	</div>
 </header>
+
+<script>
+	const catToggle = document.getElementById('cat-toggle');
+	const catRow = document.getElementById('cat-row');
+	catToggle?.addEventListener('click', () => {
+		const isHidden = catRow.hidden;
+		catRow.hidden = !isHidden;
+		catToggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+		catToggle.textContent = isHidden ? 'カテゴリー一覧 −' : 'カテゴリー一覧 +';
+	});
+
+	const navToggle = document.getElementById('nav-toggle');
+	const tabRow = document.getElementById('tab-row');
+	navToggle?.addEventListener('click', () => {
+		const isOpen = tabRow.classList.toggle('is-open');
+		navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+</script>
+
 <style>
-	.minimal-header {
+	.spec-header {
+		font-family: 'IBM Plex Sans JP', sans-serif;
 		background: #ffffff;
-		font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		border-bottom: 1px solid rgba(51,46,42,0.12);
+		border-bottom: 1px solid rgba(51,46,42,0.15);
 		margin-bottom: 2em;
-		position: relative;
-		z-index: 1000;
 	}
-	.top-bar {
-		background-color: var(--accent-dark, #6B4226);
-		color: var(--bg-color, #F7F4EF);
-		font-size: 0.8em;
-		padding: 0.6em 0;
-		letter-spacing: 1px;
-		text-align: center;
-	}
-	.top-bar p {
-		margin: 0;
-	}
-	.header-main {
+	.spec-row {
 		display: flex;
+		align-items: stretch;
 		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-between;
-		padding: 1.5em 2em;
 		max-width: 1400px;
 		margin: 0 auto;
 	}
-	.logo-container {
-		flex: 1;
-		min-width: 300px;
+	.spec-row[hidden] {
+		display: none;
 	}
-	.logo-link {
+	.spec-row-top {
+		border-bottom: 1px solid rgba(51,46,42,0.12);
+	}
+	.spec-tag {
 		display: flex;
 		align-items: center;
+		gap: 0.6em;
+		padding: 0.9em 1.4em;
+		border-right: 1px solid rgba(51,46,42,0.12);
 		text-decoration: none;
-		gap: 1em;
+		color: #33302C;
+		font-size: 0.9em;
+		white-space: nowrap;
+	}
+	.spec-logo {
+		font-family: 'Shippori Mincho', serif;
+		font-weight: 700;
+		font-size: 1.15em;
+		color: var(--accent-dark, #6B4226);
 	}
 	.site-logo {
-		height: 60px;
-		width: auto;
-		border-radius: 4px;
+		height: 28px;
+		width: 28px;
 		object-fit: cover;
+		border-radius: 2px;
 	}
-	.site-titles {
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-	}
-	.site-title {
-		margin: 0;
-		font-family: 'Shippori Mincho', serif;
-		font-size: 1.8em;
-		font-weight: 700;
-		color: var(--accent-dark, #6B4226);
-		letter-spacing: -0.5px;
-	}
-	.site-tagline {
+	.spec-meta {
+		flex: 1;
 		color: #8a8077;
-		font-size: 0.9em;
-		margin-top: 0.2em;
-		margin-bottom: 0;
+		font-size: 0.82em;
+		min-width: 200px;
 	}
-	.main-nav {
-		display: flex;
-		align-items: center;
+	.spec-cat-toggle {
+		background: none;
+		border: none;
+		border-right: 1px solid rgba(51,46,42,0.12);
+		cursor: pointer;
+		font-family: inherit;
 	}
-	.internal-links {
-		display: flex;
-		gap: 2em;
-		align-items: center;
-	}
-	.internal-links a {
-		color: #33302C;
-		text-decoration: none;
-		font-size: 1em;
-		font-weight: 500;
-		transition: color 0.3s ease;
-	}
-	.internal-links a:hover, .internal-links a.active {
+	.spec-cat-toggle[aria-expanded="true"] {
 		color: var(--accent, #C17F59);
 	}
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-	.dropbtn {
+	.nav-toggle {
+		display: none;
+		background: none;
+		border: none;
+		width: 52px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 4px;
 		cursor: pointer;
 	}
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #ffffff;
-		min-width: 250px;
-		box-shadow: none;
-		z-index: 100;
-		border-radius: 2px;
-		top: 100%;
-		left: 0;
-		border: 1px solid rgba(51,46,42,0.12);
-		padding: 0.5em 0;
+	.nav-toggle span {
+		width: 18px;
+		height: 1.5px;
+		background: #33302C;
 	}
-	.dropdown-content a {
-		color: #33302C;
-		padding: 12px 20px;
+
+	.spec-row-tabs {
+		border-bottom: 1px solid rgba(51,46,42,0.12);
+	}
+	.spec-row-tabs :global(a) {
+		padding: 0.8em 1.4em;
+		border-right: 1px solid rgba(51,46,42,0.1);
 		text-decoration: none;
-		display: block;
+		color: #33302C;
 		font-size: 0.9em;
-		border-bottom: 1px solid rgba(51,46,42,0.08);
+		transition: background-color 0.2s ease, color 0.2s ease;
 	}
-	.dropdown-content a:last-child {
-		border-bottom: none;
-	}
-	.dropdown-content a:hover {
-		background-color: #F7F4EF;
+	.spec-row-tabs :global(a:hover), .spec-row-tabs :global(a.active) {
+		background: #F7F4EF;
 		color: var(--accent-dark, #6B4226);
 	}
-	.dropdown:hover .dropdown-content {
-		display: block;
+	.tab-contact {
+		margin-left: auto;
+		background: var(--accent, #C17F59);
+		color: #fff !important;
 	}
-	.contact-btn {
-		background-color: var(--accent, #C17F59);
-		color: #ffffff !important;
-		padding: 8px 20px;
-		border-radius: 2px;
-		transition: background-color 0.3s ease, color 0.3s ease !important;
-		border: 1px solid var(--accent, #C17F59);
+	.tab-contact:hover {
+		background: var(--accent-dark, #6B4226) !important;
+		color: #fff !important;
 	}
-	.contact-btn:hover {
-		background-color: #ffffff;
-		color: var(--accent, #C17F59) !important;
+
+	.spec-row-categories {
+		flex-wrap: wrap;
+	}
+	.cat-cell {
+		flex: 1 1 auto;
+		min-width: 160px;
+		padding: 0.7em 1.2em;
+		border-right: 1px solid rgba(51,46,42,0.1);
+		border-bottom: 1px solid rgba(51,46,42,0.1);
+		text-decoration: none;
+		color: #33302C;
+		font-size: 0.85em;
+		transition: background-color 0.2s ease;
+	}
+	.cat-cell:hover {
+		background: #F7F4EF;
+		color: var(--accent-dark, #6B4226);
+	}
+
+	@media (max-width: 860px) {
+		.spec-meta {
+			display: none;
+		}
+		.nav-toggle {
+			display: flex;
+		}
+		.spec-row-tabs {
+			display: none;
+			flex-direction: column;
+		}
+		.spec-row-tabs.is-open {
+			display: flex;
+		}
+		.tab-contact {
+			margin-left: 0;
+		}
 	}
 </style>

@@ -7,16 +7,14 @@ import { getCollection } from 'astro:content';
 import fs from 'node:fs';
 import path from 'node:path';
 
-// Helper to find the correct image extension (webp, jpg, png)
+// Helper to find the correct image extension (webp, jpg, png) for thumbnails
 function findImage(basePath) {
 	const exts = ['.webp', '.jpg', '.png', '.jpeg'];
 	const publicDir = path.join(process.cwd(), 'public');
-	
 	let base = basePath;
 	if (basePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
 		base = basePath.replace(/\.(jpg|jpeg|png|webp)$/i, '');
 	}
-
 	for (const ext of exts) {
 		if (fs.existsSync(path.join(publicDir, base + ext))) {
 			return base + ext;
@@ -229,122 +227,137 @@ const pillars = [
 				font-style: italic;
 			}
 
-			/* --- Pillar Posts (Cards with BG) --- */
-			.pillar-grid {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: 0;
-				width: 100vw;
-				margin-left: calc(-50vw + 50%);
-				margin-right: calc(-50vw + 50%);
-				margin-bottom: 4em;
-				list-style: none;
+			/* --- Pillar "Chapters": stacked glossary entries, no photography --- */
+			.chapter-list {
+				max-width: 900px;
+				margin: 0 auto 5em;
+				padding: 0 1.5em;
 			}
-			.pillar-card {
-				position: relative;
-				height: 550px;
+			.chapter-entry {
+				display: flex;
+				align-items: center;
+				gap: 1.5em;
+				padding: 1.8em 0;
+				border-bottom: 1px solid rgba(167, 139, 250, 0.18);
+				text-decoration: none;
+				transition: padding-left 0.3s ease;
+			}
+			.chapter-orb {
+				margin-left: auto;
+				flex-shrink: 0;
+				width: 76px;
+				height: 76px;
+				border-radius: 50%;
 				background-size: cover;
 				background-position: center;
-				overflow: hidden;
-				transition: transform 0.5s ease;
-				display: flex;
-				flex-direction: column;
-				justify-content: flex-end;
-				border: 1px solid rgba(255,255,255,0.08);
+				box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.25), 0 0 24px 4px rgba(167, 139, 250, 0.35);
+				filter: saturate(1.1);
+				opacity: 0.9;
+				transition: box-shadow 0.3s ease, opacity 0.3s ease;
 			}
-			.pillar-card:hover {
-				transform: scale(1.03);
-				z-index: 5;
-				box-shadow: 0 15px 40px rgba(167, 139, 250, 0.35);
+			.chapter-entry:hover .chapter-orb {
+				box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.4), 0 0 32px 8px rgba(167, 139, 250, 0.55);
+				opacity: 1;
 			}
-			.pillar-overlay {
-				position: absolute;
-				bottom: 0; left: 0; right: 0;
-				background: linear-gradient(to top, rgba(11, 6, 24, 0.95), transparent);
-				backdrop-filter: blur(12px);
-				-webkit-backdrop-filter: blur(12px);
-				padding: 3em 2em 2em;
-				color: #E2DCF5;
+			.chapter-entry:hover {
+				padding-left: 0.6em;
 			}
-			.pillar-card h3 {
+			.chapter-entry:last-child {
+				border-bottom: none;
+			}
+			.chapter-glyph {
 				font-family: 'Cormorant Garamond', serif;
 				font-style: italic;
-				font-size: 2.2em;
+				font-size: 1.6em;
+				color: var(--accent, #A78BFA);
+				min-width: 1.2em;
+				opacity: 0.7;
+			}
+			.chapter-body h3 {
+				font-family: 'Cormorant Garamond', serif;
+				font-style: italic;
 				font-weight: 500;
-				margin: 0 0 0.3em 0;
+				font-size: 1.7em;
+				margin: 0 0 0.25em;
 				color: #F5F1FE;
-				text-shadow: 0 0 20px rgba(167, 139, 250, 0.35);
 			}
-			.pillar-card p {
-				font-size: 1.05em;
+			.chapter-body p {
 				margin: 0;
-				opacity: 0.8;
+				font-size: 0.95em;
+				color: #C4B5FD;
+				opacity: 0.75;
 			}
-			.pillar-link {
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				z-index: 10;
+			.chapter-entry:hover .chapter-body h3 {
+				color: var(--accent, #A78BFA);
 			}
 
-			/* --- Latest Articles Grid --- */
-			.article-grid {
-				display: grid;
-				grid-template-columns: 30vw 30vw;
-				justify-content: center;
-				gap: 3em;
-				padding: 0 1em;
-				list-style: none;
-				max-width: 1200px;
+			/* --- Latest Interpretations: two-column dictionary page, text-only --- */
+			.entry-columns {
+				max-width: 1100px;
 				margin: 0 auto 5em;
+				padding: 0 1.5em;
+				column-count: 2;
+				column-gap: 3em;
 			}
-			.article-card {
-				position: relative;
-				height: 480px;
-				background-size: cover;
-				background-position: center;
-				background-color: #1A0E33;
-				border-radius: 16px;
-				overflow: hidden;
-				box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-				transition: all 0.4s ease;
-				border: 1px solid rgba(255,255,255,0.08);
-			}
-			.article-card:hover {
-				transform: translateY(-8px);
-				box-shadow: 0 15px 30px rgba(167, 139, 250, 0.25);
-				border-color: rgba(167, 139, 250, 0.4);
-			}
-			.article-content {
-				position: absolute;
-				bottom: 0; left: 0; right: 0;
-				background: rgba(255,255,255,0.04);
-				backdrop-filter: blur(12px);
-				-webkit-backdrop-filter: blur(12px);
-				padding: 2em;
-				text-align: center;
-				border-top: 2px solid var(--accent, #A78BFA);
-			}
-			.article-card h3 {
-				font-family: 'Cormorant Garamond', serif;
-				font-size: 1.4em;
-				font-weight: 500;
-				margin: 0.5em 0;
-				line-height: 1.4;
-			}
-			.article-card h3 a {
-				color: #E2DCF5;
+			.entry-item {
+				display: flex;
+				gap: 1em;
+				align-items: flex-start;
+				break-inside: avoid;
+				-webkit-column-break-inside: avoid;
+				margin-bottom: 1.8em;
+				padding-bottom: 1.8em;
+				border-bottom: 1px solid rgba(167, 139, 250, 0.15);
 				text-decoration: none;
 			}
-			.article-date {
-				font-size: 0.85em;
-				color: var(--accent, #A78BFA);
-				text-transform: uppercase;
-				letter-spacing: 2px;
+			.entry-thumb {
+				flex-shrink: 0;
+				width: 52px;
+				height: 52px;
+				border-radius: 10px;
+				background-size: cover;
+				background-position: center;
+				background-color: rgba(167, 139, 250, 0.15);
+				border: 1px solid rgba(167, 139, 250, 0.3);
+				margin-top: 0.2em;
 			}
-			.article-link {
-				position: absolute;
-				top: 0; left: 0; right: 0; bottom: 0;
-				z-index: 10;
+			.entry-text {
+				flex: 1;
+				min-width: 0;
+			}
+			.entry-headword {
+				display: block;
+				font-family: 'Cormorant Garamond', serif;
+				font-style: italic;
+				font-size: 1.3em;
+				color: #F5F1FE;
+				margin-bottom: 0.3em;
+				transition: color 0.2s ease;
+			}
+			.entry-item:hover .entry-headword {
+				color: var(--accent, #A78BFA);
+			}
+			.entry-meta {
+				display: block;
+				font-size: 0.72em;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+				color: var(--accent, #A78BFA);
+				opacity: 0.75;
+				margin-bottom: 0.5em;
+			}
+			.entry-desc {
+				display: block;
+				font-size: 0.88em;
+				line-height: 1.6;
+				color: #C4B5FD;
+				opacity: 0.75;
+			}
+
+			@media (max-width: 700px) {
+				.entry-columns {
+					column-count: 1;
+				}
 			}
 		</style>
 	</head>
@@ -382,47 +395,45 @@ const pillars = [
 				</div>
 			</section>
 
-			<!-- Pillar Posts Section -->
+			<!-- Pillar Posts Section: stacked chapter list, no photography -->
 			<h2 class="section-title">Dimensions of the Dreamscape</h2>
-			<div class="pillar-grid">
-				{pillars.map((pillar) => (
-					<div class="pillar-card" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}>
-						<a href={pillar.link} class="pillar-link"><span class="sr-only">{pillar.title}</span></a>
-						<div class="pillar-overlay">
+			<div class="chapter-list">
+				{pillars.map((pillar, i) => (
+					<a href={pillar.link} class="chapter-entry">
+						<span class="chapter-glyph">{String.fromCharCode(97 + i)}.</span>
+						<span class="chapter-body">
 							<h3>{pillar.title}</h3>
 							<p>{pillar.desc}</p>
-						</div>
-					</div>
+						</span>
+						<span class="chapter-orb" style={pillar.bg ? `background-image: url('${pillar.bg}');` : ''}></span>
+					</a>
 				))}
 			</div>
 
-			<!-- Latest Articles Section -->
+			<!-- Latest Interpretations: two-column dictionary page -->
 			<h2 class="section-title">Latest Interpretations</h2>
-			<ul class="article-grid">
+			<div class="entry-columns">
 				{
 					posts.map((post) => {
 						const basePath = post.data.heroImage ? post.data.heroImage : `/media-images/post-${post.id}`;
-						const bgImage = findImage(basePath);
-						
+						const thumbImage = findImage(basePath);
 						return (
-						<li class="article-card" style={bgImage ? `background-image: url('${bgImage}');` : ''}>
-							<a href={`/blog/${post.id}/`} class="article-link"><span class="sr-only">{post.data.title}</span></a>
-							<div class="article-content">
-								<p class="article-date">
-									<time datetime={post.data.pubDate.toISOString()}>
-										{post.data.pubDate.toLocaleDateString('en-US', {
-											year: 'numeric',
-											month: 'long',
-											day: 'numeric',
-										})}
-									</time>
-								</p>
-								<h3><a href={`/blog/${post.id}/`}>{post.data.title}</a></h3>
-							</div>
-						</li>
-					)})
+							<a href={`/blog/${post.id}/`} class="entry-item">
+								<span class="entry-thumb" style={thumbImage ? `background-image: url('${thumbImage}');` : ''}></span>
+								<span class="entry-text">
+									<span class="entry-meta">
+										<time datetime={post.data.pubDate.toISOString()}>
+											{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+										</time>
+									</span>
+									<span class="entry-headword">{post.data.title}</span>
+									{post.data.description && <span class="entry-desc">{post.data.description}</span>}
+								</span>
+							</a>
+						);
+					})
 				}
-			</ul>
+			</div>
 		</main>
 		<Footer />
 		<script define:vars={{ searchIndex }}>

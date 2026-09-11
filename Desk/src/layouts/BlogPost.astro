@@ -113,13 +113,38 @@ const jsonLd = {
 			.faq-q { color: var(--accent-dark); font-weight: bold; font-size: 1.1rem; margin-bottom: 0.5rem; }
 			.faq-a { color: #5C5650; line-height: 1.6; }
 			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
+				margin-bottom: 1.5em;
+				padding: 1em 0 0;
+				text-align: left;
 				line-height: 1;
 			}
 			.title h1 {
-				margin: 0 0 0.5em 0;
+				margin: 0.3em 0 0.8em;
+				text-align: left;
+			}
+			.spec-meta-row {
+				display: flex;
+				flex-wrap: wrap;
+				border: 1px solid rgba(51,46,42,0.15);
+				font-size: 0.82em;
+				font-family: 'IBM Plex Sans JP', sans-serif;
+			}
+			.spec-meta-cell {
+				display: flex;
+				border-right: 1px solid rgba(51,46,42,0.15);
+			}
+			.spec-meta-cell:last-child {
+				border-right: none;
+			}
+			.spec-meta-cell .k {
+				padding: 0.6em 1em;
+				background: #F7F4EF;
+				color: #8a8077;
+				border-right: 1px solid rgba(51,46,42,0.15);
+			}
+			.spec-meta-cell .v {
+				padding: 0.6em 1.2em;
+				color: #33302C;
 			}
 			.date {
 				margin-bottom: 0.5em;
@@ -139,24 +164,20 @@ const jsonLd = {
 					{resolvedHeroImage && <img width="1020" height="510" src={resolvedHeroImage} alt={title || "Hero Image"} onerror="this.style.display='none'" />}
 				</div>
 				<div class="prose">
-					{category && (
-						<div class="article-category" style="text-align: center; margin-bottom: 0.5em;">
-							<span style="background: var(--accent, #C17F59); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px;">{category}</span>
-						</div>
-					)}
 					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
 						<h1>{title}</h1>
-						<hr />
+						<div class="spec-meta-row">
+							{category && (
+								<span class="spec-meta-cell"><span class="k">カテゴリー</span><span class="v">{category}</span></span>
+							)}
+							<span class="spec-meta-cell">
+								<span class="k">公開日</span>
+								<span class="v">
+									<FormattedDate date={pubDate} />
+									{updatedDate && <span class="last-updated-on"> (更新: <FormattedDate date={updatedDate} />)</span>}
+								</span>
+							</span>
+						</div>
 					</div>
 					<slot />
 				</div>

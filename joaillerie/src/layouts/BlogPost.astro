@@ -126,7 +126,7 @@ const jsonLd = {
 			}
 
 			.title {
-				margin-bottom: 1em;
+				margin-bottom: 1.5em;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
@@ -137,9 +137,43 @@ const jsonLd = {
 			.date {
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
+				font-family: 'IBM Plex Sans', sans-serif;
+				font-size: 0.85em;
+				text-transform: uppercase;
+				letter-spacing: 1px;
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+			.title hr {
+				width: 60px;
+				height: 2px;
+				background: var(--accent, #9335B6);
+				border: none;
+				margin: 0.8em auto 0;
+			}
+
+			/* Editorial touches: drop cap opening + pull-quote blockquotes */
+			:global(.prose > p:first-of-type::first-letter) {
+				font-family: 'Playfair Display', serif;
+				font-size: 3.6em;
+				float: left;
+				line-height: 0.8;
+				padding: 0.05em 0.08em 0 0;
+				color: var(--accent, #9335B6);
+			}
+			:global(.prose blockquote) {
+				font-family: 'Playfair Display', serif;
+				font-style: italic;
+				font-size: 1.35em;
+				color: #442049;
+				border-left: none;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #ddd;
+				padding: 1em 0;
+				margin: 2em auto;
+				max-width: 90%;
+				text-align: center;
 			}
 		</style>
 	</head>

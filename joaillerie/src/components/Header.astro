@@ -1,51 +1,79 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+
+const today = new Date();
+const editionLabel = today.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
 ---
 
-<header class="luxury-header">
+<header class="masthead">
 	<div class="top-bar">
-		<p>Bienvenue sur L'Encyclopédie des Symboles</p>
+		<p class="top-bar-left">Bienvenue sur L'Encyclopédie des Symboles</p>
+		<p class="top-bar-right">Édition de {editionLabel}</p>
 	</div>
-	<div class="header-main">
-		<div class="logo-container">
-			<a href="/" class="logo-link">
-				<img src="/media-images/Logo.webp" alt="Joaillerie et Symbolique Logo" class="site-logo" />
-				<div class="site-titles">
-					<h1 class="site-title">Joaillerie et Symbolique</h1>
-					<p class="site-tagline">L'art, la signification et le pouvoir des bijoux</p>
-				</div>
-			</a>
-		</div>
-		<nav class="main-nav">
-			<div class="internal-links">
-				<HeaderLink href="/">Accueil</HeaderLink>
-				<div class="dropdown">
-					<a href="#" class="dropbtn">L'Encyclopédie des Symboles de Bijouterie</a>
-					<div class="dropdown-content">
-						<a href="/category/symbolisme-des-bagues-par-doigt">Le Langage des Doigts et l'Autorité</a>
-						<a href="/category/vertus-spirituelles-des-pierres">L'Énergie des Pierres et la Guérison</a>
-						<a href="/category/totems-et-protection-antique">Totems Sacrés et Protection Antique</a>
-						<a href="/category/m-taux-et-nergie-alchimique">Alchimie des Métaux et Éternité</a>
-						<a href="/category/bijoux-et-rites-de-passage">Rites de Passage et Mémoire</a>
-						<a href="/category/styles-et-identit-sociale">Identité, Style et Sous-cultures</a>
-						<a href="/category/symbolisme-de-la-nature">Faune, Flore et Secrets de la Nature</a>
-					</div>
-				</div>
-				<HeaderLink href="/category/guide-de-style">Guide de Style</HeaderLink>
-				<HeaderLink href="/blog">Articles</HeaderLink>
-				<HeaderLink href="/a-propos">À Propos</HeaderLink>
-				<HeaderLink href="/politique-de-confidentialite">Politique de Confidentialité</HeaderLink>
-				<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contactez-nous</a>
+
+	<div class="nameplate">
+		<a href="/" class="nameplate-link">
+			<img src="/media-images/Logo.webp" alt="Joaillerie et Symbolique Logo" class="nameplate-crest" />
+			<h1 class="nameplate-title">Joaillerie et Symbolique</h1>
+			<p class="nameplate-tagline">L'art, la signification et le pouvoir des bijoux</p>
+		</a>
+	</div>
+
+	<button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+		<span class="nav-toggle-bar"></span>
+	</button>
+
+	<nav class="primary-nav" id="primary-nav">
+		<HeaderLink href="/">Accueil</HeaderLink>
+		<span class="nav-sep" aria-hidden="true">·</span>
+		<div class="nav-dropdown">
+			<button type="button" class="nav-dropbtn" aria-expanded="false">L'Encyclopédie des Symboles</button>
+			<div class="nav-dropdown-content">
+				<a href="/category/symbolisme-des-bagues-par-doigt">Le Langage des Doigts et l'Autorité</a>
+				<a href="/category/vertus-spirituelles-des-pierres">L'Énergie des Pierres et la Guérison</a>
+				<a href="/category/totems-et-protection-antique">Totems Sacrés et Protection Antique</a>
+				<a href="/category/m-taux-et-nergie-alchimique">Alchimie des Métaux et Éternité</a>
+				<a href="/category/bijoux-et-rites-de-passage">Rites de Passage et Mémoire</a>
+				<a href="/category/styles-et-identit-sociale">Identité, Style et Sous-cultures</a>
+				<a href="/category/symbolisme-de-la-nature">Faune, Flore et Secrets de la Nature</a>
 			</div>
-		</nav>
-	</div>
+		</div>
+		<span class="nav-sep" aria-hidden="true">·</span>
+		<HeaderLink href="/category/guide-de-style">Guide de Style</HeaderLink>
+		<span class="nav-sep" aria-hidden="true">·</span>
+		<HeaderLink href="/blog">Articles</HeaderLink>
+		<span class="nav-sep" aria-hidden="true">·</span>
+		<HeaderLink href="/a-propos">À Propos</HeaderLink>
+		<span class="nav-sep" aria-hidden="true">·</span>
+		<HeaderLink href="/politique-de-confidentialite">Politique de Confidentialité</HeaderLink>
+		<a href="mailto:eugeneyu@maxora.ai" class="contact-btn">Contactez-nous</a>
+	</nav>
 </header>
+
+<script>
+	const toggle = document.querySelector('.nav-toggle');
+	const nav = document.querySelector('.primary-nav');
+	toggle?.addEventListener('click', () => {
+		const isOpen = nav?.classList.toggle('is-open');
+		toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+
+	document.querySelectorAll('.nav-dropbtn').forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const content = btn.nextElementSibling;
+			const isOpen = content?.classList.toggle('is-open');
+			btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+		});
+	});
+</script>
+
 <style>
-	.luxury-header {
-		background: #fff;
-		font-family: 'Playfair Display', serif; /* Classic luxury font */
-		border-bottom: 1px solid #eaeaea;
+	.masthead {
+		font-family: 'Playfair Display', serif;
+		border-bottom: 3px double var(--accent-dark, #331438);
 		margin-bottom: 2em;
 		position: relative;
 		z-index: 1000;
@@ -53,124 +81,194 @@ import { SITE_TITLE } from '../consts';
 	.top-bar {
 		background-color: #3b2c35;
 		color: white;
-		font-size: 0.85em;
-		padding: 0.5em 0;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 0.78em;
+		padding: 0.5em 1.5em;
 		letter-spacing: 1px;
-		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.top-bar p {
 		margin: 0;
 	}
-	.header-main {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-between;
-		padding: 1.5em 2em;
-		max-width: 1400px;
-		margin: 0 auto;
+	.top-bar-right {
+		opacity: 0.75;
+		font-style: italic;
+		text-transform: capitalize;
 	}
-	.logo-container {
-		flex: 1;
-		min-width: 300px;
+
+	.nameplate {
+		text-align: center;
+		padding: 2em 1em 1.4em;
 	}
-	.logo-link {
-		display: flex;
-		align-items: center;
+	.nameplate-link {
 		text-decoration: none;
-		gap: 1em;
+		display: inline-flex;
+		flex-direction: column;
+		align-items: center;
 	}
-	.site-logo {
-		height: 80px;
-		width: auto;
+	.nameplate-crest {
+		height: 56px;
+		width: 56px;
 		border-radius: 50%;
 		object-fit: cover;
+		margin-bottom: 0.5em;
 	}
-	.site-titles {
-		display: flex;
-		flex-direction: column;
-		text-align: left;
-	}
-	.site-title {
+	.nameplate-title {
 		margin: 0;
-		font-size: 1.8em;
+		font-size: 2.6em;
 		font-weight: 400;
-		color: #333;
+		color: #222;
 		text-transform: uppercase;
-		letter-spacing: 2px;
+		letter-spacing: 5px;
 	}
-	.site-tagline {
+	.nameplate-tagline {
 		color: #666;
 		font-style: italic;
-		font-size: 1em;
-		margin-top: 0.2em;
-		margin-bottom: 0;
+		font-size: 1.05em;
+		font-family: 'IBM Plex Sans', sans-serif;
+		margin: 0.4em 0 0;
 	}
-	.main-nav {
-		display: flex;
+
+	.nav-toggle {
+		display: none;
+		position: absolute;
+		top: 3em;
+		right: 1.2em;
+		background: none;
+		border: 1px solid var(--accent, #9335B6);
+		border-radius: 4px;
+		width: 42px;
+		height: 42px;
+		flex-direction: column;
 		align-items: center;
+		justify-content: center;
+		gap: 5px;
+		cursor: pointer;
 	}
-	.internal-links {
+	.nav-toggle-bar {
+		width: 20px;
+		height: 2px;
+		background: var(--accent, #9335B6);
+	}
+
+	.primary-nav {
 		display: flex;
-		gap: 2em;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 0.6em;
+		padding: 1em 1.5em 1.3em;
+		border-top: 1px solid #eaeaea;
+		max-width: 1100px;
+		margin: 0 auto;
 	}
-	.internal-links a {
+	.primary-nav :global(a) {
 		color: #333;
 		text-decoration: none;
-		font-size: 1.1em;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 0.92em;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		transition: color 0.3s ease;
 	}
-	.internal-links a:hover, .internal-links a.active {
+	.primary-nav :global(a:hover),
+	.primary-nav :global(a.active) {
 		color: var(--accent, #9335B6);
 	}
-	.dropdown {
+	.nav-sep {
+		color: #ccc;
+	}
+	.nav-dropdown {
 		position: relative;
 		display: inline-block;
 	}
-	.dropbtn {
+	.nav-dropbtn {
+		background: none;
+		border: none;
+		font: inherit;
+		color: #333;
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-size: 0.92em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
 		cursor: pointer;
+		padding: 0;
 	}
-	.dropdown-content {
+	.nav-dropbtn[aria-expanded="true"] {
+		color: var(--accent, #9335B6);
+	}
+	.nav-dropdown-content {
 		display: none;
 		position: absolute;
 		background-color: #fff;
 		min-width: 320px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.12);
 		z-index: 100;
 		border-radius: 4px;
 		top: 100%;
-		left: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
-	.dropdown-content a {
+	.nav-dropdown-content.is-open {
+		display: block;
+	}
+	.nav-dropdown-content a {
 		color: #333;
-		padding: 12px 16px;
+		padding: 12px 18px;
 		text-decoration: none;
 		display: block;
-		font-size: 0.9em;
+		font-size: 0.85em;
 		text-transform: none;
 		letter-spacing: normal;
 		border-bottom: 1px solid #f0f0f0;
+		white-space: nowrap;
 	}
-	.dropdown-content a:last-child {
+	.nav-dropdown-content a:last-child {
 		border-bottom: none;
 	}
-	.dropdown-content a:hover {
+	.nav-dropdown-content a:hover {
 		background-color: #f5edf9;
 		color: var(--accent, #9335B6);
-	}
-	.dropdown:hover .dropdown-content {
-		display: block;
 	}
 	.contact-btn {
 		background-color: var(--accent, #9335B6);
 		color: white !important;
-		padding: 8px 16px;
+		padding: 6px 16px;
 		border-radius: 4px;
 		transition: background-color 0.3s ease !important;
 	}
 	.contact-btn:hover {
 		background-color: var(--accent-dark, #331438);
+	}
+
+	@media (max-width: 860px) {
+		.nav-toggle {
+			display: flex;
+		}
+		.primary-nav {
+			display: none;
+			flex-direction: column;
+			align-items: stretch;
+			text-align: center;
+			padding: 1em;
+		}
+		.primary-nav.is-open {
+			display: flex;
+		}
+		.nav-sep {
+			display: none;
+		}
+		.nav-dropdown-content {
+			position: static;
+			transform: none;
+			box-shadow: none;
+			min-width: 0;
+			background: #faf5fc;
+		}
+		.contact-btn {
+			margin-top: 0.5em;
+		}
 	}
 </style>

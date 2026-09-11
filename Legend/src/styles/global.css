@@ -20,6 +20,7 @@ body {
 	font-family: 'Courier Prime', monospace;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden; /* full-bleed 100vw sections (.hero etc.) can overrun the true viewport width by a few px depending on the browser; this prevents the resulting horizontal scroll/gutter instead of chasing the exact px cause per browser */
 	text-align: left;
 
 	background-size: 100% 600px;
