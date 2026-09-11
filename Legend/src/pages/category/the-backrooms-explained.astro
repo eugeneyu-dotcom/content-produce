@@ -10,15 +10,144 @@ import { SITE_TITLE } from '../../consts';
     <head>
         <BaseHead title={"2. Liminal Spaces & Modern Isolation | " + SITE_TITLE} description="2. Liminal Spaces & Modern Isolation category page" />
         <script type="application/ld+json" set:html={"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What are the Backrooms?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"A fictional liminal dimension\"}},{\"@type\":\"Question\",\"name\":\"Why is liminality scary?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Lack of context/purpose\"}},{\"@type\":\"Question\",\"name\":\"Is it a creepypasta?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, originating on 4chan\"}},{\"@type\":\"Question\",\"name\":\"Real-life liminal spaces?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Empty airports, hotels\"}},{\"@type\":\"Question\",\"name\":\"Why popular now?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Reflects modern isolation\"}}]}"} />
+            <style>
+	.dossier-case-page {
+		width: 75%;
+		max-width: none;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-case-header {
+		margin-bottom: 40px;
+		border-left: 3px solid var(--accent, #B91C1C);
+		padding-left: 1em;
+	}
+	.dossier-case-tag {
+		display: inline-block;
+		background: var(--accent-dark, #7A1212);
+		color: #fff;
+		font-size: 0.68em;
+		letter-spacing: 2px;
+		padding: 0.3em 0.8em;
+		margin-bottom: 0.6em;
+	}
+	.dossier-case-summary {
+		margin-bottom: 40px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #D6D3CE;
+	}
+	.dossier-keywords {
+		margin: 40px 0;
+		padding: 1.5em 0;
+		border-top: 1px solid rgba(185,28,28,0.25);
+		border-bottom: 1px solid rgba(185,28,28,0.25);
+	}
+	.dossier-keywords h3 {
+		margin-bottom: 1em;
+		font-size: 0.8em;
+		letter-spacing: 2px;
+		color: var(--accent, #B91C1C);
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-keyword-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7em;
+	}
+	.dossier-keyword-tag {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		padding: 0.6em 1em;
+		background: #1A1816;
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+		border: 1px solid rgba(185,28,28,0.3);
+		transition: all 0.2s ease;
+	}
+	.dossier-keyword-tag:hover {
+		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.dossier-keyword-tag .redaction {
+		display: inline-block;
+		width: 10px;
+		height: 8px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
+	}
+	.dossier-keyword-tag.is-pending {
+		color: #6b6862;
+		border-color: rgba(232,226,213,0.12);
+		cursor: not-allowed;
+	}
+	.dossier-keyword-tag.is-pending .redaction {
+		background: #3a3733;
+	}
+
+	.dossier-faq {
+		margin-top: 60px;
+		border: 1px solid rgba(185,28,28,0.3);
+		background: #1A1816;
+	}
+	.dossier-faq-title {
+		text-align: center;
+		padding: 1.2em;
+		margin: 0;
+		font-size: 1.5em;
+		font-family: 'Special Elite', cursive;
+		color: #D6D3CE;
+		border-bottom: 1px solid rgba(185,28,28,0.3);
+	}
+	.dossier-faq-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.dossier-faq-item {
+		padding: 1.5em 1.8em;
+		border-bottom: 1px solid rgba(185,28,28,0.2);
+	}
+	.dossier-faq-item:last-child {
+		border-bottom: none;
+	}
+	.dossier-faq-q {
+		display: block;
+		font-family: 'Special Elite', cursive;
+		font-size: 1.05em;
+		color: var(--accent, #B91C1C);
+		margin-bottom: 0.5em;
+	}
+	.dossier-faq-a {
+		margin: 0;
+		color: #D6D3CE;
+		line-height: 1.7;
+		font-size: 0.95em;
+	}
+	.dossier-faq-a strong {
+		color: #8a8680;
+		font-weight: 400;
+	}
+
+	@media (max-width: 780px) {
+		.dossier-case-page {
+			width: 100%;
+			padding: 16px;
+		}
+	}
+</style>
     </head>
     <body>
         <Header />
-        <main class="category-page" style="width: 75%; max-width: none; margin: 0 auto; padding: 20px;">
-        <header style="margin-bottom: 40px;">
+        <main class="dossier-case-page">
+        <header class="dossier-case-header">
+            <span class="dossier-case-tag">CASE FILE</span>
             <h1>2. Liminal Spaces & Modern Isolation</h1>
         </header>
 
-        <section class="category-article" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+        <section class="dossier-case-summary">
             <p>The modern era has birthed "Liminal Space" legends, most notably "The Backrooms." These tales focus on the unease felt in transitional, empty places like abandoned malls or endless hallways. This dimension explores the "Uncanny Valley" of architecture, where familiar environments become alien and hostile. It reflects a modern existential dread—the fear of being "clipped" out of reality and trapped in a non-place. This folklore is unique to the digital age, blending physical environment with psychological disorientation.</p>
         </section>
 
@@ -28,14 +157,14 @@ import { SITE_TITLE } from '../../consts';
 
 
 
-<section class="category-keywords" style="margin: 40px 0; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Related Keywords</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#why empty malls are scary</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#liminal space photography aesthetics</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#psychology of empty hallways</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#dreamcore and weirdcore origins</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#feeling of being watched in empty buildings</span>
+<section class="dossier-keywords">
+    <h3>Related Keywords</h3>
+    <div class="dossier-keyword-row">
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#why empty malls are scary</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#liminal space photography aesthetics</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#psychology of empty hallways</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#dreamcore and weirdcore origins</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#feeling of being watched in empty buildings</span>
     </div>
 </section>
 
@@ -45,33 +174,33 @@ import { SITE_TITLE } from '../../consts';
         
 
 
-<div class="category-faq-section" style="margin-top: 60px; padding: 40px 30px; background: #1A1816; border-radius: 12px; border: 1px solid rgba(185,28,28,0.4);">
-    <h2 style="text-align: center; margin-bottom: 40px; color: #E8E2D5; font-size: 2rem; font-family: 'Special Elite', cursive;">Frequently Asked Questions</h2>
-    <div class="faq-content" style="display: flex; flex-direction: column; gap: 24px;">
+<div class="dossier-faq">
+    <h2 class="dossier-faq-title">Frequently Asked Questions</h2>
+    <div class="dossier-faq-list">
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: What are the Backrooms?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> A fictional liminal dimension</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: What are the Backrooms?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> A fictional liminal dimension</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why is liminality scary?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Lack of context/purpose</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why is liminality scary?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Lack of context/purpose</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Is it a creepypasta?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Yes, originating on 4chan</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Is it a creepypasta?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Yes, originating on 4chan</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Real-life liminal spaces?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Empty airports, hotels</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Real-life liminal spaces?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Empty airports, hotels</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why popular now?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Reflects modern isolation</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why popular now?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Reflects modern isolation</p>
         </div>
     </div>
 </div>

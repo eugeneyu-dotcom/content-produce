@@ -10,15 +10,144 @@ import { SITE_TITLE } from '../../consts';
     <head>
         <BaseHead title={"Legends on Screen | " + SITE_TITLE} description="How urban legends and cryptids get adapted into video games and horror films — and what changes, and what doesn't, when a legend gets a screen." />
         <script type="application/ld+json" set:html={"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What is Legends on Screen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Coverage of legends adapted into games and film\"}},{\"@type\":\"Question\",\"name\":\"Why do legends become games?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Interactive fear spreads faster than text\"}},{\"@type\":\"Question\",\"name\":\"Are the movies historically accurate?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Usually loosely adapted, not literal\"}},{\"@type\":\"Question\",\"name\":\"What started this pattern?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Slender Man's 2012 indie horror game\"}},{\"@type\":\"Question\",\"name\":\"Will this section keep growing?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, updated as new adaptations release\"}}]}"} />
+            <style>
+	.dossier-case-page {
+		width: 75%;
+		max-width: none;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-case-header {
+		margin-bottom: 40px;
+		border-left: 3px solid var(--accent, #B91C1C);
+		padding-left: 1em;
+	}
+	.dossier-case-tag {
+		display: inline-block;
+		background: var(--accent-dark, #7A1212);
+		color: #fff;
+		font-size: 0.68em;
+		letter-spacing: 2px;
+		padding: 0.3em 0.8em;
+		margin-bottom: 0.6em;
+	}
+	.dossier-case-summary {
+		margin-bottom: 40px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #D6D3CE;
+	}
+	.dossier-keywords {
+		margin: 40px 0;
+		padding: 1.5em 0;
+		border-top: 1px solid rgba(185,28,28,0.25);
+		border-bottom: 1px solid rgba(185,28,28,0.25);
+	}
+	.dossier-keywords h3 {
+		margin-bottom: 1em;
+		font-size: 0.8em;
+		letter-spacing: 2px;
+		color: var(--accent, #B91C1C);
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-keyword-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7em;
+	}
+	.dossier-keyword-tag {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		padding: 0.6em 1em;
+		background: #1A1816;
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+		border: 1px solid rgba(185,28,28,0.3);
+		transition: all 0.2s ease;
+	}
+	.dossier-keyword-tag:hover {
+		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.dossier-keyword-tag .redaction {
+		display: inline-block;
+		width: 10px;
+		height: 8px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
+	}
+	.dossier-keyword-tag.is-pending {
+		color: #6b6862;
+		border-color: rgba(232,226,213,0.12);
+		cursor: not-allowed;
+	}
+	.dossier-keyword-tag.is-pending .redaction {
+		background: #3a3733;
+	}
+
+	.dossier-faq {
+		margin-top: 60px;
+		border: 1px solid rgba(185,28,28,0.3);
+		background: #1A1816;
+	}
+	.dossier-faq-title {
+		text-align: center;
+		padding: 1.2em;
+		margin: 0;
+		font-size: 1.5em;
+		font-family: 'Special Elite', cursive;
+		color: #D6D3CE;
+		border-bottom: 1px solid rgba(185,28,28,0.3);
+	}
+	.dossier-faq-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.dossier-faq-item {
+		padding: 1.5em 1.8em;
+		border-bottom: 1px solid rgba(185,28,28,0.2);
+	}
+	.dossier-faq-item:last-child {
+		border-bottom: none;
+	}
+	.dossier-faq-q {
+		display: block;
+		font-family: 'Special Elite', cursive;
+		font-size: 1.05em;
+		color: var(--accent, #B91C1C);
+		margin-bottom: 0.5em;
+	}
+	.dossier-faq-a {
+		margin: 0;
+		color: #D6D3CE;
+		line-height: 1.7;
+		font-size: 0.95em;
+	}
+	.dossier-faq-a strong {
+		color: #8a8680;
+		font-weight: 400;
+	}
+
+	@media (max-width: 780px) {
+		.dossier-case-page {
+			width: 100%;
+			padding: 16px;
+		}
+	}
+</style>
     </head>
     <body>
         <Header />
-        <main class="category-page" style="width: 75%; max-width: none; margin: 0 auto; padding: 20px;">
-        <header style="margin-bottom: 40px;">
+        <main class="dossier-case-page">
+        <header class="dossier-case-header">
+            <span class="dossier-case-tag">CASE FILE</span>
             <h1>Legends on Screen</h1>
         </header>
 
-        <section class="category-article" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+        <section class="dossier-case-summary">
             <p>A legend that stays as a story stays small. The moment it becomes playable or watchable, it reaches an audience that never would have found the original forum post or campfire tale. This dimension tracks how cryptids, creepypastas, and urban legends get adapted into video games and horror films — which details survive the adaptation, which get invented for the screen, and why the game or movie version is so often what people actually remember. New entries get added as new films and games keep mining the same folklore.</p>
         </section>
 
@@ -28,13 +157,13 @@ import { SITE_TITLE } from '../../consts';
 
 
 
-<section class="category-keywords" style="margin: 40px 0; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Related Keywords</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <a href="/blog/slender-man-video-game-viral-origin/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#slender man video game origin</a>
-        <a href="/blog/horror-movies-based-on-real-urban-legends/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#horror movies based on urban legends</a>
-        <a href="/blog/kokkuri-san-how-to-play/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#kokkuri san 2011 film</a>
-        <a href="/blog/daruma-san-bath-game-ritual/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#daruma san squid game</a>
+<section class="dossier-keywords">
+    <h3>Related Keywords</h3>
+    <div class="dossier-keyword-row">
+        <a href="/blog/slender-man-video-game-viral-origin/" class="dossier-keyword-tag"><span class="redaction"></span>#slender man video game origin</a>
+        <a href="/blog/horror-movies-based-on-real-urban-legends/" class="dossier-keyword-tag"><span class="redaction"></span>#horror movies based on urban legends</a>
+        <a href="/blog/kokkuri-san-how-to-play/" class="dossier-keyword-tag"><span class="redaction"></span>#kokkuri san 2011 film</a>
+        <a href="/blog/daruma-san-bath-game-ritual/" class="dossier-keyword-tag"><span class="redaction"></span>#daruma san squid game</a>
     </div>
 </section>
 
@@ -44,33 +173,33 @@ import { SITE_TITLE } from '../../consts';
 
 
 
-<div class="category-faq-section" style="margin-top: 60px; padding: 40px 30px; background: #1A1816; border-radius: 12px; border: 1px solid rgba(185,28,28,0.4);">
-    <h2 style="text-align: center; margin-bottom: 40px; color: #E8E2D5; font-size: 2rem; font-family: 'Special Elite', cursive;">Frequently Asked Questions</h2>
-    <div class="faq-content" style="display: flex; flex-direction: column; gap: 24px;">
+<div class="dossier-faq">
+    <h2 class="dossier-faq-title">Frequently Asked Questions</h2>
+    <div class="dossier-faq-list">
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: What is Legends on Screen?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Coverage of legends adapted into games and film</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: What is Legends on Screen?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Coverage of legends adapted into games and film</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why do legends become games?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Interactive fear spreads faster than text</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why do legends become games?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Interactive fear spreads faster than text</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Are the movies historically accurate?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Usually loosely adapted, not literal</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Are the movies historically accurate?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Usually loosely adapted, not literal</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: What started this pattern?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Slender Man's 2012 indie horror game</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: What started this pattern?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Slender Man's 2012 indie horror game</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Will this section keep growing?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Yes, updated as new adaptations release</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Will this section keep growing?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Yes, updated as new adaptations release</p>
         </div>
     </div>
 </div>

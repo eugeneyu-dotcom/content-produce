@@ -10,15 +10,144 @@ import { SITE_TITLE } from '../../consts';
     <head>
         <BaseHead title={"1. Psychological Foundations & Anxiety | " + SITE_TITLE} description="1. Psychological Foundations & Anxiety category page" />
         <script type="application/ld+json" set:html={"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Why are legends scary?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"They trigger primal fears\"}},{\"@type\":\"Question\",\"name\":\"What is FOAF?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Friend of a Friend credibility\"}},{\"@type\":\"Question\",\"name\":\"Are legends true?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Usually based on a grain of truth\"}},{\"@type\":\"Question\",\"name\":\"Do they teach lessons?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Yes, as cautionary tales\"}},{\"@type\":\"Question\",\"name\":\"Why the \\\"disgust\\\" factor?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"It makes stories memorable\"}}]}"} />
+            <style>
+	.dossier-case-page {
+		width: 75%;
+		max-width: none;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-case-header {
+		margin-bottom: 40px;
+		border-left: 3px solid var(--accent, #B91C1C);
+		padding-left: 1em;
+	}
+	.dossier-case-tag {
+		display: inline-block;
+		background: var(--accent-dark, #7A1212);
+		color: #fff;
+		font-size: 0.68em;
+		letter-spacing: 2px;
+		padding: 0.3em 0.8em;
+		margin-bottom: 0.6em;
+	}
+	.dossier-case-summary {
+		margin-bottom: 40px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #D6D3CE;
+	}
+	.dossier-keywords {
+		margin: 40px 0;
+		padding: 1.5em 0;
+		border-top: 1px solid rgba(185,28,28,0.25);
+		border-bottom: 1px solid rgba(185,28,28,0.25);
+	}
+	.dossier-keywords h3 {
+		margin-bottom: 1em;
+		font-size: 0.8em;
+		letter-spacing: 2px;
+		color: var(--accent, #B91C1C);
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-keyword-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7em;
+	}
+	.dossier-keyword-tag {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		padding: 0.6em 1em;
+		background: #1A1816;
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+		border: 1px solid rgba(185,28,28,0.3);
+		transition: all 0.2s ease;
+	}
+	.dossier-keyword-tag:hover {
+		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.dossier-keyword-tag .redaction {
+		display: inline-block;
+		width: 10px;
+		height: 8px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
+	}
+	.dossier-keyword-tag.is-pending {
+		color: #6b6862;
+		border-color: rgba(232,226,213,0.12);
+		cursor: not-allowed;
+	}
+	.dossier-keyword-tag.is-pending .redaction {
+		background: #3a3733;
+	}
+
+	.dossier-faq {
+		margin-top: 60px;
+		border: 1px solid rgba(185,28,28,0.3);
+		background: #1A1816;
+	}
+	.dossier-faq-title {
+		text-align: center;
+		padding: 1.2em;
+		margin: 0;
+		font-size: 1.5em;
+		font-family: 'Special Elite', cursive;
+		color: #D6D3CE;
+		border-bottom: 1px solid rgba(185,28,28,0.3);
+	}
+	.dossier-faq-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.dossier-faq-item {
+		padding: 1.5em 1.8em;
+		border-bottom: 1px solid rgba(185,28,28,0.2);
+	}
+	.dossier-faq-item:last-child {
+		border-bottom: none;
+	}
+	.dossier-faq-q {
+		display: block;
+		font-family: 'Special Elite', cursive;
+		font-size: 1.05em;
+		color: var(--accent, #B91C1C);
+		margin-bottom: 0.5em;
+	}
+	.dossier-faq-a {
+		margin: 0;
+		color: #D6D3CE;
+		line-height: 1.7;
+		font-size: 0.95em;
+	}
+	.dossier-faq-a strong {
+		color: #8a8680;
+		font-weight: 400;
+	}
+
+	@media (max-width: 780px) {
+		.dossier-case-page {
+			width: 100%;
+			padding: 16px;
+		}
+	}
+</style>
     </head>
     <body>
         <Header />
-        <main class="category-page" style="width: 75%; max-width: none; margin: 0 auto; padding: 20px;">
-        <header style="margin-bottom: 40px;">
+        <main class="dossier-case-page">
+        <header class="dossier-case-header">
+            <span class="dossier-case-tag">CASE FILE</span>
             <h1>1. Psychological Foundations & Anxiety</h1>
         </header>
 
-        <section class="category-article" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+        <section class="dossier-case-summary">
             <p>Urban legends are not merely scary stories; they are "anxiety containers" for society. Psychologically, these tales thrive on the "Friend of a Friend" (FOAF) effect, which lends a layer of perceived credibility. They often function as cautionary tales, reflecting collective fears regarding safety, health, or technology. By analyzing the psychological triggers—such as the "disgust reflex" or "moral panic"—we can understand why certain stories go viral while others fade. These legends serve a social function by reinforcing community boundaries and shared values through fear.</p>
         </section>
 
@@ -28,14 +157,14 @@ import { SITE_TITLE } from '../../consts';
 
 
 
-<section class="category-keywords" style="margin: 40px 0; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Related Keywords</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#evolutionary purpose of scary stories</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#friend of a friend effect sociology</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#urban legends as social control</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#why brains believe scary myths</span>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#psychological triggers of viral folklore</span>
+<section class="dossier-keywords">
+    <h3>Related Keywords</h3>
+    <div class="dossier-keyword-row">
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#evolutionary purpose of scary stories</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#friend of a friend effect sociology</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#urban legends as social control</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#why brains believe scary myths</span>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#psychological triggers of viral folklore</span>
     </div>
 </section>
 
@@ -45,33 +174,33 @@ import { SITE_TITLE } from '../../consts';
         
 
 
-<div class="category-faq-section" style="margin-top: 60px; padding: 40px 30px; background: #1A1816; border-radius: 12px; border: 1px solid rgba(185,28,28,0.4);">
-    <h2 style="text-align: center; margin-bottom: 40px; color: #E8E2D5; font-size: 2rem; font-family: 'Special Elite', cursive;">Frequently Asked Questions</h2>
-    <div class="faq-content" style="display: flex; flex-direction: column; gap: 24px;">
+<div class="dossier-faq">
+    <h2 class="dossier-faq-title">Frequently Asked Questions</h2>
+    <div class="dossier-faq-list">
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why are legends scary?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> They trigger primal fears</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why are legends scary?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> They trigger primal fears</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: What is FOAF?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Friend of a Friend credibility</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: What is FOAF?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Friend of a Friend credibility</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Are legends true?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Usually based on a grain of truth</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Are legends true?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Usually based on a grain of truth</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Do they teach lessons?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Yes, as cautionary tales</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Do they teach lessons?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Yes, as cautionary tales</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why the "disgust" factor?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> It makes stories memorable</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why the "disgust" factor?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> It makes stories memorable</p>
         </div>
     </div>
 </div>

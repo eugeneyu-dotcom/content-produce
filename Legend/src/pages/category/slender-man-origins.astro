@@ -10,15 +10,144 @@ import { SITE_TITLE } from '../../consts';
     <head>
         <BaseHead title={"4. Digital Folklore & Creepypastas | " + SITE_TITLE} description="4. Digital Folklore & Creepypastas category page" />
         <script type="application/ld+json" set:html={"{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"What is a creepypasta?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Horror copy-paste stories\"}},{\"@type\":\"Question\",\"name\":\"Is Slender Man real?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Created for an art contest\"}},{\"@type\":\"Question\",\"name\":\"Dangerous internet legends?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Momo, Blue Whale\"}},{\"@type\":\"Question\",\"name\":\"Why \\\"pasta\\\"?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"From \\\"copy-paste\\\"\"}},{\"@type\":\"Question\",\"name\":\"Scariest digital myths?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Smile Dog, Jeff the Killer\"}}]}"} />
+            <style>
+	.dossier-case-page {
+		width: 75%;
+		max-width: none;
+		margin: 0 auto;
+		padding: 20px;
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-case-header {
+		margin-bottom: 40px;
+		border-left: 3px solid var(--accent, #B91C1C);
+		padding-left: 1em;
+	}
+	.dossier-case-tag {
+		display: inline-block;
+		background: var(--accent-dark, #7A1212);
+		color: #fff;
+		font-size: 0.68em;
+		letter-spacing: 2px;
+		padding: 0.3em 0.8em;
+		margin-bottom: 0.6em;
+	}
+	.dossier-case-summary {
+		margin-bottom: 40px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #D6D3CE;
+	}
+	.dossier-keywords {
+		margin: 40px 0;
+		padding: 1.5em 0;
+		border-top: 1px solid rgba(185,28,28,0.25);
+		border-bottom: 1px solid rgba(185,28,28,0.25);
+	}
+	.dossier-keywords h3 {
+		margin-bottom: 1em;
+		font-size: 0.8em;
+		letter-spacing: 2px;
+		color: var(--accent, #B91C1C);
+		font-family: 'Courier Prime', monospace;
+	}
+	.dossier-keyword-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.7em;
+	}
+	.dossier-keyword-tag {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		padding: 0.6em 1em;
+		background: #1A1816;
+		color: #D6D3CE;
+		text-decoration: none;
+		font-size: 0.85em;
+		border: 1px solid rgba(185,28,28,0.3);
+		transition: all 0.2s ease;
+	}
+	.dossier-keyword-tag:hover {
+		border-color: var(--accent, #B91C1C);
+		color: var(--accent, #B91C1C);
+	}
+	.dossier-keyword-tag .redaction {
+		display: inline-block;
+		width: 10px;
+		height: 8px;
+		background: var(--accent-dark, #7A1212);
+		flex-shrink: 0;
+	}
+	.dossier-keyword-tag.is-pending {
+		color: #6b6862;
+		border-color: rgba(232,226,213,0.12);
+		cursor: not-allowed;
+	}
+	.dossier-keyword-tag.is-pending .redaction {
+		background: #3a3733;
+	}
+
+	.dossier-faq {
+		margin-top: 60px;
+		border: 1px solid rgba(185,28,28,0.3);
+		background: #1A1816;
+	}
+	.dossier-faq-title {
+		text-align: center;
+		padding: 1.2em;
+		margin: 0;
+		font-size: 1.5em;
+		font-family: 'Special Elite', cursive;
+		color: #D6D3CE;
+		border-bottom: 1px solid rgba(185,28,28,0.3);
+	}
+	.dossier-faq-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.dossier-faq-item {
+		padding: 1.5em 1.8em;
+		border-bottom: 1px solid rgba(185,28,28,0.2);
+	}
+	.dossier-faq-item:last-child {
+		border-bottom: none;
+	}
+	.dossier-faq-q {
+		display: block;
+		font-family: 'Special Elite', cursive;
+		font-size: 1.05em;
+		color: var(--accent, #B91C1C);
+		margin-bottom: 0.5em;
+	}
+	.dossier-faq-a {
+		margin: 0;
+		color: #D6D3CE;
+		line-height: 1.7;
+		font-size: 0.95em;
+	}
+	.dossier-faq-a strong {
+		color: #8a8680;
+		font-weight: 400;
+	}
+
+	@media (max-width: 780px) {
+		.dossier-case-page {
+			width: 100%;
+			padding: 16px;
+		}
+	}
+</style>
     </head>
     <body>
         <Header />
-        <main class="category-page" style="width: 75%; max-width: none; margin: 0 auto; padding: 20px;">
-        <header style="margin-bottom: 40px;">
+        <main class="dossier-case-page">
+        <header class="dossier-case-header">
+            <span class="dossier-case-tag">CASE FILE</span>
             <h1>4. Digital Folklore & Creepypastas</h1>
         </header>
 
-        <section class="category-article" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+        <section class="dossier-case-summary">
             <p>The internet has accelerated the evolution of folklore through "Creepypastas." Legends like Slender Man or the Momo Challenge are "open-source" myths, where the community contributes to the lore in real-time. This dimension explores how digital media distorts reality, leading to real-world consequences (e.g., the Slender Man stabbing). It analyzes the shift from oral tradition to viral text, where the medium itself adds to the horror through glitches, "lost" footage, and deep-web mysteries.</p>
         </section>
 
@@ -28,14 +157,14 @@ import { SITE_TITLE } from '../../consts';
 
 
 
-<section class="category-keywords" style="margin: 40px 0; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Related Keywords</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#creepypasta wiki best stories</span>
-        <a href="/blog/evolution-of-internet-horror-characters-from-chain-mail-to-ai/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#evolution of internet horror characters</a>
-        <span class="keyword-btn pending" style="padding: 8px 16px; background-color: #2A2723; color: #8A8478; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid rgba(232,226,213,0.15); cursor: not-allowed;">#influence of slender man on real world</span>
-        <a href="/blog/digital-folklore-and-lost-media-gone-forever/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#digital folklore and lost media</a>
-        <a href="/blog/modern-internet-ghost-stories-2026/" class="keyword-btn active" style="padding: 8px 16px; background-color: var(--accent, #B91C1C); color: #fff; text-decoration: none; border-radius: 2px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.08em; border: 1px solid #fff; transition: opacity 0.2s;">#modern internet ghost stories 2026</a>
+<section class="dossier-keywords">
+    <h3>Related Keywords</h3>
+    <div class="dossier-keyword-row">
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#creepypasta wiki best stories</span>
+        <a href="/blog/evolution-of-internet-horror-characters-from-chain-mail-to-ai/" class="dossier-keyword-tag"><span class="redaction"></span>#evolution of internet horror characters</a>
+        <span class="dossier-keyword-tag is-pending"><span class="redaction"></span>#influence of slender man on real world</span>
+        <a href="/blog/digital-folklore-and-lost-media-gone-forever/" class="dossier-keyword-tag"><span class="redaction"></span>#digital folklore and lost media</a>
+        <a href="/blog/modern-internet-ghost-stories-2026/" class="dossier-keyword-tag"><span class="redaction"></span>#modern internet ghost stories 2026</a>
     </div>
 </section>
 
@@ -45,33 +174,33 @@ import { SITE_TITLE } from '../../consts';
         
 
 
-<div class="category-faq-section" style="margin-top: 60px; padding: 40px 30px; background: #1A1816; border-radius: 12px; border: 1px solid rgba(185,28,28,0.4);">
-    <h2 style="text-align: center; margin-bottom: 40px; color: #E8E2D5; font-size: 2rem; font-family: 'Special Elite', cursive;">Frequently Asked Questions</h2>
-    <div class="faq-content" style="display: flex; flex-direction: column; gap: 24px;">
+<div class="dossier-faq">
+    <h2 class="dossier-faq-title">Frequently Asked Questions</h2>
+    <div class="dossier-faq-list">
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: What is a creepypasta?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Horror copy-paste stories</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: What is a creepypasta?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Horror copy-paste stories</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Is Slender Man real?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Created for an art contest</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Is Slender Man real?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Created for an art contest</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Dangerous internet legends?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Momo, Blue Whale</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Dangerous internet legends?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Momo, Blue Whale</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Why "pasta"?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> From "copy-paste"</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Why "pasta"?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> From "copy-paste"</p>
         </div>
 
-        <div class="faq-item" style="background: #E8E2D5; border-radius: 4px; padding: 24px; border-left: 3px solid var(--accent, #B91C1C); box-shadow: 0 4px 20px rgba(0,0,0,0.5); transition: transform 0.2s ease;">
-            <h4 style="color: var(--accent-dark, #7A1212); margin-top: 0; margin-bottom: 12px; font-size: 1.2rem; font-weight: 400; font-family: 'Special Elite', cursive;">Q: Scariest digital myths?</h4>
-            <p style="color: #2A2723; margin: 0; line-height: 1.7; font-size: 1.05rem;"><strong>A:</strong> Smile Dog, Jeff the Killer</p>
+        <div class="dossier-faq-item">
+            <span class="dossier-faq-q">Q: Scariest digital myths?</span>
+            <p class="dossier-faq-a"><strong>A:</strong> Smile Dog, Jeff the Killer</p>
         </div>
     </div>
 </div>
