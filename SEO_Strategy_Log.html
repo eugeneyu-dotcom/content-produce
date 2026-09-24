@@ -355,7 +355,7 @@
     <p class="lede">四站的技術 SEO、標題/CTR 優化、站台差異化策略的完整處理紀錄，依真實發生順序排列，每一項都附上實際數據跟 commit 連結。這份文件會持續往下加，待處理問題也統一在這裡追蹤，不再散落在各個對話裡。</p>
 
     <div class="stats">
-      <div class="stat"><span class="n">27</span><span class="l">SEO 相關 commit</span></div>
+      <div class="stat"><span class="n">28</span><span class="l">SEO 相關 commit</span></div>
       <div class="stat"><span class="n">104</span><span class="l">篇補上真實 meta description</span></div>
       <div class="stat"><span class="n">28</span><span class="l">分類頁加上 FAQPage schema</span></div>
       <div class="stat"><span class="n">178</span><span class="l">張圖片修正 alt text</span></div>
@@ -373,9 +373,18 @@
   <section class="pending-section">
     <div class="pending-head">
       <h2>目前待處理</h2>
-      <span class="pending-count">5 項</span>
+      <span class="pending-count">6 項</span>
     </div>
     <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">四站 Search Console 的舊 sitemap 殘留需要手動清除 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">09-24 診斷發現四站的 Search Console「Sitemap」分頁裡都還登記著 WordPress 時代的舊 sitemap 網址（`page-sitemap.xml`／`post-sitemap.xml` 等），逐一 curl 驗證全部真的是 404。現行 Astro 產生的 `sitemap-index.xml` 本身完全正常，這純粹是後台清單沒清乾淨，沒有 API 可以代勞。</p>
+        <p class="pending-item-next">下一步：<strong>Eugene 手動進四站各自的 GSC → Sitemap 分頁移除舊登記</strong></p>
+      </div>
+    </div>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
@@ -399,8 +408,8 @@
       <span class="pending-dot"></span>
       <div class="pending-item-body">
         <p class="pending-item-title">4 個新差異化模組成效 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，09-01 查核時曝光量全部個位數，部分頁面尚未被索引。</p>
-        <p class="pending-item-next">下一步：<strong>約 09-15～09-22 回頭查核</strong> — 屆時應有足夠索引量做初步判斷</p>
+        <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，09-01 查核時曝光量全部個位數，部分頁面尚未被索引。原訂 09-15～09-22 回頭查核，但同一段期間四站進行了大規模視覺改版（見下方待補記錄），這幾個模組的介面也一併被重做，成效查核尚未回頭執行。</p>
+        <p class="pending-item-next">下一步：<strong>視覺改版穩定後再查核</strong> — 介面剛換過，現在查的數字會混雜「改版前」跟「改版後」兩種介面的流量，要等改版版本累積出乾淨的窗口</p>
       </div>
     </div>
 
@@ -408,7 +417,7 @@
       <span class="pending-dot"></span>
       <div class="pending-item-body">
         <p class="pending-item-title">Legend 15 筆關鍵字積壓，全部缺 Human_Context <span class="tag legend">Legend</span></p>
-        <p class="pending-item-desc">kokkuri san how to play 跟 daruma san game ritual 都已補 HC 並發表（見第 08、09 階段），儀式遊戲系列（history-of-spirit-summoning-games、hitori-kakurenbo、kokkuri-san、daruma-san）已經相當完整。Legend 仍剩 15 筆待處理，依然遠超其他三站。<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">is mothman an alien or a cryptid</code> 補 HC 前要先確認跟既有的 cryptids-vs-urban-legends-differences-mothman 角度是否真的不重疊。09-08 另外發現 Sheet 裡已經躺著 2 筆跟 La Llorona 相關的跨文化比較候選字（<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">japanese vs mexican female ghosts</code>、<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">pontianak vs la llorona similarities</code>），之後如果要另外寫一篇 La Llorona 專篇深挖，三個角度要一起規劃分工，不要各自獨立派工變成互打。</p>
+        <p class="pending-item-desc">kokkuri san how to play 跟 daruma san game ritual 都已補 HC 並發表（見第 08、09 階段），儀式遊戲系列（history-of-spirit-summoning-games、hitori-kakurenbo、kokkuri-san、daruma-san）已經相當完整。Legend 仍剩若干筆待處理（實際筆數隨 Sheet 清理波動，見下方 Sheet 工具化紀錄），依然遠超其他三站。<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">is mothman an alien or a cryptid</code> 補 HC 前要先確認跟既有的 cryptids-vs-urban-legends-differences-mothman 角度是否真的不重疊。09-08 另外發現 Sheet 裡已經躺著 2 筆跟 La Llorona 相關的跨文化比較候選字（<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">japanese vs mexican female ghosts</code>、<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">pontianak vs la llorona similarities</code>），之後如果要另外寫一篇 La Llorona 專篇深挖，三個角度要一起規劃分工，不要各自獨立派工變成互打。</p>
         <p class="pending-item-next">下一步：<strong>等 Eugene 陸續補 HC</strong> — La Llorona 系列三個角度要先想好分工再派工</p>
       </div>
     </div>
@@ -834,8 +843,101 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">尚未完成的部分：真實搜尋量目前只能靠人工貼進 Keyword Planner 網頁介面查（一次最多 10 個字），Google Ads API 的自動化串接評估過後判定現階段不值得投入（需要 Developer Token 審核、OAuth 長期維護，且不保證低花費帳號能拿到比 UI 更精確的數字）——維持人工查詢流程，直到查詢頻率明顯提高再重新評估。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">11</span>
+      <h2 class="phase-title">四站視覺改版 + Sheet 工具化：從內容優化擴大到架構層級</h2>
+      <span class="phase-when">09-11 → 09-24</span>
+    </div>
+    <p class="phase-summary">這段期間的工作重心從「單篇文章的標題/描述」升級到兩個更大的結構性項目：四站原本共用同一套 Header/Footer/首頁/文章版面（只有配色字體不同），改成四種真正不同的視覺語言；Google Sheet 的寫回機制也從只能新增/更新，擴充成完整的刪除/改狀態工具。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">四站視覺結構差異化：joaillerie 雜誌式／Dream 字典式／Desk 型錄式／Legend 案卷式</p>
+        <p class="entry-desc">診斷發現四站的 Header/Footer/首頁/文章版面其實是同一套 DOM 結構，只有 CSS 變數（顏色/字體）不同——調用 UI/UX 改版流程，逐站設計出不共用同一種手法的獨立版型：joaillerie 走雜誌封面式（置中報頭、編號目次、風格指南 filmstrip）；Dream 走字典/百科式（常駐 Look Up 搜尋面板 + Index 分類面板、字母排序詞條列表）；Desk 走型錄式（規格單風格標籤列、可摺疊分類抽屜、密集網格陳列）；Legend 走案卷式（橫向捲動資料夾分頁、FILE #NNN 卡片、塗黑遮蔽裝飾）。四站原有的配色/字體/既有互動模組（Dream 搜尋框、Legend Legends on Screen、Desk セットアップ診断）全部保留，只換架構層的呈現方式。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">改版過程中發現並修掉一類重複出現的手機版 CSS bug</p>
+        <p class="entry-desc">三個具體問題，已寫進 CLAUDE.md：(1) 沿用已久的「width:100vw 全寬跳脫」手法在手機瀏覽器下比真實 viewport 多跑出約 30px，造成水平捲動——四站 global.css 統一加 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">overflow-x: hidden</code> 攔截，不深究確切像素成因。(2) Desk 手機版分類抽屜按了收合鍵沒反應，根因是共用 class 的 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">display:flex</code> 在 CSS 特異度打平時蓋掉了 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">hidden</code> 屬性本該有的 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">display:none</code>，補一條 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">[hidden]</code> override 修掉。(3) Legend／Desk 好幾處用 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">&lt;span&gt;</code> 承載背景圖縮圖，父層不是 flex/grid 容器時忘了寫 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">display:block</code>，寬高直接算成 0、縮圖整個消失——逐一補上後，額外對四站做了一次全站靜態掃描確認沒有遺漏的同類個案。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">分類頁改版 + 過期關鍵字標籤稽核</p>
+        <p class="entry-desc">8 個分類頁原本是逐頁手刻、彼此複製貼上的行內樣式，改版時統一抽成共用 class。順手稽核了全站 22 個「待補」（灰色未連結）關鍵字標籤：10 個實際上已經有對應文章卻沒點亮（例如 evolutionary purpose of scary stories），改回正確連結；12 個真的還沒寫的直接刪除。根因是分類頁建立當下手刻一次清單，後續新文章上線都沒回頭同步維護。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">bigfoot-sightings-pop-culture-image</p>
+        <p class="entry-desc">用真實 HC 寫成——大腳怪從恐怖形象到流行文化裡逐漸「軟化」的觀察，串連《Missing Link》動畫電影、GTA5「The Last One」任務、Undead Nightmare 的保育運動彩蛋、Sneaky Sasquatch 遊戲，全部經 Serper 查證。是 09-01 掃出的關鍵字缺口（Legend 從未寫過大腳怪/尼斯湖水怪這兩個知名度最高的神秘生物）第一篇補上的。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag system">跨站基礎設施</span>
+      <div class="entry-body">
+        <p class="entry-title">Google Sheet 寫回機制擴充：新增刪除／設定任意狀態兩個動作</p>
+        <p class="entry-desc">原本 Apps Script 只支援更新既有列（寫死 Status=USED）跟新增列。這次加上 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">action:'delete'</code>（按關鍵字文字比對刪除整列）跟 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">action:'setStatus'</code>（改成任意狀態值，例如 Pending），讓 Sheet 積壓清單可以真的被清理，不再只能新增不能刪除。</p>
+        <p class="entry-desc" style="margin-top:0.5rem;"><strong style="color:var(--legend);">代價慘痛的教訓</strong>：刪除是按關鍵字「文字」比對，不是按列號——同一個關鍵字文字如果剛好對應到兩列（一列是已發表文章的正式紀錄、一列是誤植的重複候選字），兩列會一起被刪掉。真實發生過一次：刪除 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">"why do i dream about my ex"</code> 的重複候選字時，連同已發表文章那列的 Status=USED／Post_Url 紀錄也一起被誤刪，靠 append 動作手動重建才補回來，但原始 Human_Context 內容沒能完整復原（只搶救回一小段截斷片段）。已寫進 CLAUDE.md：刪除前務必先查一次該關鍵字在 Sheet 裡是不是恰好只有一列，這之後的每次刪除批次都先做過這個檢查。</p>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">這段期間也做了例行的 Sheet 積壓清理（該刪的刪、該新增的標 Pending 等真人補 HC）跟下一輪關鍵字選題（joaillerie 的 rubis signification、Dream 的 spiritual meaning of teeth falling out in dream、Desk 的 ウルトラワイドモニター 画面分割 ソフト、Legend 的 yeti sightings，四筆目前都卡在等 Eugene 補 Human_Context）。另外發現本機 git 一度落後 origin/main 5 個 commit（其他管道完成的文章），已確認純快進後同步拉齊。</p>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">12</span>
+      <h2 class="phase-title">第四輪 GSC 診斷：意外抓到全站共通的舊 sitemap 殘留</h2>
+      <span class="phase-when">09-24</span>
+    </div>
+    <p class="phase-summary">今天的批次診斷四站全部觸發 SITEMAP_ERROR，一路查下去發現不是程式碼問題——是 WordPress 時代遺留的舊 sitemap 網址還登記在 Search Console 裡，四站共通。同一批診斷也找出 3 個乾淨的標題重寫候選字並執行完畢。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">SITEMAP_ERROR 根因：Search Console 裡卡著 WordPress 時代的舊 sitemap 登記</p>
+        <p class="entry-desc">四站的 `page-sitemap.xml`／`post-sitemap.xml`（部分站還有 `sitemap_index.xml`）逐一 curl 驗證，<strong>全部真的是 404</strong>——不是誤判。現行 Astro 產生的 `sitemap-index.xml` 本身完全正常（joaillerie 61 篇、Desk 59 篇、Dream 56 篇、Legend 45 篇，都有被定期重新下載）。這是 GSC 後台清單沒清乾淨，不是程式碼問題，需要人工進每站 Search Console →「Sitemap」分頁手動移除，沒有對應 API 可以代勞（見上方「目前待處理」）。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">6 個「已收錄」頁面的舊 404 快照，主動送 Indexing API 更新</p>
+        <p class="entry-desc">`gsc_index_status_state.json` 裡有 6 個網址標記「Not found (404)」，但都是 7-8 月的舊快照（joaillerie 3 個：`lenergie-des-pierres-et-la-guerison`、`category/alchimie-des-metaux`、`bague-pouce-signification-psychologique`；Desk 2 個：`digital-minimalism`、`tag/minimalist-desk-colors`；Legend 1 個：`local-legends-of-cryptids-map-analysis`）。逐一 curl 驗證後<strong>現在全部正常 301 轉址回真實頁面、回傳 200</strong>——是 Google 還沒重新爬取更新快取，程式碼端沒問題。已送 6 個 URL_UPDATED 通知加速重新爬取。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">symbolique-or-bijouterie-pouvoir-divinite-amour / bague-pouce-signification-psychologique</p>
+        <p class="entry-desc">用今天新拉的 90 天文章級數據找出排名不差（9.6～9.7）、CTR 仍是 0%、標題還沒被動過的乾淨案例。分別拿內文本來就有的具體細節當鉤子：圖坦卡門黃金面具「超過 10 公斤純金」的具體重量、19 世紀女性主義先驅刻意戴拇指戒指反抗「無名指婚戒=已婚依附」符碼的歷史細節。兩篇都是舊格式 WordPress 批次文章，frontmatter title 跟內文自帶的 hero 區塊 h1 是兩個獨立欄位，這次兩處都同步改了，避免顯示兩個不同標題。</p>
+        <div class="metric-line">曝光 36／32 · 排名 <span class="ok">9.6／9.7</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/b41215d" target="_blank" rel="noopener">b41215d</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">why-do-i-keep-dreaming-about-the-same-house</p>
+        <p class="entry-desc">排名 10.3（頁1/頁2交界）、128 次曝光、0 點擊，標題也還沒被動過。內文本來就有一個具體案例：軟體架構師 Julian 連續 6 個月夢到同一棟沒去過的房子，每次都在同一扇沒開過的深色木門前驚醒——直接拿這個當標題鉤子，比原本泛用的「心理學深度解析」具體很多。</p>
+        <div class="metric-line">曝光 128 · 排名 <span class="ok">10.3</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/b41215d" target="_blank" rel="noopener">b41215d</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">argent-vertus-spirituelles（第 06 階段已重寫過）這輪特意沒有再動——曝光 133→203、點擊 0→2，排名持平在 7.3～7.4，數字太小但方向是在往好的走，比起同一篇短時間內重寫第二次，讓它繼續累積數據比較合理。四站點擊數全部仍是個位數（90 天窗口 0～10 次），百分比漲跌很容易只是統計雜訊，判讀時要留意。Desk 短期 CTR 從 2.4%→8%、排名從 11.9→7.0，同時標記 TREND_DECLINE（點擊數比長期少）——兩個訊號方向相反，是曝光池縮小但流量品質變好，暫不當警訊處理。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-08。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-24。
   </footer>
 </div>
+
 </body></html>
