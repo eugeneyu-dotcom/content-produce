@@ -1,15 +1,15 @@
 ---
-title: "symbolique de l'or en bijouterie"
+title: "Pourquoi le Masque Funéraire de Toutânkhamon Pesait-il Plus de 10 Kilos d'Or Massif ?"
 slug: "symbolique-or-bijouterie-pouvoir-divinite-amour"
 pubDate: 2026-06-10T04:19:59.907Z
-description: "Symbolique de l'or en bijouterie : chair des dieux en Égypte, larmes du soleil chez les Incas, et promesse d'amour éternel dans l'alliance de mariage."
+description: "Symbolique de l'or en bijouterie : le masque funéraire de Toutânkhamon pesait plus de 10 kilos d'or massif — la chair des dieux égyptiens, les larmes du soleil incas, et la promesse d'amour éternel de l'alliance de mariage."
 category: "Alchimie des Métaux"
 heroImage: "/media-images/posts/symbolique-or-bijouterie-pouvoir-divinite-amour-cover.png"
 ---
 
 <div class="wp-block-group alignfull" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.joaillerie-et-symbolique.com/wp-content/uploads/2026/05/image-header-4.png'); background-size: cover; background-position: center; padding-top: 180px; padding-bottom: 100px; color: #ffffff; text-align: center; margin-bottom: 0px !important; display: block;">
 <p style="text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;">symbolique de l&rsquo;or en bijouterie</p>
-<h1 style="color: #ffffff; font-size: 3rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Symbolique de l&rsquo;Or en Bijouterie : Pouvoir, Divinité et Amour Éternel</h1>
+<h1 style="color: #ffffff; font-size: 3rem; margin: 0; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Pourquoi le Masque Funéraire de Toutânkhamon Pesait-il Plus de 10 Kilos d&rsquo;Or Massif ?</h1>
 </div>
 <div class="wp-block-group alignfull" style="background-color: var(--ast-global-color-4); padding: 60px 0px; margin-top: 0px !important; display: block;">
 <div style="max-width: 1200px; width: 90%; margin: 0 auto; display: block; text-align: left;">
