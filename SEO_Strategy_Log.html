@@ -355,7 +355,7 @@
     <p class="lede">四站的技術 SEO、標題/CTR 優化、站台差異化策略的完整處理紀錄，依真實發生順序排列，每一項都附上實際數據跟 commit 連結。這份文件會持續往下加，待處理問題也統一在這裡追蹤，不再散落在各個對話裡。</p>
 
     <div class="stats">
-      <div class="stat"><span class="n">28</span><span class="l">SEO 相關 commit</span></div>
+      <div class="stat"><span class="n">29</span><span class="l">SEO 相關 commit</span></div>
       <div class="stat"><span class="n">104</span><span class="l">篇補上真實 meta description</span></div>
       <div class="stat"><span class="n">28</span><span class="l">分類頁加上 FAQPage schema</span></div>
       <div class="stat"><span class="n">178</span><span class="l">張圖片修正 alt text</span></div>
@@ -935,8 +935,52 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">argent-vertus-spirituelles（第 06 階段已重寫過）這輪特意沒有再動——曝光 133→203、點擊 0→2，排名持平在 7.3～7.4，數字太小但方向是在往好的走，比起同一篇短時間內重寫第二次，讓它繼續累積數據比較合理。四站點擊數全部仍是個位數（90 天窗口 0～10 次），百分比漲跌很容易只是統計雜訊，判讀時要留意。Desk 短期 CTR 從 2.4%→8%、排名從 11.9→7.0，同時標記 TREND_DECLINE（點擊數比長期少）——兩個訊號方向相反，是曝光池縮小但流量品質變好，暫不當警訊處理。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">13</span>
+      <h2 class="phase-title">四站積壓關鍵字一次補齊：改用不吃 Gemini 的 prepare/finish 流程</h2>
+      <span class="phase-when">09-25</span>
+    </div>
+    <p class="phase-summary">第 11 階段點名卡住的 4 個關鍵字，Eugene 都補上了真實 Human_Context。執行時發現 API_Key 裡的 Gemini key 已失效，順勢改用 ai_agent.js 既有的 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">--prepare</code>/<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">--finish</code> 流程——Serper 搜尋、站內連結掃描、HC 拆解全部照舊自動化，只有撰寫這一步交給 Claude 直接讀 brief 寫文章，圖片則已改用 Maxora API（不再用 Gemini 的 Imagen），全程沒有呼叫任何 Gemini 端點。</p>
+
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">rubis-signification-prince-noir-spinelle</p>
+        <p class="entry-desc">用「英國皇室帝國王冠上的黑王子紅寶石其實是一顆紅色尖晶石，騙過世人數百年」當標題鉤子，呼應 HC 裡福爾摩斯《藍色寶石案》的雙關語（一顆藍色的「紅寶石」）帶出的紅寶石/藍寶石礦物學梗——兩者同屬剛玉，只差是含鉻還是含鐵/鈦，這個雙關其實有科學根據。分類頁上原本沒有 rubis 的關鍵字標籤，順手補上。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/694388d" target="_blank" rel="noopener">694388d</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">spiritual-meaning-of-teeth-falling-out-in-dream</p>
+        <p class="entry-desc">跟站上已經存在的 teeth-falling-out-dream-meaning-anxiety-explained（焦慮角度）刻意錯開——這篇的核心論點是「掉幾顆、掉哪裡」比「有沒有掉牙」更能決定解讀方向，呼應 HC 裡「掉一顆門牙可能代表你自信心被某人的外貌動搖」的具體推論鏈。分類頁上找到的 pending 標籤原來是指向既有的焦慮篇，修正歸位後另外新增一個對應這篇的標籤，兩篇都正確點亮，不是誤植成同一篇。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/694388d" target="_blank" rel="noopener">694388d</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">ultrawide-monitor-gamen-bunkatsu-houhou</p>
+        <p class="entry-desc">標題刻意跟關鍵字字面意思唱反調：「找『畫面分割ソフト』之前，先知道免費就能做到」——HC 裡的證據段本來就指出 Win＋方向鍵／Mac 標準功能就能二～三分割，只有真的要更精細切割時才需要 PowerToys（FancyZones）或 Rectangle，用表格整理三種方法的差異。分類頁上的 pending 標籤直接改為連結。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/694388d" target="_blank" rel="noopener">694388d</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">yeti-sightings-pop-culture-image</p>
+        <p class="entry-desc">bigfoot-sightings-pop-culture-image（第 11 階段）的姊妹篇，同樣的「形象軟化」敘事套用在雪怪身上：1921 年聖母峰遠征隊的足跡報告、1951 年 Eric Shipton 在 Menlung 冰川拍到的著名腳印照片、1986 年 Anthony Wooldridge 的近距離目擊，對照迪士尼《怪獸電力公司》、《神鬼傳奇3》裡仍偏恐怖暴力的雪怪、以及 DreamWorks《壞壞萌雪怪》徹底可愛化之後的形象轉變。這個分類頁原本完全沒有 yeti 的關鍵字標籤（不是待補而是根本沒列），新增一筆並直接設為已連結。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/694388d" target="_blank" rel="noopener">694388d</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">四站建置全數通過，四個網址已送出 Google Indexing API 通知。Gemini key 失效這件事目前只影響「還在用舊版全自動流程」的路徑（第 10 階段提到、尚未評估要不要恢復的 Google Ads API 串接沒有關係）；只要繼續走 prepare/finish + Claude 撰寫的流程，這條 pipeline 不受影響，暫時不需要修 Gemini key。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-24。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-25。
   </footer>
 </div>
 
