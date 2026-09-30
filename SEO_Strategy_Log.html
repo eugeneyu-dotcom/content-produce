@@ -355,7 +355,7 @@
     <p class="lede">四站的技術 SEO、標題/CTR 優化、站台差異化策略的完整處理紀錄，依真實發生順序排列，每一項都附上實際數據跟 commit 連結。這份文件會持續往下加，待處理問題也統一在這裡追蹤，不再散落在各個對話裡。</p>
 
     <div class="stats">
-      <div class="stat"><span class="n">29</span><span class="l">SEO 相關 commit</span></div>
+      <div class="stat"><span class="n">33</span><span class="l">SEO 相關 commit</span></div>
       <div class="stat"><span class="n">104</span><span class="l">篇補上真實 meta description</span></div>
       <div class="stat"><span class="n">28</span><span class="l">分類頁加上 FAQPage schema</span></div>
       <div class="stat"><span class="n">178</span><span class="l">張圖片修正 alt text</span></div>
@@ -373,34 +373,16 @@
   <section class="pending-section">
     <div class="pending-head">
       <h2>目前待處理</h2>
-      <span class="pending-count">6 項</span>
+      <span class="pending-count">4 項</span>
     </div>
     <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">四站 Search Console 的舊 sitemap 殘留需要手動清除 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">09-24 診斷發現四站的 Search Console「Sitemap」分頁裡都還登記著 WordPress 時代的舊 sitemap 網址（`page-sitemap.xml`／`post-sitemap.xml` 等），逐一 curl 驗證全部真的是 404。現行 Astro 產生的 `sitemap-index.xml` 本身完全正常，這純粹是後台清單沒清乾淨，沒有 API 可以代勞。</p>
-        <p class="pending-item-next">下一步：<strong>Eugene 手動進四站各自的 GSC → Sitemap 分頁移除舊登記</strong></p>
-      </div>
-    </div>
-
-    <div class="pending-item">
-      <span class="pending-dot"></span>
-      <div class="pending-item-body">
-        <p class="pending-item-title">oeil-bleu-grec-signification-protection <span class="tag joaillerie">joaillerie</span></p>
-        <p class="pending-item-desc">已重寫 2 次（08-12、08-20）仍無起色——1523 曝光、6 點擊、CTR 0.4%、排名 13.1。09-08 用 kd_score.js 實測 KD=55~65（中～高），搭配 GKP 搜尋量僅 50/月，正式落在「量少又難打」的避開象限——證實這不是標題問題，是選錯了競爭度的字。</p>
-        <p class="pending-item-next">下一步：<strong>不再重寫標題</strong> — 這個字本身性價比就低，資源應該投到量少但好打（利基象限）或量大好打（黃金象限）的候選字上</p>
-      </div>
-    </div>
-
-    <div class="pending-item">
-      <span class="pending-dot"></span>
-      <div class="pending-item-body">
-        <p class="pending-item-title">jungian-shadow-dreams <span class="tag dream">Dream</span></p>
-        <p class="pending-item-desc">已重寫 1 次（08-20），標題本身已具體、有畫面感，CTR 仍是 0%。09-08 順手用 kd_score.js + GKP 資料測了兩篇同站文章（sleep-paralysis-demons、manifest-latent-content），發現兩篇的關鍵字套完整象限判斷後也都落在「避開」——量少又難打，可能是同一類「角度先天不利」問題，不只 jungian-shadow-dreams 一篇。</p>
-        <p class="pending-item-next">下一步：<strong>三篇一起檢討</strong> — 判斷是否為同一類角度問題，而不是各自單獨處理</p>
+        <p class="pending-item-title">dream-about-being-pregnant-meaning 排名仍需觀察 <span class="tag dream">Dream</span></p>
+        <p class="pending-item-desc">09-30 診斷出的問題跟前兩篇不同——不是「排名好沒人點」，是排名太差（頁9附近）本身就代表內容切角跟搜尋意圖不符：這個詞的搜尋意圖幾乎全是「懷孕夢的通用象徵意義」，這篇原本卻整篇圍繞「男性也會做這個夢」的敘事切角展開，跟意圖對不上。已把開場重新調整成先回答通用意圖、兩位朋友的故事改成中段佐證案例，但這類「意圖對齊」修正不像標題實驗那樣幾天內見效，通常要等 1~2 週甚至更久。</p>
+        <p class="pending-item-next">下一步：<strong>下次診斷回頭追蹤排名有沒有開始移動</strong> — 09-30 剛調整完，還沒有數據可看</p>
       </div>
     </div>
 
@@ -979,9 +961,100 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">四站建置全數通過，四個網址已送出 Google Indexing API 通知。Gemini key 失效這件事目前只影響「還在用舊版全自動流程」的路徑（第 10 階段提到、尚未評估要不要恢復的 Google Ads API 串接沒有關係）；只要繼續走 prepare/finish + Claude 撰寫的流程，這條 pipeline 不受影響，暫時不需要修 Gemini key。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">14</span>
+      <h2 class="phase-title">分類頁積壓標籤總清查 + 3 篇關鍵字缺口補完</h2>
+      <span class="phase-when">09-29 → 09-30</span>
+    </div>
+    <p class="phase-summary">趁著第13階段補標籤的機會，順手對三站（joaillerie/Dream/Desk）做了一次完整的「pending 標籤是否其實早就有文章」稽核，抓出 10 個純粹沒點亮、3 個真正還沒寫的缺口；後者补上 HC 後全部寫成文章。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">10 個「pending」標籤其實文章早就寫完了</p>
+        <p class="entry-desc">joaillerie 3 個（外加 1 個純粹是別名——「hamsa」就是既有的 main-de-fatma 那篇）、Dream 5 個（含一組手動釐清：「manifest vs latent content of dreams simplified」指向的是跟既有 manifest-latent-content-dreams-simplified-guide 不同的另一篇 manifest-vs-latent-content-of-dreams-simplified，兩篇本來就是第01階段就點名過的重複主題疑案，這次只補連結沒動合併決定）、Desk 5 個（含一個誤放在 biophilic-design 分類頁的機械鍵盤標籤，位置雖然奇怪但連結對象是對的，直接原地修正）。全部改回真連結；另外保留 3 個真正還沒寫的（joaillerie 的 mauvais oeil 混搭款式、Dream 的 threat simulation theory 學術版本、Desk 的 サンスベリア 品種），標記為下一輪選題候選。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/c696cf9" target="_blank" rel="noopener">c696cf9</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">protection-mauvais-oeil-bijoux-couleurs-signification</p>
+        <p class="entry-desc">跟既有的 oeil-bleu-grec（藍眼起源）刻意錯開——這篇談的是邪眼首飾近年出現的顏色分化（紅/綠/白/黑，各自對應不同象徵）跟跨符號混搭現象（跟法蒂瑪之手串在同一條手鍊），用真實 HC（市集觀察）當骨幹。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/e4a7b23" target="_blank" rel="noopener">e4a7b23</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">threat-simulation-theory-dreaming-safest-city</p>
+        <p class="entry-desc">用「搬到全球最安全城市之一的台北，卻反覆夢到被追殺」的真實經歷，帶出 Antti Revonsuo 2000 年提出的威脅模擬理論——不需要真實經歷過某個威脅，大腦本來就有內建的演練腳本。跟既有的 evolutionary-reason-recurring-nightmares（個人視角版本）刻意錯開，這篇聚焦學術理論本身跟其驗證研究（戰亂地區兒童惡夢對照研究）。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/e4a7b23" target="_blank" rel="noopener">e4a7b23</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">sansevieria-takujou-size-hinshu-erabikata</p>
+        <p class="entry-desc">用「朋友送的虎尾蘭半年內長到半身高」的真實經歷，點出「虎尾蘭」不是單一品種——一般花市常見的直立品種天生不適合放桌上，真正適合的是「鳥巣虎尾蘭」這類矮生品種。跟既有的 desuku-kanyoushokubutsu-shoshinsha-guide（新手水耕黃金葛）角度不同，這篇專談虎尾蘭屬內部的品種差異。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/290735e" target="_blank" rel="noopener">290735e</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">三篇都經過 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">--prepare</code>/<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">--finish</code> 流程（延續第13階段的 Gemini-free 寫法），三站建置通過，Google Indexing API 通知全部送出。</p>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">15</span>
+      <h2 class="phase-title">第五輪 GSC 診斷：兩種不同性質的排名問題，兩種不同的處方</h2>
+      <span class="phase-when">09-30</span>
+    </div>
+    <p class="phase-summary">Eugene 已經手動清掉四站 GSC 的舊 sitemap 殘留（第12階段的待辦事項）。這輪診斷刻意鎖定「排名好沒人點」（標題問題）跟「排名爛」（意圖不符問題）兩種不同性質的異常，分別給出不同的處方——同一套「重寫標題」的工具，不是每種問題都適用。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">舊 Sitemap 殘留已由 Eugene 手動清除</p>
+        <p class="entry-desc">第12階段點名的 WordPress 時代舊 sitemap 登記（`page-sitemap.xml`／`post-sitemap.xml` 等）已從四站 GSC 後台移除，這條待辦事項結案。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">jungian-shadow-dreams 第 2 次標題重寫</p>
+        <p class="entry-desc">連續第 4 次確認同一個模式：核心查詢「jung shadow concept dreams animals unconscious」曝光持續漲（86→99），排名穩定站在頁1（8.8），點擊率卻依然是 0——這次真的排進處理，拿文章裡「殭屍/吸血鬼也是一種 Shadow 象徵」這個比較少見的具體說法當新標題鉤子，取代原本泛用的「Animal Symbols and the Unconscious」。</p>
+        <div class="metric-line">曝光 99 · 排名 <span class="ok">8.8</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/063287a" target="_blank" rel="noopener">063287a</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">oeil-bleu-grec-signification-protection 第 3 次標題重寫</p>
+        <p class="entry-desc">排名連續多輪原地打轉（21.6→21.8→22.0，微幅退步），CTR 僅 0.5%，同時是這次觸發 joaillerie 整站 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">HIGH_IMPRESSIONS_LOW_CTR</code> 站級警訊的主要來源。拿文章裡「破裂了不能黏回去，代表它已經完成任務」這個具體禁忌當新標題鉤子，取代泛用的「Signification, Origine et Protection Réelle」。</p>
+        <div class="metric-line">曝光 558 · 排名 <span class="bad">22.0</span> · 點擊 3</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/063287a" target="_blank" rel="noopener">063287a</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">dream-about-being-pregnant-meaning：診斷出跟前兩篇不同性質的問題</p>
+        <p class="entry-desc">排名 89（頁9附近），連續三輪數字幾乎凍結。查了 kd_score.js（KD=55，中等）發現理論上不算難打，但直接比對頁1實際排名內容跟 PAA 問題後發現：搜尋這個詞的人幾乎都在找「懷孕夢的通用象徵意義」，完全沒有一篇提到男性；這篇原本卻整篇圍繞「男性也會做這個夢」的反差角度展開——是內容切角跟搜尋意圖不符，不是標題吸引力不夠，光改標題解決不了。改成先在開場回答通用意圖（成長/轉變/新生），把兩位朋友的真實故事（一位老婆真的懷孕、一位單身離職創業）從整篇主軸改成中段的具體佐證案例，細節完全保留沒刪減。</p>
+        <div class="metric-line">曝光 21 · 排名 <span class="bad">89.0</span> · 點擊 0</div>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/e5bfb86" target="_blank" rel="noopener">e5bfb86</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">Legend、Desk 這輪沒有需要緊急處理的新問題——兩站規模還小，短期排名都比長期平均進步（Legend 10.2 vs 12.2、Desk 9.1 vs 12.7），方向健康，暫不介入。這週新發的 7 篇文章（rubis、protection-mauvais-oeil、threat-simulation、サンスベリア、ウルトラワイド、yeti、Julian的房子夢）目前都還沒有 GSC 曝光數據，太新還沒被索引，不代表有問題。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-25。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-30。
   </footer>
 </div>
+
 
 </body></html>
