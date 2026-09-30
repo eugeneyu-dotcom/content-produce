@@ -1,8 +1,8 @@
 ---
-title: "Jungian Shadow in Dreams: Animal Symbols and the Unconscious"
+title: "Why Does Your Jungian Shadow Show Up as a Snake in One Dream and a Zombie in the Next?"
 slug: "jungian-shadow-dreams"
 pubDate: 2026-03-13T07:13:36
-description: "Why does the Shadow show up as a snake, wolf, or fox in dreams? A Jungian guide to animal symbolism and the unconscious self you repress."
+description: "Jungian shadow in dreams doesn't wear one costume: some versions show up as a snake, wolf, or fox embodying repressed instinct, others as a zombie or vampire representing a part of yourself denied vitality. Here's why the disguise changes."
 type: "post"
 heroImage: "/media-images/posts/jungian-shadow-dreams-cover.png"
 category: "2. Jungian Archetypes"

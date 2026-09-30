@@ -1,8 +1,8 @@
 ---
-title: "Œil Bleu Grec : Signification, Origine et Protection Réelle"
+title: "Si Votre Œil Bleu Grec Se Brise, Ne le Recollez Surtout Pas — C'est le Signe Qu'il a Fait Son Travail"
 slug: "oeil-bleu-grec-signification-protection"
 pubDate: 2026-07-01T09:20:42.796Z
-description: "La vraie signification de l'œil bleu grec (Matiasma) : symbole de protection, pas de malchance. Origines antiques et différence avec le nazar turc."
+description: "Œil bleu grec (Matiasma) signification : pourquoi le briser n'est pas un mauvais signe mais une victoire, pourquoi il ne faut jamais l'accepter d'une main hostile, et ce qui le distingue vraiment du nazar turc."
 category: "Totems de Protection"
 heroImage: "/media-images/posts/oeil-bleu-grec-signification-protection.png"
 ---
