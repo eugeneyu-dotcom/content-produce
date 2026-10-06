@@ -380,9 +380,9 @@
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">全站索引覆蓋率只有 5～6 成，這才是目前最大的瓶頸 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">10-06 對四站所有 blog 文章逐篇做了 URL Inspection：joaillerie 26/52 收錄（50%）、Dream 26/48（54%）、Desk 28/50（56%）、Legend 24/39（61%），合計約 40% 的文章 Google 沒有放進索引。未收錄的原因分兩種：Dream、Desk 幾乎全是「Crawled - currently not indexed」（Google 爬過但判定不值得收錄，屬於內容品質/重複度訊號）；joaillerie 則高度集中在 WordPress 遷移批次（06-10 那批 32 篇裡 25 篇未收錄，之後新寫的 20 篇只有 1 篇沒收錄）。注意：URL Inspection 是上次爬取的快照，跟 GSC 效能報表偶爾對不上（例如 jungian-shadow-dreams 顯示未收錄、卻有 200 多次曝光），判讀時當作方向性訊號。</p>
-        <p class="pending-item-next">下一步：<strong>先決定處理策略再動手</strong>——不要大量重送 Indexing API。可選方向：把 joaillerie 那 25 篇遷移批次文章分成「有搜尋需求、值得用真實 HC 重寫」跟「單薄重複、直接合併或轉址」兩群；對「Crawled-未收錄」的熱門主題文章加深內容與內部連結，而不是改標題</p>
+        <p class="pending-item-title">joaillerie 約 15 篇遷移文章真的看不見；其他三站問題小很多 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">10-06 逐篇 URL Inspection 初判「約 45% 未收錄」，但交叉比對 GSC 曝光後發現這個數字高估：大半「未收錄」的文章其實有曝光（曝光來自 /blog/ 網址本身），Inspection 狀態與實際服務狀況不一致。以「已收錄或 90 天內有曝光」重算，四站可見度為 joaillerie 67%（35/52）、Dream 97%（47/48）、Desk 90%（45/50）、Legend 74%（29/39），合計 82%（156/189）。真正看不見的 33 篇裡，joaillerie 有 17 篇（全部是 06-10 遷移批次，含 2 篇檢查失敗待確認），Legend 10 篇（5 篇是這兩週的新文章），Desk 5 篇，Dream 1 篇。看不見的文章分兩種性質：「Discovered／URL unknown」（約 25 篇，Google 還沒決定要不要爬，屬於發現問題）與「Crawled - currently not indexed」（6 篇，爬過判定不收，屬於品質問題）。</p>
+        <p class="pending-item-next">下一步：<strong>分兩群處理</strong>——發現問題那群先補 Indexing API 與站內連結；爬過未收錄且關鍵字 KD≤35 的（joaillerie 的 signification-bague-index、cuivre，Desk 的 pomodoro）才用真實 HC 重寫，KD≥60 的先不投資源</p>
       </div>
     </div>
 
@@ -1149,17 +1149,15 @@
       <h2 class="phase-title">站群盤點：真正的瓶頸不是標題，是索引</h2>
       <span class="phase-when">10-06</span>
     </div>
-    <p class="phase-summary">Eugene 要求整理四站可加強的部分。這次除了重拉 90 天文章級數據，還對四站全部 blog 文章（共 189 篇）逐篇跑了 URL Inspection，結果比預期的標題/CTR 問題更根本：四站平均只有約 55% 的文章被 Google 收錄。</p>
+    <p class="phase-summary">Eugene 要求整理四站可加強的部分。這次除了重拉 90 天文章級數據，還對四站全部 blog 文章（共 189 篇）逐篇跑了 URL Inspection。初步結果顯示約 45% 的文章「未收錄」，但交叉比對曝光數據後修正了這個判讀：Inspection 狀態是快照，跟實際服務狀況不一致，以「已收錄或有曝光」重算，真正看不見的是 33 篇（18%），而且高度集中在 joaillerie 的遷移批次。</p>
 
     <div class="entry">
       <span class="tag all">全站</span>
       <div class="entry-body">
-        <p class="entry-title">索引覆蓋率：joaillerie 50%、Dream 54%、Desk 56%、Legend 61%</p>
-        <p class="entry-desc">Dream、Desk 的未收錄幾乎全是「Crawled - currently not indexed」（爬過但判定不值得收錄）；joaillerie 集中在 06-10 WordPress 遷移批次（32 篇裡 25 篇未收錄，之後新寫的 20 篇只有 1 篇沒收錄）——這個對比再次支持「真實 HC 寫的文章比遷移文章更容易被收錄」。Legend 的未收錄則是兩種性質：舊文章「爬過未收錄」7 篇，加上 bigfoot、loch-ness、yeti 與萬聖節 4 篇共 7 篇「URL is unknown to Google」。</p>
-        
+        <p class="entry-title">索引覆蓋率（修正版）：整體可見度 82%，真正的問題集中在 joaillerie</p>
+        <p class="entry-desc">初版數字（joaillerie 50%、Dream 54%、Desk 56%、Legend 61%）只看 Inspection 狀態，高估了問題。把「近 90 天有任何曝光」也算進可見：joaillerie 67%（35/52，17 篇看不見）、Dream 97%（47/48）、Desk 90%（45/50）、Legend 74%（29/39，10 篇看不見但其中 5 篇是這兩週新文章）。內容特徵對照（indexed vs not）也做過：未收錄的文章反而更長、站內連入更多、彼此重複度趨近 0，排除了「單薄」「連結不足」「互相重複」；Dream 的未收錄文章 AI 慣用詞密度是已收錄的 3.6 倍；寫作時期是最強的相關因子（07-01 後的文章 joaillerie 100%、Dream 92%、Desk 81% 通過 Inspection，遷移期僅 25～40%），但這個比較同時混了寫法、模型與 WordPress 遷移，只能當相關性，而且 Dream、Desk 的差距在改用「可見度」後大幅縮小。</p>
       </div>
     </div>
-
     <div class="entry">
       <span class="tag all">全站</span>
       <div class="entry-body">
