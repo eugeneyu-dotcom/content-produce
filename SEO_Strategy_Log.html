@@ -355,7 +355,7 @@
     <p class="lede">四站的技術 SEO、標題/CTR 優化、站台差異化策略的完整處理紀錄，依真實發生順序排列，每一項都附上實際數據跟 commit 連結。這份文件會持續往下加，待處理問題也統一在這裡追蹤，不再散落在各個對話裡。</p>
 
     <div class="stats">
-      <div class="stat"><span class="n">33</span><span class="l">SEO 相關 commit</span></div>
+      <div class="stat"><span class="n">36</span><span class="l">SEO 相關 commit</span></div>
       <div class="stat"><span class="n">104</span><span class="l">篇補上真實 meta description</span></div>
       <div class="stat"><span class="n">28</span><span class="l">分類頁加上 FAQPage schema</span></div>
       <div class="stat"><span class="n">178</span><span class="l">張圖片修正 alt text</span></div>
@@ -373,43 +373,79 @@
   <section class="pending-section">
     <div class="pending-head">
       <h2>目前待處理</h2>
-      <span class="pending-count">4 項</span>
+      <span class="pending-count">8 項</span>
     </div>
     <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">dream-about-being-pregnant-meaning 排名仍需觀察 <span class="tag dream">Dream</span></p>
-        <p class="pending-item-desc">09-30 診斷出的問題跟前兩篇不同——不是「排名好沒人點」，是排名太差（頁9附近）本身就代表內容切角跟搜尋意圖不符：這個詞的搜尋意圖幾乎全是「懷孕夢的通用象徵意義」，這篇原本卻整篇圍繞「男性也會做這個夢」的敘事切角展開，跟意圖對不上。已把開場重新調整成先回答通用意圖、兩位朋友的故事改成中段佐證案例，但這類「意圖對齊」修正不像標題實驗那樣幾天內見效，通常要等 1~2 週甚至更久。</p>
-        <p class="pending-item-next">下一步：<strong>下次診斷回頭追蹤排名有沒有開始移動</strong> — 09-30 剛調整完，還沒有數據可看</p>
+        <p class="pending-item-title">全站索引覆蓋率只有 5～6 成，這才是目前最大的瓶頸 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">10-06 對四站所有 blog 文章逐篇做了 URL Inspection：joaillerie 26/52 收錄（50%）、Dream 26/48（54%）、Desk 28/50（56%）、Legend 24/39（61%），合計約 40% 的文章 Google 沒有放進索引。未收錄的原因分兩種：Dream、Desk 幾乎全是「Crawled - currently not indexed」（Google 爬過但判定不值得收錄，屬於內容品質/重複度訊號）；joaillerie 則高度集中在 WordPress 遷移批次（06-10 那批 32 篇裡 25 篇未收錄，之後新寫的 20 篇只有 1 篇沒收錄）。注意：URL Inspection 是上次爬取的快照，跟 GSC 效能報表偶爾對不上（例如 jungian-shadow-dreams 顯示未收錄、卻有 200 多次曝光），判讀時當作方向性訊號。</p>
+        <p class="pending-item-next">下一步：<strong>先決定處理策略再動手</strong>——不要大量重送 Indexing API。可選方向：把 joaillerie 那 25 篇遷移批次文章分成「有搜尋需求、值得用真實 HC 重寫」跟「單薄重複、直接合併或轉址」兩群；對「Crawled-未收錄」的熱門主題文章加深內容與內部連結，而不是改標題</p>
       </div>
     </div>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">4 個新差異化模組成效 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，09-01 查核時曝光量全部個位數，部分頁面尚未被索引。原訂 09-15～09-22 回頭查核，但同一段期間四站進行了大規模視覺改版（見下方待補記錄），這幾個模組的介面也一併被重做，成效查核尚未回頭執行。</p>
-        <p class="pending-item-next">下一步：<strong>視覺改版穩定後再查核</strong> — 介面剛換過，現在查的數字會混雜「改版前」跟「改版後」兩種介面的流量，要等改版版本累積出乾淨的窗口</p>
+        <p class="pending-item-title">Legend 近期新文章全部「URL is unknown to Google」 <span class="tag legend">Legend</span></p>
+        <p class="pending-item-desc">bigfoot（09-11）、loch-ness（09-14）、yeti（09-25）加上這週萬聖節 4 篇（kuchisake、midnight game、wendigo、jersey devil）共 7 篇，Google 連網址都還沒登記。其中 bigfoot、yeti 已經送過 Indexing API 仍然沒動；loch-ness 與 chupacabra 則是之前漏送，這次補送了。Legend 是四站裡最新、權威最低的站，新文章被爬取的優先度本來就低，加上首頁/分類頁是否有足夠的內部連結指向新文章也值得檢查。</p>
+        <p class="pending-item-next">下一步：<strong>10-20 前後重查這 7 個網址</strong>；仍未登記就加強首頁與分類頁的內部連結曝光，而不是繼續重送通知</p>
       </div>
     </div>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">Legend 15 筆關鍵字積壓，全部缺 Human_Context <span class="tag legend">Legend</span></p>
-        <p class="pending-item-desc">kokkuri san how to play 跟 daruma san game ritual 都已補 HC 並發表（見第 08、09 階段），儀式遊戲系列（history-of-spirit-summoning-games、hitori-kakurenbo、kokkuri-san、daruma-san）已經相當完整。Legend 仍剩若干筆待處理（實際筆數隨 Sheet 清理波動，見下方 Sheet 工具化紀錄），依然遠超其他三站。<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">is mothman an alien or a cryptid</code> 補 HC 前要先確認跟既有的 cryptids-vs-urban-legends-differences-mothman 角度是否真的不重疊。09-08 另外發現 Sheet 裡已經躺著 2 筆跟 La Llorona 相關的跨文化比較候選字（<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">japanese vs mexican female ghosts</code>、<code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">pontianak vs la llorona similarities</code>），之後如果要另外寫一篇 La Llorona 專篇深挖，三個角度要一起規劃分工，不要各自獨立派工變成互打。</p>
-        <p class="pending-item-next">下一步：<strong>等 Eugene 陸續補 HC</strong> — La Llorona 系列三個角度要先想好分工再派工</p>
+        <p class="pending-item-title">Legend 還剩 1 個舊 sitemap 登記沒清掉 <span class="tag legend">Legend</span></p>
+        <p class="pending-item-desc">09-30 你清完四站的舊 sitemap 後，10-06 診斷發現 Legend 的 GSC 裡還留著 <code style="font-family:'IBM Plex Mono',monospace; font-size:0.85em;">sitemap_index.xml</code>（底線版，2026-05-20 提交，errors=1），跟 09-24 清單裡的舊登記是同一類，漏了這一個；其餘三站已經乾淨。</p>
+        <p class="pending-item-next">下一步：<strong>Eugene 手動刪除這 1 筆</strong></p>
       </div>
     </div>
 
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">Legend 網域分層清單校準狀態不同於其他三站 <span class="tag legend">Legend</span></p>
-        <p class="pending-item-desc">09-08 用 kd_score.js 實測 8 個字，KD 分數全數落在中～高（35-75，沒有低），一度懷疑是分層清單太寬鬆（wikipedia/reddit/fandom 過於泛用）；回頭核對每次實際命中的網域後推翻了這個猜測——wikipedia 8/10 次命中、reddit 8/10 次、fandom（各主題專屬 wiki）6/10 次，都是這個利基真實、重複出現的強勁對手，不是清單設計問題，是這個題材本身競爭度就偏高。清單目前不需要調整。</p>
-        <p class="pending-item-next">下一步：<strong>不用動</strong> — 已用真實命中數據驗證過，維持現狀即可</p>
+        <p class="pending-item-title">Dream「dream-about-death-meaning」曝光很大但排名在第 79 名 <span class="tag dream">Dream</span></p>
+        <p class="pending-item-desc">90 天累計 801 次曝光（全站第 2 大），平均排名 79.4，零點擊，是目前全站需求最大卻最沒被承接的主題。這篇的切角是「一百種死法的親身記憶」，跟懷孕夢那篇是同一種型態：搜尋意圖多半是「夢見死亡的通用意義」，文章卻以個人敘事為主軸，很可能同樣是意圖對不上，而不是標題問題。</p>
+        <p class="pending-item-next">下一步：<strong>先診斷再決定</strong>——用跟懷孕夢那次一樣的方法（頁1內容 + PAA 比對）確認意圖落差，再決定是否改成先講通用意義、故事退到佐證</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">Dream 兩篇 manifest-vs-latent 重複主題仍未決定 <span class="tag dream">Dream</span></p>
+        <p class="pending-item-desc">manifest-vs-latent-content-of-dreams-simplified（90 天 962 次曝光，是 Dream 曝光最大的一篇）跟 manifest-latent-content-dreams-simplified-guide（106 次）持續互相搶同一批查詢詞，第 03 階段處理過另一組 Freudian 重複，這一組一直沒決定要合併還是差異化。</p>
+        <p class="pending-item-next">下一步：<strong>Eugene 決定</strong>：合併（保留較強那篇、另一篇 301）或重新定位其中一篇</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">三次改動等待成效（太新，先別下結論） <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">09-30：oeil-bleu-grec 第 3 次標題重寫、jungian-shadow-dreams 第 2 次標題重寫、dream-about-being-pregnant-meaning 開場重構。標題類改動通常 1～2 週才看得出 CTR 變化，意圖重構更久。</p>
+        <p class="pending-item-next">下一步：<strong>10-14～10-20 回頭看</strong>這三篇的排名與點擊，不要提前判斷成敗</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">Sheet 佇列有 7 筆等 HC <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">Desk：「Windows11 デスクトップ カスタマイズ」「デスクツアー おすすめ」「ウェブカメラ 位置 デスク 目線」；joaillerie：「améthyste signification vertus」「oeil de tigre pierre signification」；Dream：「dream about being late meaning」「dream about losing hair meaning」。四個萬聖節 Legend 關鍵字已全數寫完。</p>
+        <p class="pending-item-next">下一步：<strong>等 Eugene 補 HC</strong>；補好後 Status 我會一併改 Active</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">4 個差異化模組成效還沒回頭查 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，原訂 09-15～09-22 查核，但同期四站做了大規模視覺改版，這幾個模組的介面被一併重做，數字會混雜改版前後的流量。</p>
+        <p class="pending-item-next">下一步：<strong>改版後累積出乾淨窗口再查</strong>——建議一併參考上面的索引覆蓋率，確認這些頁面本身有沒有被收錄</p>
       </div>
     </div>
   </section>
@@ -1051,10 +1087,115 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">Legend、Desk 這輪沒有需要緊急處理的新問題——兩站規模還小，短期排名都比長期平均進步（Legend 10.2 vs 12.2、Desk 9.1 vs 12.7），方向健康，暫不介入。這週新發的 7 篇文章（rubis、protection-mauvais-oeil、threat-simulation、サンスベリア、ウルトラワイド、yeti、Julian的房子夢）目前都還沒有 GSC 曝光數據，太新還沒被索引，不代表有問題。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">16</span>
+      <h2 class="phase-title">本週選題 + 萬聖節 Legend 四連發</h2>
+      <span class="phase-when">10-05 → 10-06</span>
+    </div>
+    <p class="phase-summary">依 content-farm-writer 流程選出四站各一個新關鍵字（先查站內既有主題避免互打、再用 kd_score.js 實測，KD 全部 ≤ 50），把趕萬聖節（10/31）的四個 Legend 關鍵字標成 Pending 優先處理；Eugene 補完 HC 的四篇都已寫完發佈。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">本週四個新關鍵字（已加進 Sheet，Status 留空等 HC）</p>
+        <p class="entry-desc">joaillerie「oeil de tigre pierre signification」（KD 30，接上站內流量最大的邪眼叢集）、Dream「dream about losing hair meaning」（KD 45，跟掉牙夢同類但站內完全沒有）、Desk「ウェブカメラ 位置 デスク 目線」（KD 35，補強線上會議文章）、Legend「jersey devil origin」（KD 35，趕萬聖節）。篩掉的候選：Dream drowning（跟既有 water 文章互打）、Legend hookman/bloody mary（KD 65 偏高）、Desk ヘッドホンスタンド（KD 80 被電商佔滿）。</p>
+        
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">kuchisake-onna-origin-story-explained</p>
+        <p class="entry-desc">三種起源說法（Edo 時代受刑女犯、武士不貞情婦、整形失敗）+ 固定的「我漂亮嗎」問答 + 1979 年岐阜學童集體放學、家長巡邏的真實恐慌。標題用問句型，把三種起源當選項。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/77169f8" target="_blank" rel="noopener">77169f8</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">midnight-game-ritual-history-origin</p>
+        <p class="entry-desc">用 Eugene 的觀察當骨幹：「午夜整點敲第 22 下」這個苛刻條件替所有失敗預先解釋，是整個傳說最精明也最拼湊的地方；補上 2013《The Midnight Game》與 2016《The Midnight Man》。標題用反差型。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/77169f8" target="_blank" rel="noopener">77169f8</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">wendigo-psychosis-real-or-cultural-label</p>
+        <p class="entry-desc">阿爾岡昆語系原住民的食人精怪如何變成精神醫學名詞；Swift Runner（1878）與 Jack Fiddler（1907）兩個案例都發生在飢荒中，延伸出「這是病、還是外部研究者貼的標籤」的討論。文化敏感題材，開場先講清楚這是活著的口傳傳統。標題用數字型。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/a435698" target="_blank" rel="noopener">a435698</a></div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">jersey-devil-origin-leeds-1909</p>
+        <p class="entry-desc">Leeds 家第 13 個孩子的詛咒、1909 年 1 月 16～23 日數千人目擊的一週，加上 Eugene 偏好的「教會陰謀」說法（打壓出版占星與魔法書籍的殖民時期出版商 Leeds）。標題用問句型。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/b38c06b" target="_blank" rel="noopener">b38c06b</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">寫作過程中刪掉了幾處沒有查證的說法（例如「最早紀錄是論壇貼文」），HC 裡有爭議的說法（溫迪戈「被確診過」、利茲「17 世紀出版商」）用「has been presented as」的口吻帶過，不替它背書。四個網址都已送 Indexing API——但見下一階段，Legend 新文章目前連網址都還沒被 Google 登記。</p>
+  </section>
+
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">17</span>
+      <h2 class="phase-title">站群盤點：真正的瓶頸不是標題，是索引</h2>
+      <span class="phase-when">10-06</span>
+    </div>
+    <p class="phase-summary">Eugene 要求整理四站可加強的部分。這次除了重拉 90 天文章級數據，還對四站全部 blog 文章（共 189 篇）逐篇跑了 URL Inspection，結果比預期的標題/CTR 問題更根本：四站平均只有約 55% 的文章被 Google 收錄。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">索引覆蓋率：joaillerie 50%、Dream 54%、Desk 56%、Legend 61%</p>
+        <p class="entry-desc">Dream、Desk 的未收錄幾乎全是「Crawled - currently not indexed」（爬過但判定不值得收錄）；joaillerie 集中在 06-10 WordPress 遷移批次（32 篇裡 25 篇未收錄，之後新寫的 20 篇只有 1 篇沒收錄）——這個對比再次支持「真實 HC 寫的文章比遷移文章更容易被收錄」。Legend 的未收錄則是兩種性質：舊文章「爬過未收錄」7 篇，加上 bigfoot、loch-ness、yeti 與萬聖節 4 篇共 7 篇「URL is unknown to Google」。</p>
+        
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">曝光與表現：HC 文章持續領先，但幾乎全靠少數幾篇撐起來</p>
+        <p class="entry-desc">HC 時期文章平均每篇曝光：joaillerie 146（遷移文 19）、Dream 94（遷移文 45）、Legend 24.5、Desk 17.5（跟遷移文的 17.6 持平）；joaillerie 的數字很大一部分來自 oeil-bleu-grec 一篇（90 天 1992 次曝光），扣掉它平均約 44，仍是遷移文的 2.3 倍。</p>
+        
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">表現好的主題（值得延伸）</p>
+        <p class="entry-desc">Desk「集中できる壁紙」那篇是最佳單篇（13 點擊、239 曝光、排名 7.4、CTR 5.4%），代表「數位極簡 + 專注」這個交集有效；Legend 儀式遊戲系列（daruma 171 曝光、kokkuri 83 曝光，排名 15～17，接近頁1）；joaillerie 的 argent（排名 8.0、2 點擊）與 bijoux de deuil（排名 8.1、1 點擊）驗證「具體細節當標題鉤子」確實有效；Dream 的 manifest/latent 與 jungian shadow、同一棟房子夢都已站上頁1邊緣。</p>
+        
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">同一輪處理掉的小事</p>
+        <p class="entry-desc">補送了先前漏掉的 Indexing API 通知（loch-ness、chupacabra）；確認 09-30 的三次改動（oeil-bleu-grec、jungian-shadow、懷孕夢）都還太新，不下結論。</p>
+        
+      </div>
+    </div>
+
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">這輪也順手澄清兩個資料特性：URL Inspection 是快照、跟 GSC 效能報表偶爾對不上（jungian-shadow-dreams 顯示未收錄卻有曝光）；新站的新文章（Legend 近兩週）被判「URL is unknown」不代表有問題，Google 爬取新網址本來就有延遲。待處理項目見上方清單。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-09-30。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-06。
   </footer>
 </div>
+
 
 
 </body></html>
