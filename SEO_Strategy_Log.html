@@ -1155,18 +1155,16 @@
       <span class="tag all">全站</span>
       <div class="entry-body">
         <p class="entry-title">索引覆蓋率（修正版）：整體可見度 82%，真正的問題集中在 joaillerie</p>
-        <p class="entry-desc">初版數字（joaillerie 50%、Dream 54%、Desk 56%、Legend 61%）只看 Inspection 狀態，高估了問題。把「近 90 天有任何曝光」也算進可見：joaillerie 67%（35/52，17 篇看不見）、Dream 97%（47/48）、Desk 90%（45/50）、Legend 74%（29/39，10 篇看不見但其中 5 篇是這兩週新文章）。內容特徵對照（indexed vs not）也做過：未收錄的文章反而更長、站內連入更多、彼此重複度趨近 0，排除了「單薄」「連結不足」「互相重複」；Dream 的未收錄文章 AI 慣用詞密度是已收錄的 3.6 倍；寫作時期是最強的相關因子（07-01 後的文章 joaillerie 100%、Dream 92%、Desk 81% 通過 Inspection，遷移期僅 25～40%），但這個比較同時混了寫法、模型與 WordPress 遷移，只能當相關性，而且 Dream、Desk 的差距在改用「可見度」後大幅縮小。</p>
+        <p class="entry-desc">初版數字（joaillerie 50%、Dream 54%、Desk 56%、Legend 61%）只看 Inspection 狀態，高估了問題。把「近 90 天有任何曝光」也算進可見：joaillerie 67%（35/52，17 篇看不見）、Dream 97%（47/48）、Desk 90%（45/50）、Legend 74%（29/39，10 篇看不見但其中 5 篇是這兩週新文章）。內容特徵對照（indexed vs not）也做過：未收錄的文章反而更長、站內連入更多、彼此重複度趨近 0，排除了「單薄」「連結不足」「互相重複」；Dream 的未收錄文章 AI 慣用詞密度是已收錄的 3.6 倍。10-07 回頭重新檢驗：用 Sheet 裡真實的 Human_Context 欄位（不是用日期代替）重算，發布 30 天以上的文章可見度 HC 文章 86%（53/61）、非 HC 84%（89/105），Fisher p=0.82，沒有差異；「07-01 後比較容易通過 Inspection」也縮水成可見度 84% 對 91%，原本「100%／92%／81%」來自 Inspection 快照，不再採用。</p>
       </div>
     </div>
     <div class="entry">
       <span class="tag all">全站</span>
       <div class="entry-body">
-        <p class="entry-title">曝光與表現：HC 文章持續領先，但幾乎全靠少數幾篇撐起來</p>
-        <p class="entry-desc">HC 時期文章平均每篇曝光：joaillerie 146（遷移文 19）、Dream 94（遷移文 45）、Legend 24.5、Desk 17.5（跟遷移文的 17.6 持平）；joaillerie 的數字很大一部分來自 oeil-bleu-grec 一篇（90 天 1992 次曝光），扣掉它平均約 44，仍是遷移文的 2.3 倍。</p>
-        
+        <p class="entry-title">重新檢驗「HC 文章比較好」：可見度沒有差，曝光量只有微弱訊號</p>
+        <p class="entry-desc">先前寫的「HC 時期文章平均曝光 146 vs 遷移文 19」「是遷移文的 2.3 倍」都被少數幾篇拉高（例如 oeil-bleu-grec 一篇就占 joaillerie 的 59%）。改用「90 天等效曝光」（扣掉發布時間長短）做中位數比較：HC 對非 HC 為全站 13 vs 10、joaillerie 44 vs 6、Dream 36 vs 22、Legend 16 vs 6、Desk 8 vs 5，四站方向一致偏向 HC，但統計上只是邊緣（合併 Mann-Whitney p=0.064，站內分層排列檢定 p=0.085），樣本太小、HC 文章也比較新，不能說已經證實。結論降級為：HC 沒有讓文章更容易被收錄，對曝光量可能有幫助，但目前證據只到「值得繼續觀察」。</p>
       </div>
     </div>
-
     <div class="entry">
       <span class="tag all">全站</span>
       <div class="entry-body">
@@ -1176,6 +1174,13 @@
       </div>
     </div>
 
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">修正可見度後，真正能用的結論</p>
+        <p class="entry-desc">(1) <strong>曝光極度集中</strong>：每站前 3 篇就占 41～70% 的曝光（joaillerie 70%、Dream 58%、Legend 52%、Desk 41%），前 5 篇約三分之二，所以延伸既有贏家的叢集比單篇優化更有效。(2) <strong>頁2才是最大槓桿</strong>：全站曝光有 38% 落在排名 11～20、只有 14% 在前 10；有曝光的 144 篇裡 39 篇平均排名落在 11～20；整體 CTR 僅 0.51%（8607 曝光、44 點擊）。把頁2文章推進頁1，比多寫新文章划算。(3) <strong>越長不代表越好</strong>：字數跟曝光呈負相關（joaillerie ρ=-0.33、Legend -0.37、Dream -0.28，p 約 0.03～0.07；Desk 反向但不顯著），Dream 的 AI 慣用詞密度也與曝光負相關（ρ=-0.35，p=0.02）——重寫應該求具體、不求加長。(4) <strong>WordPress 遺留區塊是 joaillerie 最強的負面特徵</strong>：含 WP 區塊的文章中位曝光 0，沒有的 54（Dream 18 vs 39），但這跟「遷移文章」混在一起，是否來自標記本身還是內容，需要實驗才能分辨。(5) <strong>KD 分數沒能預測曝光</strong>（Spearman ρ 約 0.2，p&gt;0.35，僅 73 篇舊文章）——kd_score.js 是自己做的啟發式，沒被驗證過，選題時別把它當成準確預測，要靠實際結果回饋。</p>
+      </div>
+    </div>
     <div class="entry">
       <span class="tag all">全站</span>
       <div class="entry-body">
