@@ -2,7 +2,7 @@
 title: "Kokkuri-San Isn't Just Japan's Ouija Board — It's Been Asked to Solve Math Homework"
 slug: "kokkuri-san-how-to-play"
 pubDate: 2026-09-02T09:00:00.000Z
-description: "How to play Kokkuri-san, the Japanese spirit-summoning game, step by step — plus the 2011 horror film, the Yu-Gi-Oh shadow-game parallel, and the meme where a kid summons it to check math homework."
+description: "How to play Kokkuri-san, the Japanese Ouija board, step by step — plus the 2011 horror film, the Yu-Gi-Oh shadow-game parallel, and the meme where a kid summons it to check math homework."
 category: "5. Rituals & Forbidden Games"
 heroImage: "/media-images/posts/kokkuri-san-how-to-play.webp"
 ---
@@ -11,9 +11,22 @@ heroImage: "/media-images/posts/kokkuri-san-how-to-play.webp"
 
 <p>Most write-ups of <a href="/category/bloody-mary-ritual-legend/">Kokkuri-san</a> stop at its origin story and its resemblance to the Western Ouija board — our own <a href="/blog/history-of-spirit-summoning-games/">history of spirit-summoning games</a> covers that ground already. What that broader history doesn't have room for is the actual mechanics of the game, or the strange afterlife it's had in Japanese pop culture since — a horror film, a shonen manga duel that borrows its visual language, and at least one meme where the spirit gets recruited for algebra.</p>
 
-## How the Game Is Actually Played
+## What Is Kokkuri-San?
 
-<p>The rules are specific enough that they read almost like a board game manual. It requires at least two people — Kokkuri-san, a fox-shaped spirit-deity, is said to refuse to appear for a solo player. Before starting, a door or window in the room is left slightly open, supposedly so the spirit has a physical way to enter. Players then draw up a sheet of paper marked with a torii gate, the full 50-sound Japanese syllabary, the numbers 0 through 9, and the two words "yes" and "no." A single 10-yen coin sits in the center. Every player rests an index finger lightly on the coin, recites the summoning chant together, and waits for the coin to start moving toward one of the marked positions on its own.</p>
+<p>Kokkuri-san (こっくりさん) is a Japanese spirit-summoning game, often called the Japanese Ouija board, in which several players ask questions of a fox-shaped spirit-deity and a coin appears to move on its own. It is not related to the anime <em>Gugure! Kokkuri-san</em>, which shares the name; this article is about the ritual and the horror folklore around it.</p>
+
+## How to Play Kokkuri-San, the Japanese Ouija Board
+
+<p>The rules are specific enough that they read almost like a board game manual:</p>
+
+<ol>
+<li>Gather at least two people. Kokkuri-san, a fox-shaped spirit-deity, is said to refuse to appear for a solo player.</li>
+<li>Leave a door or window in the room slightly open, supposedly so the spirit has a physical way to enter.</li>
+<li>Draw up a sheet of paper marked with a torii gate, the full 50-sound Japanese syllabary, the numbers 0 through 9, and the two words "yes" and "no."</li>
+<li>Place a single 10-yen coin in the center of the sheet.</li>
+<li>Have every player rest an index finger lightly on the coin and recite the summoning chant together.</li>
+<li>Wait for the coin to start moving toward one of the marked positions on its own.</li>
+</ol>
 
 ## The Detail Everyone Points to Is How Similar These Games Are
 

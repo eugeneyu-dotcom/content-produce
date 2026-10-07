@@ -11,6 +11,16 @@ heroImage: "/media-images/posts/daruma-san-bath-game-ritual.webp"
 
 <p>Most people who recognize the name Daruma-san know it as だるまさんがころんだ, a children's playground game — Japan's version of Red Light, Green Light. One player faces away and recites the phrase, and everyone else has to freeze the instant they turn around. It's the kind of thing that shows up at every school in the country. What most people don't know is that the same name also attaches to something considerably darker: a solo ritual known as the Bath Game, where the thing catching you for moving isn't a classmate, but supposedly a real one-eyed ghost. Between these two, it's the same core rule — <a href="/category/bloody-mary-ritual-legend/">stay still or something catches you</a> — stretched into a very different shape.</p>
 
+## Quick Answers: What Daruma-San Is, How It's Played, and Whether It's Real
+
+<p><strong>What is Daruma-san?</strong> It's the name of a Japanese children's game, だるまさんがころんだ ("the daruma doll fell over"), and also of a much darker ritual known as the Bath Game. They share a name and a rule: stay still or something catches you.</p>
+
+<p><strong>How do you play the children's version?</strong> One player is "it" and faces away from the group, reciting the phrase. Everyone else creeps forward while the phrase is being said, then freezes the instant "it" turns around. Anyone caught moving is out.</p>
+
+<p><strong>What does "daruma-san ga koronda" mean?</strong> Literally, "the daruma doll fell over." It's the chant of the playground game, and in the Bath Game it's the phrase you repeat with your eyes closed while washing your hair.</p>
+
+<p><strong>Is Daruma-san real?</strong> The children's game is very real and played in schools across Japan. The Bath Game is a legend: the story of a woman who fell against a rusted faucet is part of the ritual's lore, and I haven't found any verified case of the supposed ghost appearing. It survives as folklore and as online "challenge" videos.</p>
+
 ## The Ritual Nobody Plays Casually
 
 <p>The Bath Game asks a lot more of a player than the classroom version ever did. Every light in the house has to go off first. Then, alone, you undress, fill the bathtub, and sit down facing the faucet with your eyes closed. While washing your hair, you repeat the phrase daruma-san ga koronda — "the daruma doll fell over" — without opening your eyes, no matter what. If the ritual is done correctly, an image is supposed to surface unbidden: a Japanese woman slipping beside the bathtub, her face striking the rusted faucet, one eye destroyed in the fall. At that point you're meant to ask out loud, "why did you fall into the bathtub?" — then leave the bathroom and wait. The actual game, according to the legend, doesn't start until the next morning, when the ghost begins the version of hide-and-seek she never got to finish.</p>

@@ -1,17 +1,26 @@
 ---
-title: "集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"
+title: "集中力を高める照明の色温度は、青白い光だけが正解ではない――日中5000K前後・夜は3000K以下が目安"
 slug: "focus-lighting-cct"
 pubDate: 2026-03-26T09:55:58
-description: "照明の色温度が集中力や睡眠ホルモンに与える科学的影響を解説し、作業や時間帯に合わせた最適な色温度の選び方を紹介します。"
+description: "集中力を高める照明の色温度の目安は、日中の作業が5000〜5500K（昼白色）、精密作業は6500K、創造的な作業は4000K前後、夜は2700〜3000K。メラトニンへの影響や時間帯別の選び方、比較表までまとめて解説します。"
 type: "post"
 heroImage: "/media-images/posts/focus-lighting-cct-cover.png"
 category: "4. 照明とサーカディアンリズム (Lighting Design)"
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
-<h2 style="margin-bottom: 30px; font-weight: bold;">集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド</h2>
-<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
+<h2 style="margin-bottom: 30px; font-weight: bold;">集中力を高める照明の色温度は、青白い光だけが正解ではない――日中5000K前後・夜は3000K以下が目安</h2>
+<figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を高める照明の色温度は、青白い光だけが正解ではない――日中5000K前後・夜は3000K以下が目安"></figure>
 <div class="article-body">
+<div class="answer-summary" style="margin: 30px 0 10px; padding: 22px 26px; border: 1px solid #d9d4cc; border-left: 4px solid #C17F59; border-radius: 6px; background: #faf8f5;">
+<p style="margin: 0 0 12px; font-weight: bold;">先に結論：時間帯と作業で色温度を使い分ける</p>
+<ul style="margin: 0; padding-left: 1.2em; line-height: 1.9;">
+<li>日中、集中して作業するなら <strong>5000〜5500K（昼白色）</strong></li>
+<li>色の正確さが必要な精密作業は <strong>6500K（昼光色）</strong>。ただし長時間だと眼精疲労の原因になりうる</li>
+<li>発想を広げたい作業やブレインストーミングは <strong>4000K前後（温白色）</strong></li>
+<li>夕方から夜は <strong>2700〜3000K（電球色）</strong> に切り替えると睡眠に入りやすい</li>
+</ul>
+</div>
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">色温度が集中力と生体リズムに与える科学的影響</h4>
 <p style="margin-bottom: 25px;">私たちの脳と身体は、光のスペクトル、特にその色温度によって深く影響を受けています。色温度はケルビン（K）という単位で表現され、低い値は暖色系の光（電球色）、高い値は寒色系の光（昼光色）を示します。この光の色温度が、人間の概日リズム（サーカディアンリズム）と直接的に結びつき、集中力、覚醒度、そして睡眠の質に決定的な役割を果たします。</p>
 <p style="margin-bottom: 25px;">科学的根拠として、特に460nm～480nmの青色光成分を豊富に含む高色温度の光は、網膜の特定の光受容器である内因性光感受性網膜神経節細胞（ipRGCs）を強く刺激します。この刺激は視交叉上核（SCN）に伝達され、脳の松果体から分泌される睡眠ホルモン「メラトニン」の生成を抑制します。メラトニン分泌の抑制は、覚醒度を高め、認知機能、特に集中力と注意力の維持に寄与します。</p>
@@ -97,6 +106,6 @@ category: "4. 照明とサーカディアンリズム (Lighting Design)"
 <dd>A3: 既存の照明器具が調光・調色機能を持たない場合でも、いくつか方法はあります。最も簡単なのは、調光調色機能付きのスマートLED電球に交換することです。また、デスクライトなど局部的な照明に調光調色機能を持つものを取り入れることで、作業環境の色温度を柔軟に調整できます。天井照明とタスクライトを組み合わせる「多重照明」も効果的です。</dd>
 </dl>
 </div>
-<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を最大化する照明の色温度：科学的根拠に基づく選択と実践ガイド"></figure>
+<figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/focus-lighting-cct-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Desk lamp glowing with adjustable color temperature lighting for focus" title="集中力を高める照明の色温度は、青白い光だけが正解ではない――日中5000K前後・夜は3000K以下が目安"></figure>
 </div>
 
