@@ -27,10 +27,6 @@ heroImage: "/media-images/posts/light-as-a-feather-stiff-as-a-board-origin.webp"
 
 <p>Around that time the teacher happened to bring up the bed of nails. If you spread your weight over enough points, he said, a person can lie on a bed of nails without being hurt. I made the connection right away. We were all light children to begin with, and if the load was spread widely enough, lifting someone with two fingers didn’t seem like a hard thing at all.</p>
 
-## Why the Chant Is There at All
-
-<p>The usual explanation is that it only works if everyone lifts at the same moment, which is how the weight gets divided evenly. A shared chant is a convenient way to give a group of children one signal to lift on. It’s a reasonable theory, though I can’t say how much of it I understood back then.</p>
-
 ## Not a Ghost Game, an Experiment
 
 <p>I felt the science behind it even at that age, and I still do: this was never an ordinary make-believe haunting. It also seems very different to me from the rituals that only work if you believe in them, like <a href="/blog/kokkuri-san-how-to-play/">Kokkuri-san</a> or the games in our <a href="/blog/history-of-spirit-summoning-games/">history of spirit-summoning games</a>. This one doesn’t ask you to believe in any supernatural power, and the result doesn’t disappear if you don’t. It’s something you can repeat and check. Compare the <a href="/blog/midnight-game-ritual-history-origin/">Midnight Game</a>, where a hard-to-meet rule explains away every failure: here the thing actually happens, and the only mystery is why it feels the way it does.</p>
