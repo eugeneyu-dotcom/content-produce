@@ -25,7 +25,7 @@ heroImage: "/media-images/posts/light-as-a-feather-stiff-as-a-board-origin.webp"
 
 ## The Bed-of-Nails Lesson That Explained It
 
-<p>Around that time the teacher happened to bring up the bed of nails. If you spread your weight over enough points, he said, a person can lie on a bed of nails without being hurt. I made the connection right away. We were all light children to begin with, and if the load was spread widely enough, lifting someone with two fingers didn’t seem like a hard thing at all. Strictly speaking, the bed of nails spreads force over contact area, while this game spreads it over people, but the idea underneath is the same: no single point carries much. Divide a 40-kilogram child among six lifters and each one is carrying under seven kilograms, shared across two fingers.</p>
+<p>Around that time the teacher happened to bring up the bed of nails. If you spread your weight over enough points, he said, a person can lie on a bed of nails without being hurt. I made the connection right away. We were all light children to begin with, and if the load was spread widely enough, lifting someone with two fingers didn’t seem like a hard thing at all.</p>
 
 ## Why the Chant Is There at All
 

@@ -109,6 +109,7 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <p style="margin-bottom: 25px;">デスクマットにおける滑り止め技術は、今後も進化を続けるでしょう。より環境負荷の少ないサステナブルな素材から作られた滑り止めコーティング、ガラスや特殊塗装された金属といった特定のデスク天板に最適化された専用のグリップ素材、あるいは使用者のタイピング圧力を感知してズレを警告するスマートシステムなどが登場するかもしれません。パーソナライゼーションの波は、機能面にも及び、個々のデスク環境に合わせたカスタムメイドの滑り止めソリューションが現実のものとなる日も近いでしょう。しかし、どのような未来が訪れようとも、私たちがデスクマットに求める本質は変わりません。それは、思考を妨げない「静かな安定性」です。究極の選択とは、最新技術を追い求めることではなく、自身の作業スタイルを深く理解し、その動きを黙って支えてくれる信頼性の高い一枚を選ぶこと。それは、日々の創造性を物理的に、そして心理的に支える、最も賢明な投資なのです。</p>
 </p>
 </div>
+<p style="margin: 40px 0 0;">フェルト以外の素材（コルク、レザー調の化学繊維など）と比べて選びたい方は、<a href="/blog/desk-mat-material-hikaku-felt-cork-leather/">デスクマットを3種類使い比べた記事</a>もあわせてどうぞ。</p>
 <figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Felt desk mat with a keyboard and mouse resting on its surface" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
 </div>
 

@@ -75,5 +75,6 @@ heroImage: "/media-images/posts/desk-mat-felt-demerit-cover.png"
 </p>
 </div>
 </div>
+<p style="margin: 40px 0 0;">フェルト以外の素材（コルク、レザー調の化学繊維など）と比べて選びたい方は、<a href="/blog/desk-mat-material-hikaku-felt-cork-leather/">デスクマットを3種類使い比べた記事</a>もあわせてどうぞ。</p>
 <figure style="text-align: center; margin: 60px 0;"><img decoding="async" src="/media-images/posts/desk-mat-felt-demerit-illustration-2.png" style="max-width: 100%; width: 800px; border-radius: 8px; height: auto;" alt="Close-up of a felt desk mat showing pilling and wear over time" title="デスクマット フェルト デメリット"></figure>
 </div>
