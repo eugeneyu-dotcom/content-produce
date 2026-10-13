@@ -92,6 +92,8 @@ Status, Post_Url, Post_ID, Human_Context
 
 - `Status=Active` → agent 會處理這一列
 - `Status=USED` → 已處理，agent 跳過
+- 其他 Status 值（`Pending`、`Modify Pending`、`Modify Active`）agent 一律不認得、會跳過，
+  它們是給人跟 Claude 看的標記，見下方「Status 值約定」。
 - `Human_Context` 欄位是**多行 quoted CSV 欄位**，格式如下：
 
 ```
@@ -101,6 +103,37 @@ Status, Post_Url, Post_ID, Human_Context
 結論（偏見）：[作者個人觀點]
 證據：[佐證資料或連結]
 ```
+
+### Status 值約定（2026-10-13 起）
+
+關鍵：**`ai_agent.js` 的 `--prepare` 只挑 `Status=Active`，而且不分新舊文章**。`--finish`
+一律當成新文章處理——用新 slug 寫新的 `.md`、`pubDate` 設成「現在」、重新生圖、把 Post_Url
+改成 `/blog/新slug/`。所以「要改既有文章」絕對不能用 `Active`，否則會蓋掉原本的發佈日期、
+留下孤兒圖檔、甚至多出一個跟舊文章互搶關鍵字的新網址。
+
+| Status | 意思 | 誰處理 |
+|---|---|---|
+| （空白） | 新候選關鍵字，還沒決定要不要寫 | — |
+| `Pending` | 新關鍵字，已決定要寫，等 HC | Eugene 補 HC |
+| `Active` | 新關鍵字，HC 備妥 | 走 `--prepare` / `--finish`，產生新文章 |
+| `Modify Pending` | **既有文章**要改，等 HC | Eugene 補 HC |
+| `Modify Active` | **既有文章**要改，HC 備妥 | Claude 直接改既有檔案（流程不會抓） |
+| `USED` | 已完成 | — |
+
+**`Modify Active` 的處理方式**（這種列在 Sheet 上原本就是 `USED` 狀態的舊文章）：
+
+1. 直接編輯既有的 `.md`，**保留原 slug、`pubDate`、圖片與 Post_Url**，只重寫內容（以及視需要改標題/描述）。
+2. 標題有改就照常讀 `title_experiments.csv` 的輪替策略並記錄一列；內文開頭若有跟 frontmatter
+   標題重複的 hero `<h1>`（WordPress 遷移文常見），兩處要同步改。
+3. 建置該站、commit、push，並送 Google Indexing API 通知（這是實質改寫，不是純技術微調）。
+4. 完成後用 `setStatus` 把該列改回 `USED`。
+
+注意事項：
+
+- `setStatus` 是按 Keyword **文字**比對，改之前先確認該關鍵字在 Sheet 只有一列。
+- Status 必須拼對：Sheet 上曾被手誤打成 `Actvie`，agent 只認精確的 `Active`，打錯只會被默默跳過。
+- 如果之後要大量重寫舊文章，可以考慮讓 `ai_agent.js` 原生支援 `Modify Active`（brief 帶入現有內文、
+  `--finish` 原地更新並保留 slug 與 pubDate）；目前沒有，所以一律手動原地改。
 
 ---
 
