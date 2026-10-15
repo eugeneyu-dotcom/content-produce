@@ -6,6 +6,7 @@ description: "Explores shamanic dream healing across indigenous traditions and m
 type: "post"
 heroImage: "/media-images/posts/shamanic-dream-healing-journey-cover.png"
 category: "7. Cultural & Spiritual Evolution"
+noindex: true
 ---
 
 <div class="wp-block-uagb-container uagb-block-b8f00iiy alignfull uagb-is-root-container">

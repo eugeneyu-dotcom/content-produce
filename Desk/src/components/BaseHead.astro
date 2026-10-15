@@ -11,11 +11,12 @@ interface Props {
 	title: string;
 	description: string;
 	image?: ImageMetadata | string;
+	noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = FallbackImage } = Astro.props;
+const { title, description, image = FallbackImage, noindex = false } = Astro.props;
 const ogImageSrc = typeof image === 'string' ? image : image.src;
 const ogImageURL = new URL(ogImageSrc || FallbackImage.src, Astro.url);
 ---
@@ -33,6 +34,7 @@ const ogImageURL = new URL(ogImageSrc || FallbackImage.src, Astro.url);
 	href={new URL('rss.xml', Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 
 
 <!-- Google Search Console Verification -->

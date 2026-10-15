@@ -12,7 +12,7 @@
     },
     {
       "source": "/biblical-meaning-of-dreams-and-visions-guide/",
-      "destination": "/blog/biblical-meaning-of-dreams-and-visions-guide/",
+      "destination": "/category/history-of-dream-interpretation/",
       "permanent": true
     },
     {
@@ -218,6 +218,11 @@
     {
       "source": "/blog/role-of-amygdala-in-dreams-guide/",
       "destination": "/blog/dreams-brain-emotion-sleep/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/biblical-meaning-of-dreams-and-visions-guide/",
+      "destination": "/category/history-of-dream-interpretation/",
       "permanent": true
     }
   ]

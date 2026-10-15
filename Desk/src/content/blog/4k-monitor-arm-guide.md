@@ -6,6 +6,7 @@ description: "4Kモニターアームの選び方から設置・調整方法ま�
 type: "post"
 heroImage: "/media-images/posts/4k-monitor-arm-guide-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"
+noindex: true
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">

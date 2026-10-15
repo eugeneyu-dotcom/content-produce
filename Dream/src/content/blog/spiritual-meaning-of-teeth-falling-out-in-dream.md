@@ -33,7 +33,7 @@ heroImage: "/media-images/posts/spiritual-meaning-of-teeth-falling-out-in-dream.
 
 ## The Older Reading Nobody Brings Up First
 
-<p>Before psychology got involved, this dream already had a long life in religious and folk interpretation. Older traditions often connected tooth loss to a season of testing, a loss of strength, or — a reading that shows up more often than you'd expect — an unpaid debt, financial or otherwise. Some of that framing survives almost unchanged in a <a href="https://www.faithtime.ai/content/bible-lessons/dreaming-of-losing-teeth/">biblical reading</a> of the same dream, and it's worth cross-referencing against a fuller <a href="/blog/biblical-meaning-of-dreams-and-visions-guide/">biblical dream guide</a> if that lens fits your situation better than a purely psychological one.</p>
+<p>Before psychology got involved, this dream already had a long life in religious and folk interpretation. Older traditions often connected tooth loss to a season of testing, a loss of strength, or — a reading that shows up more often than you'd expect — an unpaid debt, financial or otherwise. Some of that framing survives almost unchanged in a <a href="https://www.faithtime.ai/content/bible-lessons/dreaming-of-losing-teeth/">biblical reading</a> of the same dream, and it's worth cross-referencing against a fuller <a href="/category/history-of-dream-interpretation/">biblical dream guide</a> if that lens fits your situation better than a purely psychological one.</p>
 
 ## What Actually Worth Writing Down the Next Morning
 

@@ -6,6 +6,7 @@ description: "Explores how ancient Egyptians interpreted dreams as divine messag
 type: "post"
 heroImage: "/media-images/posts/egyptian-dream-symbols-cover.png"
 category: "7. Cultural & Spiritual Evolution"
+noindex: true
 ---
 
 <div class="wp-block-uagb-container uagb-block-b8f00iiy alignfull uagb-is-root-container" style="background-padding: 40px 0;">

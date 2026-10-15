@@ -6,6 +6,7 @@ description: "ユーカリやローズマリーなど精油が集中力に与え
 type: "post"
 heroImage: "/media-images/posts/desk-aroma-focus-diffuser-cover.png"
 category: "6. バイオフィリックデザイン (Biophilic Design)"
+noindex: true
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">

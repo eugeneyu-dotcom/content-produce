@@ -9,7 +9,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, category } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, category, noindex } = Astro.props;
 import fs from 'node:fs';
 import path from 'node:path';
 function findImage(basePath: string) {
@@ -46,7 +46,7 @@ const jsonLd = {
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} image={resolvedHeroImage} />
+		<BaseHead title={title} description={description} image={resolvedHeroImage} noindex={noindex} />
 		<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
 		<style>
 			main {

@@ -6,6 +6,7 @@ description: "標準キーボードが手首に強いる負担とエルゴノミ
 type: "post"
 heroImage: "/media-images/posts/ergonomics-keyboard-merit-guide-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"
+noindex: true
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">

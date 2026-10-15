@@ -107,7 +107,7 @@
     },
     {
       "source": "/matte-black-gadget-recommendations/",
-      "destination": "/blog/matte-black-gadget-recommendations/",
+      "destination": "/category/color-theory-and-materiality/",
       "permanent": true
     },
     {
@@ -198,6 +198,11 @@
     {
       "source": "/blog/monitor-light-reflection-ergonomics/",
       "destination": "/blog/monitor-light-desk-light-chigai/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/matte-black-gadget-recommendations/",
+      "destination": "/category/color-theory-and-materiality/",
       "permanent": true
     }
   ]

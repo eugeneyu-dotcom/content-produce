@@ -32,7 +32,7 @@ heroImage: "/media-images/posts/creator-streamer-desk-setup-guide.webp"
 
 ## 最後に、見た目の統一感
 
-<p>配線・照明・モニターを整えたうえで、最後に効いてくるのがデスク全体の色味の統一感です。<a href="/blog/matte-black-gadget-recommendations/">マットブラックのガジェット</a>で揃えると、画面越しでも雑多な印象になりにくく、機材が増えても画面がまとまって見えます。カメラの買い替えは、この3つを整えたあとで十分間に合います。</p>
+<p>配線・照明・モニターを整えたうえで、最後に効いてくるのがデスク全体の色味の統一感です。<a href="/category/color-theory-and-materiality/">マットブラックのガジェット</a>で揃えると、画面越しでも雑多な印象になりにくく、機材が増えても画面がまとまって見えます。カメラの買い替えは、この3つを整えたあとで十分間に合います。</p>
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
     <img src="/media-images/posts/creator-streamer-desk-setup-guide-footer.webp" alt="配信映えするデスクに必要なのは、良いカメラではない" style="border-radius: 8px; width: 100%; height: auto;" />

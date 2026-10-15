@@ -12,7 +12,7 @@
     },
     {
       "source": "/abeille-bijoux-symbolisme/",
-      "destination": "/blog/abeille-bijoux-symbolisme/",
+      "destination": "/category/symbolisme-de-la-nature/",
       "permanent": true
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "source": "/bague-anti-stress-signification-guide-symbolique/",
-      "destination": "/blog/bague-anti-stress-signification-guide-symbolique/",
+      "destination": "/blog/bague-humeur-signification-couleurs-verite/",
       "permanent": true
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "source": "/bijoux-gothiques-symbolisme-evolution/",
-      "destination": "/blog/bijoux-gothiques-symbolisme-evolution/",
+      "destination": "/category/styles-et-identit-sociale/",
       "permanent": true
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "source": "/boho-chic-jewelry-evolution/",
-      "destination": "/blog/boho-chic-jewelry-evolution/",
+      "destination": "/category/styles-et-identit-sociale/",
       "permanent": true
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "source": "/fleur-de-lys-royal-jewelry/",
-      "destination": "/blog/fleur-de-lys-royal-jewelry/",
+      "destination": "/category/symbolisme-de-la-nature/",
       "permanent": true
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "source": "/platine-symbolisme-force-eternite/",
-      "destination": "/blog/platine-symbolisme-force-eternite/",
+      "destination": "/category/m-taux-et-nergie-alchimique/",
       "permanent": true
     },
     {
@@ -207,7 +207,7 @@
     },
     {
       "source": "/tendance-bijoux-minimalistes/",
-      "destination": "/blog/tendance-bijoux-minimalistes/",
+      "destination": "/category/styles-et-identit-sociale/",
       "permanent": true
     },
     {
@@ -228,6 +228,41 @@
     {
       "source": "/blog/porter-bague-petit-doigt-signification/",
       "destination": "/blog/bague-auriculaire-signification-pouvoir-intuition/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/abeille-bijoux-symbolisme/",
+      "destination": "/category/symbolisme-de-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bague-anti-stress-signification-guide-symbolique/",
+      "destination": "/blog/bague-humeur-signification-couleurs-verite/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bijoux-gothiques-symbolisme-evolution/",
+      "destination": "/category/styles-et-identit-sociale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/boho-chic-jewelry-evolution/",
+      "destination": "/category/styles-et-identit-sociale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fleur-de-lys-royal-jewelry/",
+      "destination": "/category/symbolisme-de-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/platine-symbolisme-force-eternite/",
+      "destination": "/category/m-taux-et-nergie-alchimique/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tendance-bijoux-minimalistes/",
+      "destination": "/category/styles-et-identit-sociale/",
       "permanent": true
     }
   ]

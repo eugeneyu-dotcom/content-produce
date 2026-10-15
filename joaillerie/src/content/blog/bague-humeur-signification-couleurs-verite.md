@@ -17,7 +17,7 @@ heroImage: "/media-images/posts/bague-humeur-signification-couleurs-verite.png"
 
 ## Un langage discret, pour ceux qui savent regarder
 
-<p>Ce serait formidable d'avoir une façon de transmettre discrètement son humeur sans froisser personne. Bon, il y aura toujours quelques idiots pour ne rien comprendre — mais comme ce sont des idiots, que le message soit subtil ou direct, ils ne comprendront de toute façon pas. C'est peut-être ça, au fond, le vrai attrait de l'objet : un code partagé entre soi et les rares personnes attentives.</p><p>Comme la <a href="/blog/bague-anti-stress-signification-guide-symbolique/">bague anti-stress</a>, la bague d'humeur appartient à cette famille de bijoux qu'on porte moins pour leur valeur que pour ce qu'ils font à l'esprit de celui qui les regarde.</p>
+<p>Ce serait formidable d'avoir une façon de transmettre discrètement son humeur sans froisser personne. Bon, il y aura toujours quelques idiots pour ne rien comprendre — mais comme ce sont des idiots, que le message soit subtil ou direct, ils ne comprendront de toute façon pas. C'est peut-être ça, au fond, le vrai attrait de l'objet : un code partagé entre soi et les rares personnes attentives.</p><p>Comme la <a href="/blog/bague-humeur-signification-couleurs-verite/">bague anti-stress</a>, la bague d'humeur appartient à cette famille de bijoux qu'on porte moins pour leur valeur que pour ce qu'ils font à l'esprit de celui qui les regarde.</p>
 
 ## Signification des couleurs : le tableau à connaître
 

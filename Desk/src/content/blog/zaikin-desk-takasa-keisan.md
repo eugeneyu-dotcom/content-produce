@@ -6,6 +6,7 @@ description: "身長から椅子とデスクの理想の高さを計算する差
 type: "post"
 heroImage: "/media-images/posts/zaikin-desk-takasa-keisan-cover.png"
 category: "1. 機能的人間工学 (Functional Ergonomics)"
+noindex: true
 ---
 
 <div class="mds-container" style="max-width: 1200px; margin: 0 auto; width: 94%; padding: 20px 0; box-sizing: border-box;">
