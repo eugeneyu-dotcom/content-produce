@@ -67,7 +67,7 @@
     },
     {
       "source": "/modern-internet-ghost-stories-2026/",
-      "destination": "/blog/modern-internet-ghost-stories-2026/",
+      "destination": "/blog/evolution-of-internet-horror-characters-from-chain-mail-to-ai/",
       "permanent": true
     },
     {
@@ -113,6 +113,11 @@
     {
       "source": "/blog/why-teens-play-paranormal-games-digital-seance/",
       "destination": "/blog/psychology-of-legend-tripping-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/modern-internet-ghost-stories-2026/",
+      "destination": "/blog/evolution-of-internet-horror-characters-from-chain-mail-to-ai/",
       "permanent": true
     }
   ]

@@ -1,0 +1,131 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`Conditions d'utilisation et avertissement | ${SITE_TITLE}`} description="Conditions d'utilisation et avertissement de Joaillerie et Symbolique" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans', sans-serif;
+				background-color: var(--bg-color, #F5EDF9); 
+				color: #333;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 6em 1em;
+				background-color: var(--accent-dark, #331438);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero h1 {
+				font-family: 'Playfair Display', serif;
+				font-size: 3em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 2px;
+				color: #fff;
+			}
+			
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 3em;
+				background: #fff;
+				border-radius: 12px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.8em;
+				color: var(--accent-dark, #331438);
+				border-bottom: 2px solid #f0f0f0;
+				padding-bottom: 10px;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #444;
+				margin-bottom: 1.5em;
+			}
+			
+			.number-badge {
+				display: inline-block;
+				background-color: var(--accent, #9335B6);
+				color: #fff;
+				font-family: 'IBM Plex Sans', sans-serif;
+				font-weight: bold;
+				padding: 2px 10px;
+				border-radius: 4px;
+				font-size: 0.8em;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			
+			.content-section a {
+				color: var(--accent, #9335B6);
+				text-decoration: underline;
+			}
+			
+			.image-container {
+				text-align: center;
+				margin: 4em 0;
+			}
+			.image-container img {
+				max-width: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+			}
+			.image-container p {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.5em;
+				font-style: italic;
+				color: var(--accent-dark, #331438);
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<h1>Conditions d'utilisation et avertissement</h1>
+			</section>
+
+			<section class="content-section">
+				<h3>Information générale</h3>
+				<p>Le contenu de Joaillerie et Symbolique est proposé à titre informatif et culturel. La symbolique des bijoux et des pierres relève de traditions et d'interprétations, pas de faits scientifiquement établis.</p>
+				<h3>Pas un avis médical</h3>
+				<p>Les articles évoquant les propriétés supposées des pierres ou des métaux (lithothérapie, énergie, bien-être) ne constituent pas un avis médical et ne remplacent pas un professionnel de santé.</p>
+				<h3>Exactitude et corrections</h3>
+				<p>Nous nous efforçons d'être exacts, sans garantie d'exhaustivité ni d'actualité. Certains articles sont anciens et sont en cours de relecture. Pour signaler une erreur, voir la <a href="/contact">page contact</a>.</p>
+				<h3>Comment les contenus sont réalisés</h3>
+				<p>Les articles sont rédigés avec l'aide d'outils d'IA et relus par une personne. Voir la page <a href="/a-propos">À propos</a>.</p>
+				<h3>Droits d'auteur</h3>
+				<p>Le contenu original de ce site appartient à son éditeur. Vous pouvez en citer de courts extraits avec un lien vers l'article d'origine. Merci de ne pas republier d'articles entiers sans autorisation.</p>
+				<h3>Liens externes</h3>
+				<p>Les articles peuvent contenir des liens vers des sites externes. Nous ne sommes pas responsables de leur contenu ni de leurs pratiques.</p>
+				<h3>Publicité</h3>
+				<p>Ce site peut afficher de la publicité, notamment Google AdSense. Voir la <a href="/politique-de-confidentialite">politique de confidentialité</a> pour la gestion des cookies publicitaires.</p>
+				<h3>Modifications</h3>
+				<p>Nous pouvons mettre à jour ces conditions. Dernière mise à jour : 15 octobre 2026.</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

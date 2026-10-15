@@ -1,0 +1,126 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title={`利用規約・免責事項 | ${SITE_TITLE}`} description="ミニマル・デスク・スタジオの利用規約・免責事項" />
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				background-color: var(--bg-color, #F7F4EF);
+				color: #33302C;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 6em 1em;
+				background-color: var(--bg-color, #F7F4EF);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+				border-bottom: 1px solid var(--accent, #C17F59);
+			}
+			.hero h1 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 3em;
+				font-weight: 700;
+				margin-bottom: 0.2em;
+				letter-spacing: -1px;
+				color: var(--accent-dark, #6B4226);
+			}
+
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 3em;
+				background: #ffffff;
+				border-radius: 4px;
+				border: 1px solid rgba(51,46,42,0.12);
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h3 {
+				font-family: 'Shippori Mincho', serif;
+				font-size: 1.6em;
+				font-weight: 700;
+				color: var(--accent-dark, #6B4226);
+				border-bottom: 1px solid rgba(51,46,42,0.12);
+				padding-bottom: 10px;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			.content-section p {
+				font-size: 1.05em;
+				color: #5C5650;
+				margin-bottom: 1.5em;
+			}
+
+			.number-badge {
+				display: inline-block;
+				background-color: transparent;
+				color: var(--accent, #C17F59);
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+				font-weight: bold;
+				padding: 2px 10px;
+				border-radius: 2px;
+				font-size: 0.8em;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+
+			.content-section a {
+				color: var(--accent, #C17F59);
+				text-decoration: underline;
+			}
+
+			.image-container {
+				text-align: center;
+				margin: 4em 0;
+			}
+			.image-container img {
+				max-width: 100%;
+				border-radius: 4px;
+				border: 1px solid rgba(51,46,42,0.12);
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<h1>利用規約・免責事項</h1>
+			</section>
+
+			<section class="content-section">
+				<h3>情報提供について</h3>
+				<p>当サイトの内容は、一般的な情報提供を目的としています。製品の仕様・価格・在庫は変更されることがあるため、購入前に必ず販売ページで最新情報をご確認ください。</p>
+				<h3>専門的助言ではありません</h3>
+				<p>姿勢・照明・作業環境に関する記事は、医療上の助言ではありません。体の不調がある場合は、医師など専門家にご相談ください。</p>
+				<h3>正確性と訂正</h3>
+				<p>できる限り正確な情報の提供に努めていますが、完全性・最新性を保証するものではありません。古い記事は順次見直しています。誤りのご連絡は<a href="/contact">お問い合わせページ</a>へお願いします。</p>
+				<h3>コンテンツの作り方</h3>
+				<p>記事はAIの支援を受けて執筆し、人が確認しています。詳しくは<a href="/about-us">当サイトについて</a>をご覧ください。</p>
+				<h3>著作権</h3>
+				<p>当サイトのオリジナルコンテンツの著作権は運営者に帰属します。出典として元記事へのリンクを付けた短い引用は可能です。記事の全文転載はご遠慮ください。</p>
+				<h3>外部リンク</h3>
+				<p>記事内には外部サイトへのリンクが含まれる場合があります。外部サイトの内容については責任を負いかねます。</p>
+				<h3>広告について</h3>
+				<p>当サイトでは、Google AdSense などの広告を表示する場合があります。広告に関するCookieの扱いは<a href="/privacy-policy">プライバシーポリシー</a>をご覧ください。</p>
+				<h3>改定</h3>
+				<p>本規約は予告なく改定することがあります。最終更新日：2026年10月15日。</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

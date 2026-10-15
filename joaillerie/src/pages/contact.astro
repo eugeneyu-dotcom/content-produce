@@ -1,0 +1,121 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead title={`Contact | ${SITE_TITLE}`} description="Contacter Joaillerie et Symbolique pour une correction, un avis ou une demande" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'IBM Plex Sans', sans-serif;
+				background-color: var(--bg-color, #F5EDF9); 
+				color: #333;
+				margin: 0;
+			}
+			.hero {
+				position: relative;
+				text-align: center;
+				padding: 6em 1em;
+				background-color: var(--accent-dark, #331438);
+				width: 100vw;
+				margin-left: calc(-50vw + 50%);
+				margin-right: calc(-50vw + 50%);
+			}
+			.hero h1 {
+				font-family: 'Playfair Display', serif;
+				font-size: 3em;
+				font-weight: 400;
+				margin-bottom: 0.2em;
+				letter-spacing: 2px;
+				color: #fff;
+			}
+			
+			.content-section {
+				width: 75vw;
+				max-width: 75vw;
+				margin-top: 4em;
+				margin-bottom: 4em;
+				margin-left: calc(-37.5vw + 50%);
+				margin-right: calc(-37.5vw + 50%);
+				padding: 3em;
+				background: #fff;
+				border-radius: 12px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+				line-height: 1.8;
+				box-sizing: border-box;
+			}
+			.content-section h3 {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.8em;
+				color: var(--accent-dark, #331438);
+				border-bottom: 2px solid #f0f0f0;
+				padding-bottom: 10px;
+				margin-top: 1.5em;
+				margin-bottom: 0.8em;
+			}
+			.content-section p {
+				font-size: 1.1em;
+				color: #444;
+				margin-bottom: 1.5em;
+			}
+			
+			.number-badge {
+				display: inline-block;
+				background-color: var(--accent, #9335B6);
+				color: #fff;
+				font-family: 'IBM Plex Sans', sans-serif;
+				font-weight: bold;
+				padding: 2px 10px;
+				border-radius: 4px;
+				font-size: 0.8em;
+				vertical-align: middle;
+				margin-right: 10px;
+			}
+			
+			.content-section a {
+				color: var(--accent, #9335B6);
+				text-decoration: underline;
+			}
+			
+			.image-container {
+				text-align: center;
+				margin: 4em 0;
+			}
+			.image-container img {
+				max-width: 100%;
+				border-radius: 8px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+			}
+			.image-container p {
+				font-family: 'Playfair Display', serif;
+				font-size: 1.5em;
+				font-style: italic;
+				color: var(--accent-dark, #331438);
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main style="padding-top:0;">
+			<section class="hero">
+				<h1>Contact</h1>
+			</section>
+
+			<section class="content-section">
+				<h3>Nous écrire</h3>
+				<p>Vous pouvez nous joindre par e-mail : <a href="mailto:eugeneyu@maxora.ai">eugeneyu@maxora.ai</a>. Joaillerie et Symbolique est édité par Maxora.ai.</p>
+				<h3>Corrections</h3>
+				<p>Si vous repérez une erreur ou une affirmation non étayée dans un article, envoyez-nous l'adresse de l'article et décrivez le problème. Nous examinons les corrections et mettons l'article à jour si nécessaire.</p>
+				<h3>Avis et demandes professionnelles</h3>
+				<p>Vos questions, suggestions et demandes professionnelles sont les bienvenues à la même adresse. Nous lisons tous les messages, mais nous ne pouvons pas promettre de répondre à chacun.</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
