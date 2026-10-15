@@ -373,7 +373,7 @@
   <section class="pending-section">
     <div class="pending-head">
       <h2>目前待處理</h2>
-      <span class="pending-count">10 項</span>
+      <span class="pending-count">9 項</span>
     </div>
     <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
 
@@ -453,18 +453,10 @@
       <div class="pending-item-body">
         <p class="pending-item-title">AdSense「缺乏價值的內容」：偏薄文章與重新申請時機 <span class="tag all">全站</span></p>
         <p class="pending-item-desc">Legend 有 7 篇新 HC 文章只有 460～650 字，Desk 有 4 篇情境指南約 900 字元，joaillerie 的 superposer-colliers 與 or-argent-carnation 約 640 字。擴寫需要真實背景，我不會憑空補內容，所以等 Eugene 補充背景後再擴寫。noindex 的 8 篇若 AdSense 仍不通過，可改為直接刪除。合併與刪除剛上線，建議等 Google 重新爬完（約 1～2 週）再重新申請。</p>
-        <p class="pending-item-next">下一步：<strong>Eugene 補背景 → 擴寫；約 10-29 後再評估是否重新申請 AdSense</strong></p>
+        <p class="pending-item-next">下一步：<strong>Eugene 補背景 → 擴寫；約 10-29 後再評估是否重新申請 AdSense；真的通過並啟用廣告後，再補歐盟／英國訪客需要的同意管理工具（CMP），並更新隱私政策的廣告 Cookie 段落</strong></p>
       </div>
     </div>
 
-    <div class="pending-item">
-      <span class="pending-dot"></span>
-      <div class="pending-item-body">
-        <p class="pending-item-title">隱私政策仍提到「留言」，但站上沒有留言功能 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">四站的隱私政策是 WordPress 時代的範本，提到留言、Gravatar 與留言用 Cookie，與目前的 Astro 靜態站不符。這次只修了 Dream 隱私政策「Contact Us」段落重複貼上免責聲明的問題。</p>
-        <p class="pending-item-next">下一步：<strong>改寫隱私政策</strong>，只保留實際會發生的資料處理（廣告、分析工具）</p>
-      </div>
-    </div>
   </section>
 
   <section class="phase">
@@ -1406,7 +1398,16 @@
       </div>
     </div>
 
-    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待處理新增三項：疑似虛構案例逐篇檢查、偏薄文章等 Eugene 補背景後擴寫與重新申請時機、隱私政策與現況不符。細節見上方「目前待處理」。</p>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">四站隱私政策改寫，對齊實際的資料處理</p>
+        <p class="entry-desc">舊版是 WordPress 範本，寫了留言、Gravatar、帳號與留言保存期限，但站上都沒有這些功能。新版只保留實際發生的：Vercel 伺服器紀錄、Google Analytics（GA4）、Google Fonts（IP 會傳給 Google）、可能顯示的 AdSense 廣告、來信資料，並依站點調整語言與法規（joaillerie 加 RGPD 與 CNIL）。廣告 Cookie 的同意機制不先承諾，寫成「啟用廣告時再於本頁說明」。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/d998b11" target="_blank" rel="noopener">d998b11</a></div>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待處理新增兩項：疑似虛構案例逐篇檢查、偏薄文章等 Eugene 補背景後擴寫與重新申請時機。細節見上方「目前待處理」。</p>
   </section>
 
   <footer>
