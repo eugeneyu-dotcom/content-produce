@@ -107,7 +107,12 @@
     },
     {
       "source": "/why-teens-play-paranormal-games-digital-seance/",
-      "destination": "/blog/why-teens-play-paranormal-games-digital-seance/",
+      "destination": "/blog/psychology-of-legend-tripping-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-teens-play-paranormal-games-digital-seance/",
+      "destination": "/blog/psychology-of-legend-tripping-guide/",
       "permanent": true
     }
   ]

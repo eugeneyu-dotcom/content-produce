@@ -97,7 +97,7 @@
     },
     {
       "source": "/lucid-dreaming-attainment/",
-      "destination": "/blog/lucid-dreaming-attainment/",
+      "destination": "/blog/lucid-dreaming-beginners-fast/",
       "permanent": true
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "source": "/manifest-latent-content-dreams-simplified-guide/",
-      "destination": "/blog/manifest-latent-content-dreams-simplified-guide/",
+      "destination": "/blog/manifest-vs-latent-content-of-dreams-simplified/",
       "permanent": true
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "source": "/role-of-amygdala-in-dreams-guide/",
-      "destination": "/blog/role-of-amygdala-in-dreams-guide/",
+      "destination": "/blog/dreams-brain-emotion-sleep/",
       "permanent": true
     },
     {
@@ -162,12 +162,12 @@
     },
     {
       "source": "/sigmund-freud-interpretation-of-dreams-latent-content/",
-      "destination": "/blog/manifest-latent-content-dreams-simplified-guide/",
+      "destination": "/blog/manifest-vs-latent-content-of-dreams-simplified/",
       "permanent": true
     },
     {
       "source": "/blog/sigmund-freud-interpretation-of-dreams-latent-content/",
-      "destination": "/blog/manifest-latent-content-dreams-simplified-guide/",
+      "destination": "/blog/manifest-vs-latent-content-of-dreams-simplified/",
       "permanent": true
     },
     {
@@ -192,12 +192,32 @@
     },
     {
       "source": "/why-do-my-dreams-feel-so-real-and-exhausting/",
-      "destination": "/blog/why-do-my-dreams-feel-so-real-and-exhausting/",
+      "destination": "/blog/why-do-dreams-feel-real-science/",
       "permanent": true
     },
     {
       "source": "/wish-fulfillment-theory-in-dreaming-freud-explained/",
       "destination": "/blog/wish-fulfillment-theory-in-dreaming-freud-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/manifest-latent-content-dreams-simplified-guide/",
+      "destination": "/blog/manifest-vs-latent-content-of-dreams-simplified/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-do-my-dreams-feel-so-real-and-exhausting/",
+      "destination": "/blog/why-do-dreams-feel-real-science/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lucid-dreaming-attainment/",
+      "destination": "/blog/lucid-dreaming-beginners-fast/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/role-of-amygdala-in-dreams-guide/",
+      "destination": "/blog/dreams-brain-emotion-sleep/",
       "permanent": true
     }
   ]

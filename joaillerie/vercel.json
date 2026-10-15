@@ -162,7 +162,7 @@
     },
     {
       "source": "/porter-bague-petit-doigt-signification/",
-      "destination": "/blog/porter-bague-petit-doigt-signification/",
+      "destination": "/blog/bague-auriculaire-signification-pouvoir-intuition/",
       "permanent": true
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "source": "/signification-bague-pouce/",
-      "destination": "/blog/signification-bague-pouce/",
+      "destination": "/blog/bague-pouce-signification-psychologique/",
       "permanent": true
     },
     {
@@ -218,6 +218,16 @@
     {
       "source": "/faune-flore-et-secrets-de-la-nature/",
       "destination": "/category/symbolisme-de-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/signification-bague-pouce/",
+      "destination": "/blog/bague-pouce-signification-psychologique/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/porter-bague-petit-doigt-signification/",
+      "destination": "/blog/bague-auriculaire-signification-pouvoir-intuition/",
       "permanent": true
     }
   ]

@@ -37,7 +37,7 @@ category: "5. Rituals & Forbidden Games"
 <tr style="background-color: #F9FAFB;">
 <td style="padding: 16px; border: 1px solid #E5E7EB; color: #374151;"><strong>Practitioners</strong></td>
 <td style="padding: 16px; border: 1px solid #E5E7EB; color: #374151;">Priests, oracles, trained specialists. Often a respected or feared role in society.</td>
-<td style="padding: 16px; border: 1px solid #E5E7EB; color: #374151;">Primarily adolescents and young adults, often performed in groups as a social challenge. Explores themes of <a href="/blog/why-teens-play-paranormal-games-digital-seance/">why teens play paranormal games</a>.</td>
+<td style="padding: 16px; border: 1px solid #E5E7EB; color: #374151;">Primarily adolescents and young adults, often performed in groups as a social challenge. Explores themes of <a href="/blog/psychology-of-legend-tripping-guide/">why teens play paranormal games</a>.</td>
 </tr>
 <tr style="background-color: #ffffff;">
 <td style="padding: 16px; border: 1px solid #E5E7EB; color: #374151;"><strong>Tools</strong></td>

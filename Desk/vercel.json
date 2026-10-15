@@ -117,7 +117,7 @@
     },
     {
       "source": "/monitor-light-reflection-ergonomics/",
-      "destination": "/blog/monitor-light-reflection-ergonomics/",
+      "destination": "/blog/monitor-light-desk-light-chigai/",
       "permanent": true
     },
     {
@@ -193,6 +193,11 @@
     {
       "source": "/functional-ergonomics/",
       "destination": "/category/functional-ergonomics/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/monitor-light-reflection-ergonomics/",
+      "destination": "/blog/monitor-light-desk-light-chigai/",
       "permanent": true
     }
   ]
