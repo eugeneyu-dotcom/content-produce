@@ -373,7 +373,7 @@
   <section class="pending-section">
     <div class="pending-head">
       <h2>目前待處理</h2>
-      <span class="pending-count">8 項</span>
+      <span class="pending-count">10 項</span>
     </div>
     <p class="pending-summary">新發現的待處理問題會加在這裡，解決後移到對應階段的時間軸並從這裡刪除——這份清單只放「現在還沒解決」的東西。</p>
 
@@ -382,7 +382,7 @@
       <div class="pending-item-body">
         <p class="pending-item-title">joaillerie 約 15 篇遷移文章真的看不見；其他三站問題小很多 <span class="tag all">全站</span></p>
         <p class="pending-item-desc">10-06 逐篇 URL Inspection 初判「約 45% 未收錄」，但交叉比對 GSC 曝光後發現這個數字高估：大半「未收錄」的文章其實有曝光（曝光來自 /blog/ 網址本身），Inspection 狀態與實際服務狀況不一致。以「已收錄或 90 天內有曝光」重算，四站可見度為 joaillerie 67%（35/52）、Dream 97%（47/48）、Desk 90%（45/50）、Legend 74%（29/39），合計 82%（156/189）。真正看不見的 33 篇裡，joaillerie 有 17 篇（全部是 06-10 遷移批次，含 2 篇檢查失敗待確認），Legend 10 篇（5 篇是這兩週的新文章），Desk 5 篇，Dream 1 篇。看不見的文章分兩種性質：「Discovered／URL unknown」（約 25 篇，Google 還沒決定要不要爬，屬於發現問題）與「Crawled - currently not indexed」（6 篇，爬過判定不收，屬於品質問題）。</p>
-        <p class="pending-item-next">下一步：<strong>A 類（發現問題）已在 10-07 補送 19 個網址的 Indexing API，10-20 前後重查</strong>；B 類（爬過未收錄）只有 KD≤35 的才用真實 HC 重寫：joaillerie 的 signification-bague-index（Sheet 已標 Modify Pending，等 HC）；cuivre 與 pomodoro 已在 10-13 用真實 HC 改寫完成（見第 20 階段）；KD≥60 的先不投資源</p>
+        <p class="pending-item-next">下一步：<strong>A 類（發現問題）已在 10-07 補送 19 個網址的 Indexing API，10-20 前後重查</strong>；B 類（爬過未收錄）只有 KD≤35 的才用真實 HC 重寫：joaillerie 的 cuivre、pomodoro、signification-bague-index 已用真實 HC 改寫完成（見第 20、21 階段）；KD≥60 的先不投資源</p>
       </div>
     </div>
 
@@ -416,17 +416,8 @@
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">Dream 兩篇 manifest-vs-latent 重複主題仍未決定 <span class="tag dream">Dream</span></p>
-        <p class="pending-item-desc">manifest-vs-latent-content-of-dreams-simplified（90 天 962 次曝光，是 Dream 曝光最大的一篇）跟 manifest-latent-content-dreams-simplified-guide（106 次）持續互相搶同一批查詢詞，第 03 階段處理過另一組 Freudian 重複，這一組一直沒決定要合併還是差異化。</p>
-        <p class="pending-item-next">下一步：<strong>Eugene 決定</strong>：合併（保留較強那篇、另一篇 301）或重新定位其中一篇</p>
-      </div>
-    </div>
-
-    <div class="pending-item">
-      <span class="pending-dot"></span>
-      <div class="pending-item-body">
-        <p class="pending-item-title">近兩週 9 次改動等待成效（太新，先別下結論） <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">09-30：oeil-bleu-grec 第 3 次標題重寫、jungian-shadow-dreams 第 2 次標題重寫、dream-about-being-pregnant-meaning 開場重構。10-07：focus-lighting-cct 標題＋答案摘要、daruma-san 加 People Also Ask 快答、kokkuri-san 加定義與編號步驟、anima-and-animus 的 Arthur 案例標示修正。10-13：cuivre 與 pomodoro 依真實 HC 整篇改寫（含標題）。標題類改動通常 1～2 週才看得出 CTR 變化，意圖重構更久。</p>
+        <p class="pending-item-title">近期改動等待成效（太新，先別下結論） <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">09-30：oeil-bleu-grec 第 3 次標題重寫、jungian-shadow-dreams 第 2 次標題重寫、dream-about-being-pregnant-meaning 開場重構。10-07：focus-lighting-cct 標題＋答案摘要、daruma-san 加 People Also Ask 快答、kokkuri-san 加定義與編號步驟、anima-and-animus 的 Arthur 案例標示修正。10-13：cuivre 與 pomodoro 依真實 HC 整篇改寫（含標題）。10-15：bague-index 改寫，另有合併、刪除、noindex 與信任頁面調整（第 21 階段）。標題類改動通常 1～2 週才看得出 CTR 變化，意圖重構更久。</p>
         <p class="pending-item-next">下一步：<strong>10-14～10-21（cuivre／pomodoro 約 10-27 前後）回頭看</strong>這幾篇的排名與點擊，不要提前判斷成敗</p>
       </div>
     </div>
@@ -434,8 +425,8 @@
     <div class="pending-item">
       <span class="pending-dot"></span>
       <div class="pending-item-body">
-        <p class="pending-item-title">Sheet 佇列有 9 筆等 HC，另有 1 筆等重寫 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">等 HC：Desk「Windows11 デスクトップ カスタマイズ」「デスクツアー おすすめ」「ウェブカメラ 位置 デスク 目線」；joaillerie「améthyste signification vertus」「oeil de tigre pierre signification」「pierre de naissance par mois」；Dream「dream about being late meaning」「dream about losing hair meaning」「dream about wedding meaning」。等重寫（Status=Modify Pending）：joaillerie 的 signification bague index（HC 仍空白）。積壓偏多，補 HC 的速度是目前瓶頸。</p>
+        <p class="pending-item-title">Sheet 佇列有 9 筆等 HC，另有約 16 篇既有文章等 HC 改寫 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">等 HC：Desk「Windows11 デスクトップ カスタマイズ」「デスクツアー おすすめ」「ウェブカメラ 位置 デスク 目線」；joaillerie「améthyste signification vertus」「oeil de tigre pierre signification」「pierre de naissance par mois」；Dream「dream about being late meaning」「dream about losing hair meaning」「dream about wedding meaning」。既有文章等 HC 改寫：見第 21 階段盤點，例如 joaillerie 的 saphir-bleu、bijoux-serpent、plume，Dream 的 chased-dreams、collective-unconscious，Legend 的 backrooms、mothman。積壓偏多，補 HC 的速度是目前瓶頸。</p>
         <p class="pending-item-next">下一步：<strong>等 Eugene 補 HC</strong>；補好後 Status 我會一併改 Active（這次發現 Sheet 上曾被手誤打成「Actvie」，agent 只認 Active）</p>
       </div>
     </div>
@@ -446,6 +437,32 @@
         <p class="pending-item-title">4 個差異化模組成效還沒回頭查 <span class="tag all">全站</span></p>
         <p class="pending-item-desc">08-25/26 上線的 Dream 搜尋框、Legend Legends on Screen、joaillerie Guide de Style、Desk セットアップ診断，原訂 09-15～09-22 查核，但同期四站做了大規模視覺改版，這幾個模組的介面被一併重做，數字會混雜改版前後的流量。</p>
         <p class="pending-item-next">下一步：<strong>改版後累積出乾淨窗口再查</strong>——建議一併參考上面的索引覆蓋率，確認這些頁面本身有沒有被收錄</p>
+      </div>
+    </div>
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">早期 AI 文章是否含有虛構案例，需逐篇檢查 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">Legend 的 modern-internet-ghost-stories-2026 把虛構的「AURA 內測」和受測者當成真實通報來寫，已刪除。粗略掃描發現 Dream、Legend、Desk 約 15 篇出現「Case File／案例研究／事例」之類字眼（例如 Dream 的 individuation-process-through-dream-work、jungian-dream-symbols-guide，Legend 的 historical-evidence-of-the-mothman、hitori-kakurenbo-instructions-safety-guide，Desk 多篇長文）。這只是關鍵字掃描，不能斷定是虛構，需要逐篇讀過、標出具名但無法查證的人物或事件。Dream 的 why-do-i-keep-dreaming-about-the-same-house（Julian 案例）也應一併確認。</p>
+        <p class="pending-item-next">下一步：<strong>逐篇檢查，列出疑似虛構案例清單</strong>，決定改標為「示例」、刪除或改寫</p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">AdSense「缺乏價值的內容」：偏薄文章與重新申請時機 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">Legend 有 7 篇新 HC 文章只有 460～650 字，Desk 有 4 篇情境指南約 900 字元，joaillerie 的 superposer-colliers 與 or-argent-carnation 約 640 字。擴寫需要真實背景，我不會憑空補內容，所以等 Eugene 補充背景後再擴寫。noindex 的 8 篇若 AdSense 仍不通過，可改為直接刪除。合併與刪除剛上線，建議等 Google 重新爬完（約 1～2 週）再重新申請。</p>
+        <p class="pending-item-next">下一步：<strong>Eugene 補背景 → 擴寫；約 10-29 後再評估是否重新申請 AdSense</strong></p>
+      </div>
+    </div>
+
+    <div class="pending-item">
+      <span class="pending-dot"></span>
+      <div class="pending-item-body">
+        <p class="pending-item-title">隱私政策仍提到「留言」，但站上沒有留言功能 <span class="tag all">全站</span></p>
+        <p class="pending-item-desc">四站的隱私政策是 WordPress 時代的範本，提到留言、Gravatar 與留言用 Cookie，與目前的 Astro 靜態站不符。這次只修了 Dream 隱私政策「Contact Us」段落重複貼上免責聲明的問題。</p>
+        <p class="pending-item-next">下一步：<strong>改寫隱私政策</strong>，只保留實際會發生的資料處理（廣告、分析工具）</p>
       </div>
     </div>
   </section>
@@ -1334,8 +1351,66 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">這是 Modify Active 流程第一次完整走完。cuivre 與 pomodoro 此前都沒有曝光，這次改寫的目標是讓文章值得被收錄；是否有效要等 Google 重新爬取，約 10-27 前後再看。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">21</span>
+      <h2 class="phase-title">AdSense「缺乏價值的內容」：弱文章盤點、合併、刪除與信任頁面</h2>
+      <span class="phase-when">10-15</span>
+    </div>
+    <p class="phase-summary">四站在 AdSense 的判定仍是「缺乏價值的內容」。這輪把問題當成整個網站的品質問題處理：先逐篇盤點 187 篇，再依序合併重複文章、刪除或 noindex 最弱的文章、改寫有 HC 的文章，最後補齊信任頁面並移除無法查證的說法。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">187 篇逐篇盤點（資料：Sheet 的 HC × GSC 單篇數據 × 檔案內容）</p>
+        <p class="entry-desc">依「有無 HC、曝光、是否有 WordPress 殘留、是否與他篇重複」分成合併、改寫、noindex 或刪除三類，清單存成 weak-articles-audit-20261013.md。已知限制：曝光 0 不等於沒需求，可能只是還沒被發現；noindex 對 AdSense 的幫助有限，刪除與合併更直接。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">8 組意圖重複的文章合併（301 轉址、內鏈與分類頁標籤同步修正）</p>
+        <p class="entry-desc">joaillerie：拇指戒、小指戒各併成一篇。Dream：manifest-vs-latent 重複組、「夢為什麼感覺真實」、清明夢入門、腦科學與情緒。Legend：為何玩儀式遊戲併入 legend tripping 心理學。Desk：monitor-light 兩篇併一篇。另外 6 組細看後發現搜尋意圖其實不同（清明夢現實檢驗與醒來技巧、REM 腦波與記憶、理線三種做法、姿勢與椅子、神秘生物三篇、網路恐怖兩篇），為避免少掉可被搜尋的題目而沒有合併。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/d65da3e" target="_blank" rel="noopener">d65da3e</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">刪除 9 篇（301 到分類頁）、noindex 8 篇，並為三站加上 noindex 功能</p>
+        <p class="entry-desc">規則：零曝光且無獨特價值的刪除，有曝光或被站內很多文章連結的 noindex（保留內鏈）。刪除：joaillerie 7 篇、Dream 1 篇、Desk 1 篇。noindex：Dream 3 篇、Desk 4 篇、Legend 1 篇。frontmatter 寫 noindex: true 即可輸出 robots noindex,follow 並自動排除在 sitemap 外。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/6d3a14e" target="_blank" rel="noopener">6d3a14e</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">signification-bague-index：用 HC 原地改寫</p>
+        <p class="entry-desc">HC 以《魔戒》中佛羅多在末日火山前把戒指戴在食指為切入點：食指是西方傳統的「木星之指」（權力、野心），中世紀貴族與騎士在食指戴家徽戒指；電影裡咕嚕咬掉的是食指，原著則是右手第三指（無名指，代表結合與佔有）。電影與原著的差異我用搜尋查過，來源是粉絲討論串，文章裡以「依讀者說法」措辭並標明是個人解讀。刪掉舊版無法查證的克麗奧佩脫拉軼事與主教戒指說法。slug、pubDate、圖片與 Post_Url 保留，標題記為 number 型。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/8c39c94" target="_blank" rel="noopener">8c39c94</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">信任頁面與誠信整理：Contact、Terms、About 說法、虛構文章</p>
+        <p class="entry-desc">四站新增 Contact 與 Terms／免責聲明頁並連到 footer。About 頁原本寫了無法查證的團隊資歷（心理學家與睡眠醫學專家、前記者與數位鑑識專家、寶石學家、專業團隊），改成不宣稱專業資格、由 Maxora.ai 營運、AI 輔助撰寫並經人確認、早期文章逐步重寫；依 Eugene 的指定，Dream 寫為心理學與民俗文化的獨立研究者，Legend 寫為前記者與遊戲、影視、恐怖文學愛好者，Desk 寫為自行經營媒體的發信者。Dream 的 About 頁還誤放了兩段 Legend 的內容，已換掉；Legend 的 About 寫「使用聯絡表單」但站上沒有，已改為 Contact 頁。刪除 Legend 的 modern-internet-ghost-stories-2026（把虛構的 AURA 內測當成真實通報），301 到 evolution-of-internet-horror-characters。順手移除 joaillerie 4 篇的 WordPress 舊 hero 區塊（背景圖網址已失效、與標題重複的 h1）。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/52f3ddd" target="_blank" rel="noopener">52f3ddd</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag system">跨站基礎設施</span>
+      <div class="entry-body">
+        <p class="entry-title">Sheet 標記與收尾</p>
+        <p class="entry-desc">被合併、刪除的文章共 17 列（合併 7、刪除 9、虛構文章 1）在 Sheet 的 Status 標為「已過期」；ai_agent.js 只認 Active，會自動略過。signification bague index 改回 USED，並送出 Indexing API。做法上的教訓：第一次對 bague-index 送 Indexing API 時頁面還沒推送，等於通知 Google 去抓舊內容，之後頁面上線才補送；通知必須在推送且部署完成之後。</p>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待處理新增三項：疑似虛構案例逐篇檢查、偏薄文章等 Eugene 補背景後擴寫與重新申請時機、隱私政策與現況不符。細節見上方「目前待處理」。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-13。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-15。
   </footer>
 </div>
 
