@@ -33,7 +33,7 @@ heroImage: "/media-images/posts/ultrawide-monitor-gamen-bunkatsu-houhou.webp"
 
 ## 分割の次は、中身の整理
 
-<p>画面を分割しても、開いているファイルやフォルダがぐちゃぐちゃなままでは効果が半減してしまう。分割で視覚的な余裕ができたら、次は<a href="/blog/digital-folder-mastery/">フォルダの整理術</a>にも目を向けてみてほしい。ちなみに、モニター自体の位置や高さが合っていないと、せっかく分割してもかえって首や目が疲れやすくなるので、<a href="/blog/4k-monitor-arm-guide/">モニターアーム</a>の選び方も一度見直す価値がある。</p>
+<p>画面を分割しても、開いているファイルやフォルダがぐちゃぐちゃなままでは効果が半減してしまう。分割で視覚的な余裕ができたら、次は<a href="/category/digital-minimalism/">フォルダの整理術</a>にも目を向けてみてほしい。ちなみに、モニター自体の位置や高さが合っていないと、せっかく分割してもかえって首や目が疲れやすくなるので、<a href="/blog/4k-monitor-arm-guide/">モニターアーム</a>の選び方も一度見直す価値がある。</p>
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
     <img src="/media-images/posts/ultrawide-monitor-gamen-bunkatsu-houhou-footer.webp" alt="「ウルトラワイドモニター 画面分割 ソフト」を探す前に、無料で今すぐできる方法を知ってほしい" style="border-radius: 8px; width: 100%; height: auto;" />

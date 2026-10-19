@@ -72,7 +72,7 @@
     },
     {
       "source": "/digital-folder-mastery/",
-      "destination": "/blog/digital-folder-mastery/",
+      "destination": "/category/digital-minimalism/",
       "permanent": true
     },
     {
@@ -203,6 +203,11 @@
     {
       "source": "/blog/matte-black-gadget-recommendations/",
       "destination": "/category/color-theory-and-materiality/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/digital-folder-mastery/",
+      "destination": "/category/digital-minimalism/",
       "permanent": true
     }
   ]

@@ -82,7 +82,7 @@
     },
     {
       "source": "/individuation-process-through-dream-work/",
-      "destination": "/blog/individuation-process-through-dream-work/",
+      "destination": "/category/jungian-archetypes/",
       "permanent": true
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "source": "/shamanic-dream-healing-journey/",
-      "destination": "/blog/shamanic-dream-healing-journey/",
+      "destination": "/category/history-of-dream-interpretation/",
       "permanent": true
     },
     {
@@ -222,6 +222,16 @@
     },
     {
       "source": "/blog/biblical-meaning-of-dreams-and-visions-guide/",
+      "destination": "/category/history-of-dream-interpretation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/individuation-process-through-dream-work/",
+      "destination": "/category/jungian-archetypes/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/shamanic-dream-healing-journey/",
       "destination": "/category/history-of-dream-interpretation/",
       "permanent": true
     }
