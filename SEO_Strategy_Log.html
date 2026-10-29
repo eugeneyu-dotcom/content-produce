@@ -1486,8 +1486,58 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">Julian 這篇的成效要等 Google 重新收錄後再看，樣本太小，短期內不會有可判讀的差異。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">24</span>
+      <h2 class="phase-title">本週四篇上線，以及回頭檢視前面幾輪改動的成效</h2>
+      <span class="phase-when">10-29</span>
+    </div>
+    <p class="phase-summary">Eugene 補好四篇的 HC：三篇新文章加上 Backrooms 的原地改寫，一起推送。接著把 Phase 14 以後的改動拉出來對照 GSC 的真實數據。結論先講：多數改動還看不出成效，但有一個值得警惕的訊號。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">新增 3 篇、改寫 1 篇，全部部署後送 Indexing API</p>
+        <p class="entry-desc">Dream「dream about wedding meaning」（contrast 型標題）、joaillerie「pierre de naissance par mois」（number 型，含 12 個月份表格與寶石硬度說明）、Desk「ウェブカメラ 位置 デスク 目線」（question 型）。Legend 的 Backrooms 起源文章原地改寫，保留 slug、pubDate 與三張圖，標題 contrast 型。新增的三篇與改寫的一篇都加了分類頁的關鍵字標籤。標題策略接在 Julian 那篇的 question 之後，批次內也輪替。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/d15c85a" target="_blank" rel="noopener">d15c85a</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">Backrooms：用 Wikipedia 查證，修正舊版的錯誤與 HC 的年份</p>
+        <p class="entry-desc">HC 寫「2018 年首次出現」，Wikipedia 記載最初貼文是 2019-05-12，「noclip」那段文字是隔天（05-13）由另一位使用者在同一串補上，舊版誤寫成同時出現。照片本身是 2002 年拍的威斯康辛州舊家具店，2024 年才被找到來源。Eugene 說也有 2018 年的說法，我查不到來源，所以文章寫成「有人認為更早、我無法查證，以 2019 年那串討論為準」。舊版的 Reddit 連結與「未來展望」兩段因為無法查證而拿掉。</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">警訊：兩篇排名第一頁的文章，在我改標題後曝光歸零</p>
+        <p class="entry-desc">jungian-shadow-dreams 的最後一天曝光是 09-29（排名約 4），我在 09-30 把標題從「Jungian Shadow in Dreams: Animal Symbols and the Unconscious」改成問句型的長標題，之後每天都是 0，直到 10-27 都沒有恢復，URL Inspection 現在顯示「Crawled - currently not indexed」。why-do-i-keep-dreaming-about-the-same-house 的最後曝光是 09-22，我在 09-24 把標題改成 Julian 那個，之後同樣歸零。兩篇改標題之前都在第一頁（排名 4 到 10）。同一天改標題的 oeil-bleu-grec 沒有掉，仍在排名 18 左右持續有曝光。</p>
+        <p class="entry-desc">這是時間上的對應，不是因果的證明：樣本只有兩篇，我沒辦法排除 Google 同期的演算法波動，jungian-shadow 的內文也只改了標題與描述。但兩篇都是「第一頁文章改標題後立刻消失」，這個模式比我之前的任何假設都清楚。我的假設是改標題引發重新評估，新標題與描述偏長、偏問句，可能讓頁面被判定為不同的內容。這個假設沒有驗證。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">Phase 18 以來的重寫：還是看不到成效</p>
+        <p class="entry-desc">cuivre、bague-index、pomodoro、focus-lighting-cct 四篇改寫後，URL Inspection 全部是「Crawled - currently not indexed」，過去 90 天沒有任何曝光，所以標題策略（contrast／number）還沒有任何可比較的數據。已收錄的是 bague-pouce-signification-psychologique（合併的保留篇）與 Backrooms。Phase 22 加進 Legend 的 7 篇偏薄新文章，目前只有 chupacabra 收錄，另外 5 篇是「Discovered - currently not indexed」，bigfoot 那篇 Google 還不認識。合併後的舊網址已正確 308，但 Google 仍在顯示舊網址（例如 manifest-latent-content 舊網址 26 天內 285 次曝光），要等重新爬取。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag system">跨站基礎設施</span>
+      <div class="entry-body">
+        <p class="entry-title">四站曝光趨勢（近 12 天對比 90 天日均）</p>
+        <p class="entry-desc">Legend 每天約 74 次曝光，對比 90 天均值 22.6，主要來自 daruma-san 與 kokkuri-san 兩篇進到排名 9 到 10，但這可能是萬聖節前的季節性，不能算成改動的成效。Dream 每天約 68 次，對比 52，其中一部分是舊網址的合併殘留。Desk 每天約 8.7 次，對比 13.2，往下掉，felt-desk-mat-non-slip-guide-japan 與 focus-lighting-cct 在最近 26 天都沒有曝光。joaillerie 約 30 次，對比 35，持平。四站點擊都低於每天 0.5 次，統計上沒有意義。</p>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待決定：jungian-shadow-dreams 要不要改回 09-30 以前的標題再重新送出（最直接的驗證）。此外，之後對「已在第一頁」的文章，改標題要更保守。AdSense 是否值得重新申請，我沒有任何可驗證的訊號，建議等這批新的收錄結果出來再說。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-28。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-29。
   </footer>
 </div>
 
