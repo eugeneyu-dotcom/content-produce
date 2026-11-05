@@ -17,7 +17,7 @@ heroImage: "/media-images/posts/yeti-sightings-pop-culture-image.webp"
 
 ## What Science Thinks Actually Left Those Prints
 
-<p>The leading explanations line up with the same biological reasoning used everywhere else in cryptozoology — the kind of <a href="/blog/biological-explanation-for-cryptid-sightings/">biological breakdown</a> that also gets applied to Bigfoot and to Scotland's most famous lake monster. Misidentified bears, wind-melted footprints stretching into something larger than their actual source, and simple pareidolia account for most reported cases, the same way a 2019 eDNA study reshaped the conversation around <a href="/blog/loch-ness-monster-sightings/">Loch Ness</a> sightings a continent away. None of that fully closes the file, which is exactly why a <a href="https://www.grahamhoyland.com/yeti-sightings/">running list of top sightings</a> keeps getting updated instead of retired.</p>
+<p>The leading explanations line up with the same biological reasoning used everywhere else in cryptozoology — the kind of <a href="/blog/cryptids-vs-urban-legends-differences-mothman/">biological breakdown</a> that also gets applied to Bigfoot and to Scotland's most famous lake monster. Misidentified bears, wind-melted footprints stretching into something larger than their actual source, and simple pareidolia account for most reported cases, the same way a 2019 eDNA study reshaped the conversation around <a href="/blog/loch-ness-monster-sightings/">Loch Ness</a> sightings a continent away. None of that fully closes the file, which is exactly why a <a href="https://www.grahamhoyland.com/yeti-sightings/">running list of top sightings</a> keeps getting updated instead of retired.</p>
 
 ## The Monster That Helped Me Fight Terracotta Soldiers
 

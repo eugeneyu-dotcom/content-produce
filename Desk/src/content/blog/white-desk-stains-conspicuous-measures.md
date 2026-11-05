@@ -38,7 +38,7 @@ heroImage: "/media-images/posts/white-desk-stains-conspicuous-measures-cover.png
 <ul>
 <li style="margin-bottom: 12px;"><strong>デスクマット</strong>：作業領域を物理的に保護する最も確実な方法。特にフェルト製のマットは見た目も美しいが、液体を吸収しやすいなどの特性もあるため、<a href="/blog/desk-mat-felt-demerit/">デスクマット フェルト デメリット</a>を理解した上で選択したい。</li>
 <li style="margin-bottom: 12px;"><strong>コースターの使用</strong>：冷たい飲み物の結露や、温かい飲み物のカップの底の汚れは、輪ジミの直接的な原因となる。お気に入りのコースターを一つ用意するだけで、デスクは劇的に保護される。</li>
-<li style="margin-bottom: 12px;"><strong>間接照明の活用</strong>：デスクを直射日光が当たる場所に置くことは、UVによる黄変を促進する。やむを得ない場合はUVカットフィルムを窓に貼るか、<a href="/blog/desk-indirect-lighting-guide/">間接照明 デスク おしゃれ テープライト</a>などを活用し、日中はカーテンを閉めるなどの工夫が有効だ。</li>
+<li style="margin-bottom: 12px;"><strong>間接照明の活用</strong>：デスクを直射日光が当たる場所に置くことは、UVによる黄変を促進する。やむを得ない場合はUVカットフィルムを窓に貼るか、<a href="/blog/focus-lighting-cct/">間接照明 デスク おしゃれ テープライト</a>などを活用し、日中はカーテンを閉めるなどの工夫が有効だ。</li>
 </ul>
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">比較分析：白、黒、木目—デスク天板の三つ巴</h4>
 <p style="margin-bottom: 25px;">デスクの色選びは、単なる好みの問題ではなく、ライフスタイルや働き方そのものを反映する。ここでは、代表的な3つの天板カラー「白」「黒」「木目」を、メンテナンスと視覚的効果の観点から徹底比較する。この比較を通じて、あなたにとって最適な選択肢が見えてくるだろう。</p>

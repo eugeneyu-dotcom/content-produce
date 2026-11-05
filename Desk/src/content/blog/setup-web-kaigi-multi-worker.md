@@ -13,7 +13,7 @@ heroImage: "/media-images/posts/setup-web-kaigi-multi-worker.webp"
 
 ## 1. 見え方：画面越しの印象は照明で決まる
 
-<p>カメラの画質そのものより、顔にどう光が当たっているかのほうが画面越しの印象を左右します。天井照明だけだと影が濃く出やすいため、<a href="/blog/eye-friendly-desk-light-guide-2/">目に優しいデスクライト</a>や、モニター上部に取り付けるタイプの照明を使って顔を正面から照らすのが基本です。背景についても、雑然とした棚が映り込むより、<a href="/blog/white-desk-setup-aesthetics/">ミニマルな白基調のデスク</a>のほうが会議相手に与える印象は安定します。<a href="https://www.elecom.co.jp/solution/column/00149/" target="_blank" rel="noopener noreferrer">Web会議照明の解説記事</a>でも、カメラ性能より照明の当て方のほうが見え方への影響が大きいと説明されています。</p>
+<p>カメラの画質そのものより、顔にどう光が当たっているかのほうが画面越しの印象を左右します。天井照明だけだと影が濃く出やすいため、<a href="/blog/focus-lighting-cct/">目に優しいデスクライト</a>や、モニター上部に取り付けるタイプの照明を使って顔を正面から照らすのが基本です。背景についても、雑然とした棚が映り込むより、<a href="/blog/white-desk-setup-aesthetics/">ミニマルな白基調のデスク</a>のほうが会議相手に与える印象は安定します。<a href="https://www.elecom.co.jp/solution/column/00149/" target="_blank" rel="noopener noreferrer">Web会議照明の解説記事</a>でも、カメラ性能より照明の当て方のほうが見え方への影響が大きいと説明されています。</p>
 
 ## 2. 音：タイピング音は思っている以上に響く
 
@@ -21,7 +21,7 @@ heroImage: "/media-images/posts/setup-web-kaigi-multi-worker.webp"
 
 ## 3. 姿勢：長時間会議での腰痛は椅子で決まる
 
-<p>会議は自分のペースで休憩を挟みにくいという特性があります。1時間の会議が3本続くと、立ち上がる機会がないまま3時間座り続けることになります。この働き方では<a href="/blog/chair-selection-back-pain/">腰痛対策の椅子選び</a>が集中ワーカー以上に重要で、腰のサポートがしっかりしたモデルを優先すべきです。</p>
+<p>会議は自分のペースで休憩を挟みにくいという特性があります。1時間の会議が3本続くと、立ち上がる機会がないまま3時間座り続けることになります。この働き方では<a href="/blog/desk-posture-correction-guide/">腰痛対策の椅子選び</a>が集中ワーカー以上に重要で、腰のサポートがしっかりしたモデルを優先すべきです。</p>
 
 <table>
 <tr><th>優先度</th><th>項目</th><th>対策</th></tr>

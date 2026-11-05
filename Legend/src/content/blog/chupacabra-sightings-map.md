@@ -21,7 +21,7 @@ heroImage: "/media-images/posts/chupacabra-sightings-map.webp"
 
 ## What's Actually Missing Is the Boring Kind of Evidence
 
-<p>No captured specimen, no body, no fossil record. Scientists also haven't identified any animal anywhere near the reported size that could survive on a diet of other animals' blood alone. That combination is why the <a href="/blog/biological-explanation-for-cryptid-sightings/">leading explanation</a> today still comes down to severely mangy dogs — not because every report fits it perfectly, but because it's the only explanation with an actual mechanism behind it.</p>
+<p>No captured specimen, no body, no fossil record. Scientists also haven't identified any animal anywhere near the reported size that could survive on a diet of other animals' blood alone. That combination is why the <a href="/blog/cryptids-vs-urban-legends-differences-mothman/">leading explanation</a> today still comes down to severely mangy dogs — not because every report fits it perfectly, but because it's the only explanation with an actual mechanism behind it.</p>
 
 ## What the Map Actually Shows
 

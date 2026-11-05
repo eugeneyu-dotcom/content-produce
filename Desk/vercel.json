@@ -22,7 +22,7 @@
     },
     {
       "source": "/chair-selection-back-pain/",
-      "destination": "/blog/chair-selection-back-pain/",
+      "destination": "/blog/desk-posture-correction-guide/",
       "permanent": true
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "source": "/desk-cable-management-100yen/",
-      "destination": "/blog/desk-cable-management-100yen/",
+      "destination": "/blog/no-drill-cable-management/",
       "permanent": true
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "source": "/desk-indirect-lighting-guide/",
-      "destination": "/blog/desk-indirect-lighting-guide/",
+      "destination": "/blog/focus-lighting-cct/",
       "permanent": true
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "source": "/eye-friendly-desk-light-guide-2/",
-      "destination": "/blog/eye-friendly-desk-light-guide-2/",
+      "destination": "/blog/focus-lighting-cct/",
       "permanent": true
     },
     {
@@ -112,12 +112,12 @@
     },
     {
       "source": "/monitor-light-desk-light-chigai/",
-      "destination": "/blog/monitor-light-desk-light-chigai/",
+      "destination": "/blog/focus-lighting-cct/",
       "permanent": true
     },
     {
       "source": "/monitor-light-reflection-ergonomics/",
-      "destination": "/blog/monitor-light-desk-light-chigai/",
+      "destination": "/blog/focus-lighting-cct/",
       "permanent": true
     },
     {
@@ -137,7 +137,7 @@
     },
     {
       "source": "/power-tap-hiding-box-guide/",
-      "destination": "/blog/power-tap-hiding-box-guide/",
+      "destination": "/blog/no-drill-cable-management/",
       "permanent": true
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "source": "/blog/monitor-light-reflection-ergonomics/",
-      "destination": "/blog/monitor-light-desk-light-chigai/",
+      "destination": "/blog/focus-lighting-cct/",
       "permanent": true
     },
     {
@@ -208,6 +208,36 @@
     {
       "source": "/blog/digital-folder-mastery/",
       "destination": "/category/digital-minimalism/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eye-friendly-desk-light-guide-2/",
+      "destination": "/blog/focus-lighting-cct/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/desk-indirect-lighting-guide/",
+      "destination": "/blog/focus-lighting-cct/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/monitor-light-desk-light-chigai/",
+      "destination": "/blog/focus-lighting-cct/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/desk-cable-management-100yen/",
+      "destination": "/blog/no-drill-cable-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/power-tap-hiding-box-guide/",
+      "destination": "/blog/no-drill-cable-management/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/chair-selection-back-pain/",
+      "destination": "/blog/desk-posture-correction-guide/",
       "permanent": true
     }
   ]

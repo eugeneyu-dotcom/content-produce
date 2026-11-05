@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/biological-explanation-for-cryptid-sightings/",
-      "destination": "/blog/biological-explanation-for-cryptid-sightings/",
+      "destination": "/blog/cryptids-vs-urban-legends-differences-mothman/",
       "permanent": true
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "source": "/cultural-impact-of-cryptozoology/",
-      "destination": "/blog/cultural-impact-of-cryptozoology/",
+      "destination": "/blog/cryptids-vs-urban-legends-differences-mothman/",
       "permanent": true
     },
     {
@@ -123,6 +123,16 @@
     {
       "source": "/blog/hitori-kakurenbo-instructions-safety-guide/",
       "destination": "/blog/history-of-spirit-summoning-games/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cultural-impact-of-cryptozoology/",
+      "destination": "/blog/cryptids-vs-urban-legends-differences-mothman/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/biological-explanation-for-cryptid-sightings/",
+      "destination": "/blog/cryptids-vs-urban-legends-differences-mothman/",
       "permanent": true
     }
   ]

@@ -112,7 +112,7 @@
     },
     {
       "source": "/lucid-dreaming-reality-checks-3/",
-      "destination": "/blog/lucid-dreaming-reality-checks-3/",
+      "destination": "/blog/lucid-dreaming-beginners-fast/",
       "permanent": true
     },
     {
@@ -233,6 +233,11 @@
     {
       "source": "/blog/shamanic-dream-healing-journey/",
       "destination": "/category/history-of-dream-interpretation/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/lucid-dreaming-reality-checks-3/",
+      "destination": "/blog/lucid-dreaming-beginners-fast/",
       "permanent": true
     }
   ]

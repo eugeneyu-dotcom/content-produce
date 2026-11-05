@@ -29,7 +29,7 @@ heroImage: "/media-images/posts/wendigo-psychosis-real-or-cultural-label.webp"
 
 ## Why the Monster Survived the Diagnosis
 
-<p>The Wendigo kept going in popular culture long after the medical term lost its footing, in games, films and novels, usually stripped of the context that made it frightening in the first place: a winter with nothing to eat. Compare that with how <a href="/blog/biological-explanation-for-cryptid-sightings/">cryptid sightings</a> get explained away by biology. The Wendigo can’t be explained away that way, because what it described was never an animal. It was a fear of what hunger and isolation can do to people.</p>
+<p>The Wendigo kept going in popular culture long after the medical term lost its footing, in games, films and novels, usually stripped of the context that made it frightening in the first place: a winter with nothing to eat. Compare that with how <a href="/blog/cryptids-vs-urban-legends-differences-mothman/">cryptid sightings</a> get explained away by biology. The Wendigo can’t be explained away that way, because what it described was never an animal. It was a fear of what hunger and isolation can do to people.</p>
 
 <figure class="aligncenter size-large" style="margin-top: 60px;">
     <img src="/media-images/posts/wendigo-psychosis-real-or-cultural-label-footer.webp" alt="Two Cases Put Wendigo Psychosis in the Textbooks — and Both Happened in the Middle of a Famine" style="border-radius: 8px; width: 100%; height: auto;" />

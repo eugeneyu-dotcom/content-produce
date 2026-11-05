@@ -43,7 +43,7 @@ category: "6. Lucid Dreaming & Agency"
 <ul>
 <li>**Dream Recall Foundation**: Before attempting MILD, cultivate robust dream recall. Keep a dream journal and meticulously record details immediately upon waking. This primes the mind to recognize dream elements.</li>
 <li>**Intention Setting**: Lie back down and set a clear, strong intention to remember that you are dreaming the next time you are in a dream. Repeat an affirmation such as, "Next time I'm dreaming, I will remember I'm dreaming." Focus on the meaning of these words.</li>
-<li>**Visualization**: Vividly imagine yourself in a dream from earlier that night (or a recent, memorable dream). Crucially, picture yourself realizing you are dreaming within that imagined dream scenario. See the dream details, feel the emotions, and mentally perform a <a href="/blog/lucid-dreaming-reality-checks-3/">reality check</a> (e.g., trying to push a finger through your palm, checking a clock twice).</li>
+<li>**Visualization**: Vividly imagine yourself in a dream from earlier that night (or a recent, memorable dream). Crucially, picture yourself realizing you are dreaming within that imagined dream scenario. See the dream details, feel the emotions, and mentally perform a <a href="/blog/lucid-dreaming-beginners-fast/">reality check</a> (e.g., trying to push a finger through your palm, checking a clock twice).</li>
 <li>**Re-entry**: Continue this visualization and affirmation until you fall back asleep, maintaining the intention as your last conscious thought. The goal is to condition your mind to trigger lucidity when specific dream cues appear.</li>
 </ul>
 </li>

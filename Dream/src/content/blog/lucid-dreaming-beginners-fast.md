@@ -35,7 +35,7 @@ category: "6. Lucid Dreaming & Agency"
 <p style="margin-bottom: 20px; text-align: left;">A reality check is a brief action performed multiple times a day to determine whether you are awake or dreaming. The goal is to make this act so habitual that you perform it automatically within a dream.</p>
 <ul>
 <li style="margin-bottom: 12px;"><strong style="color: #03dac6;">Engage Multiple Senses:</strong> Don't just perform the check mechanically. Genuinely ask yourself, "Am I dreaming?" and expect it to fail. Feel the texture of your palms, the solidity of a wall.</li>
-<li style="margin-bottom: 12px;"><strong style="color: #03dac6;">Effective Techniques:</strong> A comprehensive <a href="/blog/lucid-dreaming-reality-checks-3/">reality checks for lucid dreaming list</a> would include methods like trying to push your finger through your opposite palm, checking a digital watch twice (text is often unstable in dreams), or pinching your nose and attempting to breathe.</li>
+<li style="margin-bottom: 12px;"><strong style="color: #03dac6;">Effective Techniques:</strong> A comprehensive reality checks for lucid dreaming list would include methods like trying to push your finger through your opposite palm, checking a digital watch twice (text is often unstable in dreams), or pinching your nose and attempting to breathe.</li>
 <li style="margin-bottom: 12px;"><strong style="color: #03dac6;">Frequency and Triggers:</strong> Aim for 10-15 reality checks per day. Link them to common events: walking through a doorway, checking your phone, or whenever you see your personal dreamsign.</li>
 </ul>
 </div>
