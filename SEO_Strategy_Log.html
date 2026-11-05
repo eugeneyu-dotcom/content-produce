@@ -1536,8 +1536,73 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待決定：jungian-shadow-dreams 要不要改回 09-30 以前的標題再重新送出（最直接的驗證）。此外，之後對「已在第一頁」的文章，改標題要更保守。AdSense 是否值得重新申請，我沒有任何可驗證的訊號，建議等這批新的收錄結果出來再說。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">25</span>
+      <h2 class="phase-title">收錄狀況全面盤點：問題在老文章，不在站內連結</h2>
+      <span class="phase-when">11-05</span>
+    </div>
+    <p class="phase-summary">上一輪發現幾篇改寫過的文章仍未收錄後，這輪把四站全部 169 篇文章逐篇用 URL Inspection 查過，再對照發佈時間、站內連結數與 HC。結論和先前的假設不同：站內連結不是主因，真正的差別是文章的世代。依此清掉了一批重複或無法查證的老文章。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">169 篇只有 74 篇收錄（44%），按發佈時間分組差異很大</p>
+        <p class="entry-desc">2026-06-11 之前的 86 篇（WP 遷移文與早期文章）只有 15 篇收錄，約 17%；7 到 9 月的 62 篇有 51 篇收錄，約 82%；10 月的 9 篇多數才剛發佈，還不能評估。分站看，joaillerie 的新文章收錄率 85%、老文章 21%。未收錄的 95 篇裡，老文章佔約 71 篇（Desk 21、Dream 19、joaillerie 18、Legend 13）。對這份資料的限制：發佈月份和內容性質、字數、被連結次數混在一起，我只能看到相關，沒辦法證明是文章性質本身造成的。完整明細存為 index_audit_20261030.csv。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag system">跨站基礎設施</span>
+      <div class="entry-body">
+        <p class="entry-title">站內連結不是主因，連四站互連也不建議</p>
+        <p class="entry-desc">四站沒有孤立頁面，每篇至少有一篇其他文章連過去。連結數與收錄率呈反向：1 條連結的收錄率 72%，5 條以上只有 23%，原因是老文章同時是被連得最多、也是最沒被收錄的那批，是混淆，不是連結有害。所以我撤回「補站內連結」的建議。Eugene 問到四站互相連結來補外部連結：自己控制的網站互連對 Google 幾乎沒有價值，而且四站主題與語言完全不同，容易被視為連結方案，在 AdSense 已經判定缺乏價值的時候不值得冒險，也不能和 Eugene 帳號下其他站（博弈站等）有任何連結。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">第一層：刪 3 篇，保留 choker 待 HC</p>
+        <p class="entry-desc">條件是老文章、沒有 HC、90 天零曝光、尚未 noindex，只剩 6 篇。刪除並 301：wedding-ring-right-hand（併入手指戒指總覽）、engagement-ring-history-odyssey（轉到分類頁）、hitori-kakurenbo-instructions-safety-guide（併入 history-of-spirit-summoning-games）。保留 scarabee-egyptien-joaillerie（被 9 篇連到）與手指戒指總覽；signification-collier-choker-histoire 因為 Eugene 有 HC，標為 Modify Pending。Sheet 上被刪的三篇標為「已過期」。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/5d76d38" target="_blank" rel="noopener">5d76d38</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">第二層 A 組：9 篇重複題材併入保留篇</p>
+        <p class="entry-desc">Desk 的 eye-friendly-desk-light-guide-2、desk-indirect-lighting-guide、monitor-light-desk-light-chigai 併入 focus-lighting-cct；desk-cable-management-100yen、power-tap-hiding-box-guide 併入 no-drill-cable-management；chair-selection-back-pain 併入 desk-posture-correction-guide。Legend 的 cultural-impact-of-cryptozoology、biological-explanation-for-cryptid-sightings 併入 cryptids-vs-urban-legends-differences-mothman。Dream 的 lucid-dreaming-reality-checks-3 併入 lucid-dreaming-beginners-fast。連結已改指、圖片已刪、301 已補，Sheet 標為已過期。這些保留篇本身也還沒被收錄，所以主要效果是縮小網站體積與清掉重複題材，對收錄率不一定有幫助。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/64b5594" target="_blank" rel="noopener">64b5594</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">第二層 B 組：我原本建議刪的 5 篇，查過後只修不刪</p>
+        <p class="entry-desc">我先更正：這 5 篇沒有一篇有必須刪除的理由，那是我的建議不是必要。standing-desk-fatigue-solutions-japan 有編造的「エルゴノミクス研究ジャーナル」引言、無法查證的「コーネル大学の調査」，還把外部來源的結論寫反了（那位 10 年使用者並沒有主張站坐混合，而是肯定站立的好處並承認疲勞），已照原文改寫，並改引 Cornell 自己網頁的 20-8-2 目安。piercing-oreille-odyssee-culturelle-2 有兩段編造的專家引言（署名 Dr. Eleanor Vance、Professeur Marc Dubois），連同無法查證的 Haïda、維京、羅馬奴隸、Himba、榮格臆測句一併刪除，海盜金耳環改成明講是流傳的說法。其餘三篇（desk-setup-unity-guide-japan、walnut-desk-aging-process-japan、white-desk-setup-aesthetics）因為被 5 到 9 篇連到、沒有查到具體錯誤，維持原狀。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/1f4f145" target="_blank" rel="noopener">1f4f145</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">虛構案例檢查（Phase 22）有漏洞，又找到一處編造的專家引言</p>
+        <p class="entry-desc">上面 piercing 那篇的兩段引言，是 Phase 22 的關鍵字掃描沒抓到的：它抓的是具名人物的案例，漏掉了「引言加虛構專家頭銜」。這次另外用「引言後接署名」的格式全站掃描，在 bijoux-de-deuil-victoriens-memoire-chagrin（曝光 116，是 joaillerie 少數有曝光的文章）找到「Dr. Helen Jacobsen，裝飾藝術史學家」，網路搜尋找不到這個人，已刪除。其他署名引言（von Franz、Matthew Walker、Antti Revonsuo）都是真實人物，沒動。目前只能說「已知的已清掉」，不能說「全部沒有」，因為掃描涵蓋的格式有限。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/1f4f145" target="_blank" rel="noopener">1f4f145</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">本週關鍵字：每站一個，偏向新增</p>
+        <p class="entry-desc">Dream「dream about losing hair meaning」（KD 45）、joaillerie「oeil de tigre pierre signification」（KD 30）、Desk「Windows11 デスクトップ カスタマイズ」（KD 35）、Legend「the mandela effect origin」（KD 50，新加到 Sheet 的一列，與都市傳說的契合度中等）。joaillerie 另有 choker 改寫等 HC。選新增而不是重寫老文章，是因為上面的收錄數據：7 到 9 月新寫的 HC 文章收錄率約八成，老文章重寫則看不到改善。Legend 沒選 La Llorona、Momo、Charlie Charlie（KD 都是 65）和 Ouija（KD 35，但 history-of-spirit-summoning-games 已大量涵蓋，會互打）。</p>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待決定：jungian-shadow-dreams 要不要改回 09-30 之前的標題（上一輪的假設驗證，還沒動）。老文章裡曝光 20 次以下且未收錄的 31 篇，只處理了其中重複題材的那批；其餘的處理方式等 HC 補齊後再看。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-10-29。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-11-05。
   </footer>
 </div>
 
