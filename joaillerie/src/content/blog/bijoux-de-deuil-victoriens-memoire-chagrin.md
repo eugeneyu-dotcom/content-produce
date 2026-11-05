@@ -21,9 +21,6 @@ heroImage: "/media-images/posts/bijoux-de-deuil-victoriens-memoire-chagrin-cover
 <h2 class="wp-block-heading" style="margin-top: 40px;">L&rsquo;essence du deuil : une mort domestiquée et sentimentale</h2>
 <div>
 <p style="margin-bottom: 25px;">À l&rsquo;inverse de la tradition du <em>memento mori</em> des siècles précédents, qui rappelait au vivant sa propre finitude à travers des motifs de crânes et de squelettes, le bijou de deuil victorien se charge d&rsquo;une mission nouvelle : la commémoration sentimentale. Il ne s&rsquo;agit plus tant de se souvenir que l&rsquo;on va mourir, mais de se souvenir de celui ou celle qui est mort. Ce glissement est fondamental. Le bijou devient un sanctuaire portable, une extension du corps qui prolonge la présence de l&rsquo;absent. Il incarne le désir de conserver une connexion physique, presque charnelle, avec le défunt. Cette approche était rendue possible par une culture qui, malgré sa rigidité morale, valorisait l&rsquo;expression d&rsquo;une sentimentalité profonde, du moins dans le cadre très réglementé du deuil. Le bijou était l&rsquo;interface acceptable entre la sphère privée du chagrin et la sphère publique des convenances. Il permettait d&rsquo;afficher sa douleur tout en respectant un protocole strict, transformant une émotion brute en un symbole socialement lisible.</p>
-<blockquote>
-<p style="margin-bottom: 25px;">« Pour les Victoriens, la mort n&rsquo;était pas une fin abrupte, mais une transition. Les bijoux de deuil n&rsquo;étaient pas des points finaux, mais des ponts jetés entre le monde des vivants et celui des esprits, des objets chargés de maintenir le dialogue par-delà le voile. » - Dr. Helen Jacobsen, historienne de l&rsquo;art décoratif.</p>
-</blockquote>
 </div>
 <h2 class="wp-block-heading" style="margin-top: 40px;">L&rsquo;influence royale et les rigoureux codes sociaux</h2>
 <div>
