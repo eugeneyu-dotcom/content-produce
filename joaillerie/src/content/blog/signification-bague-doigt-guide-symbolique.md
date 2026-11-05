@@ -46,7 +46,7 @@ heroImage: "/media-images/posts/signification-bague-doigt-guide-symbolique-cover
 <tr style="background-color: #ffffff;">
 <td style="padding: 15px; border: 1px solid #dcdcdc; background-color: #ffffff; color: #333333;"><strong>Annulaire</strong></td>
 <td style="padding: 15px; border: 1px solid #dcdcdc; background-color: #ffffff; color: #333333;">Amour, mariage, fiançailles (main gauche). Créativité et beauté.</td>
-<td style="padding: 15px; border: 1px solid #dcdcdc; background-color: #ffffff; color: #333333;"><strong>Europe de l&rsquo;Est/Centrale (Allemagne, Pologne, Russie) :</strong> L&rsquo;alliance se porte à l&rsquo;annulaire de la <strong>main droite</strong>. L&rsquo;analyse de la <a href="/blog/wedding-ring-right-hand/">signification alliance main droite</a> révèle des racines orthodoxes et une symbolique de la droiture. <br /><strong>Inde :</strong> L&rsquo;alliance est également souvent portée à la main droite, considérée comme plus auspicieuse.</td>
+<td style="padding: 15px; border: 1px solid #dcdcdc; background-color: #ffffff; color: #333333;"><strong>Europe de l&rsquo;Est/Centrale (Allemagne, Pologne, Russie) :</strong> L&rsquo;alliance se porte à l&rsquo;annulaire de la <strong>main droite</strong>. L&rsquo;analyse de la signification alliance main droite révèle des racines orthodoxes et une symbolique de la droiture. <br /><strong>Inde :</strong> L&rsquo;alliance est également souvent portée à la main droite, considérée comme plus auspicieuse.</td>
 </tr>
 <tr style="background-color: #fcfcfc;">
 <td style="padding: 15px; border: 1px solid #dcdcdc; background-color: #ffffff; color: #333333;"><strong>Index</strong></td>

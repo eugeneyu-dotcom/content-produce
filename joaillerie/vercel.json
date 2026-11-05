@@ -82,7 +82,7 @@
     },
     {
       "source": "/engagement-ring-history-odyssey/",
-      "destination": "/blog/engagement-ring-history-odyssey/",
+      "destination": "/category/bijoux-et-rites-de-passage/",
       "permanent": true
     },
     {
@@ -212,7 +212,7 @@
     },
     {
       "source": "/wedding-ring-right-hand/",
-      "destination": "/blog/wedding-ring-right-hand/",
+      "destination": "/blog/signification-bague-doigt-guide-symbolique/",
       "permanent": true
     },
     {
@@ -263,6 +263,16 @@
     {
       "source": "/blog/tendance-bijoux-minimalistes/",
       "destination": "/category/styles-et-identit-sociale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wedding-ring-right-hand/",
+      "destination": "/blog/signification-bague-doigt-guide-symbolique/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/engagement-ring-history-odyssey/",
+      "destination": "/category/bijoux-et-rites-de-passage/",
       "permanent": true
     }
   ]

@@ -42,7 +42,7 @@
     },
     {
       "source": "/hitori-kakurenbo-instructions-safety-guide/",
-      "destination": "/blog/hitori-kakurenbo-instructions-safety-guide/",
+      "destination": "/blog/history-of-spirit-summoning-games/",
       "permanent": true
     },
     {
@@ -118,6 +118,11 @@
     {
       "source": "/blog/modern-internet-ghost-stories-2026/",
       "destination": "/blog/evolution-of-internet-horror-characters-from-chain-mail-to-ai/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hitori-kakurenbo-instructions-safety-guide/",
+      "destination": "/blog/history-of-spirit-summoning-games/",
       "permanent": true
     }
   ]
