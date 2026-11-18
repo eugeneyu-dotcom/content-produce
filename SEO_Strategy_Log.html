@@ -426,7 +426,7 @@
       <span class="pending-dot"></span>
       <div class="pending-item-body">
         <p class="pending-item-title">Sheet 沒有待 HC 的新字了，既有文章等 HC 改寫約 15 篇 <span class="tag all">全站</span></p>
-        <p class="pending-item-desc">11-11 起 Sheet 上沒有 Pending、Modify Pending 或 Active 的列，只剩兩個空白候選：Desk「デスクツアー おすすめ」、joaillerie「améthyste signification vertus」。既有文章等 HC 改寫：見第 21 階段盤點，例如 joaillerie 的 saphir-bleu、bijoux-serpent、plume、papillon，Dream 的 chased-dreams、collective-unconscious（same-house 在觀察期），Legend 的 mothman。補 HC 的速度仍是瓶頸。</p>
+        <p class="pending-item-desc">11-17 起 Sheet 上沒有 Pending、Modify Pending 或 Active 的列，只剩兩個空白候選：Desk「デスクツアー おすすめ」、joaillerie「améthyste signification vertus」。既有文章等 HC 改寫：見第 21 階段盤點，例如 joaillerie 的 saphir-bleu、bijoux-serpent、plume、papillon，Dream 的 chased-dreams、collective-unconscious（same-house 在觀察期），Legend 的 mothman。補 HC 的速度仍是瓶頸。</p>
         <p class="pending-item-next">下一步：<strong>每週挑每站一個</strong>；補好 HC 後 Status 我會一併改 Active（agent 只認精確的 Active）</p>
       </div>
     </div>
@@ -1669,8 +1669,71 @@
     <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待觀察：2 到 3 週後（約 11-25 到 12-02）用 URL Inspection 查這 5 個網址的收錄狀態，並與 Phase 22 的偏薄新文章比較；perle 的排名與點擊 3 週後再看，不要提前判斷成敗。Sheet 目前沒有 Pending 或 Active 的列，只剩兩個空白候選（Desk「デスクツアー おすすめ」、joaillerie「améthyste signification vertus」）。</p>
   </section>
 
+  <section class="phase">
+    <div class="phase-head">
+      <span class="phase-index">27</span>
+      <h2 class="phase-title">本週四篇：兩篇改寫、兩篇新增，改寫的重點在補上搜尋意圖要的內容</h2>
+      <span class="phase-when">11-17</span>
+    </div>
+    <p class="phase-summary">這週先查了 GSC、GKP 區間、KD 與收錄狀態再選字。選字結果偏向「既有頁面改寫」：月光石是「已發現但未收錄」的零曝光頁，掉牙是 Dream 的點擊主力。新增兩篇都是賭注，原因在下面寫清楚。四篇一起推送、送 Indexing API。</p>
+
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">本週關鍵字：兩改兩增，依據與取捨</p>
+        <p class="entry-desc">改寫 joaillerie「pierre de lune signification spirituelle」：GKP 約 5000 區間、KD 35，但這篇 90 天零曝光，URL Inspection 到 11-17 仍是「Discovered - currently not indexed」，09-03 送過 Indexing API 也沒有被爬。內文 923 字全在講送朋友項鍊的故事，沒有一段正面回答「月光石的意義」，標題也沒有 signification。「搜尋意圖對不上」是推論，沒有驗證。</p>
+        <p class="entry-desc">改寫 Dream「spiritual meaning of teeth falling out in dream」：90 天 564 次曝光、4 點擊、平均排名 18.4，是 Dream 的點擊主力，GKP 區間最高（約 50000），KD 35。GSC 的詞幾乎都帶 spiritual 或 biblical（排名 44 到 66），而前牙那批詞排得不錯（最好到第 1 名，其餘約 5 到 14 名）。同站另有 teeth-falling-out-dream-meaning-anxiety-explained（排名 37，心理焦慮角度），所以這篇專攻靈性與民俗，不重講焦慮。</p>
+        <p class="entry-desc">新增 Legend「japanese urban legends」：KD 35，沒有 GKP 量，賭的是樞紐頁能替站內日本系列（kuchisake-onna、hanako-san、kokkuri-san、daruma-san）集中權重，不是賭這個字本身。新增 Desk「ケーブル ボックス 100均」：GKP 約 5000，但我的 KD 工具沒比對到任何已登記網域，KD 10 這個分數不可信；Phase 25 才把舊的 desk-cable-management-100yen 併進 no-drill，這篇是部分走回頭路，切角要跟 no-drill 區隔。</p>
+        <p class="entry-desc">本週不排：dream-about-being-pregnant-meaning（曝光 1028 但排名 68、0 點擊，KD 50）、Dream spiders（KD 75）、Desk 電動昇降デスク（KD 80）、mothman 與 uncanny valley（KD 65）、kashima reiko 與 teke teke（KD 80）。觀察期的 jungian-shadow-dreams 與 same-house 不動，Group C 的四篇 joaillerie 舊文仍在等 HC。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag all">全站</span>
+      <div class="entry-body">
+        <p class="entry-title">四篇一起推送，部署後送 Indexing API</p>
+        <p class="entry-desc">joaillerie 月光石（contrast 型，原地改寫）、Dream 掉牙（標題不動，原地改寫）、Legend japanese-urban-legends-two-generations（number 型，新文章）、Desk cable-box-100kin-under-desk-rack（question 型，新文章）。標題策略接在 11-11 最後一列之後輪替，三列已記進 title_experiments.csv。</p>
+        <p class="entry-desc">四個網址部署後都回 200 並確認新內容上線，Indexing API 送出 4/4，Sheet 四列都已是 USED（兩篇改寫的先標 Modify Pending，推送後改回；兩篇新文章走 Active、--prepare、--finish）。兩篇新文章都加了分類頁的關鍵字標籤。</p>
+        <div class="entry-meta"><a href="https://github.com/eugeneyu-dotcom/content-produce/commit/1d9d09b" target="_blank" rel="noopener">1d9d09b</a></div>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag joaillerie">joaillerie</span>
+      <div class="entry-body">
+        <p class="entry-title">月光石改寫：朋友的故事收成開場，後面補「意義」本體</p>
+        <p class="entry-desc">新版先直接回答「月光石象徵什麼」，再依序排：傳統象徵（用小表格列羅馬、希臘、古埃及各自怎麼看，來源是 Histoire d’Or 與 Wikipedia）、選藍色的理由（HC：偏靈感與內在平靜；鳥形、銀飾、刻意選便宜款）、第三眼脈輪與功效說法（標成 lithothérapie 的信念，註明該頁沒有科學來源、不取代醫療意見）、月光石的暈光其實是正長石與鈉長石交替層造成的光學現象（GIA）、「彩虹月光石」其實是拉長石、硬度 6 到 6.5 所以建議墜子優先、六月誕生石之一並連到 perle 與誕生石兩篇。標題改成以 signification 為主：Intuition et Nouveaux Départs, Mais Son Halo Bleu Relève de l’Optique。約 1050 字，舊稿 923 字。</p>
+        <p class="entry-desc">拿掉了舊稿不在 HC 裡、屬於當初編出來的細節：朋友一直倒水喝、餐車「幾週後」開張、她「幾乎每天戴著項鍊」，以及沒有來源的印度月神 Chandra 與希臘 Séléné 說法。Histoire d’Or 那頁並沒有「新的開始」這個象徵，所以「鼓勵放下過去、迎接轉折」寫成作者自己的說法，沒掛在那一頁名下。我沒有驗證那條項鍊是否為天然月光石，文章也沒有聲稱。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag dream">Dream</span>
+      <div class="entry-body">
+        <p class="entry-title">掉牙改寫：補上傳統怎麼說，並更正舊稿對 2018 研究的錯誤描述</p>
+        <p class="entry-desc">保留前牙與臼齒的變數、單顆門牙的解讀與現有表格（這是目前有排名的部分），加上 HC：作者夢到掉牙時工作上有直接的對手，夢裡與人鬥毆後掉的是犬齒，所以讀成地位與邊界受威脅；作者的立場是靈性說法不能單獨依靠，結論可以參考、不該盡信。新增的傳統說法一律標成「傳統怎麼說」：Artemidorus 的牙位對照表與「掉牙連到還債」（二手來源 The Appendix 與 2018 論文）、塔木德 Berakhot 56a 的 Bar Hedya（二手轉述，Sefaria 回 403 沒讀到原文）、佛洛伊德與榮格（被轉述）與 Schneck。聖經那段我直接寫明沒有任何經文解釋掉牙夢，只有「打碎惡人的牙」（詩篇 3:7、58:6）與「壞牙」（箴言 25:19）的意象，所以「掉牙等於失去力量」是類比，不是釋經。</p>
+        <p class="entry-desc">舊稿寫「2018 研究發現心理壓力的象徵解讀成立」，我讀了原文（Rozen 與 Soffer-Dudek，210 位大學生）結論剛好相反：掉牙夢與醒來時牙齒緊繃有關（r=0.21），與心理壓力無關（r=0.02），作者自稱是初步結果、需要重複驗證。這是明確的事實錯誤，已更正並如實引用；文章把它與作者的對手解讀並列，讓讀者自己判斷。另外換掉了舊稿連到 faithtime.ai 的來源，改連聖經本文。HC 說「心理學上有部分研究確實有提到」（單顆門牙與外貌信心），我照寫成「Some psychological research does point in this direction」，沒查到出處，沒有附連結。標題與描述沒動。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag legend">Legend</span>
+      <div class="entry-body">
+        <p class="entry-title">日本傳說：從「學校廁所」改成「兩代傳說」</p>
+        <p class="entry-desc">骨架原本設想的是「日本傳說為什麼都跟學校、廁所、規則有關」。HC 實際給的是八尺大人（從惡靈古堡 8 的蒂米特雷斯庫夫人認識）與 2channel 是現代怪談的發源地，所以文章改成「口耳相傳的老傳說 vs 有時間戳記的 2channel 傳說」：第一代用表格連到站內四篇，第二代講如月車站（2004 年 2channel）、電梯遊戲、八尺大人。八尺大人那段是 HC 骨幹：原版會怪笑、模仿親屬的聲音，遊戲版初期比較溫柔、不用男人聲音；細節查證 YOKAI.JP：2008-08-26 在 2channel 神秘版首次出現（回覆 908 到 916），約八尺（2.42 公尺）、帽子在約兩公尺的樹籬上移動，後來有聲音像爺爺。</p>
+        <p class="entry-desc">兩個沒查實的點：電梯遊戲的起源有爭議（普遍引用 2008 年 2ch，但韓國流傳最廣，我只有部落格等級的來源），HC 原句本來就是「起源或類似的故事」，文章照寫並標成有爭議；蒂米特雷斯庫夫人與八尺大人的關係，只有 The Line-Up 轉述 Capcom 美術總監 Takano 在 IGN 訪談的說法（三個靈感之一，同篇說不是完全對應），我沒讀到 IGN 原文，文章寫成「報導說」。另外加了「A Few Others You’ll Run Into」一節，用 Wikipedia 的簡介列 Teke Teke、Aka Manto、Kunekune 等，不是 HC 內容。約 1125 字，偏薄。</p>
+      </div>
+    </div>
+    <div class="entry">
+      <span class="tag desk">Desk</span>
+      <div class="entry-body">
+        <p class="entry-title">收納架：HC 跟關鍵字有落差，用折衷處理</p>
+        <p class="entry-desc">HC 是素材失敗談：清掃時電線積灰，透明塑膠盒因窗邊熱度脆裂，木盒因潮濕吸水變形，兩者都是桌上型、沒解決積灰，最後改成金屬、可吊在桌面下的收納架；山崎實業的不特別好用，不知名牌子、可調長度的更好用，後來買了音響，線變多，可調長度派上用場。這份 HC 沒有一個字提到 100 均，而關鍵字「ケーブル ボックス 100均」的搜尋者要看的是 100 均商品。</p>
+        <p class="entry-desc">折衷做法：標題用問句（「机の上と下、どちらに置く？」），100 均放進一節，用一篇比較文章的內容列出大創木紋盒、Seria 收納盒、3COINS 竹盒、無印鋼製盒，並明說「這是記事的記載，不是我用過的感想」，沒有宣稱作者的塑膠盒或木盒是 100 均買的。東京消防庁的 tracking 現象（積灰受潮起火）說明連到一句標明「這是我的看法」的話。大創的商品頁連續兩次被限流（429）所以沒有放進文章。約 1800 字，對這個關鍵字的排名我信心不高，這是賭注。</p>
+      </div>
+    </div>
+
+    <p class="entry-desc" style="margin-top:0.6rem; font-size: 0.85rem;">待觀察：約 11-25 到 12-02 用 URL Inspection 查這週 4 個網址加 11-11 的 5 個網址的收錄狀態，並與 Phase 22 的偏薄新文章比較（日本傳說約 1125 字、收納架約 1800 字，都比預期短，收錄速度要留意）；掉牙的排名在約一週與三週後各看一次，標題沒動但內文大改，不要提前判斷成敗；月光石的收錄狀態三週後再看，它本來就沒有排名可以失去。Sheet 目前沒有 Pending、Modify Pending 或 Active 的列，只剩兩個空白候選（Desk「デスクツアー おすすめ」、joaillerie「améthyste signification vertus」）。</p>
+  </section>
+
   <footer>
-    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-11-11。
+    資料來源：<code style="font-family:'IBM Plex Mono',monospace">git log</code> 與 Search_Console_Check 的 GSC 報告，commit 連結指向 GitHub 上的 content-produce repo。這份文件持續更新，最後一次補充：2026-11-17。
   </footer>
 </div>
 
