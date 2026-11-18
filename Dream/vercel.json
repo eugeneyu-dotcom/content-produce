@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/adaptive-function-bad-dreams-brain-health/",
-      "destination": "/blog/adaptive-function-bad-dreams-brain-health/",
+      "destination": "/blog/threat-simulation-theory-dreaming-safest-city/",
       "permanent": true
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "source": "/evolutionary-reason-recurring-nightmares-stress-threat/",
-      "destination": "/blog/evolutionary-reason-recurring-nightmares-stress-threat/",
+      "destination": "/blog/threat-simulation-theory-dreaming-safest-city/",
       "permanent": true
     },
     {
@@ -238,6 +238,16 @@
     {
       "source": "/blog/lucid-dreaming-reality-checks-3/",
       "destination": "/blog/lucid-dreaming-beginners-fast/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/evolutionary-reason-recurring-nightmares-stress-threat/",
+      "destination": "/blog/threat-simulation-theory-dreaming-safest-city/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/adaptive-function-bad-dreams-brain-health/",
+      "destination": "/blog/threat-simulation-theory-dreaming-safest-city/",
       "permanent": true
     }
   ]

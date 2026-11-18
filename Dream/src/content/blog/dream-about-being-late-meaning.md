@@ -47,7 +47,7 @@ heroImage: "/media-images/posts/dream-about-being-late-meaning.webp"
 ## Where I Stay Cautious
 
 <p>As we have said in plenty of other articles on this site, interpreting dreams is hard. Culture and personal experience shape what a dream means, and my explanation, pressure from real life, may not be yours. I can only say that for me, the link to stress was never in doubt once I saw how the dream moved with my circumstances.</p>
-<p>The same logic applies to other anxiety dreams. The <a href="/blog/naked-in-public-dream-meaning-new-job-anxiety/">naked dream</a> that turned out to be about a job someone had held for three weeks is a close cousin, and so are <a href="/blog/teeth-falling-out-dream-meaning-anxiety-explained/">teeth dreams</a>, which also tend to show up when something in waking life is unresolved. If you want the biological side of why the brain rehearses threats at all, the piece on <a href="/blog/evolutionary-reason-recurring-nightmares-stress-threat/">recurring nightmares</a> covers it.
+<p>The same logic applies to other anxiety dreams. The <a href="/blog/naked-in-public-dream-meaning-new-job-anxiety/">naked dream</a> that turned out to be about a job someone had held for three weeks is a close cousin, and so are <a href="/blog/teeth-falling-out-dream-meaning-anxiety-explained/">teeth dreams</a>, which also tend to show up when something in waking life is unresolved. If you want the biological side of why the brain rehearses threats at all, the piece on <a href="/blog/threat-simulation-theory-dreaming-safest-city/">recurring nightmares</a> covers it.
 
 ## If You Keep Having This Dream
 

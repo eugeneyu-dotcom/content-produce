@@ -33,7 +33,7 @@ heroImage: "/media-images/posts/dream-about-death-meaning-a-hundred-ways-to-die.
 
 ## No science, just a thousand opinions
 
-<p>Truthfully, there's no solid scientific account of dream interpretation right now. If you're curious, it's worth browsing what people argue about on forums — I've followed <a href="https://www.reddit.com/r/Jung/comments/hy5st1/what_does_it_mean_when_you_die_in_a_dream/">this Reddit thread</a> for a while, and you'll notice everyone reads the exact same dream completely differently. Treat it as entertainment, not gospel.</p><p>Compare that to the more evidence-adjacent territory covered in <a href="/blog/evolutionary-reason-recurring-nightmares-stress-threat/">threat-simulation theory</a>, and you'll see the field split cleanly: some death dreams are the brain rehearsing danger, others are just narrative debris with no threat behind them at all.</p>
+<p>Truthfully, there's no solid scientific account of dream interpretation right now. If you're curious, it's worth browsing what people argue about on forums — I've followed <a href="https://www.reddit.com/r/Jung/comments/hy5st1/what_does_it_mean_when_you_die_in_a_dream/">this Reddit thread</a> for a while, and you'll notice everyone reads the exact same dream completely differently. Treat it as entertainment, not gospel.</p><p>Compare that to the more evidence-adjacent territory covered in <a href="/blog/threat-simulation-theory-dreaming-safest-city/">threat-simulation theory</a>, and you'll see the field split cleanly: some death dreams are the brain rehearsing danger, others are just narrative debris with no threat behind them at all.</p>
 
 ## Read it forward, not backward
 

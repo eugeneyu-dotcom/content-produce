@@ -239,6 +239,16 @@
       "source": "/blog/chair-selection-back-pain/",
       "destination": "/blog/desk-posture-correction-guide/",
       "permanent": true
+    },
+    {
+      "source": "/focus-worker-desk-setup-guide/",
+      "destination": "/blog/maintain-focus-desk-layout-tips/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/focus-worker-desk-setup-guide/",
+      "destination": "/blog/maintain-focus-desk-layout-tips/",
+      "permanent": true
     }
   ]
 }

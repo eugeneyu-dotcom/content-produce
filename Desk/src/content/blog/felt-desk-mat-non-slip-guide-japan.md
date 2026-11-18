@@ -12,6 +12,13 @@ category: "2. 色彩理論と素材感 (Color Theory & Materiality)"
 <h2 style="margin-bottom: 30px; font-weight: bold;">「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版</h2>
 <figure style="text-align: center; margin: 40px 0;"><img decoding="async" src="/media-images/posts/felt-desk-mat-non-slip-guide-japan-illustration-1.png" style="max-width: 100%; width: 850px; border-radius: 8px; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" alt="Felt desk mat with a keyboard and mouse resting on its surface" title="「滑らない」は科学である：フェルト デスクマットの静力学と選び方の完全版"></figure>
 <div class="article-body">
+<h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">フェルトデスクマットが滑るときの原因と対策（先に結論）</h4>
+<p style="margin-bottom: 15px;"><strong>滑る原因：</strong>裏面に滑り止め加工がないこと、そして裏面とデスクの間にたまったホコリや皮脂です。滑り止め性能を決めるのは重さや素材の純度ではなく、裏面の素材と加工です。</p>
+<ul>
+<li style="margin-bottom: 10px;"><strong>選ぶとき：</strong>裏面がシリコンドット加工、または天然ゴムコーティングのものを選びます。加工がない安価なフェルトは繊維密度が低く表面が平滑に近いため、滑りやすくなります。</li>
+<li style="margin-bottom: 10px;"><strong>店で確かめるとき：</strong>裏面を指でなぞり、突起が均一か、粘り気にムラがないかを見ます。可能なら端を滑らかな板に乗せてゆっくり傾け、どこまで静止するかを試します。</li>
+<li style="margin-bottom: 10px;"><strong>すでに滑るとき：</strong>月に一度、マットを外して裏面のホコリを粘着ローラーで取り、デスクの表面を固く絞った濡れ布巾で拭いて、完全に乾かしてから戻します。</li>
+</ul>
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">はじめに：静寂な安定性を求めて</h4>
 <p style="margin-bottom: 25px;">ミニマリストの書斎において、フェルト製のデスクマットは単なるアクセサリーではなく、一種の哲学の表明です。その柔らかな質感は視覚的なノイズを吸収し、落ち着いた雰囲気を醸成します。しかし、この静謐な美しさの裏には、しばしば見過ごされる物理的な課題が存在します――「滑り」です。キーボードを打つ僅かな力、マウスを動かす微細な振動。それらが蓄積し、気づけばマット全体が数ミリ、あるいは数センチずれている。この僅かなズレこそが、我々の集中力を削ぎ、無意識のストレスを生み出す源泉なのです。本稿では、この「滑り」という現象を物理学の視点から解剖し、真に安定した作業環境を構築するための「滑り止めフェルトデスクマット」の核心に迫ります。これは単なる製品レビューではなく、理想的なワークスペースを追求するための科学的探求です。</p>
 <h4 style="margin-top: 50px; margin-bottom: 25px; font-weight: bold;">グリップの物理学：「滑らない」を支える微細な科学</h4>
